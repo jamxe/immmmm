@@ -61,16 +61,6 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </item>
     
     <item>
-      <title>《医学大神》读中记</title>
-      <link>https://immmmm.com/reading/book-isbn-9787613337624/</link>
-      <pubDate>Sat, 14 Mar 2020 14:12:28 +0000</pubDate>
-      
-      <guid>https://immmmm.com/reading/book-isbn-9787613337624/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/34935089/&#34;&gt;https://book.douban.com/subject/34935089/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;虽是医学人物传记，但更多的是科学精神！好书增长常识，忍不住记一笔。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>关于</title>
       <link>https://immmmm.com/about/</link>
       <pubDate>Sat, 14 Mar 2020 12:41:27 +0000</pubDate>

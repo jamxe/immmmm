@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>决战24点（HTML5）开发小记 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="点击体验：https://pk24go.cn
+本就开发了一个玩儿24点游戏的微信公众号“决战24点”（pk24go），可以回复综合算式进行解答。说实话，还是挺不方面的。前段时间看到 4数网 在线 HTML5 玩法，立马着手改造！
+改造点 1、界面UI：以方格为基本图形，4个数字在4个角落，4个运算符号在中间，完成数、撤销返回、提示等按钮在空白小方格中。 2、功能减法：去除时间限制模式、积分、结束按钮。 3、功能加法：新增【题库选择】可选择数字范围1~10或1~13，新增【待解模式】针对性强化玩家提示过的题组。
+"/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/pk24go-cn/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="决战24点（HTML5）开发小记" />
+<meta property="og:description" content="点击体验：https://pk24go.cn
+本就开发了一个玩儿24点游戏的微信公众号“决战24点”（pk24go），可以回复综合算式进行解答。说实话，还是挺不方面的。前段时间看到 4数网 在线 HTML5 玩法，立马着手改造！
+改造点
+1、界面UI：以方格为基本图形，4个数字在4个角落，4个运算符号在中间，完成数、撤销返回、提示等按钮在空白小方格中。
+2、功能减法：去除时间限制模式、积分、结束按钮。
+3、功能加法：新增【题库选择】可选择数字范围1~10或1~13，新增【待解模式】针对性强化玩家提示过的题组。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/pk24go-cn/" />
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">首页</a></li>
+        
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">首页</a></li>
+      
+    
+      
+        <li><a href="/about">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="https://immmmm.com/pk24go-cn/">决战24点（HTML5）开发小记</a></h2>
+    <div class="post-meta">
+      
+
+      
+      
+        <span class="post-read-time">/ 1 分钟</span><span> / <span class="valine-comment-count" data-xid="/pk24go-cn/">0</span> 评论 / <span id="/pk24go-cn/" class="leancloud_visitors" data-flag-title="决战24点（HTML5）开发小记"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+      
+    </div>
+
+    
+
+    <div class="post-content">
+      <p>点击体验：<a href="https://pk24go.cn">https://pk24go.cn</a></p>
+<p>本就开发了一个玩儿24点游戏的微信公众号“决战24点”（pk24go），可以回复综合算式进行解答。说实话，还是挺不方面的。前段时间看到 <a href="http://4shu.net/">4数网</a> 在线 HTML5 玩法，立马着手改造！</p>
+<h3 id="改造点">改造点</h3>
+<p>1、界面UI：以方格为基本图形，4个数字在4个角落，4个运算符号在中间，完成数、撤销返回、提示等按钮在空白小方格中。
+2、功能减法：去除时间限制模式、积分、结束按钮。
+3、功能加法：新增【题库选择】可选择数字范围1~10或1~13，新增【待解模式】针对性强化玩家提示过的题组。</p>
+<h3 id="功能优化踩坑">功能优化（踩坑）：</h3>
+<p>1、去除移动端点击事件出现的灰色背景框添加CSS属性样式</p>
+<p><code>body{-webkit-tap-highlight-color:rgba(0,0,0,0)}</code></p>
+<p>2、加速 click 点击延迟历史遗留问题，移动浏览器大约 300 毫秒的等待时间。为什么这么设计呢？ 因为它想看看你是不是要进行双击（double tap）操作。</p>
+<p>解决方法 <a href="https://github.com/ftlabs/fastclick/">FastClick.js</a></p>
+<p>3、canvas 宽度自适应</p>
+<p>解决方法 <a href="https://github.com/zhangjikai/CodeSamples/blob/master/html/html5/FixCanvasSizeOnDevice.html">FixCanvasSizeOnDevice</a></p>
+<p>小坑：meta 中  <code>initial-scale=1</code> 改为 <code>initial-scale=1.0</code>
+中坑：canvas 画出来的文字线条严重发虚！</p>
+<p>解决方法 <a href="https://github.com/jondavidjohn/hidpi-canvas-polyfill">HiDPI Canvas Polyfill</a></p>
+<p>4、利用 LocalStorage 的“黑科技”</p>
+<p><a href="https://github.com/addyosmani/basket.js">Basket.js</a>  把近 70KB 的1362道题目和解法缓存到浏览器中</p>
+<h3 id="源码">源码</h3>
+<p><a href="https://coding.net/u/lmm214/p/pk24go/git">https://coding.net/u/lmm214/p/pk24go/git</a></p>
+<p><a href="https://github.com/lmm214/pk24go">https://github.com/lmm214/pk24go</a></p>
+    </div>
+
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">阅读更多</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://immmmm.com/2018-military-training-album/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">军训掠影</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/bitcron-edit-article-and-comments/">
+                  <span class="button__text">即时编辑 Bitcron 文章和评论</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/pk24go-cn/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+    });
+    jQuery(document).ready(function($){
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+        $('.vemoji-btn').text('😀');
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/lately.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/waterfall.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/slimbox2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+<script src="https://immmmm.com/all.js"></script>
+<script src="https://immmmm.com/main.js"></script>
+<script src="https://immmmm.com/prism.js"></script>
+      
+    </div>
+  </body>
+</html>

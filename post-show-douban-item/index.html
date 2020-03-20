@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>文章内显示豆瓣条目 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="小众豆瓣已成刚需，电影、图书看完都会标记下，写日志时常会提到，老想着在文章内「优雅」地展示，官方 API 已废，幸好还有给力的 @mufeng 兄，以下功能就使用其提供的轮子。
+效果如下 https://book.douban.com/subject/33408247/
+https://movie.douban.com/subject/10432911/
+"/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/post-show-douban-item/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="文章内显示豆瓣条目" />
+<meta property="og:description" content="小众豆瓣已成刚需，电影、图书看完都会标记下，写日志时常会提到，老想着在文章内「优雅」地展示，官方 API 已废，幸好还有给力的 @mufeng 兄，以下功能就使用其提供的轮子。
+效果如下
+https://book.douban.com/subject/33408247/
+https://movie.douban.com/subject/10432911/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/post-show-douban-item/" />
+<meta property="article:published_time" content="2020-01-25T21:31:46+00:00" />
+<meta property="article:modified_time" content="2020-01-25T21:31:46+00:00" />
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">首页</a></li>
+        
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">首页</a></li>
+      
+    
+      
+        <li><a href="/about">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="https://immmmm.com/post-show-douban-item/">文章内显示豆瓣条目</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2020-01-25
+        </span>
+
+        
+          
+        
+      
+
+      
+      
+        <span class="post-read-time">/ 2 分钟</span><span> / <span class="valine-comment-count" data-xid="/post-show-douban-item/">0</span> 评论 / <span id="/post-show-douban-item/" class="leancloud_visitors" data-flag-title="文章内显示豆瓣条目"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+      
+    </div>
+
+    
+
+    <div class="post-content">
+      <p>小众豆瓣已成刚需，电影、图书看完都会标记下，写日志时常会提到，老想着在文章内「优雅」地展示，官方 API 已废，幸好还有给力的 <a href="https://mufeng.me/">@mufeng</a> 兄，以下功能就使用其提供的轮子。</p>
+<h3 id="效果如下">效果如下</h3>
+<p><a href="https://book.douban.com/subject/33408247/">https://book.douban.com/subject/33408247/</a></p>
+<p><a href="https://movie.douban.com/subject/10432911/">https://movie.douban.com/subject/10432911/</a></p>
+<h3 id="使用方式">使用方式</h3>
+<p>如果是md的话之间输入以下格式，其他输入a标签链接，注意链接以 <code>/</code> 斜杠结尾。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">https:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">book</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">douban</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">com</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">subject</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">33408247</span>/&gt;
+&lt;<span style="color:#f92672">https:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">movie</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">douban</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">com</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">subject</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">10432911</span>/&gt;
+</code></pre></div><h3 id="相关代码">相关代码</h3>
+<p><code>head</code>头部添加以下 meta</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;referrer&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;never&#34;</span>&gt;
+</code></pre></div><p>基于 jQuery 的功能代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">jQuery</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">$</span>) {
+  <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;a[href*=&#39;douban&#39;]&#34;</span>).<span style="color:#a6e22e">each</span>(<span style="color:#66d9ef">function</span> () {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">_this</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">this</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_this</span>.<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;href&#34;</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_reg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^https\:\/\/(movie|book)\.douban\.com\/subject\/([0-9]+)\/?/</span>;
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">db_reg</span>.<span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">str</span>)) {
+      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_type</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">db_reg</span>, <span style="color:#e6db74">&#34;$1&#34;</span>);
+      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_id</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">db_reg</span>, <span style="color:#e6db74">&#34;$2&#34;</span>).<span style="color:#a6e22e">toString</span>();
+      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_api</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://bm.weajs.com/api/&#34;</span>;
+      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">db_type</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;movie&#39;</span>) {
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">db_api</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;movies/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">db_id</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span>;
+        <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+          <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">url</span>,
+          <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;GET&#39;</span>,
+          <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;json&#34;</span>,
+          <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">data</span>) {
+            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_star</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">rating</span>);
+            <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;&lt;div class=&#39;post-preview&#39;&gt;&lt;div class=&#39;post-preview--meta&#39;&gt;&lt;div class=&#39;post-preview--middle&#39;&gt;&lt;h4 class=&#39;post-preview--title&#39;&gt;&lt;a target=&#39;_blank&#39; href=&#39;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&gt;《&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">title</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;》&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#39;rating&#39;&gt;&lt;div class=&#39;rating-star allstar&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">db_star</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&gt;&lt;/div&gt;&lt;div class=&#39;rating-average&#39;&gt;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">rating</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/div&gt;&lt;/div&gt;&lt;time class=&#39;post-preview--date&#39;&gt;导演：&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">directors</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; / 类型：&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">genres</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; / &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">pubdate</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/time&gt;&lt;section style=&#39;max-height:75px;overflow:hidden;&#39; class=&#39;post-preview--excerpt&#39;&gt;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">intro</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/section&gt;&lt;/div&gt;&lt;/div&gt;&lt;img class=&#39;post-preview--image&#39; src=&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">cover</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&gt;&lt;/div&gt;&#34;</span>).<span style="color:#a6e22e">replaceAll</span>(<span style="color:#a6e22e">_this</span>)
+          }
+        });
+      } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">db_type</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;book&#39;</span>) {
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">db_api</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;books/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">db_id</span>;
+        <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+          <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">url</span>,
+          <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;GET&#39;</span>,
+          <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;json&#39;</span>,
+          <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">data</span>) {
+            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_star</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">rating</span>);
+            <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;&lt;div class=&#39;post-preview&#39;&gt;&lt;div class=&#39;post-preview--meta&#39;&gt;&lt;div class=&#39;post-preview--middle&#39;&gt;&lt;h4 class=&#39;post-preview--title&#39;&gt;&lt;a target=&#39;_blank&#39; href=&#39;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&gt;《&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">title</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;》&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#39;rating&#39;&gt;&lt;div class=&#39;rating-star allstar&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">db_star</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&gt;&lt;/div&gt;&lt;div class=&#39;rating-average&#39;&gt;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">rating</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/div&gt;&lt;/div&gt;&lt;time class=&#39;post-preview--date&#39;&gt;作者：&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">author</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &lt;/time&gt;&lt;section style=&#39;max-height:75px;overflow:hidden;&#39; class=&#39;post-preview--excerpt&#39;&gt;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">intro</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/section&gt;&lt;/div&gt;&lt;/div&gt;&lt;img class=&#39;post-preview--image&#39; src=&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">cover</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&gt;&lt;/div&gt;&#34;</span>).<span style="color:#a6e22e">replaceAll</span>(<span style="color:#a6e22e">_this</span>)
+          }
+        });
+      } <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;出错&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">id</span>)
+      }
+    }
+  });
+});
+</code></pre></div><p>样式代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">post-preview</span>{<span style="color:#66d9ef">max-width</span>:<span style="color:#ae81ff">780</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">height</span>:<span style="color:#ae81ff">210</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">margin</span>:<span style="color:#ae81ff">1</span><span style="color:#66d9ef">em</span> <span style="color:#66d9ef">auto</span>;<span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">relative</span>;<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">flex</span>;<span style="color:#66d9ef">background</span>:<span style="color:#ae81ff">#fff</span>;<span style="color:#66d9ef">border-radius</span>:<span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">box-shadow</span>:<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> rgba(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">.25</span>),<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> rgba(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">.25</span>);}.<span style="color:#a6e22e">post-preview--meta</span>{<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">75</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">overflow</span>:<span style="color:#66d9ef">hidden</span>;}.<span style="color:#a6e22e">post-preview--middle</span> {<span style="color:#66d9ef">line-height</span>:<span style="color:#ae81ff">28</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">post-preview--title</span> {<span style="color:#66d9ef">font-size</span>:<span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">margin</span>:<span style="color:#ae81ff">0</span><span style="color:#75715e">!important</span>;}.<span style="color:#a6e22e">post-preview--title</span> <span style="color:#f92672">a</span>{<span style="color:#66d9ef">text-decoration</span>:<span style="color:#66d9ef">none</span>;}.<span style="color:#a6e22e">post-preview--date</span>{<span style="color:#66d9ef">font-size</span>:<span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">color</span>:<span style="color:#ae81ff">#999</span>;}.<span style="color:#a6e22e">post-preview--excerpt</span>{<span style="color:#66d9ef">font-size</span>:<span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">line-height</span>:<span style="color:#ae81ff">1.825</span>;}.<span style="color:#a6e22e">post-preview--excerpt</span> <span style="color:#f92672">p</span>{<span style="color:#66d9ef">margin-bottom</span>:<span style="color:#ae81ff">0</span>;}  .<span style="color:#a6e22e">post-preview--image</span> {<span style="color:#66d9ef">height</span>:<span style="color:#ae81ff">210</span><span style="color:#66d9ef">px</span><span style="color:#75715e">!important</span>;<span style="color:#66d9ef">width</span>:<span style="color:#66d9ef">auto</span>;<span style="color:#66d9ef">float</span>:<span style="color:#66d9ef">right</span>;<span style="color:#66d9ef">border-top-right-radius</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span><span style="color:#75715e">!important</span>;<span style="color:#66d9ef">border-bottom-right-radius</span>:<span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span><span style="color:#75715e">!important</span>;<span style="color:#66d9ef">border-top-left-radius</span>:<span style="color:#ae81ff">0</span><span style="color:#75715e">!important</span>;<span style="color:#66d9ef">border-bottom-left-radius</span>:<span style="color:#ae81ff">0</span><span style="color:#75715e">!important</span>;}
+@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span>:<span style="color:#a6e22e">550px</span><span style="color:#f92672">)</span> {.<span style="color:#a6e22e">post-preview</span> {<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">95</span><span style="color:#66d9ef">%</span>;}.<span style="color:#a6e22e">post-preview--excerpt</span>{<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">none</span>;}.<span style="color:#a6e22e">post-preview--middle</span> {<span style="color:#66d9ef">line-height</span>:<span style="color:#ae81ff">19</span><span style="color:#66d9ef">px</span>;}}
+.<span style="color:#a6e22e">rating</span>{<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">block</span>;<span style="color:#66d9ef">line-height</span>:<span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">rating-star</span>{<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">75</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">height</span>:<span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">background-repeat</span>:<span style="color:#66d9ef">no-repeat</span>;<span style="color:#66d9ef">background-image</span>:url(<span style="color:#e6db74">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAClCAYAAAAUAAAYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA5xJREFUeNrs3T9rFEEcxvG7qEQIglaCICKkin9AUEtBKxU7wS61VlYivgWj70TtNFj5BqzE7qxEWwsxKIoYn4UtluFmbm8nczvzm+/BjxyuDwNzu3uXD0+46f7LC5PA45Hm+WTYw1x2LRDc0jzTXB+wqMlsaLPutz8fDFjYZHYauAz3NBvt83XNnyUWNpn1nVm3OsHmsb3EomazzZnVXKMPNcc0xzUnNKc0Rzv/77fms+Z7O3vt9b1eU7bZrNN68l5zcolX4ofmsuZXTdnmMvyi2dR86Bmcac62P6vKrnVubpc0bxYE32nOab45N8YqsvPeDfcD4SOav4HjprPuu+H5BTt9LXDMfNbdLPfT678Fx6vKupt1o/O8+R3pkOaJ5/iktqx7z/qp+aq5q/nY+fczmheaK03Gs7D5rLtZdzSvA6/Ebc2u55j57HQB0TzW7AzkjiKzny6+2hlKNE8juMNcFqKBaIZndRlCNBBNgmx7ZkE0fbLtZkE0EA1EM17WuQwhGogGooFoss6296y52cNO+J6HLJoPaFdbsvA9zGerIxrPh85eWYgGooFoDiQbuAxp0UA0EVmdWbRo+ma1WbRoIBqIZtzsnHdDWjQQDUQD0WSbde5ZS2UhmtqJJtSEiVkXooFoIJre2VATJmZdiKZ2ogk1YSb8oVMvDeUPnSAaiCaPJkzMuhANRAPRQDQpsqEmTMy6EI11oolpwkA0EA1EcyDZmCYMRAPR+LMxTZjqiCamCQPRQDQQzehNGIgGooFoIJpVZ2OaMBBN7USTqgkD0UA0EE3vbKomDERTO9GkasKYJJpUTRiIBqKBaEZvwkA0EA1EA9GkyKZqwkA01olmrCYMRAPRQDR9LkO+0QmiKbAJUyTRjNWEgWggGohm9CYMRAPRQDQQzZDsWE0YiMYC0eTYhIFoIJrKiCbHJgxEY4FocmzCZEs0OTZhIBqIpjKiybEJA9FANBANROPL5tiEgWhKIJoSmzAQDURjjGhKbMJANCUQTYlNmNGIpsQmDEQD0RgjmhKbMBANRAPR1Es0JTZhIJpciMZaEwaigWgKJBprTRiIJheisdaESUo01powEA1EUyDRWGvCQDQQDURjm2isNWEgmlURzWw2q4pZIBqIJkOiCVyGJpkFolkV0ejMMvel28mIRptl7ku3IRqIpjCimfNuaJpZIBqIBqIpm2ice5Z5ZonJupvVkMRu4JW4qXnrOWY++1+AAQBw9BJSCTeN9wAAAABJRU5ErkJggg==</span>);<span style="color:#66d9ef">overflow</span>:<span style="color:#66d9ef">hidden</span>;}.<span style="color:#a6e22e">allstar10</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">allstar9</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-15</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">allstar8</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-30</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">allstar7</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-45</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">allstar6</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-60</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">allstar5</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-75</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">allstar4</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-90</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">allstar3</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-105</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">allstar2</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-120</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">allstar1</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-135</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">allstar0</span>{<span style="color:#66d9ef">background-position</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">-150</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">rating-average</span>{<span style="color:#66d9ef">color</span>:<span style="color:#ae81ff">#777</span>;<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;<span style="color:#66d9ef">font-size</span>:<span style="color:#ae81ff">13</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">margin-left</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;}
+</code></pre></div>
+    </div>
+
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">阅读更多</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://immmmm.com/jinrishici-with-valine/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">今日诗词 &amp; Valine</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/gridea-theme-webstack/">
+                  <span class="button__text">Gridea Theme WebStack</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/post-show-douban-item/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+    });
+    jQuery(document).ready(function($){
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+        $('.vemoji-btn').text('😀');
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/lately.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/waterfall.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/slimbox2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+<script src="https://immmmm.com/all.js"></script>
+<script src="https://immmmm.com/main.js"></script>
+<script src="https://immmmm.com/prism.js"></script>
+      
+    </div>
+  </body>
+</html>

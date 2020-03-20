@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>基于 LeanCloud 实现文章点赞 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="LeanCloud 1、注册 LeanCloud ，创建应用，创建 Class（相当数据库），权限改为“无限制”。
+"/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/zan-by-leancloud-cn/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="基于 LeanCloud 实现文章点赞" />
+<meta property="og:description" content="
+LeanCloud
+1、注册 LeanCloud ，创建应用，创建 Class（相当数据库），权限改为“无限制”。
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/zan-by-leancloud-cn/" />
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">首页</a></li>
+        
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">首页</a></li>
+      
+    
+      
+        <li><a href="/about">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="https://immmmm.com/zan-by-leancloud-cn/">基于 LeanCloud 实现文章点赞</a></h2>
+    <div class="post-meta">
+      
+
+      
+      
+        <span class="post-read-time">/ 1 分钟</span><span> / <span class="valine-comment-count" data-xid="/zan-by-leancloud-cn/">0</span> 评论 / <span id="/zan-by-leancloud-cn/" class="leancloud_visitors" data-flag-title="基于 LeanCloud 实现文章点赞"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+      
+    </div>
+
+    
+
+    <div class="post-content">
+      <p class="md_block" style="text-align:center;"><img class="md_compiled" src="https://lmm.elizen.me/images/2018/01/zan.gif" alt="zan.gif"></p>
+<h3 id="leancloud">LeanCloud</h3>
+<p>1、<a href="http://leancloud.cn/login.html?refuser=lmm214#/signup">注册 LeanCloud</a> ，创建应用，创建 Class（相当数据库），权限改为“无限制”。</p>
+<p><img src="https://lmm.elizen.me/images/2018/01/zan-1.png" alt="zan-1.png"></p>
+<p>2、获取应用 ID 和 Key</p>
+<p><img src="https://lmm.elizen.me/images/2018/01/zan-2.png" alt="zan-2.png"></p>
+<p>3、设置安全域名</p>
+<p><img src="https://lmm.elizen.me/images/2018/01/zan-3.png" alt="zan-3.png"></p>
+<h3 id="bitcron">Bitcron</h3>
+<p>1、下载压缩包（有3文件：zan.scss zan.js zan.png），丢 <code>template</code> 内：<a href="https://lmm.elizen.me/images/2018/01/include_180130.zip">include_180130.zip</a></p>
+<p>2、<code>post.jade</code> 里找个地插入：</p>
+<pre><code class="language-jade" data-lang="jade">+h.load(&quot;//cdn1.lncld.net/static/js/3.5.0/av-min.js&quot;,&quot;/template/include/zan.scss&quot;,&quot;/template/include/zan.js&quot;)
+</code></pre><p>3、修改 <code>zan.js</code> 里的 appId 和 appKey；修改第 25 行，文章样式 <code>.post-content</code> 需自行匹配：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;.post-content&#34;</span>).<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#34;&lt;div id=&#39;zan&#39; class=&#39;clearfix&#39;&gt;&lt;div class=&#39;heart&#39; onclick=\&#34;goodplus(&#39;&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">url</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;&#39;)\&#34;&gt;&lt;p id=&#39;zan_text&#39;&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&#34;</span>);
+</code></pre></div><h3 id="结语">结语</h3>
+<p>首先，感谢 @Willin Wang 推荐 LeanCloud 平台，之前的 Coding.net 的动态页面太卡，严重影响页面打开速度！</p>
+<p>看了一下午 LeanCloud 的开发文档，点赞真是屈才这货啦，还有牛人基于这货开发了静态博客 的评论系统 <a href="https://github.com/xcss/Valine">Valine</a> !</p>
+    </div>
+
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">阅读更多</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://immmmm.com/return-to-campus-life/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">回归校园，褪去浮华</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/valine-by-leancloud-cn/">
+                  <span class="button__text">基于 LeanCloud 的评论系统：Valine</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/zan-by-leancloud-cn/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+    });
+    jQuery(document).ready(function($){
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+        $('.vemoji-btn').text('😀');
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/lately.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/waterfall.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/slimbox2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+<script src="https://immmmm.com/all.js"></script>
+<script src="https://immmmm.com/main.js"></script>
+<script src="https://immmmm.com/prism.js"></script>
+      
+    </div>
+  </body>
+</html>

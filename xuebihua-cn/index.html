@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>“学笔画”折腾小记 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="点击体验→ https://xuebihua.cn
+刷着阮一峰的 weekly 看到了 Hanzi Writer 1 这个项目，发现笔顺的动画比较自然，还能在 svg 上手写练习，最重要的是看看 demo 好像上手比较简单，实际也如此。
+功能代码非常好使，基本折腾在界面和陌生的代码上，比如想让 svg 自适应，搜索测试一晚发现还是以下代码好使：
+"/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/xuebihua-cn/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="“学笔画”折腾小记" />
+<meta property="og:description" content="点击体验→ https://xuebihua.cn
+
+刷着阮一峰的 weekly 看到了 Hanzi Writer 1 这个项目，发现笔顺的动画比较自然，还能在 svg 上手写练习，最重要的是看看 demo 好像上手比较简单，实际也如此。
+功能代码非常好使，基本折腾在界面和陌生的代码上，比如想让 svg 自适应，搜索测试一晚发现还是以下代码好使：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/xuebihua-cn/" />
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">首页</a></li>
+        
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">首页</a></li>
+      
+    
+      
+        <li><a href="/about">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="https://immmmm.com/xuebihua-cn/">“学笔画”折腾小记</a></h2>
+    <div class="post-meta">
+      
+
+      
+      
+        <span class="post-read-time">/ 1 分钟</span><span> / <span class="valine-comment-count" data-xid="/xuebihua-cn/">0</span> 评论 / <span id="/xuebihua-cn/" class="leancloud_visitors" data-flag-title="“学笔画”折腾小记"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+      
+    </div>
+
+    
+
+    <div class="post-content">
+      <p>点击体验→ <a href="https://xuebihua.cn">https://xuebihua.cn</a></p>
+<p><img src="https://lmm.elizen.me/images/2019/07/xuebihua_qr.png" alt="xuebihua_qr"></p>
+<p>刷着阮一峰的 weekly 看到了 <a href="https://chanind.github.io/hanzi-writer/cn/">Hanzi Writer</a> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> 这个项目，发现笔顺的动画比较自然，还能在 svg 上手写练习，最重要的是看看 demo 好像上手比较简单，实际也如此。</p>
+<p>功能代码非常好使，基本折腾在界面和陌生的代码上，比如想让 svg 自适应，搜索测试一晚发现还是以下代码好使：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-UA-Compatible&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;IE=edge,chrome=1&#34;</span> /&gt;
+&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&#34;</span>&gt;
+</code></pre></div><p>考虑到教室大屏上不方便输入文字，直接内置一年级语文的400个生字，点击即可展示。发现，会 jQuery 还真省事！</p>
+<p>折腾完准备上线使用的是 Coding Page 服务，这货已经被腾讯云拿下，索性直接败个 cn 域名绑定之。</p>
+<p>源码： <a href="https://github.com/lmm214/xuebihua/">https://github.com/lmm214/xuebihua/</a></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>HanziWriter是javascript免费开源库，根据汉字书写时按照笔画顺序的特征，可以播放正确笔画顺序的描边动画和练习测试。支持简体字和繁体字。 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+    </div>
+
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">阅读更多</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://immmmm.com/valine-diy/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">Valine 评论框美化及功能优化</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/book-isbn-9787508692098/">
+                  <span class="button__text">《今日简史》书摘</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/xuebihua-cn/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+    });
+    jQuery(document).ready(function($){
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+        $('.vemoji-btn').text('😀');
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/lately.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/waterfall.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/slimbox2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+<script src="https://immmmm.com/all.js"></script>
+<script src="https://immmmm.com/main.js"></script>
+<script src="https://immmmm.com/prism.js"></script>
+      
+    </div>
+  </body>
+</html>

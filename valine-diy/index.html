@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>Valine 评论框美化及功能优化 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="以下修改不涉及 Valine 源码的改动，防止后续官方更新还得再来一边。因此，相关 css、js 代码得放在调取 valine.min.js 之后。
+评论框美化： .v .vwrap{padding: 0 0 44px;}.v .veditor{min-height:7rem;resize:none;}.v .vwrap .vedit{padding-top:0}.v .vwrap .vheader{width: 80%;bottom:0;position: absolute;background: #f7f7f7;}.v .vinput{padding:10px 15px;}.v .vwrap .vheader .vinput{border-bottom:0px}.v .vwrap .vedit .vctrl{margin-top:-44px;right:0;position:absolute;margin-right:-3px;}.v .vwrap .vcontrol{ position:absolute;right:0;bottom:0;width:20%;padding-top:0px;}.v .vwrap .vcontrol .col.col-80{width: 100%;}.v .vbtn.vsubmit{border-radius: 0;padding: 0;color: #fff;line-height: 44px;width:100%;border: none;background:#1abc9c;}.v .vwrap .vedit .vctrl span.vpreview-btn,.v .vwrap .vcontrol .col.col-20,.v .vlist .vcard .vhead .vsys{display:none;} @media screen and (max-width: 520px){ .v .vwrap .vheader .vinput{width: 33.33%;padding:10px 5px;} } "/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/valine-diy/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="Valine 评论框美化及功能优化" />
+<meta property="og:description" content="以下修改不涉及 Valine 源码的改动，防止后续官方更新还得再来一边。因此，相关 css、js 代码得放在调取 valine.min.js 之后。
+评论框美化：
+
+.v .vwrap{padding: 0 0 44px;}.v .veditor{min-height:7rem;resize:none;}.v .vwrap .vedit{padding-top:0}.v .vwrap .vheader{width: 80%;bottom:0;position: absolute;background: #f7f7f7;}.v .vinput{padding:10px 15px;}.v .vwrap .vheader .vinput{border-bottom:0px}.v .vwrap .vedit .vctrl{margin-top:-44px;right:0;position:absolute;margin-right:-3px;}.v .vwrap .vcontrol{    position:absolute;right:0;bottom:0;width:20%;padding-top:0px;}.v .vwrap .vcontrol .col.col-80{width: 100%;}.v .vbtn.vsubmit{border-radius: 0;padding: 0;color: #fff;line-height: 44px;width:100%;border: none;background:#1abc9c;}.v .vwrap .vedit .vctrl span.vpreview-btn,.v .vwrap .vcontrol .col.col-20,.v .vlist .vcard .vhead .vsys{display:none;}
+@media screen and (max-width: 520px){
+	.v .vwrap .vheader .vinput{width: 33.33%;padding:10px 5px;}
+}
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/valine-diy/" />
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">首页</a></li>
+        
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">首页</a></li>
+      
+    
+      
+        <li><a href="/about">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="https://immmmm.com/valine-diy/">Valine 评论框美化及功能优化</a></h2>
+    <div class="post-meta">
+      
+
+      
+      
+        <span class="post-read-time">/ 2 分钟</span><span> / <span class="valine-comment-count" data-xid="/valine-diy/">0</span> 评论 / <span id="/valine-diy/" class="leancloud_visitors" data-flag-title="Valine 评论框美化及功能优化"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+      
+    </div>
+
+    
+
+    <div class="post-content">
+      <p>以下修改不涉及 Valine 源码的改动，防止后续官方更新还得再来一边。因此，相关 css、js 代码得放在调取 <code>valine.min.js</code> 之后。</p>
+<h3 id="评论框美化">评论框美化：</h3>
+<p><img src="https://lmm.elizen.me/images/2019/07/plk.jpg" alt="评论框美化："></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span>{<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">44</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">veditor</span>{<span style="color:#66d9ef">min-height</span>:<span style="color:#ae81ff">7</span><span style="color:#66d9ef">rem</span>;<span style="color:#66d9ef">resize</span>:<span style="color:#66d9ef">none</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span>{<span style="color:#66d9ef">padding-top</span>:<span style="color:#ae81ff">0</span>}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">bottom</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#f7f7f7</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">border-bottom</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span> .<span style="color:#a6e22e">vctrl</span>{<span style="color:#66d9ef">margin-top</span>:<span style="color:#ae81ff">-44</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">right</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">margin-right</span>:<span style="color:#ae81ff">-3</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span>{    <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">right</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">bottom</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">padding-top</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span> .<span style="color:#a6e22e">col</span>.<span style="color:#a6e22e">col-80</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vbtn</span>.<span style="color:#a6e22e">vsubmit</span>{<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>;<span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">44</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;<span style="color:#66d9ef">background</span>:<span style="color:#ae81ff">#1abc9c</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span> .<span style="color:#a6e22e">vctrl</span> <span style="color:#f92672">span</span>.<span style="color:#a6e22e">vpreview-btn</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span> .<span style="color:#a6e22e">col</span>.<span style="color:#a6e22e">col-20</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vlist</span> .<span style="color:#a6e22e">vcard</span> .<span style="color:#a6e22e">vhead</span> .<span style="color:#a6e22e">vsys</span>{<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">none</span>;}
+@<span style="color:#66d9ef">media</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span><span style="color:#f92672">:</span> <span style="color:#f92672">520px</span><span style="color:#f92672">)</span>{
+	.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">33.33</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;}
+}
+</code></pre></div><h3 id="点击回复直接评论">点击回复直接评论</h3>
+<p>官方版本点击回复时都是跳回到页面上方的评论框进行回复，评论框是固定不动的。比较合理的是：点哪条的回复，评论框就显示在此条评论下方。避免页面跳上跳下。</p>
+<p>相关 jQuery 代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(){
+	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;.vemoji-btn&#39;</span>).<span style="color:#a6e22e">text</span>(<span style="color:#e6db74">&#39;😀&#39;</span>);
+	<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#vcomments&#34;</span>).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#e6db74">&#39;span.vat&#39;</span>,<span style="color:#66d9ef">function</span>(){
+		<span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">parent</span>(<span style="color:#e6db74">&#39;div.vmeta&#39;</span>).<span style="color:#a6e22e">next</span>(<span style="color:#e6db74">&#34;div.vcontent&#34;</span>).<span style="color:#a6e22e">after</span>(<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;div.vwrap&#34;</span>));
+		<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;textarea#veditor&#39;</span>).<span style="color:#a6e22e">focus</span>();
+	})
+})
+</code></pre></div><p>短短几行，折腾了一个深夜加一个下午，主要是卡在点击事件得使用动态绑定事件，还有卡在移动dom后页面滚动定位错误，前者使用 on 解决，后者加个 focus 解决。</p>
+<h3 id="自定义邮件回复样式">自定义邮件回复样式</h3>
+<p><img src="https://lmm.elizen.me/images/2019/07/mail-re1.jpg" alt="自定义邮件回复样式"></p>
+<p>分享给已成功使用了 Valine Admin 的同学。</p>
+<p><code>MAIL_TEMPLATE</code> 代码，自行替换logo图片地址：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;padding:2em 10%;color:#b3b3b1;width:420px;margin:0 auto;font-size:14px&#34;</span><span style="color:#960050;background-color:#1e0010">;</span>&gt;
+	&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display:block;width:50px;margin:0 auto&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://图片地址/logo.png&#34;</span>&gt;
+	&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-align:center;&#34;</span>&gt;Hi，&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#3eae5f&#34;</span>&gt; ${PARENT_NICK} &lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+	&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;font-size:13px;text-align:center;&#34;</span>&gt;有人回复了您在 &lt;<span style="color:#f92672">strong</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;font-weight:bold&#34;</span>&gt; ${SITE_NAME} &lt;/<span style="color:#f92672">strong</span>&gt; 上的评论&lt;/<span style="color:#f92672">p</span>&gt;
+	&lt;<span style="color:#f92672">hr</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:64px;border:0;border-bottom:1px solid #e5e5e5;margin:24px auto;&#34;</span>&gt;
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#333;overflow:hidden;&#34;</span>&gt;
+		&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display:inline-block;float:left;&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#3eae5f;font-weight:bold&#34;</span>&gt; 您 &lt;/<span style="color:#f92672">span</span>&gt;&lt;<span style="color:#f92672">span</span>&gt;说：&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+		${PARENT_COMMENT}
+	&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#333;overflow:hidden;&#34;</span>&gt;
+		&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display:inline-block;float:left;&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#3eae5f;font-weight:bold&#34;</span>&gt; ${NICK} &lt;/<span style="color:#f92672">span</span>&gt;&lt;<span style="color:#f92672">span</span>&gt;说：&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+		${COMMENT}
+	&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#ffffff;text-decoration:none;display:inline-block;min-height:28px;line-height:28px;padding:0 13px;outline:0;background:#3eae5f;font-size:13px;text-align:center;font-weight:400;border:0;border-radius:999em&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${POST_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;点击查看&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+	&lt;<span style="color:#f92672">hr</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:64px;border:0;border-bottom:1px solid #e5e5e5;margin:24px auto;&#34;</span>&gt;
+	&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display:block;color:#b3b3b1;text-decoration:none;text-align:center;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${SITE_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;${SITE_NAME}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p><code>MAIL_TEMPLATE_ADMIN</code> 通知博主邮件模板代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;line-height:24px;font-size:13px;&#34;</span>&gt;
+    &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#3eae5f&#34;</span>&gt; ${NICK} &lt;/<span style="color:#f92672">span</span>&gt; 说：&lt;/<span style="color:#f92672">p</span>&gt;
+    &lt;<span style="color:#f92672">p</span> &gt;${COMMENT}&lt;/<span style="color:#f92672">p</span>&gt;
+    &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;font-size:12px;line-height:12px;&#34;</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#b3b3b1;text-decoration:none;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${POST_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;${POST_URL}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div>
+    </div>
+
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">阅读更多</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://immmmm.com/valine-show-comment-views/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">Valine 文章列表显示评论数和阅读数</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/xuebihua-cn/">
+                  <span class="button__text">“学笔画”折腾小记</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/valine-diy/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+    });
+    jQuery(document).ready(function($){
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+        $('.vemoji-btn').text('😀');
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/lately.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/waterfall.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/slimbox2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+<script src="https://immmmm.com/all.js"></script>
+<script src="https://immmmm.com/main.js"></script>
+<script src="https://immmmm.com/prism.js"></script>
+      
+    </div>
+  </body>
+</html>

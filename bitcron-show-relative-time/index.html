@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>Bitcron 显示相对时间 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="已更新下面这货！
+Lately.js：基于jQuery ，仅 800 字节却强大、好用的&amp;rsquo;Timeago&#39;插件。
+逻辑：年月相同继续（否，显示“常规日期”），日相同继续（否，显示“发布于几天前”），小时相同继续（否，显示“发布于几小时前”），分相同显示“刚刚发布”（否，显示“发布于几分钟前”）
+BUG也明显，不能跨月，跨了如12月31日23时59秒发的文，1月1日00时01分来看也是显示常规的。找不到时间戳的api及计算，只想到用这个笨办法。
+代码如下：
+"/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/bitcron-show-relative-time/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="Bitcron 显示相对时间" />
+<meta property="og:description" content="已更新下面这货！
+Lately.js：基于jQuery ，仅 800 字节却强大、好用的&rsquo;Timeago&#39;插件。
+逻辑：年月相同继续（否，显示“常规日期”），日相同继续（否，显示“发布于几天前”），小时相同继续（否，显示“发布于几小时前”），分相同显示“刚刚发布”（否，显示“发布于几分钟前”）
+BUG也明显，不能跨月，跨了如12月31日23时59秒发的文，1月1日00时01分来看也是显示常规的。找不到时间戳的api及计算，只想到用这个笨办法。
+代码如下：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/bitcron-show-relative-time/" />
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">首页</a></li>
+        
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">首页</a></li>
+      
+    
+      
+        <li><a href="/about">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="https://immmmm.com/bitcron-show-relative-time/">Bitcron 显示相对时间</a></h2>
+    <div class="post-meta">
+      
+
+      
+      
+        <span class="post-read-time">/ 1 分钟</span><span> / <span class="valine-comment-count" data-xid="/bitcron-show-relative-time/">0</span> 评论 / <span id="/bitcron-show-relative-time/" class="leancloud_visitors" data-flag-title="Bitcron 显示相对时间"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+      
+    </div>
+
+    
+
+    <div class="post-content">
+      <p>已更新下面这货！</p>
+<p><a href="https://tokinx.github.io/lately/">Lately.js</a>：基于jQuery ，仅 800 字节却强大、好用的&rsquo;Timeago'插件。</p>
+<p>逻辑：年月相同继续（否，显示“常规日期”），日相同继续（否，显示“发布于几天前”），小时相同继续（否，显示“发布于几小时前”），分相同显示“刚刚发布”（否，显示“发布于几分钟前”）</p>
+<p>BUG也明显，不能跨月，跨了如12月31日23时59秒发的文，1月1日00时01分来看也是显示常规的。找不到时间戳的api及计算，只想到用这个笨办法。</p>
+<p>代码如下：</p>
+<pre><code class="language-jade" data-lang="jade">- var now_ym = site.now.format('%y%m').int
+- var now_d = site.now.format('%d').int
+- var now_H = site.now.format('%H').int
+- var now_M = site.now.format('%M').int
+- var post_ym = post.date.format('%y%m').int
+- var post_d = post.date.format('%d').int
+- var post_H = post.date.format('%H').int
+- var post_M = post.date.format('%M').int
+
+if now_ym == post_ym
+	if now_d == post_d
+		if now_H == post_H
+			if now_M == post_M
+				- var re_date = &quot;刚刚发布&quot;
+			else
+				- var re_date = &quot;发布于 &quot; + now_M -  post_M + &quot; 分钟前&quot;
+		else
+			- var re_date = &quot;发布于 &quot; + now_H -  post_H + &quot; 小时前&quot;
+	else
+		- var re_date = &quot;发布于 &quot; + now_d -  post_d + &quot; 天前&quot;
+else
+	- var re_date = post.date.format('%m月 %d日，%Y')
+</code></pre>
+    </div>
+
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">阅读更多</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://immmmm.com/bitcron-show-last-update/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">Bitcron 显示最后更新时间</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/bitcron-diy-mail-template/">
+                  <span class="button__text">Bitcron 美化评论回复通知</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/bitcron-show-relative-time/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+    });
+    jQuery(document).ready(function($){
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+        $('.vemoji-btn').text('😀');
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/lately.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/waterfall.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/slimbox2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+<script src="https://immmmm.com/all.js"></script>
+<script src="https://immmmm.com/main.js"></script>
+<script src="https://immmmm.com/prism.js"></script>
+      
+    </div>
+  </body>
+</html>

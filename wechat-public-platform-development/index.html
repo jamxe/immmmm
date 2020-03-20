@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>微信公众平台开发小记 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="微信公众平台开发，个人申请只能订阅号，虽能开启开发者模式，可这权限令人发指！借助“微信开放平台”中的第三方，通过简单的“授权管理”做到各尽其能、互不干扰。
+自定义菜单 微之家：https://www.iweizhijia.com
+其中菜单内容的“发送消息”、“跳转网页”，当然选择后者，点击菜单后直接显示内容。
+"/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/wechat-public-platform-development/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="微信公众平台开发小记" />
+<meta property="og:description" content="微信公众平台开发，个人申请只能订阅号，虽能开启开发者模式，可这权限令人发指！借助“微信开放平台”中的第三方，通过简单的“授权管理”做到各尽其能、互不干扰。
+
+自定义菜单
+微之家：https://www.iweizhijia.com
+
+其中菜单内容的“发送消息”、“跳转网页”，当然选择后者，点击菜单后直接显示内容。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/wechat-public-platform-development/" />
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">首页</a></li>
+        
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">首页</a></li>
+      
+    
+      
+        <li><a href="/about">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="https://immmmm.com/wechat-public-platform-development/">微信公众平台开发小记</a></h2>
+    <div class="post-meta">
+      
+
+      
+      
+        <span class="post-read-time">/ 1 分钟</span><span> / <span class="valine-comment-count" data-xid="/wechat-public-platform-development/">0</span> 评论 / <span id="/wechat-public-platform-development/" class="leancloud_visitors" data-flag-title="微信公众平台开发小记"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+      
+    </div>
+
+    
+
+    <div class="post-content">
+      <p>微信公众平台开发，个人申请只能订阅号，虽能开启开发者模式，可这权限令人发指！借助“微信开放平台”中的第三方，通过简单的“授权管理”做到各尽其能、互不干扰。</p>
+<p><img src="https://lmm.elizen.me/images/2016/10/dyh-dsf.jpg" alt="dyh-dsf.jpg"></p>
+<h3>自定义菜单</h3>
+<p><strong>微之家</strong>：<a href="https://www.iweizhijia.com" target="_blank"><a href="https://www.iweizhijia.com">https://www.iweizhijia.com</a></a></p>
+<p><img src="https://lmm.elizen.me/images/2016/10/dyh-1.jpg" alt="dyh-1.jpg"></p>
+<p>其中菜单内容的“发送消息”、“跳转网页”，当然选择后者，点击菜单后直接显示内容。</p>
+<h3>获取微信文章的永久链接</h3>
+<p><strong>微之家</strong>：<a href="http://www.135editor.com" target="_blank"><a href="http://www.135editor.com">http://www.135editor.com</a></a></p>
+<p><img src="https://lmm.elizen.me/images/2016/10/dyh-3.jpg" alt="dyh-3.jpg">
+公众号后台预览文章都是临时链接，而订阅号可怜巴拉每日就1次推送，曲线救助，把链接发给自己微信，打开，再分享。阅读量、点赞都在。</p>
+<h3>获取永远图片的 MediaId</h3>
+<p>继续135：</p>
+<p>授权后&ndash;开发者模式&ndash;自动回复&ndash;图片&ndash;选择素材：</p>
+<p><img src="https://lmm.elizen.me/images/2016/10/dyh-2.jpg" alt="dyh-2.jpg"></p>
+<p>图片素材里的字符串即 MediaId ，有了它订阅号也能实现关键词回复“图片”！</p>
+<p>注：虽然135也支持自定义菜单，可它选择文章时不能搜索，而微之家OK！</p>
+    </div>
+
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">阅读更多</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://immmmm.com/happy-birthday-2020/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">庆生</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/weapp-er-xiao-zhi-zao/">
+                  <span class="button__text">微信小程序：小学数学电子教材</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/wechat-public-platform-development/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+    });
+    jQuery(document).ready(function($){
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+        $('.vemoji-btn').text('😀');
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/lately.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/waterfall.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/slimbox2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+<script src="https://immmmm.com/all.js"></script>
+<script src="https://immmmm.com/main.js"></script>
+<script src="https://immmmm.com/prism.js"></script>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>Bitcron 文章内链自动优化显示 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content=" 当我们在文章内引用了一个站内的链接，一般只是超级链接，其实，也可以为这个超级链接提供更好的表现方式。 这是看起来很简单，但确实一个超赞的想法，来自于 Jimmy。效果如下(中间部分，hello 为标题):
+ "/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/bitcron-auto-article-refer/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="Bitcron 文章内链自动优化显示" />
+<meta property="og:description" content="
+当我们在文章内引用了一个站内的链接，一般只是超级链接，其实，也可以为这个超级链接提供更好的表现方式。
+这是看起来很简单，但确实一个超赞的想法，来自于 Jimmy。效果如下(中间部分，hello 为标题):
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/bitcron-auto-article-refer/" />
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">首页</a></li>
+        
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">首页</a></li>
+      
+    
+      
+        <li><a href="/about">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="https://immmmm.com/bitcron-auto-article-refer/">Bitcron 文章内链自动优化显示</a></h2>
+    <div class="post-meta">
+      
+
+      
+      
+        <span class="post-read-time">/ 1 分钟</span><span> / <span class="valine-comment-count" data-xid="/bitcron-auto-article-refer/">0</span> 评论 / <span id="/bitcron-auto-article-refer/" class="leancloud_visitors" data-flag-title="Bitcron 文章内链自动优化显示"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+      
+    </div>
+
+    
+
+    <div class="post-content">
+      <blockquote>
+<p>当我们在文章内引用了一个站内的链接，一般只是超级链接，其实，也可以为这个超级链接提供更好的表现方式。
+这是看起来很简单，但确实一个超赞的想法，来自于 Jimmy。效果如下(中间部分，hello 为标题):</p>
+</blockquote>
+<p><img src="https://lmm.elizen.me/images/2017/12/refer-1.png" alt="refer 处理页面内的链接"></p>
+<p>官方相关页面：
+<a href="https://pi.bitcron.com/post/code_demo/refer">https://pi.bitcron.com/post/code_demo/refer</a>
+<a href="https://api.bitcron.com/read/syntax/syntax_block#toc_9">https://api.bitcron.com/read/syntax/syntax_block#toc_9</a> (此页面 orignal_html 少个 i，吭！！！)</p>
+<p>进入正题，实际效果如下：</p>
+<p><a href="brotherhood-of-blades-ii">brotherhood-of-blades-ii</a></p>
+<p>1、先找个文章里 <strong>单独一行</strong> 插入内链，如</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[<span style="color:#f92672">brotherhood-of-blades-ii</span>](<span style="color:#a6e22e">brotherhood-of-blades-ii</span>)
+</code></pre></div><p>上面的 url 其实就是 md 文档里设置的 <code>url</code> 内容。</p>
+<p>2、<code>post.jade</code> 里添加以下代码：</p>
+<pre><code class="language-jade" data-lang="jade">mixin sub_post_handler(url, original_html, new_line=True)
+    if not new_line
+        {{original_html}}
+    else
+        sub_post = d.get_doc(url=url)
+        if not sub_post
+            {{original_html}}
+        else: .post-preview.clearfix
+            preview_meta_class = &quot;with_bg post-preview--meta&quot; if sub_post.cover else 'without_bg post-preview--meta'
+            div(class=preview_meta_class)
+                .post-preview--middle
+                    h4.post-preview--title
+                        a(href=sub_post.url)= sub_post.title
+                    section.post-preview--excerpt
+                        span= sub_post.content.limit(words=40, keep_images=False).plain
+                    time.post-preview--date= sub_post.date('%Y.%m.%d') + &quot; | &quot; + &quot;%s评&quot; %(sub_post.comments_count or 0) + &quot; | &quot; + &quot;%s度&quot; %(sub_post.visits or 0)
+            if sub_post.cover
+                bg_url = sub_post.cover.resize(350, 350, fixed=True)
+                .post-preview--image(style=&quot;background-image:url({{bg_url}})&quot;)
+
+article(class=meta): +refer(sub_post_handler)
+</code></pre><p>3、<code>style.scss</code> 相关代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#a6e22e">.post-preview</span> {
+	<span style="color:#f92672">max-width</span><span style="color:#a6e22e">:780px</span>;
+	<span style="color:#f92672">margin</span><span style="color:#a6e22e">:2em</span> <span style="color:#f92672">auto</span>;
+	<span style="color:#f92672">position</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">relative</span>;
+	<span style="color:#f92672">display</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">flex</span>;
+	<span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> #fff;
+	<span style="color:#f92672">border-radius</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">4px</span>;
+	<span style="color:#f92672">box-shadow</span><span style="color:#a6e22e">:0</span> <span style="color:#f92672">1px</span> <span style="color:#f92672">2px</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#a6e22e">.25</span><span style="color:#f92672">),</span><span style="color:#f92672">0</span> <span style="color:#f92672">0</span> <span style="color:#f92672">1px</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#a6e22e">.25</span><span style="color:#f92672">)</span>;
+	<span style="color:#a6e22e">.post-preview--meta</span> {
+		<span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">100</span><span style="color:#960050;background-color:#1e0010">%</span>;<span style="color:#f92672">padding</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">25px</span>;
+		<span style="color:#a6e22e">.post-preview--middle</span> {<span style="color:#f92672">line-height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">28px</span>;}
+		<span style="color:#a6e22e">.post-preview--title</span> {
+			<span style="color:#f92672">font-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">16px</span>;
+			<span style="color:#f92672">margin</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">0</span>;
+			<span style="color:#f92672">a</span> {<span style="color:#f92672">text-decoration</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">none</span>;}
+		}
+		<span style="color:#a6e22e">.post-preview--date</span> {<span style="color:#f92672">font-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">14px</span>;<span style="color:#f92672">color</span><span style="color:#a6e22e">:</span> #999;}
+		<span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">.with_bg</span>{<span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">75</span><span style="color:#960050;background-color:#1e0010">%</span>;}
+	}
+	<span style="color:#a6e22e">.post-preview--excerpt</span> {
+		<span style="color:#f92672">font-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">14px</span>;
+		<span style="color:#f92672">line-height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">1</span><span style="color:#a6e22e">.825</span>;
+		<span style="color:#f92672">p</span>{<span style="color:#f92672">margin-bottom</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">0</span>;}
+	}
+	<span style="color:#a6e22e">.post-preview--image</span> {
+		<span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">25</span><span style="color:#960050;background-color:#1e0010">%</span>;
+		<span style="color:#f92672">float</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">right</span>;
+		<span style="color:#f92672">background-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">cover</span>;
+		<span style="color:#f92672">background-position</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">center</span> <span style="color:#f92672">center</span>;
+		<span style="color:#f92672">border-top-right-radius</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">2px</span>;
+		<span style="color:#f92672">border-bottom-right-radius</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">2px</span>;
+	}
+}
+<span style="color:#66d9ef">@media</span> (<span style="color:#66d9ef">max-width</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">550</span><span style="color:#66d9ef">px</span>) {
+	<span style="color:#a6e22e">.post-preview</span> <span style="color:#a6e22e">.post-preview--meta</span> <span style="color:#a6e22e">.post-preview--excerpt</span> {<span style="color:#f92672">display</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">none</span>;}
+	<span style="color:#a6e22e">.post-preview</span> <span style="color:#a6e22e">.post-preview--meta.with_bg</span> {<span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">60</span><span style="color:#960050;background-color:#1e0010">%</span>;}
+	<span style="color:#a6e22e">.post-preview</span> <span style="color:#a6e22e">.post-preview--image</span> {<span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">40</span><span style="color:#960050;background-color:#1e0010">%</span>;}
+}
+</code></pre></div>
+    </div>
+
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">阅读更多</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://immmmm.com/bitcron-article-run-code/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">Bitcron 文章内运行代码实例一则</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/bitcron-show-last-update/">
+                  <span class="button__text">Bitcron 显示最后更新时间</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/bitcron-auto-article-refer/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+    });
+    jQuery(document).ready(function($){
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+        $('.vemoji-btn').text('😀');
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/lately.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/waterfall.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/slimbox2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+<script src="https://immmmm.com/all.js"></script>
+<script src="https://immmmm.com/main.js"></script>
+<script src="https://immmmm.com/prism.js"></script>
+      
+    </div>
+  </body>
+</html>

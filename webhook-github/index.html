@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>曲线救“静” :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Coding 快但抽，GitHub 慢但稳。本想着静态能安安静静的码字、更新、查阅。其实忍忍也就接受了，毕竟也没多人在意。 自己这关不过去，折腾了主题，寻求了博友，求助了 @罗伊 ，开好了 vps 放静态！
+流程：本地 Gridea 同步至 Github，Github 通过 webhook 告诉主机有更新，主机利用 git 拉取最新版仓库。
+"/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/webhook-github/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="曲线救“静”" />
+<meta property="og:description" content="Coding 快但抽，GitHub 慢但稳。本想着静态能安安静静的码字、更新、查阅。其实忍忍也就接受了，毕竟也没多人在意。 自己这关不过去，折腾了主题，寻求了博友，求助了 @罗伊 ，开好了 vps 放静态！
+流程：本地 Gridea 同步至 Github，Github 通过 webhook 告诉主机有更新，主机利用 git 拉取最新版仓库。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/webhook-github/" />
+<meta property="article:published_time" content="2019-11-24T14:05:00+00:00" />
+<meta property="article:modified_time" content="2019-11-24T14:05:00+00:00" />
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">首页</a></li>
+        
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">首页</a></li>
+      
+    
+      
+        <li><a href="/about">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="https://immmmm.com/webhook-github/">曲线救“静”</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2019-11-24
+        </span>
+
+        
+          
+        
+      
+
+      
+      
+        <span class="post-read-time">/ 2 分钟</span><span> / <span class="valine-comment-count" data-xid="/webhook-github/">0</span> 评论 / <span id="/webhook-github/" class="leancloud_visitors" data-flag-title="曲线救“静”"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+      
+    </div>
+
+    
+
+    <div class="post-content">
+      <p>Coding 快但抽，GitHub 慢但稳。本想着静态能安安静静的码字、更新、查阅。其实忍忍也就接受了，毕竟也没多人在意。 自己这关不过去，折腾了主题，寻求了博友，求助了 @罗伊 ，开好了 vps 放静态！</p>
+<p>流程：本地 Gridea 同步至 Github，Github 通过 webhook 告诉主机有更新，主机利用 git 拉取最新版仓库。</p>
+<p>说来简单，折腾 vps 还是第一遭。所幸有现成代码、现成教程，几乎就是 one by one，搞定！以下仅为记录留存：</p>
+<h3 id="装宝塔面板">装宝塔面板</h3>
+<p>开终端，连主机：</p>
+<pre><code>ssh root@x.x.x.x
+</code></pre><p>centos 系统装宝塔面板：</p>
+<pre><code>yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh
+</code></pre><p>等待几分钟，得到：</p>
+<pre><code>Bt-Panel: http://...
+username: xxx
+password: xxx
+</code></pre><h3 id="域名配置">域名配置</h3>
+<p>域名配置，A记录到主机IP，宝塔-网站，安装nginx，一键https部署。</p>
+<h3 id="宝塔调配-webhook">宝塔调配 webhook</h3>
+<p>进面板-软件商店-装“webhook”，编辑 shell 命令：</p>
+<p><code>gitHttp=&quot;https://github.com/lmm214/blog.git&quot;</code> 需自行修改</p>
+<pre><code>#!/bin/bash
+echo &quot;&quot;
+#输出当前时间
+date --date='0 days ago' &quot;+%Y-%m-%d %H:%M:%S&quot;
+echo &quot;Start&quot;
+#判断宝塔WebHook参数是否存在
+if [ ! -n &quot;$1&quot; ];
+then
+          echo &quot;param参数错误&quot;
+          echo &quot;End&quot;
+          exit
+fi
+#git项目路径
+gitPath=&quot;/www/wwwroot/$1&quot;
+#git 网址
+gitHttp=&quot;https://github.com/lmm214/blog.git&quot;
+
+echo &quot;Web站点路径：$gitPath&quot;
+
+#判断项目路径是否存在
+if [ -d &quot;$gitPath&quot; ]; then
+        cd $gitPath
+        #判断是否存在git目录
+        if [ ! -d &quot;.git&quot; ]; then
+                echo &quot;在该目录下克隆 git&quot;
+                git clone $gitHttp gittemp
+                mv gittemp/.git .
+                rm -rf gittemp
+        fi
+        #拉取最新的项目文件
+        git reset --hard origin/master
+        git pull
+        #设置目录权限
+        chown -R www:www $gitPath
+        echo &quot;End&quot;
+        exit
+else
+        echo &quot;该项目路径不存在&quot;
+        echo &quot;End&quot;
+        exit
+fi
+</code></pre><h3 id="github-存钩子">GitHub 存钩子</h3>
+<p>宝塔webhook查密钥记录下，GitHub 仓库 settings 钩子：</p>
+<p><code>密钥</code> 和 <code>i.immmmm.com</code> 需自行修改</p>
+<pre><code>http://x.x.x.x:8888/hook?access_key=密钥&amp;param=i.immmmm.com
+</code></pre><p>参考文章：<a href="https://1078503.org/2019/11/4/">宝塔面板中通过GitHub同步博客仓库并通过webhook勾子拉取更新</a></p>
+    </div>
+
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">阅读更多</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://immmmm.com/gridea-theme-puti/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">Gridea Theme Puti</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/weapp-videoplay/">
+                  <span class="button__text">微信小程序腾讯视频组件：weChatVideoPlay</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/webhook-github/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+    });
+    jQuery(document).ready(function($){
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+        $('.vemoji-btn').text('😀');
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/lately.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/waterfall.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/slimbox2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+<script src="https://immmmm.com/all.js"></script>
+<script src="https://immmmm.com/main.js"></script>
+<script src="https://immmmm.com/prism.js"></script>
+      
+    </div>
+  </body>
+</html>

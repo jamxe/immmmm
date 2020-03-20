@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>三步创建 Gridea 友情链接页 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="围观地址：https://i.immmmm.com/friends/ （官方教程)
+注：以下方法基于 Gridea v0.9&#43; ，相关代码以内置主题 notes 为例。
+"/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/gridea-templates-friends/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="三步创建 Gridea 友情链接页" />
+<meta property="og:description" content="围观地址：https://i.immmmm.com/friends/ （官方教程)
+注：以下方法基于 Gridea v0.9&#43; ，相关代码以内置主题 notes 为例。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/gridea-templates-friends/" />
+<meta property="article:published_time" content="2020-01-02T20:46:57+00:00" />
+<meta property="article:modified_time" content="2020-01-02T20:46:57+00:00" />
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">首页</a></li>
+        
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">首页</a></li>
+      
+    
+      
+        <li><a href="/about">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="https://immmmm.com/gridea-templates-friends/">三步创建 Gridea 友情链接页</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2020-01-02
+        </span>
+
+        
+          
+        
+      
+
+      
+      
+        <span class="post-read-time">/ 2 分钟</span><span> / <span class="valine-comment-count" data-xid="/gridea-templates-friends/">0</span> 评论 / <span id="/gridea-templates-friends/" class="leancloud_visitors" data-flag-title="三步创建 Gridea 友情链接页"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+      
+    </div>
+
+    
+
+    <div class="post-content">
+      <p>围观地址：<a href="https://i.immmmm.com/friends/">https://i.immmmm.com/friends/</a> （<a href="https://gridea.dev/docs/theme-custom.html#%E6%95%B0%E7%BB%84%E7%B1%BB%E5%9E%8B%E9%85%8D%E7%BD%AE">官方教程</a>)</p>
+<p>注：以下方法基于 Gridea v0.9+ ，相关代码以内置主题 notes 为例。</p>
+<h3 id="一添加自定义主题功能代码">一、添加自定义主题功能代码</h3>
+<p><img src="https://lmm.elizen.me/images/2020/01/my-friends-2.png" alt="友链客户端"></p>
+<p><code>themes/notes/config.json</code>，添加以下代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//……
+</span><span style="color:#75715e">//&#34;note&#34;: &#34;UA-xxxxxxxxx-x&#34;
+</span><span style="color:#75715e">//}, 添加逗号！！！
+</span><span style="color:#75715e"></span>    {
+      <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;friends&#34;</span>,
+      <span style="color:#e6db74">&#34;label&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;友链&#34;</span>,
+      <span style="color:#e6db74">&#34;group&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;友链&#34;</span>,
+      <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;array&#34;</span>,
+      <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#f92672">:</span> [],
+      <span style="color:#e6db74">&#34;arrayItems&#34;</span><span style="color:#f92672">:</span> [
+        { <span style="color:#e6db74">&#34;label&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;名称&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;siteName&#34;</span>, <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;input&#34;</span>, <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span> },
+        { <span style="color:#e6db74">&#34;label&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;链接&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;siteLink&#34;</span>, <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;input&#34;</span>, <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span> },
+        { <span style="color:#e6db74">&#34;label&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Logo&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;siteLogo&#34;</span>, <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;picture-upload&#34;</span>, <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span> },
+        { <span style="color:#e6db74">&#34;label&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;描述&#34;</span>, <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;description&#34;</span>, <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;textarea&#34;</span>, <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span> }
+      ],
+      <span style="color:#e6db74">&#34;note&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>
+    }
+<span style="color:#75715e">//  ]
+</span><span style="color:#75715e">//}
+</span></code></pre></div><p>保存，重启客户端，主题&ndash;自定义主题&ndash;友链。</p>
+<h3 id="二创建自定义页面">二、创建自定义页面</h3>
+<p><code>themes/notes/templates/post.ejs</code> 复制并重命名为 <code>friends.ejs</code>，替换成如下代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">html</span>&gt;
+  &lt;<span style="color:#f92672">head</span>&gt;
+    <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;./includes/head&#39;, { siteTitle: `我的朋友们 | ${themeConfig.siteName}` }) %&gt;
+  &lt;/<span style="color:#f92672">head</span>&gt;
+  &lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main&#34;</span>&gt;
+      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main-content&#34;</span>&gt;
+        <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;./includes/header&#39;) %&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-detail&#34;</span>&gt;
+          &lt;<span style="color:#f92672">article</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+            &lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-title&#34;</span>&gt;我的朋友们&lt;/<span style="color:#f92672">h2</span>&gt;
+
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-content-wrapper&#34;</span>&gt;
+              &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-content&#34;</span>&gt;
+              <span style="color:#960050;background-color:#1e0010">&lt;</span>% if (site.customConfig.friends) { %&gt;
+                <span style="color:#960050;background-color:#1e0010">&lt;</span>% site.customConfig.friends.forEach(function(friend) { %&gt;
+                  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;friend-box&#34;</span>&gt;
+                    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;friend-avatar&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;%= friend.siteLogo %&gt;&#34;</span>&gt;
+                    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;flink-info&#34;</span>&gt;
+                      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;%= friend.siteLink %&gt;&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;<span style="color:#960050;background-color:#1e0010">&lt;</span>%= friend.siteName %&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+                      &lt;<span style="color:#f92672">br</span>/&gt;
+                      <span style="color:#960050;background-color:#1e0010">&lt;</span>%= friend.description %&gt;
+                    &lt;/<span style="color:#f92672">div</span>&gt;
+                  &lt;/<span style="color:#f92672">div</span>&gt;
+                <span style="color:#960050;background-color:#1e0010">&lt;</span>% }); %&gt;
+              <span style="color:#960050;background-color:#1e0010">&lt;</span>% } %&gt;
+              &lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;/<span style="color:#f92672">div</span>&gt;
+          &lt;/<span style="color:#f92672">article</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+
+        <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;./includes/footer&#39;) %&gt;
+      &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><h3 id="三添加样式代码">三、添加样式代码</h3>
+<p><img src="https://lmm.elizen.me/images/2020/01/my-friends-3.png" alt="友链效果"></p>
+<p><code>themes/notes/assets/styles/main.less</code>，添加以下代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">friend-box</span> {
+  <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+  <span style="color:#66d9ef">width</span>: calc(<span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>);
+  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#960050;background-color:#1e0010">img.friend-avatar{</span>
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">70</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">70</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span> <span style="color:#75715e">!important</span>;
+    <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+    <span style="color:#66d9ef">margin</span>:<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#75715e">!important</span>;
+  }
+  .<span style="color:#a6e22e">flink-info</span>{
+    <span style="color:#66d9ef">height</span>:<span style="color:#ae81ff">70</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+    <span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>;
+  }
+<span style="color:#960050;background-color:#1e0010">}</span>
+</code></pre></div><h3 id="结语">结语</h3>
+<p>1、2、3，折腾起～</p>
+    </div>
+
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">阅读更多</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://immmmm.com/gridea-theme-webstack/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">Gridea Theme WebStack</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/gridea-template-code/">
+                  <span class="button__text">Gridea 主题常用代码片段</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/gridea-templates-friends/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+  <script src="https://cdn.staticfile.org/valine/1.3.10/Valine.Pure.min.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+    });
+    jQuery(document).ready(function($){
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+        $('.vemoji-btn').text('😀');
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/lately.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/waterfall.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/lmm214/lmm214.github.io@latest/media/js/slimbox2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+<script src="https://immmmm.com/all.js"></script>
+<script src="https://immmmm.com/main.js"></script>
+<script src="https://immmmm.com/prism.js"></script>
+      
+    </div>
+  </body>
+</html>

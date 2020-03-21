@@ -2,30 +2,25 @@
 <html lang="zh-CN">
   <head>
     
-      <title>RSSHub 部署笔记 :: 木木木木木</title>
+      <title>Hello Hugo :: 木木木木木</title>
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content=" 🍰 万物皆可 RSS。
- 内容来源：https://docs.rsshub.app/install/#an-zhuang-2
-$ docker pull diygod/rsshub $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub 用宝塔面板的话，放行 1200 端口。浏览器打开 http://IP:1200/ ，看到成功页面。✅
+<meta name="description" content="哈喽，🐯🐶！（开机声～）
+主站顺利切换到 Hugo ，直接在 Github Web 端码字更新，自动部署，舒心！就待它的 Github APP 端支持编辑代码！
 "/>
 <meta name="keywords" content=""/>
 <meta name="referrer" content="never" />
-<link rel="canonical" href="https://immmmm.com/rsshub-docker/" />
+<link rel="canonical" href="https://immmmm.com/hello-hugo/" />
 <link rel="stylesheet" href="https://immmmm.com/style.css">
 <link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
 
-<meta property="og:title" content="RSSHub 部署笔记" />
-<meta property="og:description" content="
-🍰 万物皆可 RSS。
+<meta property="og:title" content="Hello Hugo" />
+<meta property="og:description" content="哈喽，🐯🐶！（开机声～）
 
-内容来源：https://docs.rsshub.app/install/#an-zhuang-2
-$ docker pull diygod/rsshub
-$ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
-用宝塔面板的话，放行 1200 端口。浏览器打开 http://IP:1200/ ，看到成功页面。✅" />
+主站顺利切换到 Hugo ，直接在 Github Web 端码字更新，自动部署，舒心！就待它的 Github APP 端支持编辑代码！" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://immmmm.com/rsshub-docker/" />
+<meta property="og:url" content="https://immmmm.com/hello-hugo/" />
 <meta property="article:published_time" content="2020-03-21T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-03-21T00:00:00+00:00" />
 
@@ -100,7 +95,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
   
 
   <div class="post">
-    <h2 class="post-title"><a href="https://immmmm.com/rsshub-docker/">RSSHub 部署笔记</a></h2>
+    <h2 class="post-title"><a href="https://immmmm.com/hello-hugo/">Hello Hugo</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -119,20 +114,19 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     
 
     <div class="post-content">
-      <blockquote>
-<p>🍰 万物皆可 RSS。</p>
-</blockquote>
-<p>内容来源：<a href="https://docs.rsshub.app/install/#an-zhuang-2">https://docs.rsshub.app/install/#an-zhuang-2</a></p>
-<pre><code>$ docker pull diygod/rsshub
-$ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
-</code></pre><p>用宝塔面板的话，放行 1200 端口。浏览器打开 http://IP:1200/ ，看到成功页面。✅</p>
-<h3 id="绑定域名">绑定域名</h3>
-<p><img src="https://lmm.elizen.me/images/2020/03/rsshub.png" alt="rsshub"></p>
-<p>每次 IP 总不方便，子域名绑起，后台添加网址，加一个「理代向反」即可。</p>
-<h3 id="使用指北">使用指北</h3>
-<p><img src="https://lmm.elizen.me/images/2020/03/rsshub-1.jpg" alt="rsshub-1"></p>
-<p>配合 chrome 扩展更方便：<a href="https://chrome.google.com/webstore/detail/rsshub-radar/kefjpfngnndepjbopdmoebkipbgkggaa">RSSHub Radar</a> ，自定义域名，随时查询规则！</p>
-<p>再配合 <a href="https://immmmm.com/telegram-flowerss-bot/">《电报 Flowerss Bot》</a>，开启私属 rss 聚合机器人！</p>
+      <p>哈喽，🐯🐶！（开机声～）</p>
+<p><img src="https://lmm.elizen.me/images/2020/03/hugo-2.png" alt="hugo-2"></p>
+<p>主站顺利切换到 <a href="https://gohugo.io/">Hugo</a> ，直接在 Github Web 端码字更新，自动部署，舒心！就待它的 Github APP 端支持编辑代码！</p>
+<h3 id="迁移采坑记">迁移采坑记</h3>
+<p>文章摘要失效：原来文章 <code>more</code> 标签像中间有空格就无效 <code>&lt;!--  more  --&gt;</code> 批量替换成  <code>&lt;!--more--&gt;</code> 解决。</p>
+<p>文章列表排序错乱：原来是文章信息的 <code>date</code> 格式不统一导致无法识别，统一修改为年月日 <code>date: 2020-03-21</code> 解决。</p>
+<p>文章内 html 代码被替换为空：原来 Hugo 0.60 以上默认禁用了，手动在 <code>config.toml</code> 添加以下代码。</p>
+<pre><code>[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
+</code></pre><h3 id="感叹">感叹</h3>
+<p>不懂英文，太难了！ 😭</p>
     </div>
 
 
@@ -155,17 +149,10 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
           </div>
           <div class="pagination__buttons">
             
-              <span class="button previous">
-                <a href="https://immmmm.com/hello-hugo/">
-                  <span class="button__icon">←</span>
-                  <span class="button__text">Hello Hugo</span>
-                </a>
-              </span>
-            
             
               <span class="button next">
-                <a href="https://immmmm.com/hugo-github-actions/">
-                  <span class="button__text">Hugo &#43; Github Actions 实现自动化部署</span>
+                <a href="https://immmmm.com/rsshub-docker/">
+                  <span class="button__text">RSSHub 部署笔记</span>
                   <span class="button__icon">→</span>
                 </a>
               </span>
@@ -179,7 +166,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     
       
           <div class="pagination__title">
-       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/rsshub-docker/"></span> 条评论</span>
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/hello-hugo/"></span> 条评论</span>
        <hr />
   </div>
   <div id="comments"></div>

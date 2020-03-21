@@ -701,4 +701,9 @@
     <loc>https://immmmm.com/categories/</loc>
   </url>
   
+  <url>
+    <loc>https://immmmm.com/search/</loc>
+    <priority>0.1</priority>
+  </url>
+  
 </urlset>

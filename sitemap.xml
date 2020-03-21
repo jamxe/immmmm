@@ -706,4 +706,14 @@
     <priority>0.1</priority>
   </url>
   
+  <url>
+    <loc>https://immmmm.com/movies/</loc>
+    <priority>0.1</priority>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/books/</loc>
+    <priority>0.1</priority>
+  </url>
+  
 </urlset>

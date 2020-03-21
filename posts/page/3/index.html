@@ -97,11 +97,11 @@
   <div class="posts">
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/telegram-flowerss-bot/">电报 Flowerss Bot 搭建笔记</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/valine-diy/">Valine 评论框美化及功能优化</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-12-02
+            2019-07-15
           </span>
 
           
@@ -120,21 +120,57 @@
       
 
       <div class="post-content">
-        <p>看中一点：支持 Telegram 应用内 instant view ！</p>
-<p>点开即用：<a href="https://t.me/rssflowbot">https://t.me/rssflowbot</a></p>
-<p>项目主页：<a href="https://github.com/indes/flowerss-bot">https://github.com/indes/flowerss-bot</a></p>
+        <p>以下修改不涉及 Valine 源码的改动，防止后续官方更新还得再来一边。因此，相关 css、js 代码得放在调取 <code>valine.min.js</code> 之后。</p>
+<h3 id="评论框美化">评论框美化：</h3>
+<p><img src="https://lmm.elizen.me/images/2019/07/plk.jpg" alt="评论框美化："></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span>{<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">44</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">veditor</span>{<span style="color:#66d9ef">min-height</span>:<span style="color:#ae81ff">7</span><span style="color:#66d9ef">rem</span>;<span style="color:#66d9ef">resize</span>:<span style="color:#66d9ef">none</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span>{<span style="color:#66d9ef">padding-top</span>:<span style="color:#ae81ff">0</span>}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">bottom</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#f7f7f7</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">border-bottom</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span> .<span style="color:#a6e22e">vctrl</span>{<span style="color:#66d9ef">margin-top</span>:<span style="color:#ae81ff">-44</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">right</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">margin-right</span>:<span style="color:#ae81ff">-3</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span>{    <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">right</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">bottom</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">padding-top</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span> .<span style="color:#a6e22e">col</span>.<span style="color:#a6e22e">col-80</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vbtn</span>.<span style="color:#a6e22e">vsubmit</span>{<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>;<span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">44</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;<span style="color:#66d9ef">background</span>:<span style="color:#ae81ff">#1abc9c</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span> .<span style="color:#a6e22e">vctrl</span> <span style="color:#f92672">span</span>.<span style="color:#a6e22e">vpreview-btn</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span> .<span style="color:#a6e22e">col</span>.<span style="color:#a6e22e">col-20</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vlist</span> .<span style="color:#a6e22e">vcard</span> .<span style="color:#a6e22e">vhead</span> .<span style="color:#a6e22e">vsys</span>{<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">none</span>;}
+@<span style="color:#66d9ef">media</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span><span style="color:#f92672">:</span> <span style="color:#f92672">520px</span><span style="color:#f92672">)</span>{
+	.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">33.33</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;}
+}
+</code></pre></div>
       </div>
       
-        <div><a class="read-more button" href="/telegram-flowerss-bot/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/valine-diy/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/2019-12-01/">2019-12-01</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/valine-by-leancloud-cn/">基于 LeanCloud 的评论系统：Valine</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-12-01
+            2019-07-13
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        Valine 官网： https://valine.js.org/ Valine Admin 云引擎： https://deserts.io/valine-admin-document/ 安装过程略过不表，目前还存在一个问题，通过使用： //unpkg.com/valine@1.3.6/dist/Valine.min.js 指定 1.3.6 版本解决，官方最新的 1.3.9 报错，官网自用的 1.3.10 没问题，但还没更新至 CDN。另外这个 Valine Admin 云引擎方便，顾名思义，安装完毕后可通过 LeanCloud 的二级域名管理评论，相当于给 Valine 增加了个评论管理后台。 另外，昨天绑定域名方式由原来
+      </div>
+      
+        <div><a class="read-more button" href="/valine-by-leancloud-cn/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/2019-06-30/">2019-06-30</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2019-06-30
           </span>
 
           
@@ -153,19 +189,19 @@
       
 
       <div class="post-content">
-        一台 VM 折腾了静态博客、Calibre-web、OneInedx，以及不可言说的功能。感叹，折腾真容易上瘾！但，折腾之后呢？
+        <p>一周前看到 App Store 里推荐了 《Sky 光·遇》 是《风之旅人》的陈星汉团队开发。坚持了3天“摸黑探索”后还是找了攻略，大概理清游戏套路。吃“光之子”小人升级翅膀，目前共计能吃到55颗刚好升到7星，一口气能煽7下不带喘，飞得高看的远。另外就是点“蜡烛”，蜡烛满了可换头换脸换时装凹动作，到处打卡截图嗮。</p>
       </div>
       
-        <div><a class="read-more button" href="/2019-12-01/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/2019-06-30/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/calibre-web/">Calibre Web 搭建笔记</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/the-world-between-us/">我們與惡的距離</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-11-30
+            2019-04-26
           </span>
 
           
@@ -175,7 +211,7 @@
         
         <span class="">
           
-            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+            #<a href="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8/">日常</a>&nbsp;
           
         </span>
         
@@ -184,85 +220,22 @@
       
 
       <div class="post-content">
-        <p><img src="https://lmm.elizen.me/images/2019/11/calibre-web.jpg" alt="折腾效果"></p>
-<h3 id="调配记录">调配记录</h3>
-<p>官方说明：<a href="https://github.com/janeczku/calibre-web/wiki/Configuration">https://github.com/janeczku/calibre-web/wiki/Configuration</a></p>
-<p>1.修改用户名和密码，界面修改为中文</p>
+        <figure>
+    <img src="https://lmm.elizen.me/images/2019/04/p2539805435.jpg" width="50%" /><img src="https://lmm.elizen.me/images/2019/04/p2539805408.jpg" width="50%" />
+    <figcaption>我们与恶的距离为负</figcaption>
+</figure>
       </div>
       
-        <div><a class="read-more button" href="/calibre-web/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/the-world-between-us/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/gridea-theme-puti/">Gridea Theme Puti</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/2019-02-07/">2019-02-07</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-11-26
-          </span>
-
-          
-        
-        
-        
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
-          
-        </span>
-        
-      </div>
-
-      
-
-      <div class="post-content">
-        <p>欢迎小伙伴 <a href="https://chat.elizen.me/">@Elizen</a> 入伙，同款主题折腾分享之。</p>
-      </div>
-      
-        <div><a class="read-more button" href="/gridea-theme-puti/">阅读全文 →</a></div>
-      
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/webhook-github/">曲线救“静”</a></h1>
-      <div class="post-meta">
-        
-          <span class="post-date">
-            2019-11-24
-          </span>
-
-          
-        
-        
-        
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
-          
-        </span>
-        
-      </div>
-
-      
-
-      <div class="post-content">
-        <p>Coding 快但抽，GitHub 慢但稳。本想着静态能安安静静的码字、更新、查阅。其实忍忍也就接受了，毕竟也没多人在意。 自己这关不过去，折腾了主题，寻求了博友，求助了 @罗伊 ，开好了 vps 放静态！</p>
-<p>流程：本地 Gridea 同步至 Github，Github 通过 webhook 告诉主机有更新，主机利用 git 拉取最新版仓库。</p>
-      </div>
-      
-        <div><a class="read-more button" href="/webhook-github/">阅读全文 →</a></div>
-      
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/2019-11-23/">2019-11-23</a></h1>
-      <div class="post-meta">
-        
-          <span class="post-date">
-            2019-11-23
+            2019-02-07
           </span>
 
           
@@ -281,19 +254,19 @@
       
 
       <div class="post-content">
-        <p>入了 MacBook Pro 后家里的 13年款 iMac 几乎雪藏，但仔细对比配置发现还是 iMac 高，可实际流畅度没法跟pro比。因为一个是ssd一个是sata硬盘。</p>
+        https://t.me/bitcron 给群组加了个rss机器人，欢迎来扰～
       </div>
       
-        <div><a class="read-more button" href="/2019-11-23/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/2019-02-07/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/about-html-blog/">静态博客那些事</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/book-isbn-9787553674544/">《终身幼儿园》读后记</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-11-11
+            2019-01-28
           </span>
 
           
@@ -303,7 +276,7 @@
         
         <span class="">
           
-            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+            #<a href="https://immmmm.com/tags/%E8%82%B2%E4%BA%BA/">育人</a>&nbsp;
           
         </span>
         
@@ -312,50 +285,22 @@
       
 
       <div class="post-content">
-        一个周末耗在了静态博客部署方案上，目前使用了 Gridea + Coding 搭了个，欢迎围观： https://i.immmmm.com/ 也试了 Hexo + Travis CI ，部署好后是方便，只要把文件 git push 到监测的分支，或者直接在 Github 上写日志，Travis CI 就能自动生成静态文件到主分支上。但，Hexo 静态生成器与主题插件代码的问题，哎，折腾不起。 回说 Bitcron ，更新日志停留在 2017-09-12
+        <p><a href="https://book.douban.com/subject/30285992/">https://book.douban.com/subject/30285992/</a></p>
+<blockquote>
+<p>如同作者“我认为自己是一个短期的悲观主义者和一个长期的乐观主义者。”身为父母和教育工作者，相信技术变革教育终将到来。</p>
+</blockquote>
       </div>
       
-        <div><a class="read-more button" href="/about-html-blog/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/book-isbn-9787553674544/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/weapp-videoplay/">微信小程序腾讯视频组件：weChatVideoPlay</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/2019-01-26/">2019-01-26</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-11-05
-          </span>
-
-          
-        
-        
-        
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
-          
-        </span>
-        
-      </div>
-
-      
-
-      <div class="post-content">
-        虽官方提供了腾讯视频组件，但都说有广告，懒的测试直接寻找第三方解决方案，一搜 Github 仓库发现了这货，好使！ weChatVideoPlay：https://github.com/YangXiaoP/weChatVideoPlay
-      </div>
-      
-        <div><a class="read-more button" href="/weapp-videoplay/">阅读全文 →</a></div>
-      
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/2019-10-27/">2019-10-27</a></h1>
-      <div class="post-meta">
-        
-          <span class="post-date">
-            2019-10-27
+            2019-01-26
           </span>
 
           
@@ -374,19 +319,215 @@
       
 
       <div class="post-content">
-        小程序收到好心人100分“巨款”捐赠，意义非凡！几周用户已有2k5，每天访问在100左右，内置广告已收入7.3元，达成人生一大flag“睡后”收入！
+        3个月前买的Flex2顺利积灰，上周败入 Apple Watch，装了一堆APP留下几款：印象笔记、滴答清单、网易云音乐、WeChat、MyWeather、Days Matter、Keep、AutoSleep。电量两日一冲没什么问题，自己是睡前充满，第二天晚上到家还有50%+。功能性嘛，更少拿
       </div>
       
-        <div><a class="read-more button" href="/2019-10-27/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/2019-01-26/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/alfred-workflow/">Alfred workflow 记录</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/2018-military-training-album/">军训掠影</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-10-18
+            2018-12-31
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8/">日常</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>小学惯例五年级有国防教育，校内校外还到军营住一晚，补发照片一堆。</p>
+      </div>
+      
+        <div><a class="read-more button" href="/2018-military-training-album/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/book-isbn-9787508692098/">《今日简史》书摘</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-10-21
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E8%82%B2%E4%BA%BA/">育人</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p><a href="https://book.douban.com/subject/30259720/">https://book.douban.com/subject/30259720/</a></p>
+<p>** 若无知即幸福，则求知是追求更大的幸福 **</p>
+<blockquote>
+<p>所有的“感受”只是所有哺乳动物及鸟类都拥有的生化机制，用来快速运算生存和繁殖的概率。</p>
+</blockquote>
+<blockquote>
+<p>我们现在也正在培育一种驯化的人类，产生的数据量惊人，而且能够像海量数据处理装置中的高效芯片一样运转，然而这些“ ** 数据牛 ** ”绝对称不上是发挥了人类的最大潜能。</p>
+</blockquote>
+<blockquote>
+<p>“注意力商人”（attention merchant） 2 的商业模式：靠提供免费信息、服务和娱乐来吸引我们的注意力，再把我们的注意力转卖给广告主。然而，这些数据巨头真正的目标其实远超以往的注意力商人，他们真正的业务不是销售广告，而是靠吸引我们的注意力，取得了关于我们的大量数据，这些数据远比任何广告收入更有价值。 ** 我们不是他们的用户，而是商品。**</p>
+</blockquote>
+      </div>
+      
+        <div><a class="read-more button" href="/book-isbn-9787508692098/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/2018-10-18/">2018-10-18</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-10-18
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        Fitbit Flex2 硬需仅剩下第一时间接听电话和早起闹钟。之前偶得小米手环2，体验之后再一次勾起冲动消费欲，2的显示屏在室外等于无，转动显示时间更是：定神3秒，擦，再甩，定神3秒，看不清！比对了主流几款，最后想着要么选择 flex2 这样颜值高纤细带着无感，要么上 Apple Watch。
+      </div>
+      
+        <div><a class="read-more button" href="/2018-10-18/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/2018-10-16/">2018-10-16</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-10-16
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        上周？还是上上周？不断收到七牛发来的测试域名回收通知，葫芦娃七兄弟都被收得一干二净！直接导致博客图片等直接挂掉！拖到昨晚，终于在 @沐风 的强力支持下续上了命，不然连发文的、更别说发图的欲望，早已消失殆尽！
+      </div>
+      
+        <div><a class="read-more button" href="/2018-10-16/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/2018-09-21/">2018-09-20</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-09-20
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        我把小音箱上面的绳子解开，旸说：你真是聪明的妈妈 旸爸要给他找小猪佩奇的录音，旸说：你真是专家爸爸 我们问：那你是谁？是奥特曼吗？ 旸说：不对，我是可爱的奥特曼[嘿哈]
+      </div>
+      
+        <div><a class="read-more button" href="/2018-09-21/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/2018-09-11/">2018-09-11</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-09-11
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        旸给爷爷奶奶组装了两根拐杖，他说爷爷奶奶是老年人，需要。 刚刚，旸说：爸爸也需要，爸爸也是老年人。 我问他，妈妈呢？ 旸说：妈妈不需要，妈妈是年轻人！
+      </div>
+      
+        <div><a class="read-more button" href="/2018-09-11/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/weapp-cloud-todo/">微信小程序：校园云待办</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-08-21
           </span>
 
           
@@ -405,14 +546,207 @@
       
 
       <div class="post-content">
-        <p>按了 Alfred 搜索了一圈，发现几个小workflow挺好用，特别是低频度使用的功能，好使！</p>
-<h3 id="获取中国天气">获取中国天气</h3>
-<p><a href="https://github.com/amlun/workflow-weather">主页</a> | <a href="https://github.com/amlun/workflow-weather/raw/master/China-Weather.alfredworkflow">下载</a></p>
-<p>关键字是tq，自动获取当地的天气；如果查询北京的天气，可以输入 &ldquo;tq 北京&rdquo;</p>
-<p><img src="https://lmm.elizen.me/75UIW7.jpg" alt=""></p>
+        <p>点击“点击设置团队名”，添加团队名为“吃土”，OK，欢迎来撩~</p>
+<p><img src="https://lmm.elizen.me/images/2018/08/todo.jpg" alt=""></p>
       </div>
       
-        <div><a class="read-more button" href="/alfred-workflow/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/weapp-cloud-todo/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/weapp-tian-yi-ge/">微信小程序：校园添衣阁</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-08-16
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        欢迎扫码体验~
+      </div>
+      
+        <div><a class="read-more button" href="/weapp-tian-yi-ge/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/2018-08-11/">2018-08-11</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-08-11
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        🚗 车上，妈妈打了两个喷嚏🤧 🐑：妈妈，你怎么打喷嚏了？ 👩🏻：也许是有人在骂妈妈吧。 🐑：我又没骂你，是爸爸在骂你吗？ 🧔🏻：我没有骂妈妈。 🐑：那谁在骂你呢？ 👩🏻：那也可能有两个人在想妈妈吧。 🐑：爸爸和我就是两个人在想妈妈啦。
+      </div>
+      
+        <div><a class="read-more button" href="/2018-08-11/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-exclude-cat-from-feed/">Bitcron 在 Feed 里排除某个分类</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-08-03
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>无视了文档的 <code>status: false</code> ，直接在 feed 中更新，大 BUG 啊！</p>
+<p>官方文档 <a href="https://api.bitcron.com/read/builtin-codes-files#toc_0">feed.jade</a> 中是获取最近 10 篇文章：</p>
+<pre><code class="language-jade" data-lang="jade">feed_posts = posts.recent_10
+</code></pre><p>要想排除某个分类，其实也就是 <strong>某个文件夹</strong>，只要在这里改动。经过超出预习的测试，暂且改为：</p>
+      </div>
+      
+        <div><a class="read-more button" href="/bitcron-exclude-cat-from-feed/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/2018-08-01/">2018-08-01</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-08-01
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        臭小子开始适应性“上班”，到一个早教中心上全托班，上午9:00~下午4:00，头一次整整一天没有家里人的陪伴。 早上8点半到了教室，第二早，老师与我们简单询问了几句后，拿出几盒不同玩具让臭小子挑一种喜欢的玩。老师让臭小子跟我们再见，他干脆地跟我们挥挥手“再见～”，然后就和老师玩了起
+      </div>
+      
+        <div><a class="read-more button" href="/2018-08-01/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/telegram-linmumu/">Telegram 使用小记</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-08-01
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <h3 id="user">user</h3>
+<p>@linmumu： <a href="https://t.me/linmumu">https://t.me/linmumu</a></p>
+<h3 id="group">Group</h3>
+<p>Bitcron 中文圈： <a href="https://t.me/bitcron">https://t.me/bitcron</a></p>
+      </div>
+      
+        <div><a class="read-more button" href="/telegram-linmumu/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/book-isbn-9787550292895/">《育儿基本》的阅读笔记</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-07-31
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E8%82%B2%E4%BA%BA/">育人</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p><a href="https://book.douban.com/subject/26930253/">https://book.douban.com/subject/26930253/</a></p>
+<h3 id="别把养娃当投资">别把养娃当投资</h3>
+<p>在被控制中长大的孩子，很难发展出独立、健全的人格，而且成年后，会延续从父母那里习得的控制习惯，继续成为<strong>控制者</strong>，自己不自由，也不令孩子、爱人自由。这对一个人的人生来说，相当可怕。</p>
+<h3 id="第二章-爸妈守则一不断成长">第二章 爸妈守则一：不断成长</h3>
+<p>“叛逆”是基于家长威权的描述，“叛逆期”实际上是孩子“自我”迅速发展的阶段，<strong>父母没跟上，才会觉得孩子“叛逆”</strong>，明智成熟的父母，应该和孩子一起成长。</p>
+      </div>
+      
+        <div><a class="read-more button" href="/book-isbn-9787550292895/">阅读全文 →</a></div>
       
     </div>
     

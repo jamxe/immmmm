@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+    <generator uri="https://gohugo.io/" version="0.67.1">Hugo</generator><title type="html"><![CDATA[木木木木木]]></title>
+    
+    
+    
+            <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
+            <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
+    <updated>2020-03-21T07:12:27+00:00</updated>
+    
+    
+    
+    
+        <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Hello Hugo]]></title>
+            <link href="https://immmmm.com/hello-hugo/?utm_source=atom_feed" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/rsshub-docker/?utm_source=atom_feed" rel="related" type="text/html" title="RSSHub 部署笔记" />
+                <link href="https://immmmm.com/hugo-github-actions/?utm_source=atom_feed" rel="related" type="text/html" title="Hugo &#43; Github Actions 实现自动化部署" />
+                <link href="https://immmmm.com/post-show-douban-item-localstorage-cache/?utm_source=atom_feed" rel="related" type="text/html" title="文章内显示豆瓣条目（LocalStorage 缓存版）" />
+                <link href="https://immmmm.com/gridea-theme-motify/?utm_source=atom_feed" rel="related" type="text/html" title="Gridea Theme Motify" />
+                <link href="https://immmmm.com/jsdelivr-gridea/?utm_source=atom_feed" rel="related" type="text/html" title="使用 jsDelivr 加速 Gridea" />
+            
+                <id>https://immmmm.com/hello-hugo/</id>
+            
+            
+            <published>2020-03-21T00:00:00+00:00</published>
+            <updated>2020-03-21T00:00:00+00:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>哈喽，🐯🐶！（开机声～）</p>
+<p><img src="https://lmm.elizen.me/images/2020/03/hugo-2.png" alt="hugo-2"></p>
+<p>主站顺利切换到 <a href="https://gohugo.io/">Hugo</a> ，直接在 Github Web 端码字，</p>
+<p><img src="https://lmm.elizen.me/images/2020/03/hugo-3.png" alt="hugo-3"></p>
+<p>或者本地码好拖进去，自动更新，自动部署，舒心！</p>
+<p>就待它的 Github APP 端支持编辑代码咯！</p>
+<h3 id="迁移采坑记">迁移采坑记</h3>
+<p>文章摘要失效：原来文章 <code>more</code> 标签像中间有空格就无效 <code>&lt;!--  more  --&gt;</code> 批量替换成  <code>&lt;!--more--&gt;</code> 解决。</p>
+<p>文章列表排序错乱：原来是文章信息的 <code>date</code> 格式不统一导致无法识别，统一修改为年月日 <code>date: 2020-03-21</code> 解决。</p>
+<p>文章内 html 代码被替换为空：原来 Hugo 0.60 以上默认禁用了，手动在 <code>config.toml</code> 添加以下代码。</p>
+<pre><code>[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
+</code></pre><h3 id="感叹">感叹</h3>
+<p>不懂英文，太难了！ 😭</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[RSSHub 部署笔记]]></title>
+            <link href="https://immmmm.com/rsshub-docker/?utm_source=atom_feed" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/hello-hugo/?utm_source=atom_feed" rel="related" type="text/html" title="Hello Hugo" />
+                <link href="https://immmmm.com/hugo-github-actions/?utm_source=atom_feed" rel="related" type="text/html" title="Hugo &#43; Github Actions 实现自动化部署" />
+                <link href="https://immmmm.com/post-show-douban-item-localstorage-cache/?utm_source=atom_feed" rel="related" type="text/html" title="文章内显示豆瓣条目（LocalStorage 缓存版）" />
+                <link href="https://immmmm.com/gridea-theme-motify/?utm_source=atom_feed" rel="related" type="text/html" title="Gridea Theme Motify" />
+                <link href="https://immmmm.com/jsdelivr-gridea/?utm_source=atom_feed" rel="related" type="text/html" title="使用 jsDelivr 加速 Gridea" />
+            
+                <id>https://immmmm.com/rsshub-docker/</id>
+            
+            
+            <published>2020-03-21T00:00:00+00:00</published>
+            <updated>2020-03-21T00:00:00+00:00</updated>
+            
+            
+            <content type="html"><![CDATA[<blockquote>
+<p>🍰 万物皆可 RSS。</p>
+</blockquote>
+<p>内容来源：<a href="https://docs.rsshub.app/install/#an-zhuang-2">https://docs.rsshub.app/install/#an-zhuang-2</a></p>
+<pre><code>$ docker pull diygod/rsshub
+$ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
+</code></pre><p>用宝塔面板的话，放行 1200 端口。浏览器打开 http://IP:1200/ ，看到成功页面。✅</p>
+<h3 id="绑定域名">绑定域名</h3>
+<p><img src="https://lmm.elizen.me/images/2020/03/rsshub.png" alt="rsshub"></p>
+<p>每次 IP 总不方便，子域名绑起，后台添加网址，加一个「理代向反」即可。</p>
+<h3 id="使用指北">使用指北</h3>
+<p><img src="https://lmm.elizen.me/images/2020/03/rsshub-1.jpg" alt="rsshub-1"></p>
+<p>配合 chrome 扩展更方便：<a href="https://chrome.google.com/webstore/detail/rsshub-radar/kefjpfngnndepjbopdmoebkipbgkggaa">RSSHub Radar</a> ，自定义域名，随时查询规则！</p>
+<p>再配合 <a href="https://immmmm.com/telegram-flowerss-bot/">《电报 Flowerss Bot》</a>，开启私属 rss 聚合机器人！</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Hugo + Github Actions 实现自动化部署]]></title>
+            <link href="https://immmmm.com/hugo-github-actions/?utm_source=atom_feed" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/post-show-douban-item-localstorage-cache/?utm_source=atom_feed" rel="related" type="text/html" title="文章内显示豆瓣条目（LocalStorage 缓存版）" />
+                <link href="https://immmmm.com/gridea-theme-motify/?utm_source=atom_feed" rel="related" type="text/html" title="Gridea Theme Motify" />
+                <link href="https://immmmm.com/jsdelivr-gridea/?utm_source=atom_feed" rel="related" type="text/html" title="使用 jsDelivr 加速 Gridea" />
+                <link href="https://immmmm.com/jinrishici-with-valine/?utm_source=atom_feed" rel="related" type="text/html" title="今日诗词 &amp; Valine" />
+                <link href="https://immmmm.com/valine-show-comment-views/?utm_source=atom_feed" rel="related" type="text/html" title="Valine 文章列表显示评论数和阅读数" />
+            
+                <id>https://immmmm.com/hugo-github-actions/</id>
+            
+            
+            <published>2020-03-19T00:00:00+00:00</published>
+            <updated>2020-03-19T00:00:00+00:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>不折腾点东西总觉得浑浑噩噩，折腾点东西搞得脑袋晕晕乎乎！</p>
+<h3 id="折腾需求">折腾需求</h3>
+<p>为更新 <a href="https://edui.fun/">https://edui.fun/</a> 导航站能随手些，造了 <a href="https://immmmm.com/gridea-theme-webstack/">Gridea Theme WebStack</a> 。每次得源文件切换加载，但只为加几行代码，等等等；</p>
+<p>折腾一天，已实现直接在 GitHub  <code>master</code> 添加代码，<code>Github Actions </code> 自动构建 <code>Hugo</code> 静态文件到 <code>gh-pages</code> 分支，外加同步 webhook 到自己的服务器。</p>
+<p>再也不用 git 来 git 去！</p>
+<h3 id="上传-hugo-源文件">上传 Hugo 源文件</h3>
+<p>（注：如已把 Hugo 程序 push 到 GitHub 上，直接跳过看下一步。）</p>
+<p>点击下载：<a href="https://github.com/lmm214/edui/archive/master.zip">https://github.com/lmm214/edui/archive/master.zip</a></p>
+<p>GitHub 上新建一个 repo，并只需保留以下文件上传到 <code>master</code> ，同时随手建个 <code>gh-pages</code> 分支：</p>
+<pre><code>├── archetypes
+│   └── default.md
+├── config.toml  //Hugo 程序配置文件
+├── content
+│   ├── about.md
+├── data
+│   └── links.toml //导航数据，一个文件搞定
+└── themes
+    └── webstack  //Hugo 主题
+        ├── layouts
+        │   └── home.html  //主页
+        └── theme.toml  //主题配置文件
+</code></pre><h3 id="添加-github-actions-代码">添加 Github Actions 代码：</h3>
+<p>实现效果，直接网页上修改 <code>data/links.toml</code> 或任意文件，触发 Actions 自动化运行 Hugo 程序生成静态文件并推送到 <code>gh-pages</code> 分支上，等待几十秒可看到更新 <a href="https://lmm214.github.io/edui/">https://lmm214.github.io/edui/</a></p>
+<p>具体操作：</p>
+<ul>
+<li>
+<p>点 <a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a> 新建一个，并暂存；进项目 <code>settings/secrets</code> 新建标题为 <code>personal_token</code> ，内容是刚创建的 <code>tokens</code> ;</p>
+</li>
+<li>
+<p>回项目，点 <code>Actions -- New wordflow -- Set up a workflow yourself</code> ，添加如下代码：</p>
+</li>
+</ul>
+<pre><code>name: Deploy Hugo # 任君喜欢
+
+on:
+  push:
+    branches:
+      - master   # master 更新触发
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+
+      - name: Build 
+        run: hugo
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.personal_token }} # personal_token 这里新建一个 https://github.com/settings/tokens
+          PUBLISH_BRANCH: gh-pages  # 推送到当前 gh-pages 分支
+          PUBLISH_DIR: ./public  # hugo 生成到 public 作为跟目录
+          commit_message: ${{ github.event.head_commit.message }}
+</code></pre><p>👌 等，3、2、1，看看 <code>Actions</code> 顺利不，再看看 <code>gh-pages</code> 静态文件更新了不，最终打开 Pages ，祝贺！</p>
+<p>日志？主题？统统 GitHub 网页端搞定！当然，调试主题什么的还是建议本地进行。</p>
+<h3 id="同步到服务器">同步到服务器</h3>
+<p>完整源文件 <a href="https://github.com/lmm214/edui/blob/master/.github/workflows/main.yml">【这里】</a> ，还有一段代码，实现同步推送到自己的服务器。</p>
+<pre><code>      - name: Webhook
+        uses: distributhor/workflow-webhook@v1
+        env:
+          webhook_url: ${{ secrets.WEBHOOK_URL }}
+          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
+</code></pre><p><code>WEBHOOK_URL</code> 和 <code>WEBHOOK_SECRET</code> 是进项目 <code>settings/secrets</code> 新建添加，构建成宝塔面板的 webhook 链接，同时宝塔后台的代码去掉后缀判断。</p>
+<h3 id="后话一点点-">后话一点点 🤏</h3>
+<p>听闻 Hugo 大名也有好几个月，一直没尝试，之后也沉浸在 Gridea 中，不得不夸夸 Gridea 客户端体检真是优雅！</p>
+<p>但一直有一点点遗憾，更新只能启动客户端，点击【同步】。</p>
+<p>而 Hugo 生成静态文件摔 Hexo 几光年，部署安装无依赖，试用门槛较低。看着官方文档，程序、主题自定义也比较强悍。</p>
+<p>搜遍全网教程，要不就是太详细，一长串代码加注释，供大于求，要不略过。幸好，也算折腾成功！ ✌️</p>
+<h3 id="感谢">感谢</h3>
+<ul>
+<li>官方 Hugo Templates： <a href="https://gohugo.io/templates/">https://gohugo.io/templates/</a></li>
+<li>Hugo 中文帮助文档：<a href="https://hugo.aiaide.com/">https://hugo.aiaide.com/</a></li>
+</ul>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[文章内显示豆瓣条目（LocalStorage 缓存版）]]></title>
+            <link href="https://immmmm.com/post-show-douban-item-localstorage-cache/?utm_source=atom_feed" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/gridea-theme-motify/?utm_source=atom_feed" rel="related" type="text/html" title="Gridea Theme Motify" />
+                <link href="https://immmmm.com/jsdelivr-gridea/?utm_source=atom_feed" rel="related" type="text/html" title="使用 jsDelivr 加速 Gridea" />
+                <link href="https://immmmm.com/jinrishici-with-valine/?utm_source=atom_feed" rel="related" type="text/html" title="今日诗词 &amp; Valine" />
+                <link href="https://immmmm.com/valine-show-comment-views/?utm_source=atom_feed" rel="related" type="text/html" title="Valine 文章列表显示评论数和阅读数" />
+                <link href="https://immmmm.com/post-show-douban-item/?utm_source=atom_feed" rel="related" type="text/html" title="文章内显示豆瓣条目" />
+            
+                <id>https://immmmm.com/post-show-douban-item-localstorage-cache/</id>
+            
+            
+            <published>2020-03-17T00:00:00+00:00</published>
+            <updated>2020-03-17T00:00:00+00:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p><a href="https://movie.douban.com/subject/30206389/">https://movie.douban.com/subject/30206389/</a></p>
+<p><img src="https://lmm.elizen.me/images/2020/03/douban-ls.png" alt="douban-ls"></p>
+<p>具体使用说明同：<a href="https://immmmm.com/post-show-douban-item/">https://immmmm.com/post-show-douban-item/</a></p>
+<h3 id="相关代码">相关代码</h3>
+<p>增加判断，首次访问把 json 缓存到本地 LocalStorage，之后直接本地取数据，能对二次访问提点速，聊胜于无。 🤓</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//豆瓣图书电影条目
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;a[href*=&#39;douban.com/subject/&#39;]&#34;</span>).<span style="color:#a6e22e">each</span>(<span style="color:#66d9ef">function</span> () {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">_this</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">this</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_this</span>.<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;href&#34;</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_reg</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^https\:\/\/(movie|book)\.douban\.com\/subject\/([0-9]+)\/?/</span>;
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">db_reg</span>.<span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">str</span>)) {
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_type</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">db_reg</span>, <span style="color:#e6db74">&#34;$1&#34;</span>);
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_id</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#a6e22e">db_reg</span>, <span style="color:#e6db74">&#34;$2&#34;</span>).<span style="color:#a6e22e">toString</span>();
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_api</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://bm.weajs.com/api/&#34;</span>;
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">db_type</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;movie&#39;</span>) {
+          <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ls_item</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;movie&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">db_id</span>;
+          <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">db_api</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;movies/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">db_id</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span>;
+          <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#a6e22e">ls_item</span>)<span style="color:#f92672">==</span><span style="color:#66d9ef">null</span> <span style="color:#f92672">||</span><span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#a6e22e">ls_item</span>)<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;undefined&#39;</span>){
+            <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+                <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">url</span>,
+                <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;GET&#39;</span>,
+                <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;json&#34;</span>,
+                <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">data</span>) {
+                  <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">setItem</span>(<span style="color:#a6e22e">ls_item</span>,<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">data</span>));
+                  <span style="color:#a6e22e">moiveShow</span>(<span style="color:#a6e22e">_this</span>,<span style="color:#a6e22e">ls_item</span>)
+                }
+            });
+          }<span style="color:#66d9ef">else</span>{
+            <span style="color:#a6e22e">moiveShow</span>(<span style="color:#a6e22e">_this</span>,<span style="color:#a6e22e">ls_item</span>)
+          }
+        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">db_type</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;book&#39;</span>) {
+          <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ls_item</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;book&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">db_id</span>;
+          <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">db_api</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;books/&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">db_id</span>;
+          <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#a6e22e">ls_item</span>)<span style="color:#f92672">==</span><span style="color:#66d9ef">null</span> <span style="color:#f92672">||</span><span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#a6e22e">ls_item</span>)<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;undefined&#39;</span>){
+            <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+                <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">url</span>,
+                <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;GET&#39;</span>,
+                <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;json&#39;</span>,
+                <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">data</span>) {
+                  <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">setItem</span>(<span style="color:#e6db74">&#39;book&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">db_id</span>,<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">data</span>));
+                  <span style="color:#a6e22e">bookShow</span>(<span style="color:#a6e22e">_this</span>,<span style="color:#a6e22e">ls_item</span>)
+                }
+            });
+          }<span style="color:#66d9ef">else</span>{
+            <span style="color:#a6e22e">bookShow</span>(<span style="color:#a6e22e">_this</span>,<span style="color:#a6e22e">ls_item</span>)
+          }
+        }
+    }
+});
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">moiveShow</span>(<span style="color:#a6e22e">_this</span>,<span style="color:#a6e22e">ls_item</span>){
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">storage</span><span style="color:#f92672">=</span><span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#a6e22e">ls_item</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">data</span><span style="color:#f92672">=</span><span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">storage</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_this</span>.<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;href&#34;</span>);
+    <span style="color:#75715e">//console.log(data)
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_star</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">rating</span>);
+    <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;&lt;div class=&#39;post-preview&#39;&gt;&lt;div class=&#39;post-preview--meta&#39;&gt;&lt;div class=&#39;post-preview--middle&#39;&gt;&lt;h4 class=&#39;post-preview--title&#39;&gt;&lt;a target=&#39;_blank&#39; href=&#39;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&gt;《&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">title</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;》&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#39;rating&#39;&gt;&lt;div class=&#39;rating-star allstar&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">db_star</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&gt;&lt;/div&gt;&lt;div class=&#39;rating-average&#39;&gt;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">rating</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/div&gt;&lt;/div&gt;&lt;time class=&#39;post-preview--date&#39;&gt;导演：&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">directors</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; / 类型：&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">genres</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; / &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">pubdate</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/time&gt;&lt;section style=&#39;max-height:75px;overflow:hidden;&#39; class=&#39;post-preview--excerpt&#39;&gt;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">intro</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/section&gt;&lt;/div&gt;&lt;/div&gt;&lt;img class=&#39;post-preview--image&#39; src=&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">cover</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&gt;&lt;/div&gt;&#34;</span>).<span style="color:#a6e22e">replaceAll</span>(<span style="color:#a6e22e">_this</span>);
+}
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">bookShow</span>(<span style="color:#a6e22e">_this</span>,<span style="color:#a6e22e">ls_item</span>){
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">storage</span><span style="color:#f92672">=</span><span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#a6e22e">ls_item</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">data</span><span style="color:#f92672">=</span><span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">storage</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_this</span>.<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;href&#34;</span>);
+    <span style="color:#75715e">///console.log(data)
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">db_star</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">rating</span>);
+    <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;&lt;div class=&#39;post-preview&#39;&gt;&lt;div class=&#39;post-preview--meta&#39;&gt;&lt;div class=&#39;post-preview--middle&#39;&gt;&lt;h4 class=&#39;post-preview--title&#39;&gt;&lt;a target=&#39;_blank&#39; href=&#39;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&gt;《&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">title</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;》&lt;/a&gt;&lt;/h4&gt;&lt;div class=&#39;rating&#39;&gt;&lt;div class=&#39;rating-star allstar&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">db_star</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&gt;&lt;/div&gt;&lt;div class=&#39;rating-average&#39;&gt;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">rating</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/div&gt;&lt;/div&gt;&lt;time class=&#39;post-preview--date&#39;&gt;作者：&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">author</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &lt;/time&gt;&lt;section style=&#39;max-height:75px;overflow:hidden;&#39; class=&#39;post-preview--excerpt&#39;&gt;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">intro</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&lt;/section&gt;&lt;/div&gt;&lt;/div&gt;&lt;img class=&#39;post-preview--image&#39; src=&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">cover</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&gt;&lt;/div&gt;&#34;</span>).<span style="color:#a6e22e">replaceAll</span>(<span style="color:#a6e22e">_this</span>);
+}
+</code></pre></div>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[《医学大神》读中记]]></title>
+            <link href="https://immmmm.com/book-isbn-9787613337624/?utm_source=atom_feed" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/book-isbn-9787213093302/?utm_source=atom_feed" rel="related" type="text/html" title="《园丁与木匠》阅读笔记" />
+                <link href="https://immmmm.com/book-isbn-9787553674544/?utm_source=atom_feed" rel="related" type="text/html" title="《终身幼儿园》读后记" />
+                <link href="https://immmmm.com/book-isbn-9787508692098/?utm_source=atom_feed" rel="related" type="text/html" title="《今日简史》书摘" />
+                <link href="https://immmmm.com/book-isbn-9787550292895/?utm_source=atom_feed" rel="related" type="text/html" title="《育儿基本》的阅读笔记" />
+                <link href="https://immmmm.com/book-isbn-9787508687032/?utm_source=atom_feed" rel="related" type="text/html" title="《给孩子的未来脑计划》的阅读笔记" />
+            
+                <id>https://immmmm.com/book-isbn-9787613337624/</id>
+            
+            
+            <published>2020-03-14T00:00:00+00:00</published>
+            <updated>2020-03-14T00:00:00+00:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p><a href="https://book.douban.com/subject/34935089/">https://book.douban.com/subject/34935089/</a></p>
+<p>虽是医学人物传记，但更多的是科学精神！好书增长常识，忍不住记一笔。</p>
+<p>🌝</p>
+]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E8%82%B2%E4%BA%BA" term="%E8%82%B2%E4%BA%BA" label="育人" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+</feed>

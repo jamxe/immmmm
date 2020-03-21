@@ -97,11 +97,11 @@
   <div class="posts">
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/valine-diy/">Valine 评论框美化及功能优化</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-article-run-code/">Bitcron 文章内运行代码实例一则</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-07-15
+            2017-12-18
           </span>
 
           
@@ -120,26 +120,21 @@
       
 
       <div class="post-content">
-        <p>以下修改不涉及 Valine 源码的改动，防止后续官方更新还得再来一边。因此，相关 css、js 代码得放在调取 <code>valine.min.js</code> 之后。</p>
-<h3 id="评论框美化">评论框美化：</h3>
-<p><img src="https://lmm.elizen.me/images/2019/07/plk.jpg" alt="评论框美化："></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span>{<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">44</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">veditor</span>{<span style="color:#66d9ef">min-height</span>:<span style="color:#ae81ff">7</span><span style="color:#66d9ef">rem</span>;<span style="color:#66d9ef">resize</span>:<span style="color:#66d9ef">none</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span>{<span style="color:#66d9ef">padding-top</span>:<span style="color:#ae81ff">0</span>}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">bottom</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#f7f7f7</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">border-bottom</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span> .<span style="color:#a6e22e">vctrl</span>{<span style="color:#66d9ef">margin-top</span>:<span style="color:#ae81ff">-44</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">right</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">margin-right</span>:<span style="color:#ae81ff">-3</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span>{    <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">right</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">bottom</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">padding-top</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span> .<span style="color:#a6e22e">col</span>.<span style="color:#a6e22e">col-80</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vbtn</span>.<span style="color:#a6e22e">vsubmit</span>{<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>;<span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">44</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;<span style="color:#66d9ef">background</span>:<span style="color:#ae81ff">#1abc9c</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span> .<span style="color:#a6e22e">vctrl</span> <span style="color:#f92672">span</span>.<span style="color:#a6e22e">vpreview-btn</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span> .<span style="color:#a6e22e">col</span>.<span style="color:#a6e22e">col-20</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vlist</span> .<span style="color:#a6e22e">vcard</span> .<span style="color:#a6e22e">vhead</span> .<span style="color:#a6e22e">vsys</span>{<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">none</span>;}
-@<span style="color:#66d9ef">media</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span><span style="color:#f92672">:</span> <span style="color:#f92672">520px</span><span style="color:#f92672">)</span>{
-	.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">33.33</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;}
-}
-</code></pre></div>
+        <p>Bitcron 文章里是可以直接运行代码的，只要把代码高亮类型设置成 <code>code</code> 即可。</p>
+<p>什么用呢？可以当定制页面（Pages）用！文章定制功能So Easy！</p>
+<p>比如，我的友情链接页。按照常规需要新建个 <code>links.jade</code> ，然后再把需要插入的 css 和 js 写入模板调用。</p>
       </div>
       
-        <div><a class="read-more button" href="/valine-diy/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/bitcron-article-run-code/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/valine-by-leancloud-cn/">基于 LeanCloud 的评论系统：Valine</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-auto-article-refer/">Bitcron 文章内链自动优化显示</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-07-13
+            2017-12-18
           </span>
 
           
@@ -158,19 +153,23 @@
       
 
       <div class="post-content">
-        Valine 官网： https://valine.js.org/ Valine Admin 云引擎： https://deserts.io/valine-admin-document/ 安装过程略过不表，目前还存在一个问题，通过使用： //unpkg.com/valine@1.3.6/dist/Valine.min.js 指定 1.3.6 版本解决，官方最新的 1.3.9 报错，官网自用的 1.3.10 没问题，但还没更新至 CDN。另外这个 Valine Admin 云引擎方便，顾名思义，安装完毕后可通过 LeanCloud 的二级域名管理评论，相当于给 Valine 增加了个评论管理后台。 另外，昨天绑定域名方式由原来
+        <blockquote>
+<p>当我们在文章内引用了一个站内的链接，一般只是超级链接，其实，也可以为这个超级链接提供更好的表现方式。
+这是看起来很简单，但确实一个超赞的想法，来自于 Jimmy。效果如下(中间部分，hello 为标题):</p>
+</blockquote>
+<p><img src="https://lmm.elizen.me/images/2017/12/refer-1.png" alt="refer 处理页面内的链接"></p>
       </div>
       
-        <div><a class="read-more button" href="/valine-by-leancloud-cn/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/bitcron-auto-article-refer/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/2019-06-30/">2019-06-30</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-add-owo-similies/">给 Bitcron 评论添加 OwO 表情</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-06-30
+            2017-12-17
           </span>
 
           
@@ -180,38 +179,7 @@
         
         <span class="">
           
-            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
-          
-        </span>
-        
-      </div>
-
-      
-
-      <div class="post-content">
-        <p>一周前看到 App Store 里推荐了 《Sky 光·遇》 是《风之旅人》的陈星汉团队开发。坚持了3天“摸黑探索”后还是找了攻略，大概理清游戏套路。吃“光之子”小人升级翅膀，目前共计能吃到55颗刚好升到7星，一口气能煽7下不带喘，飞得高看的远。另外就是点“蜡烛”，蜡烛满了可换头换脸换时装凹动作，到处打卡截图嗮。</p>
-      </div>
-      
-        <div><a class="read-more button" href="/2019-06-30/">阅读全文 →</a></div>
-      
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/the-world-between-us/">我們與惡的距離</a></h1>
-      <div class="post-meta">
-        
-          <span class="post-date">
-            2019-04-26
-          </span>
-
-          
-        
-        
-        
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8/">日常</a>&nbsp;
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
           
         </span>
         
@@ -221,21 +189,21 @@
 
       <div class="post-content">
         <figure>
-    <img src="https://lmm.elizen.me/images/2019/04/p2539805435.jpg" width="50%" /><img src="https://lmm.elizen.me/images/2019/04/p2539805408.jpg" width="50%" />
-    <figcaption>我们与恶的距离为负</figcaption>
+    <img src="https://lmm.elizen.me/images/2017/12/owo-1.png" />
+    <figcaption>OwO 表情</figcaption>
 </figure>
       </div>
       
-        <div><a class="read-more button" href="/the-world-between-us/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/bitcron-add-owo-similies/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/2019-02-07/">2019-02-07</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-edit-article-and-comments/">即时编辑 Bitcron 文章和评论</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-02-07
+            2017-12-16
           </span>
 
           
@@ -245,7 +213,7 @@
         
         <span class="">
           
-            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
           
         </span>
         
@@ -254,19 +222,22 @@
       
 
       <div class="post-content">
-        https://t.me/bitcron 给群组加了个rss机器人，欢迎来扰～
+        <p>Bitcron 后台是有个“文件管理器”的功能，完全可依此在 WEB 端管理自己的博客。偶尔想修改下文章内的错别字或删除个垃圾评论，会手动输入 <a href="https://us.bitcron.com/">https://us.bitcron.com/</a> ，然后进入相应的文件里进行修改。</p>
+<p>其实，直接访问以下链接同样可以</p>
+<p><a href="https://us.bitcron.com/service/files_manager?site_id=">https://us.bitcron.com/service/files_manager?site_id=</a>站点ID.bitcron.com#pages/文件名.md
+<a href="https://us.bitcron.com/service/files_manager?site_id=">https://us.bitcron.com/service/files_manager?site_id=</a>站点ID.bitcron.com#_comments/pages/文件名.csv</p>
       </div>
       
-        <div><a class="read-more button" href="/2019-02-07/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/bitcron-edit-article-and-comments/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/book-isbn-9787553674544/">《终身幼儿园》读后记</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/weapp-round-avatar-builder/">微信小程序：巡礼头像编辑器</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-01-28
+            2017-10-06
           </span>
 
           
@@ -276,7 +247,7 @@
         
         <span class="">
           
-            #<a href="https://immmmm.com/tags/%E8%82%B2%E4%BA%BA/">育人</a>&nbsp;
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
           
         </span>
         
@@ -285,22 +256,19 @@
       
 
       <div class="post-content">
-        <p><a href="https://book.douban.com/subject/30285992/">https://book.douban.com/subject/30285992/</a></p>
-<blockquote>
-<p>如同作者“我认为自己是一个短期的悲观主义者和一个长期的乐观主义者。”身为父母和教育工作者，相信技术变革教育终将到来。</p>
-</blockquote>
+        巡礼头像编辑器 看到人大80周年网页版的头像生成器，试了一试微信小程序，花了一个周末也就搞定之！ 感谢 we-cropper 作者，上传图片手势缩放裁剪一条龙。 源码托管： https://coding.net/u/lmm214/p/weapp-round-avatar-builder/git
       </div>
       
-        <div><a class="read-more button" href="/book-isbn-9787553674544/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/weapp-round-avatar-builder/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/2019-01-26/">2019-01-26</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-close-post-comments/">Bitcron 关闭某篇文章评论</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2019-01-26
+            2017-08-09
           </span>
 
           
@@ -310,7 +278,7 @@
         
         <span class="">
           
-            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
           
         </span>
         
@@ -319,19 +287,146 @@
       
 
       <div class="post-content">
-        3个月前买的Flex2顺利积灰，上周败入 Apple Watch，装了一堆APP留下几款：印象笔记、滴答清单、网易云音乐、WeChat、MyWeather、Days Matter、Keep、AutoSleep。电量两日一冲没什么问题，自己是睡前充满，第二天晚上到家还有50%+。功能性嘛，更少拿
+        <p>捂脸，遁之……</p>
+<p>文章直接添加下句即可:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">comment: no
+</code></pre></div>
       </div>
       
-        <div><a class="read-more button" href="/2019-01-26/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/bitcron-close-post-comments/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/2018-military-training-album/">军训掠影</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/pk24go-cn/">决战24点（HTML5）开发小记</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2018-12-31
+            2017-07-26
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>点击体验：<a href="https://pk24go.cn">https://pk24go.cn</a></p>
+<p>本就开发了一个玩儿24点游戏的微信公众号“决战24点”（pk24go），可以回复综合算式进行解答。说实话，还是挺不方面的。前段时间看到 <a href="http://4shu.net/">4数网</a> 在线 HTML5 玩法，立马着手改造！</p>
+<h3 id="改造点">改造点</h3>
+<p>1、界面UI：以方格为基本图形，4个数字在4个角落，4个运算符号在中间，完成数、撤销返回、提示等按钮在空白小方格中。
+2、功能减法：去除时间限制模式、积分、结束按钮。
+3、功能加法：新增【题库选择】可选择数字范围1~10或1~13，新增【待解模式】针对性强化玩家提示过的题组。</p>
+      </div>
+      
+        <div><a class="read-more button" href="/pk24go-cn/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/new-tab-external-link/">识别外链并新窗口打开</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2017-07-25
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>注：已对类似 toc 里的链接进行排除。</p>
+<p>markdown 语法链接不支持设置 <code>target='_blank'</code> ，如果要就直接写 html 的链接代码。个人来说，非常反习惯！</p>
+<p>既然 Bitcron 加载了 jQuery ，那就重操旧业来个自动识别内外链！代码如下：</p>
+<pre><code class="language-jade" data-lang="jade">	script
+		$(document).ready (function() {
+			var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
+			var location_href = window.location.href.replace(parse_url,'$3')
+			$('.post-content a:not(:has(img)),.author-name a').hover(function() {
+				var this_href = $(this).attr('href');
+				var replace_href = this_href.replace(parse_url,'$3');
+                if ( this_href != replace_href &amp;&amp; location_href != replace_href)
+					$(this).attr('target','_blank'); 
+			});
+		});
+</code></pre><p>一般放 <code>post.jade</code>里，直接放 <code>base.jade</code> 也行。其中 <code>.post-content</code> 和 <code>.author-name</code> 有可能需要匹配自己的主题模板。</p>
+<p>短短代码测试了个把小时，主要耗在“a标签里无img”和“本地和点击的href的正则”，哎，果真代码欺负老新人！</p>
+      </div>
+      
+        <div><a class="read-more button" href="/new-tab-external-link/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-template-code/">Bitcron 主题常用的代码片段</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2017-07-23
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <h3 id="全站-site">全站 Site</h3>
+<p>标题：<code>site.title</code>，示例：</p>
+<pre><code class="language-jade" data-lang="jade">a(href=&quot;/&quot;)= site.title
+</code></pre><p>副标题：<code>site.sub_title</code>，示例：</p>
+<pre><code class="language-jade" data-lang="jade">if site.sub_title
+	h2.site-description= site.sub_title]
+</code></pre><p>关键词：<code>site.keywords</code>
+描述：<code>site.description</code></p>
+<p>站点头像：<code>site.avatar</code>
+背景：<code>site.background_image</code>，示例：</p>
+<pre><code class="language-jade" data-lang="jade">header#header(style=&quot;background-image:url({{site.background_image}})&quot;)
+</code></pre><p>当下年份：<code>site.now.year</code></p>
+      </div>
+      
+        <div><a class="read-more button" href="/bitcron-template-code/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/brotherhood-of-blades-ii/">绣春刀2</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2017-07-22
           </span>
 
           
@@ -350,19 +445,19 @@
       
 
       <div class="post-content">
-        <p>小学惯例五年级有国防教育，校内校外还到军营住一晚，补发照片一堆。</p>
+        辛芷蕾 哎哟，好好的破案片，成了儿女情长片。直接2星，想想动作设计、想想还有几个角不错，还是3星推荐吧
       </div>
       
-        <div><a class="read-more button" href="/2018-military-training-album/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/brotherhood-of-blades-ii/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/book-isbn-9787508692098/">《今日简史》书摘</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-theme-motify/">Bitcron 主题「Motify」</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2018-10-21
+            2017-07-20
           </span>
 
           
@@ -372,7 +467,7 @@
         
         <span class="">
           
-            #<a href="https://immmmm.com/tags/%E8%82%B2%E4%BA%BA/">育人</a>&nbsp;
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
           
         </span>
         
@@ -381,29 +476,30 @@
       
 
       <div class="post-content">
-        <p><a href="https://book.douban.com/subject/30259720/">https://book.douban.com/subject/30259720/</a></p>
-<p>** 若无知即幸福，则求知是追求更大的幸福 **</p>
-<blockquote>
-<p>所有的“感受”只是所有哺乳动物及鸟类都拥有的生化机制，用来快速运算生存和繁殖的概率。</p>
-</blockquote>
-<blockquote>
-<p>我们现在也正在培育一种驯化的人类，产生的数据量惊人，而且能够像海量数据处理装置中的高效芯片一样运转，然而这些“ ** 数据牛 ** ”绝对称不上是发挥了人类的最大潜能。</p>
-</blockquote>
-<blockquote>
-<p>“注意力商人”（attention merchant） 2 的商业模式：靠提供免费信息、服务和娱乐来吸引我们的注意力，再把我们的注意力转卖给广告主。然而，这些数据巨头真正的目标其实远超以往的注意力商人，他们真正的业务不是销售广告，而是靠吸引我们的注意力，取得了关于我们的大量数据，这些数据远比任何广告收入更有价值。 ** 我们不是他们的用户，而是商品。**</p>
-</blockquote>
+        <figure>
+    <img src="https://lmm.elizen.me/images/2017/07/motify.jpg" alt="Bitcron 主题「Motify」" />
+    <figcaption>Github 地址： <a href="https://github.com/lmm214/Bitcron-Theme-Motify">Motify</a> </figcaption>
+</figure>
+<h3 id="主题简介">主题简介</h3>
+<p>自扒 WordPress 同名主题，支持：</p>
+<ul>
+<li>头部背景自定义</li>
+<li>“相册”、“一句话”特色文章样式</li>
+<li>社交图标包含：Twitter、Instagram、Github、Flickr、微博、Facebook。</li>
+<li>自动识别外链并新窗口打开</li>
+</ul>
       </div>
       
-        <div><a class="read-more button" href="/book-isbn-9787508692098/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/bitcron-theme-motify/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/2018-10-18/">2018-10-18</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-themes/">Bitcron 主题集</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2018-10-18
+            2017-07-14
           </span>
 
           
@@ -413,7 +509,7 @@
         
         <span class="">
           
-            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
           
         </span>
         
@@ -422,10 +518,283 @@
       
 
       <div class="post-content">
-        Fitbit Flex2 硬需仅剩下第一时间接听电话和早起闹钟。之前偶得小米手环2，体验之后再一次勾起冲动消费欲，2的显示屏在室外等于无，转动显示时间更是：定神3秒，擦，再甩，定神3秒，看不清！比对了主流几款，最后想着要么选择 flex2 这样颜值高纤细带着无感，要么上 Apple Watch。
+        demo-shuiba-co 主题名(-) | 链接(-) Bedford | [预览](https://blog-bedford--theme.bitcron.com/) [源码](https://github.com/pagecho/Bedford) Akina | [预览](https://akina.0x400.bitcron.com/
       </div>
       
-        <div><a class="read-more button" href="/2018-10-18/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/bitcron-themes/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/come-back/">终于回场</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2017-07-08
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8/">日常</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        接触静态博客也有些年头，用过 Jekyll、Octopress、Hexo 都是本地书写后命令行生成静态文件同步至 Github。光听这书写流程就别扭，虽然这很酷，但久了就会发现 非书写时间 与 书写 比值常常大于1 随着 Github 被认证半死不活，文章数增多后 Hexo 标榜的生成性能也不复存在，最纠结的是想码字还
+      </div>
+      
+        <div><a class="read-more button" href="/come-back/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/wechat-public-platform-development/">微信公众平台开发小记</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2016-10-30
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>微信公众平台开发，个人申请只能订阅号，虽能开启开发者模式，可这权限令人发指！借助“微信开放平台”中的第三方，通过简单的“授权管理”做到各尽其能、互不干扰。</p>
+<p><img src="https://lmm.elizen.me/images/2016/10/dyh-dsf.jpg" alt="dyh-dsf.jpg"></p>
+<h3>自定义菜单</h3>
+<p><strong>微之家</strong>：<a href="https://www.iweizhijia.com" target="_blank"><a href="https://www.iweizhijia.com">https://www.iweizhijia.com</a></a></p>
+<p><img src="https://lmm.elizen.me/images/2016/10/dyh-1.jpg" alt="dyh-1.jpg"></p>
+<p>其中菜单内容的“发送消息”、“跳转网页”，当然选择后者，点击菜单后直接显示内容。</p>
+      </div>
+      
+        <div><a class="read-more button" href="/wechat-public-platform-development/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/goodbay-2015/">二〇一五，不见。</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2016-02-07
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8/">日常</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <h3 id="过去">过去</h3>
+<p>过去一年若码流水肯定得码通宵，若只说一件那就是：<strong>为人父</strong>。</p>
+<p>臭小子6个多月咯，全靠长辈特别是奶奶和外婆。当然，最为辛苦的是老婆！经历孕育、当下的哺育以及之后的教育，让我在这个过程中拓宽了对“爱”的定义域，延展了“爱”的峰值。新的一年，想对老婆说：</p>
+<p style="text-align: center;"><strong>你的幸福，我们爷俩全包了！</strong></p>
+<p>若说第二件就是：<strong>成“阿姨”</strong>。</p>
+<p>工作第五年，被任命为一班之主任，成为了43个孩子的“阿姨”。说阿姨真是一点不夸张，准确说应该是 43×2 的阿姨，甚至，还不止。咳，说多了都是泪啊！当然，这份差事虽苦，也有感动与感激，且思且行且珍惜，继续咯。</p>
+<p>若说第三件…这水流得好欢哟，下面说几个关键词吧。</p>
+      </div>
+      
+        <div><a class="read-more button" href="/goodbay-2015/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/dont-be-trust/">不被信任感</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2014-06-30
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8/">日常</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>不知多少人会有这样的想法：如果你觉着我做不好，那就做不好吧，就算自己其实能做好。如果你觉得我肯定做得好，就算自己其实没把握，也尽全力做好。</p>
+<p>当面对别人对自己的信任度时，总显得特别敏感，生怕别人不信任自己，一旦察觉随之也就应验了别人的不信任：你看，他果真不行吧！</p>
+<p>在读书时期很长一段时间里，感受到父母对自己的不信任，特别不信任我能做到超出他们预期的事儿。这种不被自己至亲信任的感觉，真的是好讨厌的感觉，因为感觉受到了伤害，而且施害方是至亲！那段时间一直困扰的问题：明明我是他们孩子，为什么他们会不信任我呢？</p>
+      </div>
+      
+        <div><a class="read-more button" href="/dont-be-trust/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/overcome-the-grocery-store/">解忧杂货店</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2014-06-14
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8/">日常</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        如今回顾写作过程，我发现直接始终再思考一个问题：站在人生的岔路口，人究竟应该怎么做？————东野圭吾 月兔：是参加奥运集训，还是陪身患绝症的男友度过生命最后一程…… 鱼店音乐人：是坚持自己的音乐梦，还是子承父业成为鱼店的接班人…… 约翰·列侬：是否与父母一同走上逃债的不归路，还是坚持让
+      </div>
+      
+        <div><a class="read-more button" href="/overcome-the-grocery-store/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/slimbox2-js-adaptive/">Slimbox2.js 图片灯箱自适应</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2014-04-19
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>Github： <a href="https://github.com/lmm214/slimbox2-lite">slimbox2-lite</a></p>
+<p>很久很久以前（喂，喂喂），很早很早以前（嘿！），好吧。以前发现只有几KB的图片灯箱特效 slimbox2 就瞬间被它征服了，不过这娃一直有个硬伤：</p>
+<p>图片多大灯箱显示出来的图片就有多大。就是说，一旦图片比较大比如1800<em>1200，显示器只有1280</em>800，那真是赤果果扑面而来啊！</p>
+<p>虽然带着这个硬伤，还是把它作为哥发布的主题的标配！昨 @小黑黑 再一次向我反馈了这个情况，一下决心操起编辑器开试。吼，花了个把小时把 js 从头到尾读了N遍后，顺利搞定！修改部分如下：</p>
+      </div>
+      
+        <div><a class="read-more button" href="/slimbox2-js-adaptive/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/goodbye-2013/">二〇一三，不见。</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2014-01-15
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8/">日常</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <h3>一、博客小记</h3>
+<p>一三年，微信公众平台各博客老手自号“自媒体”汹涌袭来，看多了自己就更加动不了笔了。繁忙中心里惦记着空下来一定好好找个话题，好好前思后想一番来一发。真闲了，发现码下的尽是口水文，完全不符合前期心里预设，索性，关页面！</p>
+<p>几周前的年底，各博集体诈shi纷纷岁末总结文。动物界有冬眠，现今博客圈有“年更”，一年一更，其实我也很想跟进这波潮流，不过，那几天人生要事进行中，待明年再跟。</p>
+<p>Google Reader 关闭后，个人使用了 Feedly ，刚查看竟然还有 400+ 童鞋订阅着，受宠若惊感激涕零啊！看着“前端”这个 Tag ，请问能P成“生活端”或者“老婆端”OK不？这年除掉零碎折腾水文、就剩暑假“丽江行”的记录文了。</p>
+<p>用了快两年的主题，昨下午做了一些减法，技能生疏，得改段时间或者学习段时间，码个新滴，吼吼！</p>
+      </div>
+      
+        <div><a class="read-more button" href="/goodbye-2013/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/huawei-hg8240-setting/">华为 HG8240 光猫路由设置方法</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2013-11-11
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>开通了电信光纤入户，送的光猫是“华为 HG8240”，明明自带路由（可开机就自动拨号），可默认却隐藏了。高手在民间，以下方法来自网络，已试可用：</p>
+<h3>一、设置本地连接属性。</h3>
+<p>IP地址：<code>192.168.100.2</code>（从 192.168.100.2~192.168.100.254 都可以），子网掩码：<code>255.255.255.0</code>，默认网关：<code>192.168.100.1</code>，DNS空着。</p>
+<h3>二、查询 VLAN ID （portvid） 和 802.1p（PortPri）。</h3>
+<p><img src="https://lmm.elizen.me/images/2013/11/huawei-1.jpg" alt="huawei-1"></p>
+<p>方法： <code>Win+R</code> 输入 <code>cmd</code> 回车，再输入 <code>telnet 192.168.100.1</code> 回车，等待出现“user：”输入 <code>root</code> 回车，出现“password：”输入 <code>admin</code> ，出现 ”WAP&gt;“输入 <code>get port config portid 1</code> 回车，得到端口1的 ”VLAN ID （portvid）“ 和 ”802.1p（PortPri）“值。</p>
+      </div>
+      
+        <div><a class="read-more button" href="/huawei-hg8240-setting/">阅读全文 →</a></div>
       
     </div>
     

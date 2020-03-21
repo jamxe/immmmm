@@ -6,7 +6,7 @@
     
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
-    <updated>2020-03-21T07:12:27+00:00</updated>
+    <updated>2020-03-21T07:21:23+00:00</updated>
     
     
     
@@ -45,6 +45,14 @@
 [markup.goldmark]
 [markup.goldmark.renderer]
   unsafe = true
+</code></pre><p>默认 rss 地址是 <code>index.xml</code>：什么鬼！下载 <a href="https://github.com/kaushalmodi/hugo-atom-feed/blob/master/layouts/_default/list.atom.xml">list.atom.xml</a> 丢入自己主题的 <code>layouts/_default</code>, 并在<code>config.toml</code> 添加以下代码。</p>
+<pre><code>rssLimit = 5 # 控制输出数量，不然默认是全站
+[outputs]
+  home = [&quot;Atom&quot;, &quot;HTML&quot;] # &lt;domain&gt;/atom.xml
+
+[outputFormats.Atom]
+  mediatype = &quot;application/rss&quot;
+  baseName = &quot;atom&quot;
 </code></pre><h3 id="感叹">感叹</h3>
 <p>不懂英文，太难了！ 😭</p>]]></content>
             

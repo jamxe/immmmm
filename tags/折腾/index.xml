@@ -6,28 +6,15 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 19 Mar 2020 22:55:33 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hugo &#43; Github Actions 实现自动化部署</title>
-      <link>https://immmmm.com/hugo-github-actions/</link>
-      <pubDate>Thu, 19 Mar 2020 22:55:33 +0000</pubDate>
-      
-      <guid>https://immmmm.com/hugo-github-actions/</guid>
-      <description>&lt;p&gt;不折腾点东西总觉得浑浑噩噩，折腾点东西搞得脑袋晕晕乎乎！&lt;/p&gt;
-&lt;h3 id=&#34;折腾需求&#34;&gt;折腾需求&lt;/h3&gt;
-&lt;p&gt;为更新 &lt;a href=&#34;https://edui.fun/&#34;&gt;https://edui.fun/&lt;/a&gt; 导航站能随手些，造了 &lt;a href=&#34;https://immmmm.com/gridea-theme-webstack/&#34;&gt;Gridea Theme WebStack&lt;/a&gt; 。每次得源文件切换加载，但只为加几行代码，等等等；&lt;/p&gt;
-&lt;p&gt;折腾一天，已实现直接在 GitHub  &lt;code&gt;master&lt;/code&gt; 添加代码，&lt;code&gt;Github Actions &lt;/code&gt; 自动构建 &lt;code&gt;Hugo&lt;/code&gt; 静态文件到 &lt;code&gt;gh-pages&lt;/code&gt; 分支，外加同步 webhook 到自己的服务器。&lt;/p&gt;
-&lt;p&gt;再也不用 git 来 git 去！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>RSSHub 部署笔记</title>
       <link>https://immmmm.com/rsshub-docker/</link>
-      <pubDate>Wed, 18 Mar 2020 00:31:40 +0000</pubDate>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/rsshub-docker/</guid>
       <description>&lt;blockquote&gt;
@@ -40,9 +27,22 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </item>
     
     <item>
+      <title>Hugo &#43; Github Actions 实现自动化部署</title>
+      <link>https://immmmm.com/hugo-github-actions/</link>
+      <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/hugo-github-actions/</guid>
+      <description>&lt;p&gt;不折腾点东西总觉得浑浑噩噩，折腾点东西搞得脑袋晕晕乎乎！&lt;/p&gt;
+&lt;h3 id=&#34;折腾需求&#34;&gt;折腾需求&lt;/h3&gt;
+&lt;p&gt;为更新 &lt;a href=&#34;https://edui.fun/&#34;&gt;https://edui.fun/&lt;/a&gt; 导航站能随手些，造了 &lt;a href=&#34;https://immmmm.com/gridea-theme-webstack/&#34;&gt;Gridea Theme WebStack&lt;/a&gt; 。每次得源文件切换加载，但只为加几行代码，等等等；&lt;/p&gt;
+&lt;p&gt;折腾一天，已实现直接在 GitHub  &lt;code&gt;master&lt;/code&gt; 添加代码，&lt;code&gt;Github Actions &lt;/code&gt; 自动构建 &lt;code&gt;Hugo&lt;/code&gt; 静态文件到 &lt;code&gt;gh-pages&lt;/code&gt; 分支，外加同步 webhook 到自己的服务器。&lt;/p&gt;
+&lt;p&gt;再也不用 git 来 git 去！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>文章内显示豆瓣条目（LocalStorage 缓存版）</title>
       <link>https://immmmm.com/post-show-douban-item-localstorage-cache/</link>
-      <pubDate>Tue, 17 Mar 2020 09:05:20 +0000</pubDate>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/post-show-douban-item-localstorage-cache/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://movie.douban.com/subject/30206389/&#34;&gt;https://movie.douban.com/subject/30206389/&lt;/a&gt;&lt;/p&gt;
@@ -53,7 +53,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     <item>
       <title>Gridea Theme Motify</title>
       <link>https://immmmm.com/gridea-theme-motify/</link>
-      <pubDate>Fri, 13 Mar 2020 19:35:34 +0000</pubDate>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/gridea-theme-motify/</guid>
       <description>&lt;p&gt;自用 N 年主题转制 Gridea 完成！&lt;/p&gt;
@@ -64,7 +64,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     <item>
       <title>使用 jsDelivr 加速 Gridea</title>
       <link>https://immmmm.com/jsdelivr-gridea/</link>
-      <pubDate>Fri, 13 Mar 2020 16:20:49 +0000</pubDate>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/jsdelivr-gridea/</guid>
       <description>&lt;p&gt;如果有博客托管在 GitHub 的话，加载速度着实感人，使用 jsDelivr 的 CDN 大法能有效改善，操作也简单，把原网址替换一下就能搞定！&lt;/p&gt;
@@ -77,7 +77,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     <item>
       <title>今日诗词 &amp; Valine</title>
       <link>https://immmmm.com/jinrishici-with-valine/</link>
-      <pubDate>Thu, 30 Jan 2020 16:40:00 +0000</pubDate>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/jinrishici-with-valine/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.jinrishici.com/&#34;&gt;今日诗词&lt;/a&gt;：一个可以随机返回一句古诗词名句的接口，宅到用来做 Valine 的 placeholder 显示内容……&lt;/p&gt;
@@ -85,9 +85,19 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </item>
     
     <item>
+      <title>Valine 文章列表显示评论数和阅读数</title>
+      <link>https://immmmm.com/valine-show-comment-views/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/valine-show-comment-views/</guid>
+      <description>&lt;p&gt;回头一看 Valine 已使用半年，除早前国内版 Leancloud 出现&lt;strong&gt;被&lt;/strong&gt;宕机，整体还算稳。&lt;/p&gt;
+&lt;p&gt;闲着寻思到 Valine 能否在首页文章列表中显示对应的「评论数」和「阅读数」，查阅了文档（只有阅读数代码）和issue，好家伙,竟然 &lt;a href=&#34;https://github.com/xCss/Valine/releases/tag/v1.1.8-beta2&#34;&gt;v1.1.8-beta2&lt;/a&gt; 已实现！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>文章内显示豆瓣条目</title>
       <link>https://immmmm.com/post-show-douban-item/</link>
-      <pubDate>Sat, 25 Jan 2020 21:31:46 +0000</pubDate>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/post-show-douban-item/</guid>
       <description>&lt;p&gt;小众豆瓣已成刚需，电影、图书看完都会标记下，写日志时常会提到，老想着在文章内「优雅」地展示，官方 API 已废，幸好还有给力的 &lt;a href=&#34;https://mufeng.me/&#34;&gt;@mufeng&lt;/a&gt; 兄，以下功能就使用其提供的轮子。&lt;/p&gt;
@@ -99,7 +109,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     <item>
       <title>Gridea Theme WebStack</title>
       <link>https://immmmm.com/gridea-theme-webstack/</link>
-      <pubDate>Sat, 11 Jan 2020 23:00:18 +0000</pubDate>
+      <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/gridea-theme-webstack/</guid>
       <description>&lt;p&gt;@Jackie 同学留言推荐了一个网站导航项目 &lt;a href=&#34;https://github.com/WebStackPage/WebStackPage.github.io&#34;&gt;WebStackPage&lt;/a&gt; ，样式不错，尝试了纯静态，不得不佩服原作者，这一大段一大段的循环代码静态手工 html ，服！之后尝试了 Laravel、Docker，失败……&lt;/p&gt;
@@ -109,7 +119,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     <item>
       <title>三步创建 Gridea 友情链接页</title>
       <link>https://immmmm.com/gridea-templates-friends/</link>
-      <pubDate>Thu, 02 Jan 2020 20:46:57 +0000</pubDate>
+      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/gridea-templates-friends/</guid>
       <description>&lt;p&gt;围观地址：&lt;a href=&#34;https://i.immmmm.com/friends/&#34;&gt;https://i.immmmm.com/friends/&lt;/a&gt; （&lt;a href=&#34;https://gridea.dev/docs/theme-custom.html#%E6%95%B0%E7%BB%84%E7%B1%BB%E5%9E%8B%E9%85%8D%E7%BD%AE&#34;&gt;官方教程&lt;/a&gt;)&lt;/p&gt;
@@ -119,7 +129,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     <item>
       <title>Gridea 主题常用代码片段</title>
       <link>https://immmmm.com/gridea-template-code/</link>
-      <pubDate>Mon, 16 Dec 2019 15:14:17 +0000</pubDate>
+      <pubDate>Mon, 16 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/gridea-template-code/</guid>
       <description>&lt;h3 id=&#34;全站-site&#34;&gt;全站 Site&lt;/h3&gt;
@@ -131,9 +141,32 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </item>
     
     <item>
+      <title>OLAINDEX 搭建笔记</title>
+      <link>https://immmmm.com/olaindex-onedrive/</link>
+      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/olaindex-onedrive/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://wangningkai.github.io/OLAINDEX/#/?id=olaindex&#34;&gt;OLAINDEX&lt;/a&gt;：Another One Drrive Directory Index&lt;/p&gt;
+&lt;p&gt;最后遇到id和密钥无法保存，输入下面命令解决。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;chmod 777 storage/app/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;支持前端上传文件，大赞！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>电报 Flowerss Bot 搭建笔记</title>
+      <link>https://immmmm.com/telegram-flowerss-bot/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/telegram-flowerss-bot/</guid>
+      <description>&lt;p&gt;看中一点：支持 Telegram 应用内 instant view ！&lt;/p&gt;
+&lt;p&gt;点开即用：&lt;a href=&#34;https://t.me/rssflowbot&#34;&gt;https://t.me/rssflowbot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;项目主页：&lt;a href=&#34;https://github.com/indes/flowerss-bot&#34;&gt;https://github.com/indes/flowerss-bot&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Calibre Web 搭建笔记</title>
       <link>https://immmmm.com/calibre-web/</link>
-      <pubDate>Sat, 30 Nov 2019 14:05:00 +0000</pubDate>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/calibre-web/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/11/calibre-web.jpg&#34; alt=&#34;折腾效果&#34;&gt;&lt;/p&gt;
@@ -145,7 +178,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     <item>
       <title>Gridea Theme Puti</title>
       <link>https://immmmm.com/gridea-theme-puti/</link>
-      <pubDate>Tue, 26 Nov 2019 21:28:06 +0000</pubDate>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/gridea-theme-puti/</guid>
       <description>&lt;p&gt;欢迎小伙伴 &lt;a href=&#34;https://chat.elizen.me/&#34;&gt;@Elizen&lt;/a&gt; 入伙，同款主题折腾分享之。&lt;/p&gt;</description>
@@ -154,7 +187,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     <item>
       <title>曲线救“静”</title>
       <link>https://immmmm.com/webhook-github/</link>
-      <pubDate>Sun, 24 Nov 2019 14:05:00 +0000</pubDate>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/webhook-github/</guid>
       <description>&lt;p&gt;Coding 快但抽，GitHub 慢但稳。本想着静态能安安静静的码字、更新、查阅。其实忍忍也就接受了，毕竟也没多人在意。 自己这关不过去，折腾了主题，寻求了博友，求助了 @罗伊 ，开好了 vps 放静态！&lt;/p&gt;
@@ -162,55 +195,27 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </item>
     
     <item>
+      <title>静态博客那些事</title>
+      <link>https://immmmm.com/about-html-blog/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/about-html-blog/</guid>
+      <description>一个周末耗在了静态博客部署方案上，目前使用了 Gridea + Coding 搭了个，欢迎围观： https://i.immmmm.com/ 也试了 Hexo + Travis CI ，部署好后是方便，只要把文件 git push 到监测的分支，或者直接在 Github 上写日志，Travis CI 就能自动生成静态文件到主分支上。但，Hexo 静态生成器与主题插件代码的问题，哎，折腾不起。 回说 Bitcron ，更新日志停留在 2017-09-12</description>
+    </item>
+    
+    <item>
       <title>微信小程序腾讯视频组件：weChatVideoPlay</title>
       <link>https://immmmm.com/weapp-videoplay/</link>
-      <pubDate>Tue, 05 Nov 2019 10:35:46 +0000</pubDate>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/weapp-videoplay/</guid>
       <description>虽官方提供了腾讯视频组件，但都说有广告，懒的测试直接寻找第三方解决方案，一搜 Github 仓库发现了这货，好使！ weChatVideoPlay：https://github.com/YangXiaoP/weChatVideoPlay</description>
     </item>
     
     <item>
-      <title>矩阵良的 Bitcron 主题集</title>
-      <link>https://immmmm.com/matrixk-bitcron-themes/</link>
-      <pubDate>Wed, 17 Jul 2019 10:09:06 +0000</pubDate>
-      
-      <guid>https://immmmm.com/matrixk-bitcron-themes/</guid>
-      <description>&lt;p&gt;强力搬运：&lt;a href=&#34;https://mrx.moe/zi-zhi/my-bitcron-themes&#34;&gt;矩阵良的Bitcron主题集&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;皿&#34;&gt;皿&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/07/Screenshot1.png&#34; alt=&#34;效果图&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Slimbox2.js 图片灯箱自适应</title>
-      <link>https://immmmm.com/slimbox2-js-adaptive/</link>
-      <pubDate>Sat, 19 Apr 2014 13:25:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/slimbox2-js-adaptive/</guid>
-      <description>&lt;p&gt;Github： &lt;a href=&#34;https://github.com/lmm214/slimbox2-lite&#34;&gt;slimbox2-lite&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;很久很久以前（喂，喂喂），很早很早以前（嘿！），好吧。以前发现只有几KB的图片灯箱特效 slimbox2 就瞬间被它征服了，不过这娃一直有个硬伤：&lt;/p&gt;
-&lt;p&gt;图片多大灯箱显示出来的图片就有多大。就是说，一旦图片比较大比如1800&lt;em&gt;1200，显示器只有1280&lt;/em&gt;800，那真是赤果果扑面而来啊！&lt;/p&gt;
-&lt;p&gt;虽然带着这个硬伤，还是把它作为哥发布的主题的标配！昨 @小黑黑 再一次向我反馈了这个情况，一下决心操起编辑器开试。吼，花了个把小时把 js 从头到尾读了N遍后，顺利搞定！修改部分如下：&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>华为 HG8240 光猫路由设置方法</title>
-      <link>https://immmmm.com/huawei-hg8240-setting/</link>
-      <pubDate>Mon, 11 Nov 2013 14:35:46 +0000</pubDate>
-      
-      <guid>https://immmmm.com/huawei-hg8240-setting/</guid>
-      <description>&lt;p&gt;开通了电信光纤入户，送的光猫是“华为 HG8240”，明明自带路由（可开机就自动拨号），可默认却隐藏了。高手在民间，以下方法来自网络，已试可用：&lt;/p&gt;
-&lt;h3&gt;一、设置本地连接属性。&lt;/h3&gt;
-&lt;p&gt;IP地址：&lt;code&gt;192.168.100.2&lt;/code&gt;（从 192.168.100.2~192.168.100.254 都可以），子网掩码：&lt;code&gt;255.255.255.0&lt;/code&gt;，默认网关：&lt;code&gt;192.168.100.1&lt;/code&gt;，DNS空着。&lt;/p&gt;
-&lt;h3&gt;二、查询 VLAN ID （portvid） 和 802.1p（PortPri）。&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2013/11/huawei-1.jpg&#34; alt=&#34;huawei-1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;方法： &lt;code&gt;Win+R&lt;/code&gt; 输入 &lt;code&gt;cmd&lt;/code&gt; 回车，再输入 &lt;code&gt;telnet 192.168.100.1&lt;/code&gt; 回车，等待出现“user：”输入 &lt;code&gt;root&lt;/code&gt; 回车，出现“password：”输入 &lt;code&gt;admin&lt;/code&gt; ，出现 ”WAP&amp;gt;“输入 &lt;code&gt;get port config portid 1&lt;/code&gt; 回车，得到端口1的 ”VLAN ID （portvid）“ 和 ”802.1p（PortPri）“值。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Alfred workflow 记录</title>
       <link>https://immmmm.com/alfred-workflow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/alfred-workflow/</guid>
       <description>&lt;p&gt;按了 Alfred 搜索了一圈，发现几个小workflow挺好用，特别是低频度使用的功能，好使！&lt;/p&gt;
@@ -221,9 +226,276 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </item>
     
     <item>
+      <title>微信小程序：小学数学电子教材</title>
+      <link>https://immmmm.com/weapp-er-xiao-zhi-zao/</link>
+      <pubDate>Sat, 05 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/weapp-er-xiao-zhi-zao/</guid>
+      <description>&lt;p&gt;欢迎扫码体验~&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/xxdzjc.JPG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>用 Typora 做了本电子书</title>
+      <link>https://immmmm.com/typora-paepub/</link>
+      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/typora-paepub/</guid>
+      <description>&lt;p&gt;网上有组系列文章想做成电子书，搜索 markdown 导出 epub，找到了 Typora 和 Pandoc，后者是纯命令行制作电子书，其实 Typora 的导出 epub 功能也是基于它的。制作流程非常简单，一篇篇文章打开直接复制标题、复制内容，TY直接识别成了 md 格式。点击文件&amp;ndash;导出&amp;ndash;epub，没安装会提示安装 pandoc，完成搞定。&lt;/p&gt;
+&lt;p&gt;第一次导出发现许久没完成，原来是文章里的图片无法顺利访问，得，看来这个插件不走秘密通道，此处我傻傻的一张张图片手动下载，其实可以利用这个功能：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/07/Moaz3D.jpg&#34; alt=&#34;pic&#34;&gt;&lt;/p&gt;
+&lt;p&gt;网页上图片右键 &lt;code&gt;复制图片&lt;/code&gt; 回编辑器直接 &lt;code&gt;Ctrl+V&lt;/code&gt; 粘贴，乖乖，图片自动下载！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Canvas 手写输入法</title>
+      <link>https://immmmm.com/qq-handwrite-typewriting/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/qq-handwrite-typewriting/</guid>
+      <description>xuebihua-cn 在整合完“写笔画”网站后，考虑到大屏上输入文字不太方便，搜索一圈发现以下代码：web版手写输入法 ，利用了 QQ输入法的手写 handwritingapi.js 接口，不过文中添加的仅是鼠标事件，移动端的触摸事件不支持。 折腾到凌晨实在搞不定，求助了 @牧风 后依然卡壳，之后发现QQ输入法的鼠标定位值和 Canvas 直接触摸定位值不同</description>
+    </item>
+    
+    <item>
+      <title>“学笔画”折腾小记</title>
+      <link>https://immmmm.com/xuebihua-cn/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/xuebihua-cn/</guid>
+      <description>&lt;p&gt;点击体验→ &lt;a href=&#34;https://xuebihua.cn&#34;&gt;https://xuebihua.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/07/xuebihua_qr.png&#34; alt=&#34;xuebihua_qr&#34;&gt;&lt;/p&gt;
+&lt;p&gt;刷着阮一峰的 weekly 看到了 &lt;a href=&#34;https://chanind.github.io/hanzi-writer/cn/&#34;&gt;Hanzi Writer&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 这个项目，发现笔顺的动画比较自然，还能在 svg 上手写练习，最重要的是看看 demo 好像上手比较简单，实际也如此。&lt;/p&gt;
+&lt;p&gt;功能代码非常好使，基本折腾在界面和陌生的代码上，比如想让 svg 自适应，搜索测试一晚发现还是以下代码好使：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>矩阵良的 Bitcron 主题集</title>
+      <link>https://immmmm.com/matrixk-bitcron-themes/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/matrixk-bitcron-themes/</guid>
+      <description>&lt;p&gt;强力搬运：&lt;a href=&#34;https://mrx.moe/zi-zhi/my-bitcron-themes&#34;&gt;矩阵良的Bitcron主题集&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;皿&#34;&gt;皿&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/07/Screenshot1.png&#34; alt=&#34;效果图&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Valine 评论框美化及功能优化</title>
+      <link>https://immmmm.com/valine-diy/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/valine-diy/</guid>
+      <description>&lt;p&gt;以下修改不涉及 Valine 源码的改动，防止后续官方更新还得再来一边。因此，相关 css、js 代码得放在调取 &lt;code&gt;valine.min.js&lt;/code&gt; 之后。&lt;/p&gt;
+&lt;h3 id=&#34;评论框美化&#34;&gt;评论框美化：&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/07/plk.jpg&#34; alt=&#34;评论框美化：&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;padding&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;44&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;veditor&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;min-height&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;rem&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;resize&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vedit&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;padding-top&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vheader&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;bottom&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;absolute&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;background&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;#f7f7f7&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vinput&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;padding&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vheader&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vinput&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;border-bottom&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vedit&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vctrl&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;-44&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;right&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;absolute&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;margin-right&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;-3&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vcontrol&lt;/span&gt;{    &lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;absolute&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;right&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;bottom&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;padding-top&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vcontrol&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;col&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;col-80&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vbtn&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;vsubmit&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;border-radius&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;padding&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;#fff&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;line-height&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;44&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;border&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;background&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;#1abc9c&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vedit&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vctrl&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;vpreview-btn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vcontrol&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;col&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;col-20&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vlist&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vcard&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vhead&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vsys&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;}
+@&lt;span style=&#34;color:#66d9ef&#34;&gt;media&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;screen&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;max-width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;520px&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;{
+	.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vheader&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vinput&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;33.33&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;padding&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于 LeanCloud 的评论系统：Valine</title>
+      <link>https://immmmm.com/valine-by-leancloud-cn/</link>
+      <pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/valine-by-leancloud-cn/</guid>
+      <description>Valine 官网： https://valine.js.org/ Valine Admin 云引擎： https://deserts.io/valine-admin-document/ 安装过程略过不表，目前还存在一个问题，通过使用： //unpkg.com/valine@1.3.6/dist/Valine.min.js 指定 1.3.6 版本解决，官方最新的 1.3.9 报错，官网自用的 1.3.10 没问题，但还没更新至 CDN。另外这个 Valine Admin 云引擎方便，顾名思义，安装完毕后可通过 LeanCloud 的二级域名管理评论，相当于给 Valine 增加了个评论管理后台。 另外，昨天绑定域名方式由原来</description>
+    </item>
+    
+    <item>
+      <title>微信小程序：校园云待办</title>
+      <link>https://immmmm.com/weapp-cloud-todo/</link>
+      <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/weapp-cloud-todo/</guid>
+      <description>&lt;p&gt;点击“点击设置团队名”，添加团队名为“吃土”，OK，欢迎来撩~&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2018/08/todo.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>微信小程序：校园添衣阁</title>
+      <link>https://immmmm.com/weapp-tian-yi-ge/</link>
+      <pubDate>Thu, 16 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/weapp-tian-yi-ge/</guid>
+      <description>欢迎扫码体验~</description>
+    </item>
+    
+    <item>
+      <title>Bitcron 在 Feed 里排除某个分类</title>
+      <link>https://immmmm.com/bitcron-exclude-cat-from-feed/</link>
+      <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/bitcron-exclude-cat-from-feed/</guid>
+      <description>&lt;p&gt;无视了文档的 &lt;code&gt;status: false&lt;/code&gt; ，直接在 feed 中更新，大 BUG 啊！&lt;/p&gt;
+&lt;p&gt;官方文档 &lt;a href=&#34;https://api.bitcron.com/read/builtin-codes-files#toc_0&#34;&gt;feed.jade&lt;/a&gt; 中是获取最近 10 篇文章：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-jade&#34; data-lang=&#34;jade&#34;&gt;feed_posts = posts.recent_10
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;要想排除某个分类，其实也就是 &lt;strong&gt;某个文件夹&lt;/strong&gt;，只要在这里改动。经过超出预习的测试，暂且改为：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Telegram 使用小记</title>
+      <link>https://immmmm.com/telegram-linmumu/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/telegram-linmumu/</guid>
+      <description>&lt;h3 id=&#34;user&#34;&gt;user&lt;/h3&gt;
+&lt;p&gt;@linmumu： &lt;a href=&#34;https://t.me/linmumu&#34;&gt;https://t.me/linmumu&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;group&#34;&gt;Group&lt;/h3&gt;
+&lt;p&gt;Bitcron 中文圈： &lt;a href=&#34;https://t.me/bitcron&#34;&gt;https://t.me/bitcron&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于 LeanCloud 实现文章点赞</title>
+      <link>https://immmmm.com/zan-by-leancloud-cn/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/zan-by-leancloud-cn/</guid>
+      <description>&lt;p class=&#34;md_block&#34; style=&#34;text-align:center;&#34;&gt;&lt;img class=&#34;md_compiled&#34; src=&#34;https://lmm.elizen.me/images/2018/01/zan.gif&#34; alt=&#34;zan.gif&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;leancloud&#34;&gt;LeanCloud&lt;/h3&gt;
+&lt;p&gt;1、&lt;a href=&#34;http://leancloud.cn/login.html?refuser=lmm214#/signup&#34;&gt;注册 LeanCloud&lt;/a&gt; ，创建应用，创建 Class（相当数据库），权限改为“无限制”。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2018/01/zan-1.png&#34; alt=&#34;zan-1.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>换个法儿添加评论表情</title>
+      <link>https://immmmm.com/bitcron-add-comment-smilie/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/bitcron-add-comment-smilie/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://lmm.elizen.me/images/2018/01/smilie-1.png&#34; alt=&#34;&#34;/&gt;
+    &lt;figcaption&gt;效果如上&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;实现思路也比较简单，丢图片-&amp;gt;丢HTML-&amp;gt;丢JS，然后加载！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>添加文章点赞功能</title>
+      <link>https://immmmm.com/zan-by-coding-net/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/zan-by-coding-net/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;zan-by-leancloud-cn&#34;&gt;zan-by-leancloud-cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;以下内容已弃用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;JS &amp;amp; SCSS 压缩包下载，一般丢至主题 &lt;code&gt;template&lt;/code&gt; 内,然后在 &lt;code&gt;post.jade&lt;/code&gt; 加载即可：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-jade&#34; data-lang=&#34;jade&#34;&gt;+h.load(&amp;quot;/fb_static/lib/jquery.js&amp;quot;,&amp;quot;/template/include/zan.scss&amp;quot;,&amp;quot;/template/include/zan.js&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitcron 文章内插入豆瓣条目</title>
+      <link>https://immmmm.com/bitcron-show-douban-item/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/bitcron-show-douban-item/</guid>
+      <description>&lt;h3 id=&#34;调取代码&#34;&gt;调取代码：&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/06/douban_id.jpg&#34; alt=&#34;show-douban&#34;&gt;&lt;/p&gt;
+&lt;p&gt;下载解压丢至 &lt;code&gt;template&lt;/code&gt; 文件夹： &lt;a href=&#34;https://lmm.elizen.me/images/2019/06/template_20190618.zip&#34;&gt;template_20190618.zip&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;id&lt;/code&gt; 是电影或书籍页面 &lt;a href=&#34;https://movie.douban.com/subject/26862829/&#34;&gt;https://movie.douban.com/subject/26862829/&lt;/a&gt; 后面的数字 &lt;code&gt;26862829&lt;/code&gt;  。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;type&lt;/code&gt; 是 &lt;code&gt;movie&lt;/code&gt; 或 &lt;code&gt;book&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitcron 评论框的几件事</title>
+      <link>https://immmmm.com/bitcron-diy-comment-template/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/bitcron-diy-comment-template/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/diy-comment-1.png&#34; alt=&#34;&#34;/&gt;              &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/diy-comment-2.png&#34; alt=&#34;&#34;/&gt;
+    &lt;figcaption&gt;前后对比&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;代码懒得贴啦，需要的看源码吧&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自动识别外链并添加图标</title>
+      <link>https://immmmm.com/auto-outlinks-add-iconfont/</link>
+      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/auto-outlinks-add-iconfont/</guid>
+      <description>&lt;p&gt;效果测试：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/&#34;&gt;推特&lt;/a&gt; &lt;a href=&#34;https://web.wechat.com/&#34;&gt;微信&lt;/a&gt; &lt;a href=&#34;https://weibo.com/&#34;&gt;微博&lt;/a&gt; &lt;a href=&#34;https://www.facebook.com&#34;&gt;脸书&lt;/a&gt; &lt;a href=&#34;https://www.google.com&#34;&gt;谷歌&lt;/a&gt; &lt;a href=&#34;https://github.com/&#34;&gt;Github&lt;/a&gt; &lt;a href=&#34;https://movie.douban.com/&#34;&gt;豆瓣&lt;/a&gt; &lt;a href=&#34;https://www.v2ex.com/&#34;&gt;V2EX&lt;/a&gt; &lt;a href=&#34;https://www.zhihu.com/&#34;&gt;知乎&lt;/a&gt; &lt;a href=&#34;https://zh.wikipedia.org&#34;&gt;维基百科&lt;/a&gt; &lt;a href=&#34;http://jianshu.io/&#34;&gt;简书&lt;/a&gt; &lt;a href=&#34;http://youku.com/&#34;&gt;优酷&lt;/a&gt; &lt;a href=&#34;https://www.youtube.com/&#34;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;功能代码来自： &lt;a href=&#34;https://github.com/foru17/Yasuko&#34;&gt;@罗磊&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitcron 显示相对时间</title>
+      <link>https://immmmm.com/bitcron-show-relative-time/</link>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/bitcron-show-relative-time/</guid>
+      <description>&lt;p&gt;已更新下面这货！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tokinx.github.io/lately/&#34;&gt;Lately.js&lt;/a&gt;：基于jQuery ，仅 800 字节却强大、好用的&amp;rsquo;Timeago&#39;插件。&lt;/p&gt;
+&lt;p&gt;逻辑：年月相同继续（否，显示“常规日期”），日相同继续（否，显示“发布于几天前”），小时相同继续（否，显示“发布于几小时前”），分相同显示“刚刚发布”（否，显示“发布于几分钟前”）&lt;/p&gt;
+&lt;p&gt;BUG也明显，不能跨月，跨了如12月31日23时59秒发的文，1月1日00时01分来看也是显示常规的。找不到时间戳的api及计算，只想到用这个笨办法。&lt;/p&gt;
+&lt;p&gt;代码如下：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitcron 显示最后更新时间</title>
+      <link>https://immmmm.com/bitcron-show-last-update/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/bitcron-show-last-update/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;需求点：很多教程文章会多次修改，显示文章最后的修改时间，就显得非常有必要。效果图如下：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/last-1.png&#34; alt=&#34;&#34; /&gt;
+    &lt;figcaption&gt;显示最后更新时间&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;利用了 &lt;code&gt;sys_date&lt;/code&gt; 这属性，格式化为 &lt;code&gt;%Y%j&lt;/code&gt;，其中 &lt;code&gt;%j&lt;/code&gt; 表示一年中的第几天，所以 &lt;strong&gt;判断发布与修改不是同一日&lt;/strong&gt; ，则显示。相关代码如下：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitcron 美化评论回复通知</title>
+      <link>https://immmmm.com/bitcron-diy-mail-template/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/bitcron-diy-mail-template/</guid>
+      <description>&lt;p&gt;之前用 WordPress 的时候，评论的邮件通知也算是个折腾点，PHP的回复样式和内容随便自己写，相比较而言 Bitcron 源码未公布，Jade 都改名 Pug，折腾测试全凭感觉。所幸，没白折腾，效果如下：&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/mail-1.png&#34; alt=&#34;&#34; style=&#34;width:30%&#34;/&gt;              &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/mail-0.png&#34; alt=&#34;&#34; style=&#34;width:30%&#34;/&gt;
+    &lt;figcaption&gt;样式对比&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;官方介绍：&lt;a href=&#34;https://api.bitcron.com/read/others#toc_6&#34;&gt;https://api.bitcron.com/read/others#toc_6&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitcron 实现个性友情链接页</title>
+      <link>https://immmmm.com/bitcron-cool-links-page/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/bitcron-cool-links-page/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2017/12/links-1.png&#34; alt=&#34;我的朋友们&#34;&gt;&lt;/p&gt;
+&lt;p&gt;具体效果见：&lt;a href=&#34;https://immmmm.com/friends&#34;&gt;https://immmmm.com/friends&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>为八口打 Call ！！！</title>
+      <link>https://immmmm.com/demo-shuiba-co/</link>
+      <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/demo-shuiba-co/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;一个字：服！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;01你好呀&#34;&gt;01「你好呀」&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2017/12/shuiba-01.jpg&#34; alt=&#34;shuiba-01&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;预览httpsdemoshuibacotemplate_prefix0120hello-介绍httpsblogshuibacobitcron-theme-hello&#34;&gt;&lt;a href=&#34;https://demo.shuiba.co/?template_prefix=01%20hello&#34;&gt;[预览]&lt;/a&gt; &lt;a href=&#34;https://blog.shuiba.co/bitcron-theme-hello&#34;&gt;[介绍]&lt;/a&gt;&lt;/h5&gt;
+&lt;h3 id=&#34;02庸&#34;&gt;02「庸」&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2017/12/shuiba-02.jpg&#34; alt=&#34;shuiba-02&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;预览httpsdemoshuibacotemplate_prefix0220ordinary-介绍httpsblogshuibacobitcron-theme-ordinary&#34;&gt;&lt;a href=&#34;https://demo.shuiba.co/?template_prefix=02%20ordinary&#34;&gt;[预览]&lt;/a&gt; &lt;a href=&#34;https://blog.shuiba.co/bitcron-theme-ordinary&#34;&gt;[介绍]&lt;/a&gt;&lt;/h5&gt;</description>
+    </item>
+    
+    <item>
       <title>Bitcron 一站搞定多主题预览</title>
       <link>https://immmmm.com/bitcron-multi-theme-preview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/bitcron-multi-theme-preview/</guid>
       <description>&lt;p&gt;起源： &lt;a href=&#34;https://pi.bitcron.com/post/wen-da/2017-12/2017-12-11-13-32-39#main&#34;&gt;网站上适用不同自定义主题&lt;/a&gt;&lt;/p&gt;
@@ -243,105 +515,9 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </item>
     
     <item>
-      <title>Bitcron 主题「Motify」</title>
-      <link>https://immmmm.com/bitcron-theme-motify/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-theme-motify/</guid>
-      <description>&lt;figure&gt;
-    &lt;img src=&#34;https://lmm.elizen.me/images/2017/07/motify.jpg&#34; alt=&#34;Bitcron 主题「Motify」&#34; /&gt;
-    &lt;figcaption&gt;Github 地址： &lt;a href=&#34;https://github.com/lmm214/Bitcron-Theme-Motify&#34;&gt;Motify&lt;/a&gt; &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;h3 id=&#34;主题简介&#34;&gt;主题简介&lt;/h3&gt;
-&lt;p&gt;自扒 WordPress 同名主题，支持：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;头部背景自定义&lt;/li&gt;
-&lt;li&gt;“相册”、“一句话”特色文章样式&lt;/li&gt;
-&lt;li&gt;社交图标包含：Twitter、Instagram、Github、Flickr、微博、Facebook。&lt;/li&gt;
-&lt;li&gt;自动识别外链并新窗口打开&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bitcron 主题常用的代码片段</title>
-      <link>https://immmmm.com/bitcron-template-code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-template-code/</guid>
-      <description>&lt;h3 id=&#34;全站-site&#34;&gt;全站 Site&lt;/h3&gt;
-&lt;p&gt;标题：&lt;code&gt;site.title&lt;/code&gt;，示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-jade&#34; data-lang=&#34;jade&#34;&gt;a(href=&amp;quot;/&amp;quot;)= site.title
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;副标题：&lt;code&gt;site.sub_title&lt;/code&gt;，示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-jade&#34; data-lang=&#34;jade&#34;&gt;if site.sub_title
-	h2.site-description= site.sub_title]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;关键词：&lt;code&gt;site.keywords&lt;/code&gt;
-描述：&lt;code&gt;site.description&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;站点头像：&lt;code&gt;site.avatar&lt;/code&gt;
-背景：&lt;code&gt;site.background_image&lt;/code&gt;，示例：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-jade&#34; data-lang=&#34;jade&#34;&gt;header#header(style=&amp;quot;background-image:url({{site.background_image}})&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当下年份：&lt;code&gt;site.now.year&lt;/code&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bitcron 主题集</title>
-      <link>https://immmmm.com/bitcron-themes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-themes/</guid>
-      <description>demo-shuiba-co 主题名(-) | 链接(-) Bedford | [预览](https://blog-bedford--theme.bitcron.com/) [源码](https://github.com/pagecho/Bedford) Akina | [预览](https://akina.0x400.bitcron.com/</description>
-    </item>
-    
-    <item>
-      <title>Bitcron 关闭某篇文章评论</title>
-      <link>https://immmmm.com/bitcron-close-post-comments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-close-post-comments/</guid>
-      <description>&lt;p&gt;捂脸，遁之……&lt;/p&gt;
-&lt;p&gt;文章直接添加下句即可:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;comment: no
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bitcron 在 Feed 里排除某个分类</title>
-      <link>https://immmmm.com/bitcron-exclude-cat-from-feed/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-exclude-cat-from-feed/</guid>
-      <description>&lt;p&gt;无视了文档的 &lt;code&gt;status: false&lt;/code&gt; ，直接在 feed 中更新，大 BUG 啊！&lt;/p&gt;
-&lt;p&gt;官方文档 &lt;a href=&#34;https://api.bitcron.com/read/builtin-codes-files#toc_0&#34;&gt;feed.jade&lt;/a&gt; 中是获取最近 10 篇文章：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-jade&#34; data-lang=&#34;jade&#34;&gt;feed_posts = posts.recent_10
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;要想排除某个分类，其实也就是 &lt;strong&gt;某个文件夹&lt;/strong&gt;，只要在这里改动。经过超出预习的测试，暂且改为：&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bitcron 实现个性友情链接页</title>
-      <link>https://immmmm.com/bitcron-cool-links-page/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-cool-links-page/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2017/12/links-1.png&#34; alt=&#34;我的朋友们&#34;&gt;&lt;/p&gt;
-&lt;p&gt;具体效果见：&lt;a href=&#34;https://immmmm.com/friends&#34;&gt;https://immmmm.com/friends&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bitcron 文章内插入豆瓣条目</title>
-      <link>https://immmmm.com/bitcron-show-douban-item/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-show-douban-item/</guid>
-      <description>&lt;h3 id=&#34;调取代码&#34;&gt;调取代码：&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/06/douban_id.jpg&#34; alt=&#34;show-douban&#34;&gt;&lt;/p&gt;
-&lt;p&gt;下载解压丢至 &lt;code&gt;template&lt;/code&gt; 文件夹： &lt;a href=&#34;https://lmm.elizen.me/images/2019/06/template_20190618.zip&#34;&gt;template_20190618.zip&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;id&lt;/code&gt; 是电影或书籍页面 &lt;a href=&#34;https://movie.douban.com/subject/26862829/&#34;&gt;https://movie.douban.com/subject/26862829/&lt;/a&gt; 后面的数字 &lt;code&gt;26862829&lt;/code&gt;  。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;type&lt;/code&gt; 是 &lt;code&gt;movie&lt;/code&gt; 或 &lt;code&gt;book&lt;/code&gt;。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Bitcron 文章内运行代码实例一则</title>
       <link>https://immmmm.com/bitcron-article-run-code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/bitcron-article-run-code/</guid>
       <description>&lt;p&gt;Bitcron 文章里是可以直接运行代码的，只要把代码高亮类型设置成 &lt;code&gt;code&lt;/code&gt; 即可。&lt;/p&gt;
@@ -352,7 +528,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     <item>
       <title>Bitcron 文章内链自动优化显示</title>
       <link>https://immmmm.com/bitcron-auto-article-refer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/bitcron-auto-article-refer/</guid>
       <description>&lt;blockquote&gt;
@@ -363,153 +539,54 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </item>
     
     <item>
-      <title>Bitcron 显示最后更新时间</title>
-      <link>https://immmmm.com/bitcron-show-last-update/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>给 Bitcron 评论添加 OwO 表情</title>
+      <link>https://immmmm.com/bitcron-add-owo-similies/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://immmmm.com/bitcron-show-last-update/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;需求点：很多教程文章会多次修改，显示文章最后的修改时间，就显得非常有必要。效果图如下：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/last-1.png&#34; alt=&#34;&#34; /&gt;
-    &lt;figcaption&gt;显示最后更新时间&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;利用了 &lt;code&gt;sys_date&lt;/code&gt; 这属性，格式化为 &lt;code&gt;%Y%j&lt;/code&gt;，其中 &lt;code&gt;%j&lt;/code&gt; 表示一年中的第几天，所以 &lt;strong&gt;判断发布与修改不是同一日&lt;/strong&gt; ，则显示。相关代码如下：&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bitcron 显示相对时间</title>
-      <link>https://immmmm.com/bitcron-show-relative-time/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-show-relative-time/</guid>
-      <description>&lt;p&gt;已更新下面这货！&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://tokinx.github.io/lately/&#34;&gt;Lately.js&lt;/a&gt;：基于jQuery ，仅 800 字节却强大、好用的&amp;rsquo;Timeago&#39;插件。&lt;/p&gt;
-&lt;p&gt;逻辑：年月相同继续（否，显示“常规日期”），日相同继续（否，显示“发布于几天前”），小时相同继续（否，显示“发布于几小时前”），分相同显示“刚刚发布”（否，显示“发布于几分钟前”）&lt;/p&gt;
-&lt;p&gt;BUG也明显，不能跨月，跨了如12月31日23时59秒发的文，1月1日00时01分来看也是显示常规的。找不到时间戳的api及计算，只想到用这个笨办法。&lt;/p&gt;
-&lt;p&gt;代码如下：&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bitcron 美化评论回复通知</title>
-      <link>https://immmmm.com/bitcron-diy-mail-template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-diy-mail-template/</guid>
-      <description>&lt;p&gt;之前用 WordPress 的时候，评论的邮件通知也算是个折腾点，PHP的回复样式和内容随便自己写，相比较而言 Bitcron 源码未公布，Jade 都改名 Pug，折腾测试全凭感觉。所幸，没白折腾，效果如下：&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/mail-1.png&#34; alt=&#34;&#34; style=&#34;width:30%&#34;/&gt;              &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/mail-0.png&#34; alt=&#34;&#34; style=&#34;width:30%&#34;/&gt;
-    &lt;figcaption&gt;样式对比&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;官方介绍：&lt;a href=&#34;https://api.bitcron.com/read/others#toc_6&#34;&gt;https://api.bitcron.com/read/others#toc_6&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bitcron 评论框的几件事</title>
-      <link>https://immmmm.com/bitcron-diy-comment-template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-diy-comment-template/</guid>
+      <guid>https://immmmm.com/bitcron-add-owo-similies/</guid>
       <description>&lt;figure&gt;
-    &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/diy-comment-1.png&#34; alt=&#34;&#34;/&gt;              &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/diy-comment-2.png&#34; alt=&#34;&#34;/&gt;
-    &lt;figcaption&gt;前后对比&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;代码懒得贴啦，需要的看源码吧&lt;/p&gt;</description>
+    &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/owo-1.png&#34; /&gt;
+    &lt;figcaption&gt;OwO 表情&lt;/figcaption&gt;
+&lt;/figure&gt;</description>
     </item>
     
     <item>
-      <title>Canvas 手写输入法</title>
-      <link>https://immmmm.com/qq-handwrite-typewriting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>即时编辑 Bitcron 文章和评论</title>
+      <link>https://immmmm.com/bitcron-edit-article-and-comments/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://immmmm.com/qq-handwrite-typewriting/</guid>
-      <description>xuebihua-cn 在整合完“写笔画”网站后，考虑到大屏上输入文字不太方便，搜索一圈发现以下代码：web版手写输入法 ，利用了 QQ输入法的手写 handwritingapi.js 接口，不过文中添加的仅是鼠标事件，移动端的触摸事件不支持。 折腾到凌晨实在搞不定，求助了 @牧风 后依然卡壳，之后发现QQ输入法的鼠标定位值和 Canvas 直接触摸定位值不同</description>
+      <guid>https://immmmm.com/bitcron-edit-article-and-comments/</guid>
+      <description>&lt;p&gt;Bitcron 后台是有个“文件管理器”的功能，完全可依此在 WEB 端管理自己的博客。偶尔想修改下文章内的错别字或删除个垃圾评论，会手动输入 &lt;a href=&#34;https://us.bitcron.com/&#34;&gt;https://us.bitcron.com/&lt;/a&gt; ，然后进入相应的文件里进行修改。&lt;/p&gt;
+&lt;p&gt;其实，直接访问以下链接同样可以&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://us.bitcron.com/service/files_manager?site_id=&#34;&gt;https://us.bitcron.com/service/files_manager?site_id=&lt;/a&gt;站点ID.bitcron.com#pages/文件名.md
+&lt;a href=&#34;https://us.bitcron.com/service/files_manager?site_id=&#34;&gt;https://us.bitcron.com/service/files_manager?site_id=&lt;/a&gt;站点ID.bitcron.com#_comments/pages/文件名.csv&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>OLAINDEX 搭建笔记</title>
-      <link>https://immmmm.com/olaindex-onedrive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>微信小程序：巡礼头像编辑器</title>
+      <link>https://immmmm.com/weapp-round-avatar-builder/</link>
+      <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://immmmm.com/olaindex-onedrive/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://wangningkai.github.io/OLAINDEX/#/?id=olaindex&#34;&gt;OLAINDEX&lt;/a&gt;：Another One Drrive Directory Index&lt;/p&gt;
-&lt;p&gt;最后遇到id和密钥无法保存，输入下面命令解决。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;chmod 777 storage/app/
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;支持前端上传文件，大赞！&lt;/p&gt;</description>
+      <guid>https://immmmm.com/weapp-round-avatar-builder/</guid>
+      <description>巡礼头像编辑器 看到人大80周年网页版的头像生成器，试了一试微信小程序，花了一个周末也就搞定之！ 感谢 we-cropper 作者，上传图片手势缩放裁剪一条龙。 源码托管： https://coding.net/u/lmm214/p/weapp-round-avatar-builder/git</description>
     </item>
     
     <item>
-      <title>Telegram 使用小记</title>
-      <link>https://immmmm.com/telegram-linmumu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Bitcron 关闭某篇文章评论</title>
+      <link>https://immmmm.com/bitcron-close-post-comments/</link>
+      <pubDate>Wed, 09 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://immmmm.com/telegram-linmumu/</guid>
-      <description>&lt;h3 id=&#34;user&#34;&gt;user&lt;/h3&gt;
-&lt;p&gt;@linmumu： &lt;a href=&#34;https://t.me/linmumu&#34;&gt;https://t.me/linmumu&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;group&#34;&gt;Group&lt;/h3&gt;
-&lt;p&gt;Bitcron 中文圈： &lt;a href=&#34;https://t.me/bitcron&#34;&gt;https://t.me/bitcron&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Valine 文章列表显示评论数和阅读数</title>
-      <link>https://immmmm.com/valine-show-comment-views/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/valine-show-comment-views/</guid>
-      <description>&lt;p&gt;回头一看 Valine 已使用半年，除早前国内版 Leancloud 出现&lt;strong&gt;被&lt;/strong&gt;宕机，整体还算稳。&lt;/p&gt;
-&lt;p&gt;闲着寻思到 Valine 能否在首页文章列表中显示对应的「评论数」和「阅读数」，查阅了文档（只有阅读数代码）和issue，好家伙,竟然 &lt;a href=&#34;https://github.com/xCss/Valine/releases/tag/v1.1.8-beta2&#34;&gt;v1.1.8-beta2&lt;/a&gt; 已实现！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Valine 评论框美化及功能优化</title>
-      <link>https://immmmm.com/valine-diy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/valine-diy/</guid>
-      <description>&lt;p&gt;以下修改不涉及 Valine 源码的改动，防止后续官方更新还得再来一边。因此，相关 css、js 代码得放在调取 &lt;code&gt;valine.min.js&lt;/code&gt; 之后。&lt;/p&gt;
-&lt;h3 id=&#34;评论框美化&#34;&gt;评论框美化：&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/07/plk.jpg&#34; alt=&#34;评论框美化：&#34;&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;padding&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;44&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;veditor&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;min-height&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;rem&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;resize&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vedit&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;padding-top&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vheader&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;bottom&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;absolute&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;background&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;#f7f7f7&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vinput&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;padding&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vheader&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vinput&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;border-bottom&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vedit&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vctrl&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;-44&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;right&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;absolute&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;margin-right&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;-3&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vcontrol&lt;/span&gt;{    &lt;span style=&#34;color:#66d9ef&#34;&gt;position&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;absolute&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;right&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;bottom&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;padding-top&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vcontrol&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;col&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;col-80&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vbtn&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;vsubmit&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;border-radius&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;padding&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;#fff&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;line-height&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;44&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;border&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;background&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;#1abc9c&lt;/span&gt;;}.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vedit&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vctrl&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;span&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;vpreview-btn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vcontrol&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;col&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;col-20&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vlist&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vcard&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vhead&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vsys&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;}
-@&lt;span style=&#34;color:#66d9ef&#34;&gt;media&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;screen&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;max-width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;520px&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;{
-	.&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vwrap&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vheader&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;vinput&lt;/span&gt;{&lt;span style=&#34;color:#66d9ef&#34;&gt;width&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;33.33&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;%&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;padding&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;;}
-}
+      <guid>https://immmmm.com/bitcron-close-post-comments/</guid>
+      <description>&lt;p&gt;捂脸，遁之……&lt;/p&gt;
+&lt;p&gt;文章直接添加下句即可:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;comment: no
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>“学笔画”折腾小记</title>
-      <link>https://immmmm.com/xuebihua-cn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/xuebihua-cn/</guid>
-      <description>&lt;p&gt;点击体验→ &lt;a href=&#34;https://xuebihua.cn&#34;&gt;https://xuebihua.cn&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/07/xuebihua_qr.png&#34; alt=&#34;xuebihua_qr&#34;&gt;&lt;/p&gt;
-&lt;p&gt;刷着阮一峰的 weekly 看到了 &lt;a href=&#34;https://chanind.github.io/hanzi-writer/cn/&#34;&gt;Hanzi Writer&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 这个项目，发现笔顺的动画比较自然，还能在 svg 上手写练习，最重要的是看看 demo 好像上手比较简单，实际也如此。&lt;/p&gt;
-&lt;p&gt;功能代码非常好使，基本折腾在界面和陌生的代码上，比如想让 svg 自适应，搜索测试一晚发现还是以下代码好使：&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>为八口打 Call ！！！</title>
-      <link>https://immmmm.com/demo-shuiba-co/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/demo-shuiba-co/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;一个字：服！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;01你好呀&#34;&gt;01「你好呀」&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2017/12/shuiba-01.jpg&#34; alt=&#34;shuiba-01&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;预览httpsdemoshuibacotemplate_prefix0120hello-介绍httpsblogshuibacobitcron-theme-hello&#34;&gt;&lt;a href=&#34;https://demo.shuiba.co/?template_prefix=01%20hello&#34;&gt;[预览]&lt;/a&gt; &lt;a href=&#34;https://blog.shuiba.co/bitcron-theme-hello&#34;&gt;[介绍]&lt;/a&gt;&lt;/h5&gt;
-&lt;h3 id=&#34;02庸&#34;&gt;02「庸」&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2017/12/shuiba-02.jpg&#34; alt=&#34;shuiba-02&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;预览httpsdemoshuibacotemplate_prefix0220ordinary-介绍httpsblogshuibacobitcron-theme-ordinary&#34;&gt;&lt;a href=&#34;https://demo.shuiba.co/?template_prefix=02%20ordinary&#34;&gt;[预览]&lt;/a&gt; &lt;a href=&#34;https://blog.shuiba.co/bitcron-theme-ordinary&#34;&gt;[介绍]&lt;/a&gt;&lt;/h5&gt;</description>
     </item>
     
     <item>
       <title>决战24点（HTML5）开发小记</title>
       <link>https://immmmm.com/pk24go-cn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/pk24go-cn/</guid>
       <description>&lt;p&gt;点击体验：&lt;a href=&#34;https://pk24go.cn&#34;&gt;https://pk24go.cn&lt;/a&gt;&lt;/p&gt;
@@ -521,166 +598,9 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </item>
     
     <item>
-      <title>即时编辑 Bitcron 文章和评论</title>
-      <link>https://immmmm.com/bitcron-edit-article-and-comments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-edit-article-and-comments/</guid>
-      <description>&lt;p&gt;Bitcron 后台是有个“文件管理器”的功能，完全可依此在 WEB 端管理自己的博客。偶尔想修改下文章内的错别字或删除个垃圾评论，会手动输入 &lt;a href=&#34;https://us.bitcron.com/&#34;&gt;https://us.bitcron.com/&lt;/a&gt; ，然后进入相应的文件里进行修改。&lt;/p&gt;
-&lt;p&gt;其实，直接访问以下链接同样可以&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://us.bitcron.com/service/files_manager?site_id=&#34;&gt;https://us.bitcron.com/service/files_manager?site_id=&lt;/a&gt;站点ID.bitcron.com#pages/文件名.md
-&lt;a href=&#34;https://us.bitcron.com/service/files_manager?site_id=&#34;&gt;https://us.bitcron.com/service/files_manager?site_id=&lt;/a&gt;站点ID.bitcron.com#_comments/pages/文件名.csv&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>基于 LeanCloud 实现文章点赞</title>
-      <link>https://immmmm.com/zan-by-leancloud-cn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/zan-by-leancloud-cn/</guid>
-      <description>&lt;p class=&#34;md_block&#34; style=&#34;text-align:center;&#34;&gt;&lt;img class=&#34;md_compiled&#34; src=&#34;https://lmm.elizen.me/images/2018/01/zan.gif&#34; alt=&#34;zan.gif&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;leancloud&#34;&gt;LeanCloud&lt;/h3&gt;
-&lt;p&gt;1、&lt;a href=&#34;http://leancloud.cn/login.html?refuser=lmm214#/signup&#34;&gt;注册 LeanCloud&lt;/a&gt; ，创建应用，创建 Class（相当数据库），权限改为“无限制”。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2018/01/zan-1.png&#34; alt=&#34;zan-1.png&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>基于 LeanCloud 的评论系统：Valine</title>
-      <link>https://immmmm.com/valine-by-leancloud-cn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/valine-by-leancloud-cn/</guid>
-      <description>Valine 官网： https://valine.js.org/ Valine Admin 云引擎： https://deserts.io/valine-admin-document/ 安装过程略过不表，目前还存在一个问题，通过使用： //unpkg.com/valine@1.3.6/dist/Valine.min.js 指定 1.3.6 版本解决，官方最新的 1.3.9 报错，官网自用的 1.3.10 没问题，但还没更新至 CDN。另外这个 Valine Admin 云引擎方便，顾名思义，安装完毕后可通过 LeanCloud 的二级域名管理评论，相当于给 Valine 增加了个评论管理后台。 另外，昨天绑定域名方式由原来</description>
-    </item>
-    
-    <item>
-      <title>微信公众平台开发小记</title>
-      <link>https://immmmm.com/wechat-public-platform-development/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/wechat-public-platform-development/</guid>
-      <description>&lt;p&gt;微信公众平台开发，个人申请只能订阅号，虽能开启开发者模式，可这权限令人发指！借助“微信开放平台”中的第三方，通过简单的“授权管理”做到各尽其能、互不干扰。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2016/10/dyh-dsf.jpg&#34; alt=&#34;dyh-dsf.jpg&#34;&gt;&lt;/p&gt;
-&lt;h3&gt;自定义菜单&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;微之家&lt;/strong&gt;：&lt;a href=&#34;https://www.iweizhijia.com&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;https://www.iweizhijia.com&#34;&gt;https://www.iweizhijia.com&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2016/10/dyh-1.jpg&#34; alt=&#34;dyh-1.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;其中菜单内容的“发送消息”、“跳转网页”，当然选择后者，点击菜单后直接显示内容。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>微信小程序：小学数学电子教材</title>
-      <link>https://immmmm.com/weapp-er-xiao-zhi-zao/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/weapp-er-xiao-zhi-zao/</guid>
-      <description>&lt;p&gt;欢迎扫码体验~&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/xxdzjc.JPG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>微信小程序：巡礼头像编辑器</title>
-      <link>https://immmmm.com/weapp-round-avatar-builder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/weapp-round-avatar-builder/</guid>
-      <description>巡礼头像编辑器 看到人大80周年网页版的头像生成器，试了一试微信小程序，花了一个周末也就搞定之！ 感谢 we-cropper 作者，上传图片手势缩放裁剪一条龙。 源码托管： https://coding.net/u/lmm214/p/weapp-round-avatar-builder/git</description>
-    </item>
-    
-    <item>
-      <title>微信小程序：校园云待办</title>
-      <link>https://immmmm.com/weapp-cloud-todo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/weapp-cloud-todo/</guid>
-      <description>&lt;p&gt;点击“点击设置团队名”，添加团队名为“吃土”，OK，欢迎来撩~&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2018/08/todo.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>微信小程序：校园添衣阁</title>
-      <link>https://immmmm.com/weapp-tian-yi-ge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/weapp-tian-yi-ge/</guid>
-      <description>欢迎扫码体验~</description>
-    </item>
-    
-    <item>
-      <title>换个法儿添加评论表情</title>
-      <link>https://immmmm.com/bitcron-add-comment-smilie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-add-comment-smilie/</guid>
-      <description>&lt;figure&gt;
-    &lt;img src=&#34;https://lmm.elizen.me/images/2018/01/smilie-1.png&#34; alt=&#34;&#34;/&gt;
-    &lt;figcaption&gt;效果如上&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;实现思路也比较简单，丢图片-&amp;gt;丢HTML-&amp;gt;丢JS，然后加载！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>添加文章点赞功能</title>
-      <link>https://immmmm.com/zan-by-coding-net/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/zan-by-coding-net/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;zan-by-leancloud-cn&#34;&gt;zan-by-leancloud-cn&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;以下内容已弃用&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;JS &amp;amp; SCSS 压缩包下载，一般丢至主题 &lt;code&gt;template&lt;/code&gt; 内,然后在 &lt;code&gt;post.jade&lt;/code&gt; 加载即可：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-jade&#34; data-lang=&#34;jade&#34;&gt;+h.load(&amp;quot;/fb_static/lib/jquery.js&amp;quot;,&amp;quot;/template/include/zan.scss&amp;quot;,&amp;quot;/template/include/zan.js&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>用 Typora 做了本电子书</title>
-      <link>https://immmmm.com/typora-paepub/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/typora-paepub/</guid>
-      <description>&lt;p&gt;网上有组系列文章想做成电子书，搜索 markdown 导出 epub，找到了 Typora 和 Pandoc，后者是纯命令行制作电子书，其实 Typora 的导出 epub 功能也是基于它的。制作流程非常简单，一篇篇文章打开直接复制标题、复制内容，TY直接识别成了 md 格式。点击文件&amp;ndash;导出&amp;ndash;epub，没安装会提示安装 pandoc，完成搞定。&lt;/p&gt;
-&lt;p&gt;第一次导出发现许久没完成，原来是文章里的图片无法顺利访问，得，看来这个插件不走秘密通道，此处我傻傻的一张张图片手动下载，其实可以利用这个功能：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/07/Moaz3D.jpg&#34; alt=&#34;pic&#34;&gt;&lt;/p&gt;
-&lt;p&gt;网页上图片右键 &lt;code&gt;复制图片&lt;/code&gt; 回编辑器直接 &lt;code&gt;Ctrl+V&lt;/code&gt; 粘贴，乖乖，图片自动下载！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>电报 Flowerss Bot 搭建笔记</title>
-      <link>https://immmmm.com/telegram-flowerss-bot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/telegram-flowerss-bot/</guid>
-      <description>&lt;p&gt;看中一点：支持 Telegram 应用内 instant view ！&lt;/p&gt;
-&lt;p&gt;点开即用：&lt;a href=&#34;https://t.me/rssflowbot&#34;&gt;https://t.me/rssflowbot&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;项目主页：&lt;a href=&#34;https://github.com/indes/flowerss-bot&#34;&gt;https://github.com/indes/flowerss-bot&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>给 Bitcron 评论添加 OwO 表情</title>
-      <link>https://immmmm.com/bitcron-add-owo-similies/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/bitcron-add-owo-similies/</guid>
-      <description>&lt;figure&gt;
-    &lt;img src=&#34;https://lmm.elizen.me/images/2017/12/owo-1.png&#34; /&gt;
-    &lt;figcaption&gt;OwO 表情&lt;/figcaption&gt;
-&lt;/figure&gt;</description>
-    </item>
-    
-    <item>
-      <title>自动识别外链并添加图标</title>
-      <link>https://immmmm.com/auto-outlinks-add-iconfont/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/auto-outlinks-add-iconfont/</guid>
-      <description>&lt;p&gt;效果测试：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/&#34;&gt;推特&lt;/a&gt; &lt;a href=&#34;https://web.wechat.com/&#34;&gt;微信&lt;/a&gt; &lt;a href=&#34;https://weibo.com/&#34;&gt;微博&lt;/a&gt; &lt;a href=&#34;https://www.facebook.com&#34;&gt;脸书&lt;/a&gt; &lt;a href=&#34;https://www.google.com&#34;&gt;谷歌&lt;/a&gt; &lt;a href=&#34;https://github.com/&#34;&gt;Github&lt;/a&gt; &lt;a href=&#34;https://movie.douban.com/&#34;&gt;豆瓣&lt;/a&gt; &lt;a href=&#34;https://www.v2ex.com/&#34;&gt;V2EX&lt;/a&gt; &lt;a href=&#34;https://www.zhihu.com/&#34;&gt;知乎&lt;/a&gt; &lt;a href=&#34;https://zh.wikipedia.org&#34;&gt;维基百科&lt;/a&gt; &lt;a href=&#34;http://jianshu.io/&#34;&gt;简书&lt;/a&gt; &lt;a href=&#34;http://youku.com/&#34;&gt;优酷&lt;/a&gt; &lt;a href=&#34;https://www.youtube.com/&#34;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;功能代码来自： &lt;a href=&#34;https://github.com/foru17/Yasuko&#34;&gt;@罗磊&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>识别外链并新窗口打开</title>
       <link>https://immmmm.com/new-tab-external-link/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://immmmm.com/new-tab-external-link/</guid>
       <description>&lt;p&gt;注：已对类似 toc 里的链接进行排除。&lt;/p&gt;
@@ -702,12 +622,92 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </item>
     
     <item>
-      <title>静态博客那些事</title>
-      <link>https://immmmm.com/about-html-blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Bitcron 主题常用的代码片段</title>
+      <link>https://immmmm.com/bitcron-template-code/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://immmmm.com/about-html-blog/</guid>
-      <description>一个周末耗在了静态博客部署方案上，目前使用了 Gridea + Coding 搭了个，欢迎围观： https://i.immmmm.com/ 也试了 Hexo + Travis CI ，部署好后是方便，只要把文件 git push 到监测的分支，或者直接在 Github 上写日志，Travis CI 就能自动生成静态文件到主分支上。但，Hexo 静态生成器与主题插件代码的问题，哎，折腾不起。 回说 Bitcron ，更新日志停留在 2017-09-12</description>
+      <guid>https://immmmm.com/bitcron-template-code/</guid>
+      <description>&lt;h3 id=&#34;全站-site&#34;&gt;全站 Site&lt;/h3&gt;
+&lt;p&gt;标题：&lt;code&gt;site.title&lt;/code&gt;，示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-jade&#34; data-lang=&#34;jade&#34;&gt;a(href=&amp;quot;/&amp;quot;)= site.title
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;副标题：&lt;code&gt;site.sub_title&lt;/code&gt;，示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-jade&#34; data-lang=&#34;jade&#34;&gt;if site.sub_title
+	h2.site-description= site.sub_title]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;关键词：&lt;code&gt;site.keywords&lt;/code&gt;
+描述：&lt;code&gt;site.description&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;站点头像：&lt;code&gt;site.avatar&lt;/code&gt;
+背景：&lt;code&gt;site.background_image&lt;/code&gt;，示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-jade&#34; data-lang=&#34;jade&#34;&gt;header#header(style=&amp;quot;background-image:url({{site.background_image}})&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当下年份：&lt;code&gt;site.now.year&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitcron 主题「Motify」</title>
+      <link>https://immmmm.com/bitcron-theme-motify/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/bitcron-theme-motify/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://lmm.elizen.me/images/2017/07/motify.jpg&#34; alt=&#34;Bitcron 主题「Motify」&#34; /&gt;
+    &lt;figcaption&gt;Github 地址： &lt;a href=&#34;https://github.com/lmm214/Bitcron-Theme-Motify&#34;&gt;Motify&lt;/a&gt; &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3 id=&#34;主题简介&#34;&gt;主题简介&lt;/h3&gt;
+&lt;p&gt;自扒 WordPress 同名主题，支持：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;头部背景自定义&lt;/li&gt;
+&lt;li&gt;“相册”、“一句话”特色文章样式&lt;/li&gt;
+&lt;li&gt;社交图标包含：Twitter、Instagram、Github、Flickr、微博、Facebook。&lt;/li&gt;
+&lt;li&gt;自动识别外链并新窗口打开&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitcron 主题集</title>
+      <link>https://immmmm.com/bitcron-themes/</link>
+      <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/bitcron-themes/</guid>
+      <description>demo-shuiba-co 主题名(-) | 链接(-) Bedford | [预览](https://blog-bedford--theme.bitcron.com/) [源码](https://github.com/pagecho/Bedford) Akina | [预览](https://akina.0x400.bitcron.com/</description>
+    </item>
+    
+    <item>
+      <title>微信公众平台开发小记</title>
+      <link>https://immmmm.com/wechat-public-platform-development/</link>
+      <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/wechat-public-platform-development/</guid>
+      <description>&lt;p&gt;微信公众平台开发，个人申请只能订阅号，虽能开启开发者模式，可这权限令人发指！借助“微信开放平台”中的第三方，通过简单的“授权管理”做到各尽其能、互不干扰。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2016/10/dyh-dsf.jpg&#34; alt=&#34;dyh-dsf.jpg&#34;&gt;&lt;/p&gt;
+&lt;h3&gt;自定义菜单&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;微之家&lt;/strong&gt;：&lt;a href=&#34;https://www.iweizhijia.com&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;https://www.iweizhijia.com&#34;&gt;https://www.iweizhijia.com&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2016/10/dyh-1.jpg&#34; alt=&#34;dyh-1.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;其中菜单内容的“发送消息”、“跳转网页”，当然选择后者，点击菜单后直接显示内容。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Slimbox2.js 图片灯箱自适应</title>
+      <link>https://immmmm.com/slimbox2-js-adaptive/</link>
+      <pubDate>Sat, 19 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/slimbox2-js-adaptive/</guid>
+      <description>&lt;p&gt;Github： &lt;a href=&#34;https://github.com/lmm214/slimbox2-lite&#34;&gt;slimbox2-lite&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;很久很久以前（喂，喂喂），很早很早以前（嘿！），好吧。以前发现只有几KB的图片灯箱特效 slimbox2 就瞬间被它征服了，不过这娃一直有个硬伤：&lt;/p&gt;
+&lt;p&gt;图片多大灯箱显示出来的图片就有多大。就是说，一旦图片比较大比如1800&lt;em&gt;1200，显示器只有1280&lt;/em&gt;800，那真是赤果果扑面而来啊！&lt;/p&gt;
+&lt;p&gt;虽然带着这个硬伤，还是把它作为哥发布的主题的标配！昨 @小黑黑 再一次向我反馈了这个情况，一下决心操起编辑器开试。吼，花了个把小时把 js 从头到尾读了N遍后，顺利搞定！修改部分如下：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>华为 HG8240 光猫路由设置方法</title>
+      <link>https://immmmm.com/huawei-hg8240-setting/</link>
+      <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/huawei-hg8240-setting/</guid>
+      <description>&lt;p&gt;开通了电信光纤入户，送的光猫是“华为 HG8240”，明明自带路由（可开机就自动拨号），可默认却隐藏了。高手在民间，以下方法来自网络，已试可用：&lt;/p&gt;
+&lt;h3&gt;一、设置本地连接属性。&lt;/h3&gt;
+&lt;p&gt;IP地址：&lt;code&gt;192.168.100.2&lt;/code&gt;（从 192.168.100.2~192.168.100.254 都可以），子网掩码：&lt;code&gt;255.255.255.0&lt;/code&gt;，默认网关：&lt;code&gt;192.168.100.1&lt;/code&gt;，DNS空着。&lt;/p&gt;
+&lt;h3&gt;二、查询 VLAN ID （portvid） 和 802.1p（PortPri）。&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2013/11/huawei-1.jpg&#34; alt=&#34;huawei-1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;方法： &lt;code&gt;Win+R&lt;/code&gt; 输入 &lt;code&gt;cmd&lt;/code&gt; 回车，再输入 &lt;code&gt;telnet 192.168.100.1&lt;/code&gt; 回车，等待出现“user：”输入 &lt;code&gt;root&lt;/code&gt; 回车，出现“password：”输入 &lt;code&gt;admin&lt;/code&gt; ，出现 ”WAP&amp;gt;“输入 &lt;code&gt;get port config portid 1&lt;/code&gt; 回车，得到端口1的 ”VLAN ID （portvid）“ 和 ”802.1p（PortPri）“值。&lt;/p&gt;</description>
     </item>
     
   </channel>

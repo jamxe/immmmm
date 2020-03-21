@@ -100,6 +100,43 @@
   <div class="posts">
     
     <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/rsshub-docker/">RSSHub 部署笔记</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2020-03-21
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <blockquote>
+<p>🍰 万物皆可 RSS。</p>
+</blockquote>
+<p>内容来源：<a href="https://docs.rsshub.app/install/#an-zhuang-2">https://docs.rsshub.app/install/#an-zhuang-2</a></p>
+<pre><code>$ docker pull diygod/rsshub
+$ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
+</code></pre><p>用宝塔面板的话，放行 1200 端口。浏览器打开 http://IP:1200/ ，看到成功页面。✅</p>
+      </div>
+      
+        <div><a class="read-more button" href="/rsshub-docker/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
       <h1 class="post-title"><a href="https://immmmm.com/hugo-github-actions/">Hugo + Github Actions 实现自动化部署</a></h1>
       <div class="post-meta">
         
@@ -131,43 +168,6 @@
       </div>
       
         <div><a class="read-more button" href="/hugo-github-actions/">阅读全文 →</a></div>
-      
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/rsshub-docker/">RSSHub 部署笔记</a></h1>
-      <div class="post-meta">
-        
-          <span class="post-date">
-            2020-03-18
-          </span>
-
-          
-        
-        
-        
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
-          
-        </span>
-        
-      </div>
-
-      
-
-      <div class="post-content">
-        <blockquote>
-<p>🍰 万物皆可 RSS。</p>
-</blockquote>
-<p>内容来源：<a href="https://docs.rsshub.app/install/#an-zhuang-2">https://docs.rsshub.app/install/#an-zhuang-2</a></p>
-<pre><code>$ docker pull diygod/rsshub
-$ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
-</code></pre><p>用宝塔面板的话，放行 1200 端口。浏览器打开 http://IP:1200/ ，看到成功页面。✅</p>
-      </div>
-      
-        <div><a class="read-more button" href="/rsshub-docker/">阅读全文 →</a></div>
       
     </div>
     
@@ -401,11 +401,11 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/post-show-douban-item/">文章内显示豆瓣条目</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/valine-show-comment-views/">Valine 文章列表显示评论数和阅读数</a></h1>
       <div class="post-meta">
         
           <span class="post-date">
-            2020-01-25
+            2020-01-27
           </span>
 
           
@@ -424,13 +424,11 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
       
 
       <div class="post-content">
-        <p>小众豆瓣已成刚需，电影、图书看完都会标记下，写日志时常会提到，老想着在文章内「优雅」地展示，官方 API 已废，幸好还有给力的 <a href="https://mufeng.me/">@mufeng</a> 兄，以下功能就使用其提供的轮子。</p>
-<h3 id="效果如下">效果如下</h3>
-<p><a href="https://book.douban.com/subject/33408247/">https://book.douban.com/subject/33408247/</a></p>
-<p><a href="https://movie.douban.com/subject/10432911/">https://movie.douban.com/subject/10432911/</a></p>
+        <p>回头一看 Valine 已使用半年，除早前国内版 Leancloud 出现<strong>被</strong>宕机，整体还算稳。</p>
+<p>闲着寻思到 Valine 能否在首页文章列表中显示对应的「评论数」和「阅读数」，查阅了文档（只有阅读数代码）和issue，好家伙,竟然 <a href="https://github.com/xCss/Valine/releases/tag/v1.1.8-beta2">v1.1.8-beta2</a> 已实现！</p>
       </div>
       
-        <div><a class="read-more button" href="/post-show-douban-item/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/valine-show-comment-views/">阅读全文 →</a></div>
       
     </div>
     

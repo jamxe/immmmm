@@ -17,7 +17,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/" />
-<meta property="og:updated_time" content="2020-03-19T22:55:33+00:00" />
+<meta property="og:updated_time" content="2020-03-21T00:00:00+00:00" />
 
 
 <link rel="alternate" type="application/rss+xml" href="/tags/%E6%8A%98%E8%85%BE/index.xml" title="木木木木木" />
@@ -97,8 +97,14 @@
   <div class="posts">
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/typora-paepub/">用 Typora 做了本电子书</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-template-code/">Bitcron 主题常用的代码片段</a></h1>
       <div class="post-meta">
+        
+          <span class="post-date">
+            2017-07-23
+          </span>
+
+          
         
         
         
@@ -114,46 +120,33 @@
       
 
       <div class="post-content">
-        <p>网上有组系列文章想做成电子书，搜索 markdown 导出 epub，找到了 Typora 和 Pandoc，后者是纯命令行制作电子书，其实 Typora 的导出 epub 功能也是基于它的。制作流程非常简单，一篇篇文章打开直接复制标题、复制内容，TY直接识别成了 md 格式。点击文件&ndash;导出&ndash;epub，没安装会提示安装 pandoc，完成搞定。</p>
-<p>第一次导出发现许久没完成，原来是文章里的图片无法顺利访问，得，看来这个插件不走秘密通道，此处我傻傻的一张张图片手动下载，其实可以利用这个功能：</p>
-<p><img src="https://lmm.elizen.me/images/2019/07/Moaz3D.jpg" alt="pic"></p>
-<p>网页上图片右键 <code>复制图片</code> 回编辑器直接 <code>Ctrl+V</code> 粘贴，乖乖，图片自动下载！</p>
+        <h3 id="全站-site">全站 Site</h3>
+<p>标题：<code>site.title</code>，示例：</p>
+<pre><code class="language-jade" data-lang="jade">a(href=&quot;/&quot;)= site.title
+</code></pre><p>副标题：<code>site.sub_title</code>，示例：</p>
+<pre><code class="language-jade" data-lang="jade">if site.sub_title
+	h2.site-description= site.sub_title]
+</code></pre><p>关键词：<code>site.keywords</code>
+描述：<code>site.description</code></p>
+<p>站点头像：<code>site.avatar</code>
+背景：<code>site.background_image</code>，示例：</p>
+<pre><code class="language-jade" data-lang="jade">header#header(style=&quot;background-image:url({{site.background_image}})&quot;)
+</code></pre><p>当下年份：<code>site.now.year</code></p>
       </div>
       
-        <div><a class="read-more button" href="/typora-paepub/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/bitcron-template-code/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/telegram-flowerss-bot/">电报 Flowerss Bot 搭建笔记</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-theme-motify/">Bitcron 主题「Motify」</a></h1>
       <div class="post-meta">
         
-        
-        
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
-          
-        </span>
-        
-      </div>
+          <span class="post-date">
+            2017-07-20
+          </span>
 
-      
-
-      <div class="post-content">
-        <p>看中一点：支持 Telegram 应用内 instant view ！</p>
-<p>点开即用：<a href="https://t.me/rssflowbot">https://t.me/rssflowbot</a></p>
-<p>项目主页：<a href="https://github.com/indes/flowerss-bot">https://github.com/indes/flowerss-bot</a></p>
-      </div>
-      
-        <div><a class="read-more button" href="/telegram-flowerss-bot/">阅读全文 →</a></div>
-      
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/bitcron-add-owo-similies/">给 Bitcron 评论添加 OwO 表情</a></h1>
-      <div class="post-meta">
+          
         
         
         
@@ -170,18 +163,32 @@
 
       <div class="post-content">
         <figure>
-    <img src="https://lmm.elizen.me/images/2017/12/owo-1.png" />
-    <figcaption>OwO 表情</figcaption>
+    <img src="https://lmm.elizen.me/images/2017/07/motify.jpg" alt="Bitcron 主题「Motify」" />
+    <figcaption>Github 地址： <a href="https://github.com/lmm214/Bitcron-Theme-Motify">Motify</a> </figcaption>
 </figure>
+<h3 id="主题简介">主题简介</h3>
+<p>自扒 WordPress 同名主题，支持：</p>
+<ul>
+<li>头部背景自定义</li>
+<li>“相册”、“一句话”特色文章样式</li>
+<li>社交图标包含：Twitter、Instagram、Github、Flickr、微博、Facebook。</li>
+<li>自动识别外链并新窗口打开</li>
+</ul>
       </div>
       
-        <div><a class="read-more button" href="/bitcron-add-owo-similies/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/bitcron-theme-motify/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/auto-outlinks-add-iconfont/">自动识别外链并添加图标</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-themes/">Bitcron 主题集</a></h1>
       <div class="post-meta">
+        
+          <span class="post-date">
+            2017-07-14
+          </span>
+
+          
         
         
         
@@ -197,18 +204,22 @@
       
 
       <div class="post-content">
-        <p>效果测试：</p>
-<p><a href="https://twitter.com/">推特</a> <a href="https://web.wechat.com/">微信</a> <a href="https://weibo.com/">微博</a> <a href="https://www.facebook.com">脸书</a> <a href="https://www.google.com">谷歌</a> <a href="https://github.com/">Github</a> <a href="https://movie.douban.com/">豆瓣</a> <a href="https://www.v2ex.com/">V2EX</a> <a href="https://www.zhihu.com/">知乎</a> <a href="https://zh.wikipedia.org">维基百科</a> <a href="http://jianshu.io/">简书</a> <a href="http://youku.com/">优酷</a> <a href="https://www.youtube.com/">YouTube</a></p>
-<p>功能代码来自： <a href="https://github.com/foru17/Yasuko">@罗磊</a></p>
+        demo-shuiba-co 主题名(-) | 链接(-) Bedford | [预览](https://blog-bedford--theme.bitcron.com/) [源码](https://github.com/pagecho/Bedford) Akina | [预览](https://akina.0x400.bitcron.com/
       </div>
       
-        <div><a class="read-more button" href="/auto-outlinks-add-iconfont/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/bitcron-themes/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/new-tab-external-link/">识别外链并新窗口打开</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/wechat-public-platform-development/">微信公众平台开发小记</a></h1>
       <div class="post-meta">
+        
+          <span class="post-date">
+            2016-10-30
+          </span>
+
+          
         
         
         
@@ -224,31 +235,27 @@
       
 
       <div class="post-content">
-        <p>注：已对类似 toc 里的链接进行排除。</p>
-<p>markdown 语法链接不支持设置 <code>target='_blank'</code> ，如果要就直接写 html 的链接代码。个人来说，非常反习惯！</p>
-<p>既然 Bitcron 加载了 jQuery ，那就重操旧业来个自动识别内外链！代码如下：</p>
-<pre><code class="language-jade" data-lang="jade">	script
-		$(document).ready (function() {
-			var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
-			var location_href = window.location.href.replace(parse_url,'$3')
-			$('.post-content a:not(:has(img)),.author-name a').hover(function() {
-				var this_href = $(this).attr('href');
-				var replace_href = this_href.replace(parse_url,'$3');
-                if ( this_href != replace_href &amp;&amp; location_href != replace_href)
-					$(this).attr('target','_blank'); 
-			});
-		});
-</code></pre><p>一般放 <code>post.jade</code>里，直接放 <code>base.jade</code> 也行。其中 <code>.post-content</code> 和 <code>.author-name</code> 有可能需要匹配自己的主题模板。</p>
-<p>短短代码测试了个把小时，主要耗在“a标签里无img”和“本地和点击的href的正则”，哎，果真代码欺负老新人！</p>
+        <p>微信公众平台开发，个人申请只能订阅号，虽能开启开发者模式，可这权限令人发指！借助“微信开放平台”中的第三方，通过简单的“授权管理”做到各尽其能、互不干扰。</p>
+<p><img src="https://lmm.elizen.me/images/2016/10/dyh-dsf.jpg" alt="dyh-dsf.jpg"></p>
+<h3>自定义菜单</h3>
+<p><strong>微之家</strong>：<a href="https://www.iweizhijia.com" target="_blank"><a href="https://www.iweizhijia.com">https://www.iweizhijia.com</a></a></p>
+<p><img src="https://lmm.elizen.me/images/2016/10/dyh-1.jpg" alt="dyh-1.jpg"></p>
+<p>其中菜单内容的“发送消息”、“跳转网页”，当然选择后者，点击菜单后直接显示内容。</p>
       </div>
       
-        <div><a class="read-more button" href="/new-tab-external-link/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/wechat-public-platform-development/">阅读全文 →</a></div>
       
     </div>
     
     <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/about-html-blog/">静态博客那些事</a></h1>
+      <h1 class="post-title"><a href="https://immmmm.com/slimbox2-js-adaptive/">Slimbox2.js 图片灯箱自适应</a></h1>
       <div class="post-meta">
+        
+          <span class="post-date">
+            2014-04-19
+          </span>
+
+          
         
         
         
@@ -264,10 +271,49 @@
       
 
       <div class="post-content">
-        一个周末耗在了静态博客部署方案上，目前使用了 Gridea + Coding 搭了个，欢迎围观： https://i.immmmm.com/ 也试了 Hexo + Travis CI ，部署好后是方便，只要把文件 git push 到监测的分支，或者直接在 Github 上写日志，Travis CI 就能自动生成静态文件到主分支上。但，Hexo 静态生成器与主题插件代码的问题，哎，折腾不起。 回说 Bitcron ，更新日志停留在 2017-09-12
+        <p>Github： <a href="https://github.com/lmm214/slimbox2-lite">slimbox2-lite</a></p>
+<p>很久很久以前（喂，喂喂），很早很早以前（嘿！），好吧。以前发现只有几KB的图片灯箱特效 slimbox2 就瞬间被它征服了，不过这娃一直有个硬伤：</p>
+<p>图片多大灯箱显示出来的图片就有多大。就是说，一旦图片比较大比如1800<em>1200，显示器只有1280</em>800，那真是赤果果扑面而来啊！</p>
+<p>虽然带着这个硬伤，还是把它作为哥发布的主题的标配！昨 @小黑黑 再一次向我反馈了这个情况，一下决心操起编辑器开试。吼，花了个把小时把 js 从头到尾读了N遍后，顺利搞定！修改部分如下：</p>
       </div>
       
-        <div><a class="read-more button" href="/about-html-blog/">阅读全文 →</a></div>
+        <div><a class="read-more button" href="/slimbox2-js-adaptive/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/huawei-hg8240-setting/">华为 HG8240 光猫路由设置方法</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2013-11-11
+          </span>
+
+          
+        
+        
+        
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>开通了电信光纤入户，送的光猫是“华为 HG8240”，明明自带路由（可开机就自动拨号），可默认却隐藏了。高手在民间，以下方法来自网络，已试可用：</p>
+<h3>一、设置本地连接属性。</h3>
+<p>IP地址：<code>192.168.100.2</code>（从 192.168.100.2~192.168.100.254 都可以），子网掩码：<code>255.255.255.0</code>，默认网关：<code>192.168.100.1</code>，DNS空着。</p>
+<h3>二、查询 VLAN ID （portvid） 和 802.1p（PortPri）。</h3>
+<p><img src="https://lmm.elizen.me/images/2013/11/huawei-1.jpg" alt="huawei-1"></p>
+<p>方法： <code>Win+R</code> 输入 <code>cmd</code> 回车，再输入 <code>telnet 192.168.100.1</code> 回车，等待出现“user：”输入 <code>root</code> 回车，出现“password：”输入 <code>admin</code> ，出现 ”WAP&gt;“输入 <code>get port config portid 1</code> 回车，得到端口1的 ”VLAN ID （portvid）“ 和 ”802.1p（PortPri）“值。</p>
+      </div>
+      
+        <div><a class="read-more button" href="/huawei-hg8240-setting/">阅读全文 →</a></div>
       
     </div>
     

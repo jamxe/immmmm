@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>2020-03-23</title>
+      <link>https://immmmm.com/2020-03-23/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/2020-03-23/</guid>
+      <description>喜大普奔，市官宣 **“全面恢复生产生活秩序”**❗️ 自家小区已解禁，商场全部正常营业，餐饮也全部支持堂食。真是 “忽如一夜春风来，千树万树梨花开。”</description>
+    </item>
+    
+    <item>
       <title>Valine 懒加载</title>
       <link>https://immmmm.com/valine-getscript-load/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
@@ -63,17 +72,6 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
 &lt;p&gt;为更新 &lt;a href=&#34;https://edui.fun/&#34;&gt;https://edui.fun/&lt;/a&gt; 导航站能随手些，造了 &lt;a href=&#34;https://immmmm.com/gridea-theme-webstack/&#34;&gt;Gridea Theme WebStack&lt;/a&gt; 。每次得源文件切换加载，但只为加几行代码，等等等；&lt;/p&gt;
 &lt;p&gt;折腾一天，已实现直接在 GitHub  &lt;code&gt;master&lt;/code&gt; 添加代码，&lt;code&gt;Github Actions &lt;/code&gt; 自动构建 &lt;code&gt;Hugo&lt;/code&gt; 静态文件到 &lt;code&gt;gh-pages&lt;/code&gt; 分支，外加同步 webhook 到自己的服务器。&lt;/p&gt;
 &lt;p&gt;再也不用 git 来 git 去！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>文章内显示豆瓣条目（LocalStorage 缓存版）</title>
-      <link>https://immmmm.com/post-show-douban-item-localstorage-cache/</link>
-      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/post-show-douban-item-localstorage-cache/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://movie.douban.com/subject/30206389/&#34;&gt;https://movie.douban.com/subject/30206389/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2020/03/douban-ls.png&#34; alt=&#34;douban-ls&#34;&gt;&lt;/p&gt;
-&lt;p&gt;具体使用说明同：&lt;a href=&#34;https://immmmm.com/post-show-douban-item/&#34;&gt;https://immmmm.com/post-show-douban-item/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

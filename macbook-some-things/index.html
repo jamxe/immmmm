@@ -213,11 +213,12 @@ Tab控制间移动焦点：键盘 - 快捷键 - 勾选最下方的「使用键�
 
     
           <div class="pagination__title">
-       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/macbook-some-things/"></span> 条评论</span>
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="https://immmmm.com/macbook-some-things/"></span> 条评论</span>
        <hr />
   </div>
   <div id="comments"></div>
-  <script type="text/javascript">
+  <script>
+    loadComments();
     function loadComments() {
         if (typeof Valine === 'undefined') {
             var getScript = (options) => {
@@ -242,6 +243,7 @@ Tab控制间移动焦点：键盘 - 快捷键 - 勾选最下方的「使用键�
     function newValine() {
       new Valine({
         el: '#comments' ,
+        recordIP : true,
         appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
         appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
         placeholder: '既然来了，那就留个痕迹吧~',
@@ -251,7 +253,7 @@ Tab控制间移动焦点：键盘 - 快捷键 - 勾选最下方的「使用键�
 </script>
 <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
 <script type="text/javascript">
-  jQuery(document).ready(function($){
+    jQuery(document).ready(function($){
         $('.vemoji-btn').text('😀');
         $("#comments").on('click', 'span.vat',function(){
         	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
@@ -265,7 +267,7 @@ Tab控制间移动焦点：键盘 - 快捷键 - 勾选最下方的「使用键�
                         }
                 }, 100);
         }
-      });
+    });
   </script>
 
     

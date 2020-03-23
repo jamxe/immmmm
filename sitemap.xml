@@ -38,16 +38,6 @@
   </url>
   
   <url>
-    <loc>https://immmmm.com/friends/</loc>
-    <lastmod>2020-03-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/</loc>
-    <lastmod>2020-03-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immmmm.com/hello-hugo/</loc>
     <lastmod>2020-03-21T00:00:00+00:00</lastmod>
   </url>
@@ -69,6 +59,11 @@
   
   <url>
     <loc>https://immmmm.com/about/</loc>
+    <lastmod>2020-03-14T12:41:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/</loc>
     <lastmod>2020-03-14T12:41:27+00:00</lastmod>
   </url>
   
@@ -715,6 +710,11 @@
   <url>
     <loc>https://immmmm.com/hey-my-university/</loc>
     <lastmod>2008-08-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/friends/</loc>
+    <lastmod>2008-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>

@@ -248,7 +248,10 @@ Tab控制间移动焦点：键盘 - 快捷键 - 勾选最下方的「使用键�
         visitor:  true 
       });
     }
-      jQuery(document).ready(function($){
+</script>
+<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
         $('.vemoji-btn').text('😀');
         $("#comments").on('click', 'span.vat',function(){
         	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));

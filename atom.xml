@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-03-23T17:05:30+00:00</updated>
+    <updated>2020-03-23T17:13:37+00:00</updated>
     
     
     
@@ -70,7 +70,7 @@
             
             
             <content type="html"><![CDATA[<p>效果预览：<a href="https://edui.fun/">https://edui.fun/</a></p>
-<p>仓库下载：<a href="https://github.com/lmm214/hugo-theme-webstack">https://github.com/lmm214/hugo-theme-webstack</a></p>
+<p>仓库下载：<a href="https://github.com/lmm214/hugo-theme-webstack">hugo-theme-webstack</a></p>
 <p>食用参考：<a href="https://immmmm.com/hugo-github-actions/">Hugo + Github Actions 实现自动化部署</a></p>
 <p>主题目录：</p>
 <pre><code>hugo-webstack

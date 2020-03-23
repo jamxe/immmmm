@@ -6,10 +6,24 @@
     <description>Recent content in Posts on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Valine 懒加载</title>
+      <link>https://immmmm.com/valine-getscript-load/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/valine-getscript-load/</guid>
+      <description>&lt;p&gt;博客都已静态，想再提速，要么换国内云服，要么优化一个个 JS 加载。立竿见影办法是使用 CDN 来加载，或者前端延迟加载，甚者后端判断按需加载。&lt;/p&gt;
+&lt;p&gt;在需要加载的一串 JS 里，找来找去，Valine 这货最强大 💪&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;47.5KB --&amp;gt; https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js
+75KB   --&amp;gt; https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js
+6.4KB  --&amp;gt; https://js.fundebug.cn/fundebug.1.9.0.min.js
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;撸起袖子，月干！&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hello Hugo</title>
@@ -60,15 +74,6 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
       <description>&lt;p&gt;&lt;a href=&#34;https://movie.douban.com/subject/30206389/&#34;&gt;https://movie.douban.com/subject/30206389/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2020/03/douban-ls.png&#34; alt=&#34;douban-ls&#34;&gt;&lt;/p&gt;
 &lt;p&gt;具体使用说明同：&lt;a href=&#34;https://immmmm.com/post-show-douban-item/&#34;&gt;https://immmmm.com/post-show-douban-item/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>《医学大神》读中记</title>
-      <link>https://immmmm.com/book-isbn-9787613337624/</link>
-      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/book-isbn-9787613337624/</guid>
-      <description>https://book.douban.com/subject/34935089/ 虽是医学人物传记，但更多的是科学精神！好书增长常识，忍不住记一笔。 🌝</description>
     </item>
     
   </channel>

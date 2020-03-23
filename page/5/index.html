@@ -126,6 +126,47 @@
   <div class="posts">
     
     <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-multi-theme-preview/">Bitcron 一站搞定多主题预览</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2017-12-20
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>起源： <a href="https://pi.bitcron.com/post/wen-da/2017-12/2017-12-11-13-32-39#main">网站上适用不同自定义主题</a></p>
+<blockquote>
+<p>假设 /template/a/index.jade
+访问 <a href="http://yourdomain.com/?template_prefix=a,">http://yourdomain.com/?template_prefix=a,</a> 会强制模板匹配的时候，访问前缀为 a 的目录路径。</p>
+</blockquote>
+<p>什么意思？就是说我们可以把多个主题放到 template 的子文件夹里，比如 <code>a</code>子文件夹，然后在链接后加上参数 <code>?template_prefix=a</code> 就能用这个模板来渲染呈现主题啦！</p>
+<p>所以，可以这样做:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">/template/a/
+/template/b/
+/template/c/
+/template/d/
+/template/e/
+/template/f/
+</code></pre></div><p>来半打子主题，然后用 js 加上参数就好啦~（ 注：template 目录下的总文件要低于 200）</p>
+      </div>
+      
+        <div><a class="read-more button" href="/bitcron-multi-theme-preview/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list">
       <h1 class="post-title"><a href="https://immmmm.com/bitcron-article-run-code/">Bitcron 文章内运行代码实例一则</a></h1>
       <div class="post-meta">
         
@@ -735,39 +776,6 @@
       </div>
       
         <div><a class="read-more button" href="/goodbye-2013/">阅读全文 →</a></div>
-      
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/huawei-hg8240-setting/">华为 HG8240 光猫路由设置方法</a></h1>
-      <div class="post-meta">
-        
-          <span class="post-date">
-            2013-11-11
-          </span>
-        
-
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
-          
-        </span>
-        
-      </div>
-
-      
-
-      <div class="post-content">
-        <p>开通了电信光纤入户，送的光猫是“华为 HG8240”，明明自带路由（可开机就自动拨号），可默认却隐藏了。高手在民间，以下方法来自网络，已试可用：</p>
-<h3>一、设置本地连接属性。</h3>
-<p>IP地址：<code>192.168.100.2</code>（从 192.168.100.2~192.168.100.254 都可以），子网掩码：<code>255.255.255.0</code>，默认网关：<code>192.168.100.1</code>，DNS空着。</p>
-<h3>二、查询 VLAN ID （portvid） 和 802.1p（PortPri）。</h3>
-<p><img src="https://lmm.elizen.me/images/2013/11/huawei-1.jpg" alt="huawei-1"></p>
-<p>方法： <code>Win+R</code> 输入 <code>cmd</code> 回车，再输入 <code>telnet 192.168.100.1</code> 回车，等待出现“user：”输入 <code>root</code> 回车，出现“password：”输入 <code>admin</code> ，出现 ”WAP&gt;“输入 <code>get port config portid 1</code> 回车，得到端口1的 ”VLAN ID （portvid）“ 和 ”802.1p（PortPri）“值。</p>
-      </div>
-      
-        <div><a class="read-more button" href="/huawei-hg8240-setting/">阅读全文 →</a></div>
       
     </div>
     

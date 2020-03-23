@@ -7,12 +7,71 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-03-23T07:22:02+00:00</updated>
+    <updated>2020-03-23T07:23:59+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Valine 懒加载]]></title>
+            <link href="https://immmmm.com/valine-getscript-load/" rel="alternate" type="text/html" />
+            
+            
+                <id>https://immmmm.com/valine-getscript-load/</id>
+            
+            
+            <published>2020-03-23T00:00:00+00:00</published>
+            <updated>2020-03-23T00:00:00+00:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>博客都已静态，想再提速，要么换国内云服，要么优化一个个 JS 加载。立竿见影办法是使用 CDN 来加载，或者前端延迟加载，甚者后端判断按需加载。</p>
+<p>在需要加载的一串 JS 里，找来找去，Valine 这货最强大 💪</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">47.5KB --&gt; https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js
+75KB   --&gt; https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js
+6.4KB  --&gt; https://js.fundebug.cn/fundebug.1.9.0.min.js
+</code></pre></div><p>撸起袖子，月干！</p>
+<p>代码来自：<a href="https://github.com/reuixiy/hugo-theme-meme/blob/master/layouts/partials/third-party/valine.html">hugo-theme-meme/valine.html</a>，好使！ 👍</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="color:#a6e22e">loadComments</span>();
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">loadComments</span>() {
+  <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">Valine</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;undefined&#39;</span>) {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">getScript</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">options</span>) =&gt; {
+      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">script</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;script&#39;</span>);
+      <span style="color:#a6e22e">script</span>.<span style="color:#a6e22e">defer</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+      <span style="color:#a6e22e">script</span>.<span style="color:#a6e22e">crossOrigin</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;anonymous&#39;</span>;
+      Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">options</span>).<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">key</span>) =&gt; {
+          <span style="color:#a6e22e">script</span>[<span style="color:#a6e22e">key</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">options</span>[<span style="color:#a6e22e">key</span>];
+      });
+      document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">script</span>);
+    };
+    <span style="color:#a6e22e">getScript</span>({
+      <span style="color:#a6e22e">src</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js&#39;</span>,
+      <span style="color:#a6e22e">onload</span><span style="color:#f92672">:</span> () =&gt; {
+        <span style="color:#a6e22e">newValine</span>();
+      }
+    });
+  } <span style="color:#66d9ef">else</span> {
+    <span style="color:#a6e22e">newValine</span>();
+  }
+}
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">newValine</span>() {
+  <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Valine</span>({
+    <span style="color:#75715e">//原配置
+</span><span style="color:#75715e"></span>  });
+}
+<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
+</code></pre></div><p>🎉</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -393,45 +452,6 @@ jobs:
                             
                              
                                 <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[《医学大神》读中记]]></title>
-            <link href="https://immmmm.com/book-isbn-9787613337624/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/book-isbn-9787213093302/" rel="related" type="text/html" title="《园丁与木匠》阅读笔记" />
-                <link href="https://immmmm.com/book-isbn-9787553674544/" rel="related" type="text/html" title="《终身幼儿园》读后记" />
-                <link href="https://immmmm.com/book-isbn-9787508692098/" rel="related" type="text/html" title="《今日简史》书摘" />
-                <link href="https://immmmm.com/book-isbn-9787550292895/" rel="related" type="text/html" title="《育儿基本》的阅读笔记" />
-                <link href="https://immmmm.com/book-isbn-9787508687032/" rel="related" type="text/html" title="《给孩子的未来脑计划》的阅读笔记" />
-            
-                <id>https://immmmm.com/book-isbn-9787613337624/</id>
-            
-            
-            <published>2020-03-14T00:00:00+00:00</published>
-            <updated>2020-03-14T00:00:00+00:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p><a href="https://book.douban.com/subject/34935089/">https://book.douban.com/subject/34935089/</a></p>
-<p>虽是医学人物传记，但更多的是科学精神！好书增长常识，忍不住记一笔。</p>
-<p>🌝</p>
-]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E8%82%B2%E4%BA%BA" term="%E8%82%B2%E4%BA%BA" label="育人" />
                             
                         
                     

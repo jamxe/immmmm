@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://immmmm.com/posts/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/valine-getscript-load/</loc>
+    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://immmmm.com/friends/</loc>
     <lastmod>2020-03-22T00:00:00+00:00</lastmod>
   </url>
@@ -14,11 +24,6 @@
   
   <url>
     <loc>https://immmmm.com/hello-hugo/</loc>
-    <lastmod>2020-03-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/posts/</loc>
     <lastmod>2020-03-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -713,10 +718,6 @@
   <url>
     <loc>https://immmmm.com/search/</loc>
     <priority>0.1</priority>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/valine-getscript-load/</loc>
   </url>
   
   <url>

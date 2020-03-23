@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Hugo Theme Webstack</title>
+      <link>https://immmmm.com/hugo-theme-webstack/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/hugo-theme-webstack/</guid>
+      <description>&lt;p&gt;效果预览：&lt;a href=&#34;https://edui.fun/&#34;&gt;https://edui.fun/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;仓库下载：&lt;a href=&#34;https://github.com/lmm214/hugo-theme-webstack&#34;&gt;https://github.com/lmm214/hugo-theme-webstack&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Valine 懒加载</title>
       <link>https://immmmm.com/valine-getscript-load/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
@@ -59,19 +69,6 @@
 &lt;pre&gt;&lt;code&gt;$ docker pull diygod/rsshub
 $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;用宝塔面板的话，放行 1200 端口。浏览器打开 http://IP:1200/ ，看到成功页面。✅&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo &#43; Github Actions 实现自动化部署</title>
-      <link>https://immmmm.com/hugo-github-actions/</link>
-      <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/hugo-github-actions/</guid>
-      <description>&lt;p&gt;不折腾点东西总觉得浑浑噩噩，折腾点东西搞得脑袋晕晕乎乎！&lt;/p&gt;
-&lt;h3 id=&#34;折腾需求&#34;&gt;折腾需求&lt;/h3&gt;
-&lt;p&gt;为更新 &lt;a href=&#34;https://edui.fun/&#34;&gt;https://edui.fun/&lt;/a&gt; 导航站能随手些，造了 &lt;a href=&#34;https://immmmm.com/gridea-theme-webstack/&#34;&gt;Gridea Theme WebStack&lt;/a&gt; 。每次得源文件切换加载，但只为加几行代码，等等等；&lt;/p&gt;
-&lt;p&gt;折腾一天，已实现直接在 GitHub  &lt;code&gt;master&lt;/code&gt; 添加代码，&lt;code&gt;Github Actions &lt;/code&gt; 自动构建 &lt;code&gt;Hugo&lt;/code&gt; 静态文件到 &lt;code&gt;gh-pages&lt;/code&gt; 分支，外加同步 webhook 到自己的服务器。&lt;/p&gt;
-&lt;p&gt;再也不用 git 来 git 去！&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-03-23T13:02:40+00:00</updated>
+    <updated>2020-03-23T13:39:07+00:00</updated>
     
     
     
@@ -44,6 +44,52 @@
                             
                              
                                 <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Hugo Theme Webstack]]></title>
+            <link href="https://immmmm.com/hugo-theme-webstack/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/hello-hugo/" rel="related" type="text/html" title="Hello Hugo" />
+                <link href="https://immmmm.com/rsshub-docker/" rel="related" type="text/html" title="RSSHub 部署笔记" />
+                <link href="https://immmmm.com/hugo-github-actions/" rel="related" type="text/html" title="Hugo &#43; Github Actions 实现自动化部署" />
+                <link href="https://immmmm.com/post-show-douban-item-localstorage-cache/" rel="related" type="text/html" title="文章内显示豆瓣条目（LocalStorage 缓存版）" />
+                <link href="https://immmmm.com/gridea-theme-motify/" rel="related" type="text/html" title="Gridea Theme Motify" />
+            
+                <id>https://immmmm.com/hugo-theme-webstack/</id>
+            
+            
+            <published>2020-03-23T00:00:00+00:00</published>
+            <updated>2020-03-23T00:00:00+00:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>效果预览：<a href="https://edui.fun/">https://edui.fun/</a></p>
+<p>仓库下载：<a href="https://github.com/lmm214/hugo-theme-webstack">https://github.com/lmm214/hugo-theme-webstack</a></p>
+<p>食用参考：<a href="https://immmmm.com/hugo-github-actions/">Hugo + Github Actions 实现自动化部署</a></p>
+<p>主题目录：</p>
+<pre><code>hugo-webstack
+├── data
+│   └── links.toml  //内置类似 [[fun1]] [[fun2]] 数据 
+├── layouts
+│   └── home.html //独一无二一个页面搞定
+└── theme.toml
+</code></pre><p>😈</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
                             
                         
                     
@@ -262,122 +308,6 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
 <p><img src="https://lmm.elizen.me/images/2020/03/rsshub-1.jpg" alt="rsshub-1"></p>
 <p>配合 chrome 扩展更方便：<a href="https://chrome.google.com/webstore/detail/rsshub-radar/kefjpfngnndepjbopdmoebkipbgkggaa">RSSHub Radar</a> ，自定义域名，随时查询规则！</p>
 <p>再配合 <a href="https://immmmm.com/telegram-flowerss-bot/">《电报 Flowerss Bot》</a>，开启私属 rss 聚合机器人！</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[Hugo + Github Actions 实现自动化部署]]></title>
-            <link href="https://immmmm.com/hugo-github-actions/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/post-show-douban-item-localstorage-cache/" rel="related" type="text/html" title="文章内显示豆瓣条目（LocalStorage 缓存版）" />
-                <link href="https://immmmm.com/gridea-theme-motify/" rel="related" type="text/html" title="Gridea Theme Motify" />
-                <link href="https://immmmm.com/jsdelivr-gridea/" rel="related" type="text/html" title="使用 jsDelivr 加速 Gridea" />
-                <link href="https://immmmm.com/jinrishici-with-valine/" rel="related" type="text/html" title="今日诗词 &amp; Valine" />
-                <link href="https://immmmm.com/valine-show-comment-views/" rel="related" type="text/html" title="Valine 文章列表显示评论数和阅读数" />
-            
-                <id>https://immmmm.com/hugo-github-actions/</id>
-            
-            
-            <published>2020-03-19T00:00:00+00:00</published>
-            <updated>2020-03-19T00:00:00+00:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>不折腾点东西总觉得浑浑噩噩，折腾点东西搞得脑袋晕晕乎乎！</p>
-<h3 id="折腾需求">折腾需求</h3>
-<p>为更新 <a href="https://edui.fun/">https://edui.fun/</a> 导航站能随手些，造了 <a href="https://immmmm.com/gridea-theme-webstack/">Gridea Theme WebStack</a> 。每次得源文件切换加载，但只为加几行代码，等等等；</p>
-<p>折腾一天，已实现直接在 GitHub  <code>master</code> 添加代码，<code>Github Actions </code> 自动构建 <code>Hugo</code> 静态文件到 <code>gh-pages</code> 分支，外加同步 webhook 到自己的服务器。</p>
-<p>再也不用 git 来 git 去！</p>
-<h3 id="上传-hugo-源文件">上传 Hugo 源文件</h3>
-<p>（注：如已把 Hugo 程序 push 到 GitHub 上，直接跳过看下一步。）</p>
-<p>点击下载：<a href="https://github.com/lmm214/edui/archive/master.zip">https://github.com/lmm214/edui/archive/master.zip</a></p>
-<p>GitHub 上新建一个 repo，并只需保留以下文件上传到 <code>master</code> ，同时随手建个 <code>gh-pages</code> 分支：</p>
-<pre><code>├── archetypes
-│   └── default.md
-├── config.toml  //Hugo 程序配置文件
-├── content
-│   ├── about.md
-├── data
-│   └── links.toml //导航数据，一个文件搞定
-└── themes
-    └── webstack  //Hugo 主题
-        ├── layouts
-        │   └── home.html  //主页
-        └── theme.toml  //主题配置文件
-</code></pre><h3 id="添加-github-actions-代码">添加 Github Actions 代码：</h3>
-<p>实现效果，直接网页上修改 <code>data/links.toml</code> 或任意文件，触发 Actions 自动化运行 Hugo 程序生成静态文件并推送到 <code>gh-pages</code> 分支上，等待几十秒可看到更新 <a href="https://lmm214.github.io/edui/">https://lmm214.github.io/edui/</a></p>
-<p>具体操作：</p>
-<ul>
-<li>
-<p>点 <a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a> 新建一个，并暂存；进项目 <code>settings/secrets</code> 新建标题为 <code>personal_token</code> ，内容是刚创建的 <code>tokens</code> ;</p>
-</li>
-<li>
-<p>回项目，点 <code>Actions -- New wordflow -- Set up a workflow yourself</code> ，添加如下代码：</p>
-</li>
-</ul>
-<pre><code>name: Deploy Hugo # 任君喜欢
-
-on:
-  push:
-    branches:
-      - master   # master 更新触发
-
-jobs:
-  build-deploy:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v1
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: latest
-
-      - name: Build 
-        run: hugo
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.personal_token }} # personal_token 这里新建一个 https://github.com/settings/tokens
-          PUBLISH_BRANCH: gh-pages  # 推送到当前 gh-pages 分支
-          PUBLISH_DIR: ./public  # hugo 生成到 public 作为跟目录
-          commit_message: ${{ github.event.head_commit.message }}
-</code></pre><p>👌 等，3、2、1，看看 <code>Actions</code> 顺利不，再看看 <code>gh-pages</code> 静态文件更新了不，最终打开 Pages ，祝贺！</p>
-<p>日志？主题？统统 GitHub 网页端搞定！当然，调试主题什么的还是建议本地进行。</p>
-<h3 id="同步到服务器">同步到服务器</h3>
-<p>完整源文件 <a href="https://github.com/lmm214/edui/blob/master/.github/workflows/main.yml">【这里】</a> ，还有一段代码，实现同步推送到自己的服务器。</p>
-<pre><code>      - name: Webhook
-        uses: distributhor/workflow-webhook@v1
-        env:
-          webhook_url: ${{ secrets.WEBHOOK_URL }}
-          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
-</code></pre><p><code>WEBHOOK_URL</code> 和 <code>WEBHOOK_SECRET</code> 是进项目 <code>settings/secrets</code> 新建添加，构建成宝塔面板的 webhook 链接，同时宝塔后台的代码去掉后缀判断。</p>
-<h3 id="后话一点点-">后话一点点 🤏</h3>
-<p>听闻 Hugo 大名也有好几个月，一直没尝试，之后也沉浸在 Gridea 中，不得不夸夸 Gridea 客户端体检真是优雅！</p>
-<p>但一直有一点点遗憾，更新只能启动客户端，点击【同步】。</p>
-<p>而 Hugo 生成静态文件摔 Hexo 几光年，部署安装无依赖，试用门槛较低。看着官方文档，程序、主题自定义也比较强悍。</p>
-<p>搜遍全网教程，要不就是太详细，一长串代码加注释，供大于求，要不略过。幸好，也算折腾成功！ ✌️</p>
-<h3 id="感谢">感谢</h3>
-<ul>
-<li>官方 Hugo Templates： <a href="https://gohugo.io/templates/">https://gohugo.io/templates/</a></li>
-<li>中文系列教程翻译： <a href="https://www.rectcircle.cn/series/hugo/">https://www.rectcircle.cn/series/hugo/</a></li>
-<li>Hugo 中文帮助文档：<a href="https://hugo.aiaide.com/">https://hugo.aiaide.com/</a></li>
-</ul>]]></content>
             
                  
                     

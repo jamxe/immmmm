@@ -2,29 +2,24 @@
 <html lang="zh-CN">
   <head>
     
-      <title>Valine 懒加载 :: 木木木木木</title>
+      <title>Hugo Theme Webstack :: 木木木木木</title>
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="博客都已静态，想再提速，要么换国内云服，要么优化一个个 JS 加载。立竿见影办法是使用 CDN 来加载，或者前端延迟加载，甚者后端判断按需加载。
-在需要加载的一串 JS 里，找来找去，Valine 这货最强大 💪
-47.5KB --&amp;gt; https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js 75KB --&amp;gt; https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js 6.4KB --&amp;gt; https://js.fundebug.cn/fundebug.1.9.0.min.js 撸起袖子，月干！
+<meta name="description" content="效果预览：https://edui.fun/
+仓库下载：https://github.com/lmm214/hugo-theme-webstack
 "/>
 <meta name="keywords" content=""/>
 <meta name="referrer" content="never" />
-<link rel="canonical" href="https://immmmm.com/valine-getscript-load/" />
+<link rel="canonical" href="https://immmmm.com/hugo-theme-webstack/" />
 <link rel="stylesheet" href="https://immmmm.com/style.css">
 <link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
 
-<meta property="og:title" content="Valine 懒加载" />
-<meta property="og:description" content="博客都已静态，想再提速，要么换国内云服，要么优化一个个 JS 加载。立竿见影办法是使用 CDN 来加载，或者前端延迟加载，甚者后端判断按需加载。
-在需要加载的一串 JS 里，找来找去，Valine 这货最强大 💪
-47.5KB --&gt; https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js
-75KB   --&gt; https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js
-6.4KB  --&gt; https://js.fundebug.cn/fundebug.1.9.0.min.js
-撸起袖子，月干！" />
+<meta property="og:title" content="Hugo Theme Webstack" />
+<meta property="og:description" content="效果预览：https://edui.fun/
+仓库下载：https://github.com/lmm214/hugo-theme-webstack" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://immmmm.com/valine-getscript-load/" />
+<meta property="og:url" content="https://immmmm.com/hugo-theme-webstack/" />
 <meta property="article:published_time" content="2020-03-23T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-03-23T00:00:00+00:00" />
 
@@ -124,7 +119,7 @@
   
   
   <div class="post">
-    <h2 class="post-title"><a href="https://immmmm.com/valine-getscript-load/">Valine 懒加载</a></h2>
+    <h2 class="post-title"><a href="https://immmmm.com/hugo-theme-webstack/">Hugo Theme Webstack</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -134,54 +129,38 @@
         
           
         
-      <span> / <span class="valine-comment-count" data-xid="/valine-getscript-load/">0</span> 评论 / <span id="/valine-getscript-load/" class="leancloud_visitors" data-flag-title="Valine 懒加载"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+      <span> / <span class="valine-comment-count" data-xid="/hugo-theme-webstack/">0</span> 评论 / <span id="/hugo-theme-webstack/" class="leancloud_visitors" data-flag-title="Hugo Theme Webstack"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
         
     </div>
 
     
+      
+        <img src="https://lmm.elizen.me/images/2020/03/hugo-webstack.png" class="post-cover" />
+      
+    
 
     <div class="post-content">
-      <p>博客都已静态，想再提速，要么换国内云服，要么优化一个个 JS 加载。立竿见影办法是使用 CDN 来加载，或者前端延迟加载，甚者后端判断按需加载。</p>
-<p>在需要加载的一串 JS 里，找来找去，Valine 这货最强大 💪</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">47.5KB --&gt; https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js
-75KB   --&gt; https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js
-6.4KB  --&gt; https://js.fundebug.cn/fundebug.1.9.0.min.js
-</code></pre></div><p>撸起袖子，月干！</p>
-<p>代码来自：<a href="https://github.com/reuixiy/hugo-theme-meme/blob/master/layouts/partials/third-party/valine.html">hugo-theme-meme/valine.html</a>，好使！ 👍</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span><span style="color:#f92672">&gt;</span>
-<span style="color:#a6e22e">loadComments</span>();
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">loadComments</span>() {
-  <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">Valine</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;undefined&#39;</span>) {
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">getScript</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">options</span>) =&gt; {
-      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">script</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;script&#39;</span>);
-      <span style="color:#a6e22e">script</span>.<span style="color:#a6e22e">defer</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
-      <span style="color:#a6e22e">script</span>.<span style="color:#a6e22e">crossOrigin</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;anonymous&#39;</span>;
-      Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">options</span>).<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">key</span>) =&gt; {
-          <span style="color:#a6e22e">script</span>[<span style="color:#a6e22e">key</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">options</span>[<span style="color:#a6e22e">key</span>];
-      });
-      document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">script</span>);
-    };
-    <span style="color:#a6e22e">getScript</span>({
-      <span style="color:#a6e22e">src</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js&#39;</span>,
-      <span style="color:#a6e22e">onload</span><span style="color:#f92672">:</span> () =&gt; {
-        <span style="color:#a6e22e">newValine</span>();
-      }
-    });
-  } <span style="color:#66d9ef">else</span> {
-    <span style="color:#a6e22e">newValine</span>();
-  }
-}
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">newValine</span>() {
-  <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Valine</span>({
-    <span style="color:#75715e">//原配置
-</span><span style="color:#75715e"></span>  });
-}
-<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
-</code></pre></div><p>🎉</p>
+      <p>效果预览：<a href="https://edui.fun/">https://edui.fun/</a></p>
+<p>仓库下载：<a href="https://github.com/lmm214/hugo-theme-webstack">https://github.com/lmm214/hugo-theme-webstack</a></p>
+<p>食用参考：<a href="https://immmmm.com/hugo-github-actions/">Hugo + Github Actions 实现自动化部署</a></p>
+<p>主题目录：</p>
+<pre><code>hugo-webstack
+├── data
+│   └── links.toml  //内置类似 [[fun1]] [[fun2]] 数据 
+├── layouts
+│   └── home.html //独一无二一个页面搞定
+└── theme.toml
+</code></pre><p>😈</p>
     </div>
 
     
 
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
     
 
     <div class="clear"></div>
@@ -196,16 +175,16 @@
           <div class="pagination__buttons">
             
               <span class="button previous">
-                <a href="https://immmmm.com/hugo-theme-webstack/">
+                <a href="https://immmmm.com/2020-03-23/">
                   <span class="button__icon">←</span>
-                  <span class="button__text">Hugo Theme Webstack</span>
+                  <span class="button__text">2020-03-23</span>
                 </a>
               </span>
             
             
               <span class="button next">
-                <a href="https://immmmm.com/hello-hugo/">
-                  <span class="button__text">Hello Hugo</span>
+                <a href="https://immmmm.com/valine-getscript-load/">
+                  <span class="button__text">Valine 懒加载</span>
                   <span class="button__icon">→</span>
                 </a>
               </span>
@@ -218,7 +197,7 @@
 
     
           <div class="pagination__title">
-       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/valine-getscript-load/"></span> 条评论</span>
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/hugo-theme-webstack/"></span> 条评论</span>
        <hr />
   </div>
   <div id="comments"></div>

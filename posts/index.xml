@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2020 21:28:00 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Hugo 图片懒加载</title>
       <link>https://immmmm.com/hugo-render-hook/</link>
-      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 24 Mar 2020 21:28:00 +0800</pubDate>
       
       <guid>https://immmmm.com/hugo-render-hook/</guid>
       <description>&lt;p&gt;起因，想给文章插入的 img 图片添加 &lt;code&gt;loading=&#39;lazy&#39;&lt;/code&gt;，果然有爱折腾的，看（&lt;a href=&#34;https://lvv.me/posts/2019/12/24_hugo_render_hooks/&#34;&gt;这里&lt;/a&gt;），官方说明 &lt;a href=&#34;https://gohugo.io/getting-started/configuration-markup/#render-hook-templates&#34;&gt;#render-hook-templates&lt;/a&gt;，Hugo v0.62+&lt;/p&gt;

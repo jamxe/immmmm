@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-03-24T13:22:13+00:00</updated>
+    <updated>2020-03-24T13:36:13+00:00</updated>
     
     
     
@@ -28,8 +28,8 @@
                 <id>https://immmmm.com/hugo-render-hook/</id>
             
             
-            <published>2020-03-24T00:00:00+00:00</published>
-            <updated>2020-03-24T00:00:00+00:00</updated>
+            <published>2020-03-24T21:28:00+08:00</published>
+            <updated>2020-03-24T21:28:00+08:00</updated>
             
             
             <content type="html"><![CDATA[<p>起因，想给文章插入的 img 图片添加 <code>loading='lazy'</code>，果然有爱折腾的，看（<a href="https://lvv.me/posts/2019/12/24_hugo_render_hooks/">这里</a>），官方说明 <a href="https://gohugo.io/getting-started/configuration-markup/#render-hook-templates">#render-hook-templates</a>，Hugo v0.62+</p>

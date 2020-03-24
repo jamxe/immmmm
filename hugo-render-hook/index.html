@@ -2,29 +2,32 @@
 <html lang="zh-CN">
   <head>
     
-      <title>2020-03-23 :: 木木木木木</title>
+      <title>Hugo 图片懒加载 :: 木木木木木</title>
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="喜大普奔，市官宣 “全面恢复生产生活秩序” ！自家小区已解禁，商场全部正常营业，餐饮也全部支持堂食。真是 “忽如一夜春风来，千树万树梨花开。”"/>
+<meta name="description" content="起因，想给文章插入的 img 图片添加 loading=&#39;lazy&#39;，果然有爱折腾的，看（这里），官方说明 #render-hook-templates，Hugo v0.62&#43;
+简单说能对md内的链接（link）和图像（image）自定义渲染，比如实现以上需求，只需在主题新建 layouts/_default/_markup/render-image.html
+"/>
 <meta name="keywords" content=""/>
 <meta name="referrer" content="never" />
-<link rel="canonical" href="https://immmmm.com/2020-03-23/" />
+<link rel="canonical" href="https://immmmm.com/hugo-render-hook/" />
 <link rel="stylesheet" href="https://immmmm.com/style.css">
 <link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
 
-<meta property="og:title" content="2020-03-23" />
-<meta property="og:description" content="喜大普奔，市官宣 “全面恢复生产生活秩序” ！自家小区已解禁，商场全部正常营业，餐饮也全部支持堂食。真是 “忽如一夜春风来，千树万树梨花开。”" />
+<meta property="og:title" content="Hugo 图片懒加载" />
+<meta property="og:description" content="起因，想给文章插入的 img 图片添加 loading=&#39;lazy&#39;，果然有爱折腾的，看（这里），官方说明 #render-hook-templates，Hugo v0.62&#43;
+简单说能对md内的链接（link）和图像（image）自定义渲染，比如实现以上需求，只需在主题新建 layouts/_default/_markup/render-image.html" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://immmmm.com/2020-03-23/" />
-<meta property="article:published_time" content="2020-03-23T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-03-23T00:00:00+00:00" />
+<meta property="og:url" content="https://immmmm.com/hugo-render-hook/" />
+<meta property="article:published_time" content="2020-03-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-24T00:00:00+00:00" />
 
 
 
     
-  <link rel="prefetch" href="https://immmmm.com/hugo-render-hook/">
-  <link rel="prefetch" href="https://immmmm.com/hugo-theme-webstack/">
+  
+  <link rel="prefetch" href="https://immmmm.com/2020-03-23/">
 
   </head>
   <body class="dark-theme">
@@ -120,25 +123,37 @@
   
   
   <div class="post">
-    <h2 class="post-title"><a href="https://immmmm.com/2020-03-23/">2020-03-23</a></h2>
+    <h2 class="post-title"><a href="https://immmmm.com/hugo-render-hook/">Hugo 图片懒加载</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
-          2020-03-23
+          2020-03-24
         </span>
 
         
           
         
-      <span> / <span class="valine-comment-count" data-xid="/2020-03-23/">0</span> 评论 / <span id="/2020-03-23/" class="leancloud_visitors" data-flag-title="2020-03-23"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+      <span> / <span class="valine-comment-count" data-xid="/hugo-render-hook/">0</span> 评论 / <span id="/hugo-render-hook/" class="leancloud_visitors" data-flag-title="Hugo 图片懒加载"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
         
     </div>
 
     
+      
+        <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/logo-lazy.jpeg" class="post-cover" />
+      
+    
 
     <div class="post-content">
-      <p>喜大普奔，市官宣 <strong>“全面恢复生产生活秩序”</strong> ！自家小区已解禁，商场全部正常营业，餐饮也全部支持堂食。真是 <strong>“忽如一夜春风来，千树万树梨花开。”</strong></p>
-
+      <p>起因，想给文章插入的 img 图片添加 <code>loading='lazy'</code>，果然有爱折腾的，看（<a href="https://lvv.me/posts/2019/12/24_hugo_render_hooks/">这里</a>），官方说明 <a href="https://gohugo.io/getting-started/configuration-markup/#render-hook-templates">#render-hook-templates</a>，Hugo v0.62+</p>
+<p>简单说能对md内的链接（link）和图像（image）自定义渲染，比如实现以上需求，只需在主题新建 <code>layouts/_default/_markup/render-image.html</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">layouts/_default
+├── _markup
+│   └── render-image.html
+</code></pre></div><p>丢入代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;md_image&#34;</span>&gt;
+  &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">loading</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;lazy&#39;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Destination | safeURL }}&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Text }}&#34;</span> <span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">with</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Title</span><span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}</span> /&gt;
+&lt;/<span style="color:#f92672">p</span>&gt;
+</code></pre></div><p>🐯🐶一下，收工！等等，这么简单？！再来个图片自动 jsdelivr cdn 前缀？</p>
     </div>
 
     
@@ -146,7 +161,7 @@
     
       <span class="post-tags">
         
-          #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
         
       </span>
     
@@ -162,17 +177,10 @@
           </div>
           <div class="pagination__buttons">
             
-              <span class="button previous">
-                <a href="https://immmmm.com/hugo-render-hook/">
-                  <span class="button__icon">←</span>
-                  <span class="button__text">Hugo 图片懒加载</span>
-                </a>
-              </span>
-            
             
               <span class="button next">
-                <a href="https://immmmm.com/hugo-theme-webstack/">
-                  <span class="button__text">Hugo Theme Webstack</span>
+                <a href="https://immmmm.com/2020-03-23/">
+                  <span class="button__text">2020-03-23</span>
                   <span class="button__icon">→</span>
                 </a>
               </span>
@@ -185,7 +193,7 @@
 
     
           <div class="pagination__title">
-       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/2020-03-23/"></span> 条评论</span>
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/hugo-render-hook/"></span> 条评论</span>
        <hr />
   </div>
   <div id="comments"></div>

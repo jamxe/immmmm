@@ -7,12 +7,57 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-03-24T13:05:52+00:00</updated>
+    <updated>2020-03-24T13:07:04+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Hugo 图片懒加载]]></title>
+            <link href="https://immmmm.com/hugo-render-hook/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/hugo-theme-webstack/" rel="related" type="text/html" title="Hugo Theme Webstack" />
+                <link href="https://immmmm.com/valine-getscript-load/" rel="related" type="text/html" title="Valine 懒加载" />
+                <link href="https://immmmm.com/hello-hugo/" rel="related" type="text/html" title="Hello Hugo" />
+                <link href="https://immmmm.com/rsshub-docker/" rel="related" type="text/html" title="RSSHub 部署笔记" />
+                <link href="https://immmmm.com/hugo-github-actions/" rel="related" type="text/html" title="Hugo &#43; Github Actions 实现自动化部署" />
+            
+                <id>https://immmmm.com/hugo-render-hook/</id>
+            
+            
+            <published>2020-03-24T00:00:00+00:00</published>
+            <updated>2020-03-24T00:00:00+00:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>起因，想给文章插入的 img 图片添加 <code>loading='lazy'</code>，果然有爱折腾的，看（<a href="https://lvv.me/posts/2019/12/24_hugo_render_hooks/">这里</a>），官方说明 <a href="https://gohugo.io/getting-started/configuration-markup/#render-hook-templates">#render-hook-templates</a>，Hugo v0.62+</p>
+<p>简单说能对md内的链接（link）和图像（image）自定义渲染，比如实现以上需求，只需在主题新建 <code>layouts/_default/_markup/render-image.html</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">layouts/_default
+├── _markup
+│   └── render-image.html
+</code></pre></div><p>丢入代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;md_image&#34;</span>&gt;
+  &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">loading</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;lazy&#39;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Destination | safeURL }}&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Text }}&#34;</span> <span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">with</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Title</span><span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}</span> /&gt;
+&lt;/<span style="color:#f92672">p</span>&gt;
+</code></pre></div><p>🐯🐶一下，收工！等等，这么简单？！再来个图片自动 jsdelivr cdn 前缀？</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -274,59 +319,6 @@
 <li>Hugo 中文帮助文档：<a href="https://hugo.aiaide.com/">https://hugo.aiaide.com/</a></li>
 <li>官方 Hugo Templates： <a href="https://gohugo.io/templates/">https://gohugo.io/templates/</a></li>
 </ul>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[RSSHub 部署笔记]]></title>
-            <link href="https://immmmm.com/rsshub-docker/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/hello-hugo/" rel="related" type="text/html" title="Hello Hugo" />
-                <link href="https://immmmm.com/hugo-github-actions/" rel="related" type="text/html" title="Hugo &#43; Github Actions 实现自动化部署" />
-                <link href="https://immmmm.com/post-show-douban-item-localstorage-cache/" rel="related" type="text/html" title="文章内显示豆瓣条目（LocalStorage 缓存版）" />
-                <link href="https://immmmm.com/gridea-theme-motify/" rel="related" type="text/html" title="Gridea Theme Motify" />
-                <link href="https://immmmm.com/jsdelivr-gridea/" rel="related" type="text/html" title="使用 jsDelivr 加速 Gridea" />
-            
-                <id>https://immmmm.com/rsshub-docker/</id>
-            
-            
-            <published>2020-03-21T00:00:00+00:00</published>
-            <updated>2020-03-21T00:00:00+00:00</updated>
-            
-            
-            <content type="html"><![CDATA[<blockquote>
-<p>🍰 万物皆可 RSS。</p>
-</blockquote>
-<p>内容来源：<a href="https://docs.rsshub.app/install/#an-zhuang-2">https://docs.rsshub.app/install/#an-zhuang-2</a></p>
-<pre><code>$ docker pull diygod/rsshub
-$ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
-</code></pre><p>用宝塔面板的话，放行 1200 端口。浏览器打开 http://IP:1200/ ，看到成功页面。✅</p>
-<h3 id="绑定域名">绑定域名</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/rsshub.png" alt="rsshub"  />
-</p></p>
-<p>每次 IP 总不方便，子域名绑起，后台添加网址，加一个「理代向反」即可。</p>
-<h3 id="使用指北">使用指北</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/rsshub-1.jpg" alt="rsshub-1"  />
-</p></p>
-<p>配合 chrome 扩展更方便：<a href="https://chrome.google.com/webstore/detail/rsshub-radar/kefjpfngnndepjbopdmoebkipbgkggaa">RSSHub Radar</a> ，自定义域名，随时查询规则！</p>
-<p>再配合 <a href="https://immmmm.com/telegram-flowerss-bot/">《电报 Flowerss Bot》</a>，开启私属 rss 聚合机器人！</p>]]></content>
             
                  
                     

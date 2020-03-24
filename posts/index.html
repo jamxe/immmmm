@@ -17,7 +17,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://immmmm.com/posts/" />
-<meta property="og:updated_time" content="2020-03-23T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-03-24T00:00:00+00:00" />
 
 
 <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="木木木木木" />
@@ -124,6 +124,39 @@
   
 
   <div class="posts">
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/hugo-render-hook/">Hugo 图片懒加载</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2020-03-24
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+        
+          <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/logo-lazy.jpeg" class="post-cover" />
+        
+      
+
+      <div class="post-content">
+        <p>起因，想给文章插入的 img 图片添加 <code>loading='lazy'</code>，果然有爱折腾的，看（<a href="https://lvv.me/posts/2019/12/24_hugo_render_hooks/">这里</a>），官方说明 <a href="https://gohugo.io/getting-started/configuration-markup/#render-hook-templates">#render-hook-templates</a>，Hugo v0.62+</p>
+<p>简单说能对md内的链接（link）和图像（image）自定义渲染，比如实现以上需求，只需在主题新建 <code>layouts/_default/_markup/render-image.html</code></p>
+      </div>
+      
+        <div><a class="read-more button" href="/hugo-render-hook/">阅读全文 →</a></div>
+      
+    </div>
     
     <div class="post on-list">
       <h1 class="post-title"><a href="https://immmmm.com/2020-03-23/">2020-03-23</a></h1>
@@ -727,39 +760,6 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
       </div>
       
         <div><a class="read-more button" href="/gridea-theme-webstack/">阅读全文 →</a></div>
-      
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/gridea-templates-friends/">三步创建 Gridea 友情链接页</a></h1>
-      <div class="post-meta">
-        
-          <span class="post-date">
-            2020-01-02
-          </span>
-        
-
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
-          
-        </span>
-        
-      </div>
-
-      
-        
-          <img loading='lazy' src="https://lmm.elizen.me/images/2020/01/my-friends-5.jpg" class="post-cover" />
-        
-      
-
-      <div class="post-content">
-        <p>围观地址：<a href="https://i.immmmm.com/friends/">https://i.immmmm.com/friends/</a> （<a href="https://gridea.dev/docs/theme-custom.html#%E6%95%B0%E7%BB%84%E7%B1%BB%E5%9E%8B%E9%85%8D%E7%BD%AE">官方教程</a>)</p>
-<p>注：以下方法基于 Gridea v0.9+ ，相关代码以内置主题 notes 为例。</p>
-      </div>
-      
-        <div><a class="read-more button" href="/gridea-templates-friends/">阅读全文 →</a></div>
       
     </div>
     

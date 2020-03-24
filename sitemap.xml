@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://immmmm.com/hugo-render-hook/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/posts/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/tags/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/tags/%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://immmmm.com/2020-03-23/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
@@ -13,22 +33,7 @@
   </url>
   
   <url>
-    <loc>https://immmmm.com/posts/</loc>
-    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/tags/</loc>
-    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immmmm.com/valine-getscript-load/</loc>
-    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/tags/%E6%8A%98%E8%85%BE/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
   

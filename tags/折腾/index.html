@@ -17,7 +17,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/" />
-<meta property="og:updated_time" content="2020-03-23T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-03-24T00:00:00+00:00" />
 
 
 <link rel="alternate" type="application/rss+xml" href="/tags/%E6%8A%98%E8%85%BE/index.xml" title="木木木木木" />
@@ -124,6 +124,39 @@
   
 
   <div class="posts">
+    
+    <div class="post on-list">
+      <h1 class="post-title"><a href="https://immmmm.com/hugo-render-hook/">Hugo 图片懒加载</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2020-03-24
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+        
+          <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/logo-lazy.jpeg" class="post-cover" />
+        
+      
+
+      <div class="post-content">
+        <p>起因，想给文章插入的 img 图片添加 <code>loading='lazy'</code>，果然有爱折腾的，看（<a href="https://lvv.me/posts/2019/12/24_hugo_render_hooks/">这里</a>），官方说明 <a href="https://gohugo.io/getting-started/configuration-markup/#render-hook-templates">#render-hook-templates</a>，Hugo v0.62+</p>
+<p>简单说能对md内的链接（link）和图像（image）自定义渲染，比如实现以上需求，只需在主题新建 <code>layouts/_default/_markup/render-image.html</code></p>
+      </div>
+      
+        <div><a class="read-more button" href="/hugo-render-hook/">阅读全文 →</a></div>
+      
+    </div>
     
     <div class="post on-list">
       <h1 class="post-title"><a href="https://immmmm.com/hugo-theme-webstack/">Hugo Theme Webstack</a></h1>
@@ -732,34 +765,6 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
       </div>
       
         <div><a class="read-more button" href="/webhook-github/">阅读全文 →</a></div>
-      
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://immmmm.com/about-html-blog/">静态博客那些事</a></h1>
-      <div class="post-meta">
-        
-          <span class="post-date">
-            2019-11-11
-          </span>
-        
-
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
-          
-        </span>
-        
-      </div>
-
-      
-
-      <div class="post-content">
-        一个周末耗在了静态博客部署方案上，目前使用了 Gridea + Coding 搭了个，欢迎围观： https://i.immmmm.com/ 也试了 Hexo + Travis CI ，部署好后是方便，只要把文件 git push 到监测的分支，或者直接在 Github 上写日志，Travis CI 就能自动生成静态文件到主分支上。但，Hexo 静态生成器与主题插件代码的问题，哎，折腾不起。 回说 Bitcron ，更新日志停留在 2017-09-12
-      </div>
-      
-        <div><a class="read-more button" href="/about-html-blog/">阅读全文 →</a></div>
       
     </div>
     

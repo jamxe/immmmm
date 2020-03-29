@@ -6,10 +6,24 @@
     <description>Recent content in Posts on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 29 Mar 2020 22:41:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 23:15:00 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>前端编辑 Hugo 文章</title>
+      <link>https://immmmm.com/hugo-github-editpath/</link>
+      <pubDate>Sun, 29 Mar 2020 23:15:00 +0800</pubDate>
+      
+      <guid>https://immmmm.com/hugo-github-editpath/</guid>
+      <description>&lt;p&gt;目前发文是直接在 Github 前端进行，Hugo 的构建交给 &lt;a href=&#34;https://immmmm.com/hugo-github-actions/&#34;&gt;Github Actions&lt;/a&gt; 实现自动化部署。因此，产生个需求，文章里改个错别字什么的，能不能一键直达 GIthub 编辑页面？&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;# 当面页面链接
+https://immmmm.com/hugo-themes/
+# Github 编辑页面链接
+https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 主题推荐</title>
@@ -47,20 +61,6 @@
       <guid>https://immmmm.com/hugo-theme-webstack/</guid>
       <description>&lt;p&gt;效果预览：&lt;a href=&#34;https://edui.fun/&#34;&gt;https://edui.fun/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;仓库下载：&lt;a href=&#34;https://github.com/lmm214/hugo-theme-webstack&#34;&gt;https://github.com/lmm214/hugo-theme-webstack&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Valine 懒加载</title>
-      <link>https://immmmm.com/valine-getscript-load/</link>
-      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/valine-getscript-load/</guid>
-      <description>&lt;p&gt;博客都已静态，想再提速，要么换国内云服，要么优化一个个 JS 加载。立竿见影办法是使用 CDN 来加载，或者前端延迟加载，甚者后端判断按需加载。&lt;/p&gt;
-&lt;p&gt;在需要加载的一串 JS 里，找来找去，Valine 这货最强大 💪&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;47.5KB --&amp;gt; https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js
-75KB   --&amp;gt; https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js
-6.4KB  --&amp;gt; https://js.fundebug.cn/fundebug.1.9.0.min.js
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;撸起袖子，月干！&lt;/p&gt;</description>
     </item>
     
   </channel>

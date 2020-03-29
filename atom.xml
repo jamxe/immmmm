@@ -7,12 +7,98 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-03-29T13:45:24+00:00</updated>
+    <updated>2020-03-29T14:50:17+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Hugo 主题推荐]]></title>
+            <link href="https://immmmm.com/hugo-themes/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/hugo-render-hook/" rel="related" type="text/html" title="Hugo 图片懒加载" />
+                <link href="https://immmmm.com/hugo-theme-webstack/" rel="related" type="text/html" title="Hugo Theme Webstack" />
+                <link href="https://immmmm.com/valine-getscript-load/" rel="related" type="text/html" title="Valine 懒加载" />
+                <link href="https://immmmm.com/hello-hugo/" rel="related" type="text/html" title="Hello Hugo" />
+                <link href="https://immmmm.com/rsshub-docker/" rel="related" type="text/html" title="RSSHub 部署笔记" />
+            
+                <id>https://immmmm.com/hugo-themes/</id>
+            
+            
+            <published>2020-03-29T22:41:00+08:00</published>
+            <updated>2020-03-29T22:41:00+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>人工 Github 搜索 “Hugo theme” 按 stars 排序，挑出以下十款。</p>
+<h3 id="hugo-theme-we">「hugo-theme-we」</h3>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-theme-we.png" alt="hugo-theme-we"  />
+</p>
+<a href="https://github.com/xiaomingplus/hugo-theme-we">https://github.com/xiaomingplus/hugo-theme-we</a></p>
+<h3 id="hugo-theme-nuo">「hugo-theme-nuo」</h3>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-theme-nuo.png" alt="hugo-theme-nuo"  />
+</p>
+<a href="https://github.com/laozhu/hugo-nuo">https://github.com/laozhu/hugo-nuo</a></p>
+<h3 id="hugo-theme-hyde">「hugo-theme-hyde」</h3>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-theme-hyde.png" alt="hugo-theme-hyde"  />
+</p>
+<a href="https://github.com/spf13/hyde">https://github.com/spf13/hyde</a></p>
+<h3 id="hugo-theme-loveit">「hugo-theme-loveIt」</h3>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-theme-loveIt.png" alt="hugo-theme-loveIt"  />
+</p>
+<a href="https://github.com/dillonzq/LoveIt">https://github.com/dillonzq/LoveIt</a></p>
+<h3 id="hugo-theme-yinyang">「hugo-theme-yinyang」</h3>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-theme-yinyang.png" alt="hugo-theme-yinyang"  />
+</p>
+<a href="https://github.com/joway/hugo-theme-yinyang">https://github.com/joway/hugo-theme-yinyang</a></p>
+<h3 id="hugo-theme-zozo">「hugo-theme-zozo」</h3>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-theme-zozo.png" alt="hugo-theme-zozo"  />
+</p>
+<a href="https://github.com/varkai/hugo-theme-zozo">https://github.com/varkai/hugo-theme-zozo</a></p>
+<h3 id="hugo-theme-meme">「hugo-theme-meme」</h3>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-theme-meme.png" alt="hugo-theme-meme"  />
+</p>
+<a href="https://github.com/reuixiy/hugo-theme-meme">https://github.com/reuixiy/hugo-theme-meme</a></p>
+<h3 id="hugo-theme-next">「hugo-theme-next」</h3>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-theme-next.png" alt="hugo-theme-next"  />
+</p>
+<a href="https://github.com/xtfly/hugo-theme-next">https://github.com/xtfly/hugo-theme-next</a></p>
+<h3 id="hugo-theme-pure">「hugo-theme-pure」</h3>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-theme-pure.png" alt="hugo-theme-pure"  />
+</p>
+<a href="https://github.com/xiaoheiAh/hugo-theme-pure">https://github.com/xiaoheiAh/hugo-theme-pure</a></p>
+<h3 id="hugo-theme-slim">「hugo-theme-slim」</h3>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-theme-slim.png" alt="hugo-theme-slim"  />
+</p>
+<a href="https://github.com/zhe/hugo-theme-slim">https://github.com/zhe/hugo-theme-slim</a></p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -197,128 +283,6 @@
 }
 <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
 </code></pre></div><p>🎉</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[Hello Hugo]]></title>
-            <link href="https://immmmm.com/hello-hugo/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/rsshub-docker/" rel="related" type="text/html" title="RSSHub 部署笔记" />
-                <link href="https://immmmm.com/hugo-github-actions/" rel="related" type="text/html" title="Hugo &#43; Github Actions 实现自动化部署" />
-                <link href="https://immmmm.com/post-show-douban-item-localstorage-cache/" rel="related" type="text/html" title="文章内显示豆瓣条目（LocalStorage 缓存版）" />
-                <link href="https://immmmm.com/gridea-theme-motify/" rel="related" type="text/html" title="Gridea Theme Motify" />
-                <link href="https://immmmm.com/jsdelivr-gridea/" rel="related" type="text/html" title="使用 jsDelivr 加速 Gridea" />
-            
-                <id>https://immmmm.com/hello-hugo/</id>
-            
-            
-            <published>2020-03-21T00:00:00+00:00</published>
-            <updated>2020-03-21T00:00:00+00:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>哈喽，🐯🐶！（开机声～）</p>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-2.png" alt="hugo-2"  />
-</p></p>
-<p>主站顺利切换到 <a href="https://gohugo.io/">Hugo</a> ，直接在 Github Web 端码字，或者本地码好拖进去，自动更新，自动部署，舒心！</p>
-<p>就待它的 Github APP 端支持编辑代码咯！</p>
-<h3 id="迁移采坑记">迁移采坑记</h3>
-<h4 id="文章摘要失效">文章摘要失效</h4>
-<p>原来文章 <code>more</code> 标签像中间有空格就无效 <code>&lt;!--  more  --&gt;</code> 批量替换成  <code>&lt;!--more--&gt;</code> 解决。</p>
-<h4 id="文章列表排序错乱">文章列表排序错乱</h4>
-<p>原来是文章信息的 <code>date</code> 格式不统一导致无法识别，统一修改为年月日 <code>date: 2020-03-21</code> 解决。</p>
-<h4 id="文章内-html-标签为空">文章内 html 标签为空</h4>
-<p>被替换为 <code>&lt;!-- raw HTML omitted --&gt;</code> ，原来 Hugo 0.60 以上默认禁用了，手动在 <code>config.toml</code> 添加以下代码。</p>
-<pre><code>[markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-  unsafe = true
-</code></pre><h3 id="瞎折腾导引">瞎折腾导引</h3>
-<p>强烈推荐一波流，文章 TOC 目录、面包屑导航、URL 无缝迁移、内置搜索等 ➡️ <a href="https://www.rectcircle.cn/posts/blog-migration/">博客迁移——Hugo使用整体概览</a></p>
-<p>瞎改后的主题源码见 <a href="https://github.com/lmm214/immmmm/tree/master/themes/hello-friend">「这里」</a></p>
-<h4 id="更改默认-rss-地址">更改默认 RSS 地址</h4>
-<p>原默认 rss 地址是 <code>index.xml</code>：什么鬼！下载 <a href="https://github.com/kaushalmodi/hugo-atom-feed/blob/master/layouts/_default/list.atom.xml">list.atom.xml</a> 丢入自己主题的 <code>layouts/_default</code>, 并在 <code>config.toml</code> 添加以下代码。</p>
-<pre><code>rssLimit = 5 # 控制输出数量，不然默认是全站
-[outputs]
-  home = [&quot;Atom&quot;, &quot;HTML&quot;] # &lt;domain&gt;/atom.xml
-[outputFormats.Atom]
-  mediatype = &quot;application/rss&quot;
-  baseName = &quot;atom&quot;
-</code></pre><h4 id="增加文章-toc">增加文章 TOC</h4>
-<p>新建 <a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/partials/toc.html">layouts/partials/toc.html</a> ，修改 <a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/_default/single.html">layouts/_default/single.html</a> 添加引用代码：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    {{ if .Params.toc }}
-      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tocify&#34;</span>&gt;目录：{{- partial &#34;toc.html&#34; . -}}&lt;/<span style="color:#f92672">div</span>&gt;
-    {{ end }}
-</code></pre></div><p>在文章 md 头部信息中添加 <code>toc: true</code> 启用。相关 CSS 和 jQuery 代码如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* tocify */</span>
-.<span style="color:#a6e22e">tocify</span> {<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">max-height</span>: <span style="color:#ae81ff">90</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">auto</span>; <span style="color:#66d9ef">margin-left</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>; <span style="color:#66d9ef">right</span>:<span style="color:#ae81ff">2</span><span style="color:#66d9ef">%</span>; <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>;}
-.<span style="color:#a6e22e">tocify</span> <span style="color:#f92672">ul</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">tocify</span> <span style="color:#f92672">li</span> {<span style="color:#66d9ef">list-style</span>: <span style="color:#66d9ef">none</span>; <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>; <span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>; }
-.<span style="color:#a6e22e">tocify</span> <span style="color:#f92672">li</span> <span style="color:#f92672">a</span> {<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>; <span style="color:#66d9ef">text-indent</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">text-decoration</span>: <span style="color:#66d9ef">none</span>; }
-.<span style="color:#a6e22e">tocify</span> <span style="color:#f92672">ul</span> <span style="color:#f92672">ul</span> <span style="color:#f92672">li</span> <span style="color:#f92672">a</span>:<span style="color:#a6e22e">before</span> {<span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#34;- &#34;</span>}
-@<span style="color:#66d9ef">media</span> <span style="color:#f92672">only</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span>:<span style="color:#a6e22e">683px</span><span style="color:#f92672">)</span> {
-	.<span style="color:#a6e22e">tocify</span> {<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;}
-}
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//文章 toc 跟随
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">nav</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;.tocify&#34;</span>);
-<span style="color:#a6e22e">nav</span>.<span style="color:#a6e22e">removeClass</span>(<span style="color:#e6db74">&#34;hide&#34;</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">navTop</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;.post-content&#34;</span>).<span style="color:#a6e22e">offset</span>().<span style="color:#a6e22e">top</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">w</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(window).<span style="color:#a6e22e">width</span>()<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">400</span>;
-<span style="color:#a6e22e">nav</span>.<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;left&#34;</span>, <span style="color:#a6e22e">w</span>);
-<span style="color:#a6e22e">nav</span>.<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;top&#34;</span>, <span style="color:#a6e22e">navTop</span>);
-<span style="color:#a6e22e">$</span>(window).<span style="color:#a6e22e">scroll</span>(<span style="color:#66d9ef">function</span>() {
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">scrolls</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">scrollTop</span>();
-    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">scrolls</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">navTop</span>) {
-      <span style="color:#a6e22e">nav</span>.<span style="color:#a6e22e">css</span>({<span style="color:#e6db74">&#34;top&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>,<span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;fixed&#34;</span>});
-    } <span style="color:#66d9ef">else</span> {
-      <span style="color:#a6e22e">nav</span>.<span style="color:#a6e22e">css</span>({<span style="color:#e6db74">&#34;top&#34;</span><span style="color:#f92672">:</span><span style="color:#a6e22e">navTop</span>,<span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;absolute&#34;</span>});
-    };
-});
-</code></pre></div><h4 id="添加豆瓣页面">添加豆瓣页面</h4>
-<p>新建模板 <a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/_default/books.html">layouts/_default/books.html</a> 、<a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/_default/movies.html">layouts/_default/movies.html</a> 页面模板，自行修改 <code>secret</code>。</p>
-<p>新建文章 <a href="https://github.com/lmm214/immmmm/blob/master/content/books.md">content/books.md</a>、<a href="https://github.com/lmm214/immmmm/blob/master/content/movies.md">content/movies.md</a> ，当访问 <code>域名/books/</code> 时 Hugo 会匹配 <code>books.html</code> 进行渲染。</p>
-<h4 id="实现内置搜索">实现内置搜索</h4>
-<p>敲黑板，记得写个文章md， <a href="https://github.com/lmm214/immmmm/blob/master/content/search.md">content/search.md</a> 丢入 <code>content</code> 中用来渲染空目录。</p>
-<p>搜索利用的是 <code>fuse.js</code> 实现前端搜索全站文章 json 数据。</p>
-<p><code>config.toml</code> 添加合并：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">[outputs]
-  home = [&#34;Atom&#34;, &#34;HTML&#34;, &#34;JSON&#34;] #加上 JSON 支持
-</code></pre></div><p>新建 <a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/index.json">layouts/index.json</a> ,新建搜索模板 <a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/_default/search.html">layouts/_default/search.html</a> ，新建搜索 JS <a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/static/search.js">static/search.js</a> ,添加搜索 CSS：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* searchBoxInput */</span>
-.<span style="color:#a6e22e">menu</span> .<span style="color:#a6e22e">search-box-icon</span> {<span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">11</span><span style="color:#66d9ef">px</span>; }
-.<span style="color:#a6e22e">searchPage</span>{<span style="color:#66d9ef">min-height</span>:<span style="color:#ae81ff">300</span><span style="color:#66d9ef">px</span>}
-.<span style="color:#a6e22e">search-box</span> {<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>; <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>; } #searchBoxInput {<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">rem</span>; <span style="color:#66d9ef">background</span>:<span style="color:#ae81ff">#eaeaea</span>; <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>; <span style="color:#66d9ef">outline</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>; <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">inherit</span>; <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">box-sizing</span>: <span style="color:#66d9ef">border-box</span>; }
-.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">search-box</span> #searchBoxInput {<span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#3b3d42</span>; }
-#searchBoxButton {<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span>; <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">none</span>; <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">rem</span>; <span style="color:#66d9ef">border</span>:<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">none</span>; <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0</span>; <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0.4</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">0.6</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">0.4</span><span style="color:#66d9ef">rem</span>; }
-.<span style="color:#a6e22e">search-box-icon</span> {<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">inherit</span>; fill: <span style="color:#66d9ef">currentColor</span>; <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">1.1</span><span style="color:#66d9ef">rem</span>; <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">1.1</span><span style="color:#66d9ef">rem</span>; }
-</code></pre></div><h4 id="匹配-valine-暗黑样式">匹配 Valine 暗黑样式</h4>
-<p>使用 <code>Valine.Pure.min.js</code> 不带默认样式的，并添加暗黑代码（完整版 <a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/static/style.css">style.css</a>）：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span>{<span style="color:#66d9ef">border</span>:<span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#4a4b50</span>;}
-.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> <span style="color:#f92672">input</span>{<span style="color:#66d9ef">background</span>:<span style="color:#ae81ff">#dcdcdc</span>;}
-.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">veditor</span>{<span style="color:#66d9ef">color</span>:<span style="color:#ae81ff">#fff</span>;}
-.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vbtn</span>{<span style="color:#66d9ef">color</span>:<span style="color:#ae81ff">#dcdcdc</span>;<span style="color:#66d9ef">background</span>:<span style="color:#ae81ff">#4a4b50</span>;}
-</code></pre></div><h3 id="感叹和感谢">感叹和感谢</h3>
-<p>不懂英文，太难了！ 懂点英文，但也看不懂官方文档，😭</p>
-<ul>
-<li>中文系列教程翻译： <a href="https://www.rectcircle.cn/series/hugo/">https://www.rectcircle.cn/series/hugo/</a></li>
-<li>Hugo 中文帮助文档：<a href="https://hugo.aiaide.com/">https://hugo.aiaide.com/</a></li>
-<li>官方 Hugo Templates： <a href="https://gohugo.io/templates/">https://gohugo.io/templates/</a></li>
-</ul>]]></content>
             
                  
                     

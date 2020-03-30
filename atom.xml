@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-03-30T02:23:16+00:00</updated>
+    <updated>2020-03-30T02:36:17+00:00</updated>
     
     
     
@@ -77,55 +77,115 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
             
             <content type="html"><![CDATA[<p>人工 Github 搜索 “Hugo theme” 按 stars 排序，挑出以下十款。</p>
 <h3 id="hugo-theme-we">「hugo-theme-we」</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/theme-we.png" alt="hugo-theme-we"  />
+<p><a href="https://github.com/xiaomingplus/hugo-theme-we">https://github.com/xiaomingplus/hugo-theme-we</a>
+
+  <figure class="center" >
+    <img src="https://lmm.elizen.me/images/2020/03/theme-we.png"   />
+    
+      <figcaption class="center" >hugo-theme-we</figcaption>
+    
+  </figure>
+
 </p>
-<a href="https://github.com/xiaomingplus/hugo-theme-we">https://github.com/xiaomingplus/hugo-theme-we</a></p>
 <h3 id="hugo-theme-nuo">「hugo-theme-nuo」</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/theme-nuo.png" alt="hugo-theme-nuo"  />
+<p><a href="https://github.com/laozhu/hugo-nuo">https://github.com/laozhu/hugo-nuo</a>
+
+  <figure class="center" >
+    <img src="https://lmm.elizen.me/images/2020/03/theme-nuo.png"   />
+    
+      <figcaption class="center" >hugo-theme-nuo</figcaption>
+    
+  </figure>
+
 </p>
-<a href="https://github.com/laozhu/hugo-nuo">https://github.com/laozhu/hugo-nuo</a></p>
 <h3 id="hugo-theme-hyde">「hugo-theme-hyde」</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/theme-hyde.png" alt="hugo-theme-hyde"  />
+<p><a href="https://github.com/spf13/hyde">https://github.com/spf13/hyde</a>
+
+  <figure class="center" >
+    <img src="https://lmm.elizen.me/images/2020/03/theme-hyde.png"   />
+    
+      <figcaption class="center" >hugo-theme-hyde</figcaption>
+    
+  </figure>
+
 </p>
-<a href="https://github.com/spf13/hyde">https://github.com/spf13/hyde</a></p>
 <h3 id="hugo-theme-loveit">「hugo-theme-loveIt」</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/theme-loveIt.png" alt="hugo-theme-loveIt"  />
+<p><a href="https://github.com/dillonzq/LoveIt">https://github.com/dillonzq/LoveIt</a>
+
+  <figure class="center" >
+    <img src="https://lmm.elizen.me/images/2020/03/theme-loveIt.png"   />
+    
+      <figcaption class="center" >hugo-theme-loveIt</figcaption>
+    
+  </figure>
+
 </p>
-<a href="https://github.com/dillonzq/LoveIt">https://github.com/dillonzq/LoveIt</a></p>
 <h3 id="hugo-theme-yinyang">「hugo-theme-yinyang」</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/theme-yinyang.png" alt="hugo-theme-yinyang"  />
+<p><a href="https://github.com/joway/hugo-theme-yinyang">https://github.com/joway/hugo-theme-yinyang</a>
+
+  <figure class="center" >
+    <img src="https://lmm.elizen.me/images/2020/03/theme-yinyang.png"   />
+    
+      <figcaption class="center" >hugo-theme-yinyang</figcaption>
+    
+  </figure>
+
 </p>
-<a href="https://github.com/joway/hugo-theme-yinyang">https://github.com/joway/hugo-theme-yinyang</a></p>
 <h3 id="hugo-theme-zozo">「hugo-theme-zozo」</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/theme-zozo.png" alt="hugo-theme-zozo"  />
+<p><a href="https://github.com/varkai/hugo-theme-zozo">https://github.com/varkai/hugo-theme-zozo</a>
+
+  <figure class="center" >
+    <img src="https://lmm.elizen.me/images/2020/03/theme-zozo.png"   />
+    
+      <figcaption class="center" >hugo-theme-zozo</figcaption>
+    
+  </figure>
+
 </p>
-<a href="https://github.com/varkai/hugo-theme-zozo">https://github.com/varkai/hugo-theme-zozo</a></p>
 <h3 id="hugo-theme-meme">「hugo-theme-meme」</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/theme-meme.png" alt="hugo-theme-meme"  />
+<p><a href="https://github.com/reuixiy/hugo-theme-meme">https://github.com/reuixiy/hugo-theme-meme</a>
+
+  <figure class="center" >
+    <img src="https://lmm.elizen.me/images/2020/03/theme-meme.png"   />
+    
+      <figcaption class="center" >hugo-theme-meme</figcaption>
+    
+  </figure>
+
 </p>
-<a href="https://github.com/reuixiy/hugo-theme-meme">https://github.com/reuixiy/hugo-theme-meme</a></p>
 <h3 id="hugo-theme-next">「hugo-theme-next」</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/theme-next.png" alt="hugo-theme-next"  />
+<p><a href="https://github.com/xtfly/hugo-theme-next">https://github.com/xtfly/hugo-theme-next</a>
+
+  <figure class="center" >
+    <img src="https://lmm.elizen.me/images/2020/03/theme-next.png"   />
+    
+      <figcaption class="center" >hugo-theme-next</figcaption>
+    
+  </figure>
+
 </p>
-<a href="https://github.com/xtfly/hugo-theme-next">https://github.com/xtfly/hugo-theme-next</a></p>
 <h3 id="hugo-theme-pure">「hugo-theme-pure」</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/theme-pure.png" alt="hugo-theme-pure"  />
+<p><a href="https://github.com/xiaoheiAh/hugo-theme-pure">https://github.com/xiaoheiAh/hugo-theme-pure</a>
+
+  <figure class="center" >
+    <img src="https://lmm.elizen.me/images/2020/03/theme-pure.png"   />
+    
+      <figcaption class="center" >hugo-theme-pure</figcaption>
+    
+  </figure>
+
 </p>
-<a href="https://github.com/xiaoheiAh/hugo-theme-pure">https://github.com/xiaoheiAh/hugo-theme-pure</a></p>
 <h3 id="hugo-theme-slim">「hugo-theme-slim」</h3>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/theme-slim.png" alt="hugo-theme-slim"  />
-</p>
-<a href="https://github.com/zhe/hugo-theme-slim">https://github.com/zhe/hugo-theme-slim</a></p>]]></content>
+<p><a href="https://github.com/zhe/hugo-theme-slim">https://github.com/zhe/hugo-theme-slim</a>
+
+  <figure class="center" >
+    <img src="https://lmm.elizen.me/images/2020/03/theme-slim.png"   />
+    
+      <figcaption class="center" >hugo-theme-slim</figcaption>
+    
+  </figure>
+
+</p>]]></content>
             
                  
                     

@@ -6,10 +6,26 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 30 Mar 2020 12:24:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2020 21:59:00 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 添加面包屑导航</title>
+      <link>https://immmmm.com/hugo-add-breadcrumb/</link>
+      <pubDate>Tue, 31 Mar 2020 21:59:00 +0800</pubDate>
+      
+      <guid>https://immmmm.com/hugo-add-breadcrumb/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://lmm.elizen.me/images/2020/03/breadcrumb-1.png&#34; width=&#34;50%&#34;/&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2020/03/breadcrumb-2.png&#34; width=&#34;50%&#34; /&gt;
+    
+      &lt;figcaption&gt;黑+白，疗效好&lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;p&gt;「不问明天，悠然浪费」，多少年前看到的一句话，一直作为博客的 Slogan ，如同“谶语”般的存在！ 😷&lt;/p&gt;
+&lt;p&gt;说回正题，折腾流程如下：&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>添加 Google Fonts 思源宋体</title>
@@ -52,16 +68,6 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
       <guid>https://immmmm.com/hugo-render-hook/</guid>
       <description>&lt;p&gt;起因，想给文章插入的 img 图片添加 &lt;code&gt;loading=&#39;lazy&#39;&lt;/code&gt;，果然有爱折腾的，看（&lt;a href=&#34;https://lvv.me/posts/2019/12/24_hugo_render_hooks/&#34;&gt;这里&lt;/a&gt;），官方说明 &lt;a href=&#34;https://gohugo.io/getting-started/configuration-markup/#render-hook-templates&#34;&gt;#render-hook-templates&lt;/a&gt;，Hugo v0.62+&lt;/p&gt;
 &lt;p&gt;简单说能对md内的链接（link）和图像（image）自定义渲染，比如实现以上需求，只需在主题新建 &lt;code&gt;layouts/_default/_markup/render-image.html&lt;/code&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo Theme Webstack</title>
-      <link>https://immmmm.com/hugo-theme-webstack/</link>
-      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/hugo-theme-webstack/</guid>
-      <description>&lt;p&gt;效果预览：&lt;a href=&#34;https://edui.fun/&#34;&gt;https://edui.fun/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;仓库下载：&lt;a href=&#34;https://github.com/lmm214/hugo-theme-webstack&#34;&gt;https://github.com/lmm214/hugo-theme-webstack&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

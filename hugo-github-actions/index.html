@@ -170,9 +170,21 @@
 </code></pre><h3 id="添加-github-actions-代码">添加 Github Actions 代码：</h3>
 <p>实现效果，直接网页上修改 <code>data/links.toml</code> 或任意文件，触发 Actions 自动化运行 Hugo 程序生成静态文件并推送到 <code>gh-pages</code> 分支上，等待几十秒可看到更新 <a href="https://lmm214.github.io/edui/">https://lmm214.github.io/edui/</a></p>
 <p>具体操作：</p>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/tokens-1.png" alt="tokens-1"  />
+</p></p>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/tokens-2.png" alt="tokens-2"  />
+</p></p>
+<ul>
+<li>点 <a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a> 新建一个，勾选 <code>repo</code> 和 <code>workflow</code> ,暂存；</li>
+</ul>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/secrets.jpeg" alt="secrets"  />
+</p></p>
 <ul>
 <li>
-<p>点 <a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a> 新建一个，并暂存；进项目 <code>settings/secrets</code> 新建标题为 <code>personal_token</code> ，内容是刚创建的 <code>tokens</code> ;</p>
+<p>进项目 <code>settings/secrets</code> 新建标题为 <code>personal_token</code> ，内容是刚创建的 <code>tokens</code> ;</p>
 </li>
 <li>
 <p>回项目，点 <code>Actions -- New wordflow -- Set up a workflow yourself</code> ，添加如下代码：</p>
@@ -215,8 +227,40 @@ jobs:
         env:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
           webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
-</code></pre><p><code>WEBHOOK_URL</code> 和 <code>WEBHOOK_SECRET</code> 是进项目 <code>settings/secrets</code> 新建添加，构建成宝塔面板的 webhook 链接，同时宝塔后台的代码去掉后缀判断。</p>
-<h3 id="后话一点点-">后话一点点 🤏</h3>
+</code></pre><p><code>WEBHOOK_URL</code> 和 <code>WEBHOOK_SECRET</code> 是进项目 <code>settings/secrets</code> 新建添加，构建成宝塔面板的 webhook 链接，如：</p>
+<p><code>WEBHOOK_URL</code> 设为：<code>http://1.1.1.1/hook?access_key=密钥</code>;</p>
+<p><code>WEBHOOK_SECRET</code> 设为 <code>&amp;param=immmmm.com</code>;这样合并成：</p>
+<pre><code>http://1.1.1.1/hook?access_key=密钥&amp;param=immmmm.com
+</code></pre><p>ip 和域名需需改，同时宝塔后台的 webhooks 添加同步代码，需修改本地路径、github 项目路径，代码如下：</p>
+<pre><code>#!/bin/bash
+echo &quot;&quot;
+date --date='0 days ago' &quot;+%Y-%m-%d %H:%M:%S&quot;
+echo &quot;Start&quot;
+
+#修改本地路径、github 项目路径
+gitPath=&quot;/www/wwwroot/immmmm.com&quot;
+gitHttp=&quot;https://github.com/lmm214/immmmm.git&quot;
+
+echo &quot;Web站点路径：$gitPath&quot;
+if [ -d &quot;$gitPath&quot; ]; then
+        cd $gitPath
+        if [ ! -d &quot;.git&quot; ]; then
+                echo &quot;在该目录下克隆 git&quot;
+                git clone -b gh-pages $gitHttp gittemp
+                mv gittemp/.git .
+                rm -rf gittemp
+        fi
+        git reset --hard gh-pages
+        git pull
+        chown -R www:www $gitPath
+        echo &quot;End&quot;
+        exit
+else
+        echo &quot;该项目路径不存在&quot;
+        echo &quot;End&quot;
+        exit
+fi
+</code></pre><h3 id="后话一点点-">后话一点点 🤏</h3>
 <p>听闻 Hugo 大名也有好几个月，一直没尝试，之后也沉浸在 Gridea 中，不得不夸夸 Gridea 客户端体检真是优雅！</p>
 <p>但一直有一点点遗憾，更新只能启动客户端，点击【同步】。</p>
 <p>而 Hugo 生成静态文件摔 Hexo 几光年，部署安装无依赖，试用门槛较低。看着官方文档，程序、主题自定义也比较强悍。</p>

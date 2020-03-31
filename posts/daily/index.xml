@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>日常 on 木木木木木</title>
+    <link>https://immmmm.com/posts/daily/</link>
+    <description>Recent content in 日常 on 木木木木木</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 06 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://immmmm.com/posts/daily/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>春</title>
+      <link>https://immmmm.com/waiting-for-spring/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/waiting-for-spring/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;春水初生，春林初盛。春风十里，不如你。 ——《春》冯唐&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>庆生</title>
+      <link>https://immmmm.com/happy-birthday-2020/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/happy-birthday-2020/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://lmm.elizen.me/images/logos/birthday-1.JPG&#34; width=&#34;50%&#34;/&gt;
+    &lt;figcaption&gt;庆生&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;生，活着，当下异常值得庆祝！祝，自己生日快乐！祝，家人平安健康！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>二〇二〇，你好</title>
+      <link>https://immmmm.com/hi-2020/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/hi-2020/</guid>
+      <description>&lt;p&gt;取消外出旅行计划，乖乖乡下来过年，愿所有人平安无事！&lt;/p&gt;
+&lt;h3 id=&#34;推荐&#34;&gt;推荐&lt;/h3&gt;
+&lt;p&gt;一本书《病毒星球》
+一部电影《流感》
+一个游戏《瘟疫公司》
+一个小程序《我要戴口罩》
+……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Macbook 二三事</title>
+      <link>https://immmmm.com/macbook-some-things/</link>
+      <pubDate>Sun, 29 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/macbook-some-things/</guid>
+      <description>&lt;p&gt;感谢老婆，二话没说，一个字买。官网败了 MacBook Pro 2019 13寸 2.4G ，用工作证享受了把教育优惠，还得到一副近3k的Beats耳机。昨中午开始折腾到深夜，基本调教完毕。&lt;/p&gt;
+&lt;h3 id=&#34;槽点无数砸钱来填&#34;&gt;槽点无数，砸钱来填&lt;/h3&gt;
+&lt;p&gt;-仅typec口，需另购配件配线 USB、SD、VGA、HDMI 扩展坞买起
+-CPU在40度以上，剪辑视频导出时近70度，touchbar烫手，风扇托盘买起
+-键盘真残，近正方形比例、键帽预估容易积灰，键盘膜买起
+-屏幕反光厉害，时常看瞎自己，啥膜买起？
+……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>我們與惡的距離</title>
+      <link>https://immmmm.com/the-world-between-us/</link>
+      <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/the-world-between-us/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://lmm.elizen.me/images/2019/04/p2539805435.jpg&#34; width=&#34;50%&#34; /&gt;&lt;img src=&#34;https://lmm.elizen.me/images/2019/04/p2539805408.jpg&#34; width=&#34;50%&#34; /&gt;
+    &lt;figcaption&gt;我们与恶的距离为负&lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

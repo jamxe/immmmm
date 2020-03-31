@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>词穷 on 木木木木木</title>
+    <link>https://immmmm.com/posts/chat/</link>
+    <description>Recent content in 词穷 on 木木木木木</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://immmmm.com/posts/chat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2020-03-23</title>
+      <link>https://immmmm.com/2020-03-23/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/2020-03-23/</guid>
+      <description>喜大普奔，市官宣 “全面恢复生产生活秩序” ！自家小区已解禁，商场全部正常营业，餐饮也全部支持堂食。真是 “忽如一夜春风来，千树万树梨花开。”</description>
+    </item>
+    
+    <item>
+      <title>2020-03-09</title>
+      <link>https://immmmm.com/2020-03-09/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/2020-03-09/</guid>
+      <description>复学遥遥无期，总得找点事打发时间，花了一下午从 Bitcron 迁移到 Gridea，主要是日志meta匹配和主题转制，目前感觉甚好！🎧</description>
+    </item>
+    
+    <item>
+      <title>2020-01-14</title>
+      <link>https://immmmm.com/2020-01-14/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/2020-01-14/</guid>
+      <description>Edui.fun，让教学有点意思。整了个导航站，收集些与工作有关的在线工具、实用软件什么的，希望有点用！</description>
+    </item>
+    
+    <item>
+      <title>2019-12-08</title>
+      <link>https://immmmm.com/2019-12-08/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/2019-12-08/</guid>
+      <description>shi上最大工程量，手动安装了 Tiny Tiny RSS ,一直填坑一直爽！台子是搭好了，可上台的“主儿”得寻觅一番！</description>
+    </item>
+    
+    <item>
+      <title>2019-12-01</title>
+      <link>https://immmmm.com/2019-12-01/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://immmmm.com/2019-12-01/</guid>
+      <description>一台 VM 折腾了静态博客、Calibre-web、OneInedx，以及不可言说的功能。感叹，折腾真容易上瘾！但，折腾之后呢？</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -227,7 +227,7 @@ jobs:
         env:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
           webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
-</code></pre><p><code>WEBHOOK_URL</code> 和 <code>WEBHOOK_SECRET</code> 是进项目 <code>settings/secrets</code> 新建添加，构建成宝塔面板的 webhook 链接，如：</p>
+</code></pre><p><code>WEBHOOK_URL</code> 和 <code>WEBHOOK_SECRET</code> 是进项目 <code>settings/secrets</code> 新建添加，构建成宝塔面板的 webhook 链接（进面板-软件商店-装“webhook”），如：</p>
 <p><code>WEBHOOK_URL</code> 设为：<code>http://1.1.1.1/hook?access_key=密钥</code>;</p>
 <p><code>WEBHOOK_SECRET</code> 设为 <code>&amp;param=immmmm.com</code>;这样合并成：</p>
 <pre><code>http://1.1.1.1/hook?access_key=密钥&amp;param=immmmm.com

@@ -6,10 +6,29 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 31 Mar 2020 21:59:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 09:46:00 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 主题常用的代码片段</title>
+      <link>https://immmmm.com/hugo-template-code/</link>
+      <pubDate>Wed, 01 Apr 2020 09:46:00 +0800</pubDate>
+      
+      <guid>https://immmmm.com/hugo-template-code/</guid>
+      <description>&lt;h3 id=&#34;全站-site&#34;&gt;全站 Site&lt;/h3&gt;
+&lt;p&gt;网址：&lt;code&gt;.Site.BaseURL&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;标题：&lt;code&gt;.Site.Title&lt;/code&gt;，示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ $.Site.BaseURL }}&amp;#34;&lt;/span&gt;&amp;gt;{{ $.Site.Title }}&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;副标题：&lt;code&gt;.Site.Params.description&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;关键词：&lt;code&gt;.Site.Params.keywords&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;头部菜单：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ range $.Site.Menus.main }}
+	&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ .URL }}&amp;#34;&lt;/span&gt;&amp;gt;{{ .Name }}&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+{{ end }}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 添加面包屑导航</title>
@@ -58,16 +77,6 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
       
       <guid>https://immmmm.com/hugo-themes/</guid>
       <description>&lt;p&gt;人工 Github 搜索 “Hugo theme” 按 stars 排序，挑出以下十款。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 图片懒加载</title>
-      <link>https://immmmm.com/hugo-render-hook/</link>
-      <pubDate>Tue, 24 Mar 2020 21:28:00 +0800</pubDate>
-      
-      <guid>https://immmmm.com/hugo-render-hook/</guid>
-      <description>&lt;p&gt;起因，想给文章插入的 img 图片添加 &lt;code&gt;loading=&#39;lazy&#39;&lt;/code&gt;，果然有爱折腾的，看（&lt;a href=&#34;https://lvv.me/posts/2019/12/24_hugo_render_hooks/&#34;&gt;这里&lt;/a&gt;），官方说明 &lt;a href=&#34;https://gohugo.io/getting-started/configuration-markup/#render-hook-templates&#34;&gt;#render-hook-templates&lt;/a&gt;，Hugo v0.62+&lt;/p&gt;
-&lt;p&gt;简单说能对md内的链接（link）和图像（image）自定义渲染，比如实现以上需求，只需在主题新建 &lt;code&gt;layouts/_default/_markup/render-image.html&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

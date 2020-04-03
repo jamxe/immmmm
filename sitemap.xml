@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://immmmm.com/2020-04-04/</loc>
+    <lastmod>2020-04-03T23:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/posts/</loc>
+    <lastmod>2020-04-03T23:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/tags/</loc>
+    <lastmod>2020-04-03T23:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/</loc>
+    <lastmod>2020-04-03T23:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/posts/chat/</loc>
+    <lastmod>2020-04-03T23:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://immmmm.com/hugo-template-code/</loc>
     <lastmod>2020-04-01T09:46:00+08:00</lastmod>
   </url>
@@ -14,16 +39,6 @@
   
   <url>
     <loc>https://immmmm.com/posts/coding/</loc>
-    <lastmod>2020-04-01T09:46:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/posts/</loc>
-    <lastmod>2020-04-01T09:46:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/tags/</loc>
     <lastmod>2020-04-01T09:46:00+08:00</lastmod>
   </url>
   
@@ -64,16 +79,6 @@
   
   <url>
     <loc>https://immmmm.com/valine-getscript-load/</loc>
-    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/</loc>
-    <lastmod>2020-03-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/posts/chat/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url>
   

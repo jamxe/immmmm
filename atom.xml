@@ -7,12 +7,49 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-03T15:14:48+00:00</updated>
+    <updated>2020-04-03T15:26:56+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[2020-04-04]]></title>
+            <link href="https://immmmm.com/2020-04-04/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/2020-03-23/" rel="related" type="text/html" title="2020-03-23" />
+                <link href="https://immmmm.com/2020-03-09/" rel="related" type="text/html" title="2020-03-09" />
+                <link href="https://immmmm.com/2020-01-14/" rel="related" type="text/html" title="2020-01-14" />
+                <link href="https://immmmm.com/2019-12-08/" rel="related" type="text/html" title="2019-12-08" />
+                <link href="https://immmmm.com/2019-12-01/" rel="related" type="text/html" title="2019-12-01" />
+            
+                <id>https://immmmm.com/2020-04-04/</id>
+            
+            
+            <published>2020-04-03T23:23:23+08:00</published>
+            <updated>2020-04-03T23:23:23+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p><del>404</del></p>
+]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -328,152 +365,6 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
 </code></pre></div><p>想想是可行的，无非是根据当前文章的链接构建编辑页面的链接。直接放代码：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/lmm214/immmmm/edit/master/content/{{ replace .File.Path &#34;</span><span style="color:#960050;background-color:#1e0010">\\&#34;</span> <span style="color:#960050;background-color:#1e0010">&#34;/&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;编辑文章&lt;/<span style="color:#f92672">a</span>&gt;
 </code></pre></div><p>为了页面美观，偷偷加到了某个地方。 ✌️</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[Hugo 主题推荐]]></title>
-            <link href="https://immmmm.com/hugo-themes/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/hugo-render-hook/" rel="related" type="text/html" title="Hugo 图片懒加载" />
-                <link href="https://immmmm.com/hugo-theme-webstack/" rel="related" type="text/html" title="Hugo Theme Webstack" />
-                <link href="https://immmmm.com/valine-getscript-load/" rel="related" type="text/html" title="Valine 懒加载" />
-                <link href="https://immmmm.com/hello-hugo/" rel="related" type="text/html" title="Hello Hugo" />
-                <link href="https://immmmm.com/rsshub-docker/" rel="related" type="text/html" title="RSSHub 部署笔记" />
-            
-                <id>https://immmmm.com/hugo-themes/</id>
-            
-            
-            <published>2020-03-29T22:41:00+08:00</published>
-            <updated>2020-03-29T22:41:00+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>人工 Github 搜索 “Hugo theme” 按 stars 排序，挑出以下十款。</p>
-<h3 id="hugo-theme-we">「hugo-theme-we」</h3>
-<p><a href="https://github.com/xiaomingplus/hugo-theme-we">https://github.com/xiaomingplus/hugo-theme-we</a>
-
-  <figure class="center" >
-    <img src="https://lmm.elizen.me/images/2020/03/theme-we.png"   />
-    
-      <figcaption class="center" >hugo-theme-we</figcaption>
-    
-  </figure>
-
-</p>
-<h3 id="hugo-theme-nuo">「hugo-theme-nuo」</h3>
-<p><a href="https://github.com/laozhu/hugo-nuo">https://github.com/laozhu/hugo-nuo</a>
-
-  <figure class="center" >
-    <img src="https://lmm.elizen.me/images/2020/03/theme-nuo.png"   />
-    
-      <figcaption class="center" >hugo-theme-nuo</figcaption>
-    
-  </figure>
-
-</p>
-<h3 id="hugo-theme-hyde">「hugo-theme-hyde」</h3>
-<p><a href="https://github.com/spf13/hyde">https://github.com/spf13/hyde</a>
-
-  <figure class="center" >
-    <img src="https://lmm.elizen.me/images/2020/03/theme-hyde.png"   />
-    
-      <figcaption class="center" >hugo-theme-hyde</figcaption>
-    
-  </figure>
-
-</p>
-<h3 id="hugo-theme-loveit">「hugo-theme-loveIt」</h3>
-<p><a href="https://github.com/dillonzq/LoveIt">https://github.com/dillonzq/LoveIt</a>
-
-  <figure class="center" >
-    <img src="https://lmm.elizen.me/images/2020/03/theme-loveIt.png"   />
-    
-      <figcaption class="center" >hugo-theme-loveIt</figcaption>
-    
-  </figure>
-
-</p>
-<h3 id="hugo-theme-yinyang">「hugo-theme-yinyang」</h3>
-<p><a href="https://github.com/joway/hugo-theme-yinyang">https://github.com/joway/hugo-theme-yinyang</a>
-
-  <figure class="center" >
-    <img src="https://lmm.elizen.me/images/2020/03/theme-yinyang.png"   />
-    
-      <figcaption class="center" >hugo-theme-yinyang</figcaption>
-    
-  </figure>
-
-</p>
-<h3 id="hugo-theme-zozo">「hugo-theme-zozo」</h3>
-<p><a href="https://github.com/varkai/hugo-theme-zozo">https://github.com/varkai/hugo-theme-zozo</a>
-
-  <figure class="center" >
-    <img src="https://lmm.elizen.me/images/2020/03/theme-zozo.png"   />
-    
-      <figcaption class="center" >hugo-theme-zozo</figcaption>
-    
-  </figure>
-
-</p>
-<h3 id="hugo-theme-meme">「hugo-theme-meme」</h3>
-<p><a href="https://github.com/reuixiy/hugo-theme-meme">https://github.com/reuixiy/hugo-theme-meme</a>
-
-  <figure class="center" >
-    <img src="https://lmm.elizen.me/images/2020/03/theme-meme.png"   />
-    
-      <figcaption class="center" >hugo-theme-meme</figcaption>
-    
-  </figure>
-
-</p>
-<h3 id="hugo-theme-next">「hugo-theme-next」</h3>
-<p><a href="https://github.com/xtfly/hugo-theme-next">https://github.com/xtfly/hugo-theme-next</a>
-
-  <figure class="center" >
-    <img src="https://lmm.elizen.me/images/2020/03/theme-next.png"   />
-    
-      <figcaption class="center" >hugo-theme-next</figcaption>
-    
-  </figure>
-
-</p>
-<h3 id="hugo-theme-pure">「hugo-theme-pure」</h3>
-<p><a href="https://github.com/xiaoheiAh/hugo-theme-pure">https://github.com/xiaoheiAh/hugo-theme-pure</a>
-
-  <figure class="center" >
-    <img src="https://lmm.elizen.me/images/2020/03/theme-pure.png"   />
-    
-      <figcaption class="center" >hugo-theme-pure</figcaption>
-    
-  </figure>
-
-</p>
-<h3 id="hugo-theme-slim">「hugo-theme-slim」</h3>
-<p><a href="https://github.com/zhe/hugo-theme-slim">https://github.com/zhe/hugo-theme-slim</a>
-
-  <figure class="center" >
-    <img src="https://lmm.elizen.me/images/2020/03/theme-slim.png"   />
-    
-      <figcaption class="center" >hugo-theme-slim</figcaption>
-    
-  </figure>
-
-</p>]]></content>
             
                  
                     

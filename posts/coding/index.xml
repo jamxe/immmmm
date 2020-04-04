@@ -6,10 +6,22 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 01 Apr 2020 09:46:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2020 09:50:00 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VS Code 初体验</title>
+      <link>https://immmmm.com/use-visual-studio-code/</link>
+      <pubDate>Sat, 04 Apr 2020 09:50:00 +0800</pubDate>
+      
+      <guid>https://immmmm.com/use-visual-studio-code/</guid>
+      <description>&lt;p&gt;Visual Studio Code 久仰大名，但一直误认为是个臃肿大部头，毕竟是微软出品。 🙇&lt;/p&gt;
+&lt;p&gt;一试，直接拉取仓库开启 Git 同步，成了，满足本地码字同步而不用碰终端，不用碰终端，碰终端！&lt;/p&gt;
+&lt;p&gt;二试，使用 gpm 插件更能多仓库管理，也成了，好感爆棚。没遇到什么权限问题，应该是之前终端里配置过的关系。&lt;/p&gt;
+&lt;p&gt;再试，GitHub 网页上更改，VS 里拉取变更，丝滑，这下舒心到随心咯！&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 主题常用的代码片段</title>
@@ -68,15 +80,6 @@ https://immmmm.com/hugo-themes/
 # Github 编辑页面链接
 https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 主题推荐</title>
-      <link>https://immmmm.com/hugo-themes/</link>
-      <pubDate>Sun, 29 Mar 2020 22:41:00 +0800</pubDate>
-      
-      <guid>https://immmmm.com/hugo-themes/</guid>
-      <description>&lt;p&gt;人工 Github 搜索 “Hugo theme” 按 stars 排序，挑出以下十款。&lt;/p&gt;</description>
     </item>
     
   </channel>

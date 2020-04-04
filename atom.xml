@@ -7,12 +7,60 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-03T23:03:28+00:00</updated>
+    <updated>2020-04-04T02:45:21+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[VS Code 初体验]]></title>
+            <link href="https://immmmm.com/use-visual-studio-code/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/hugo-template-code/" rel="related" type="text/html" title="Hugo 主题常用的代码片段" />
+                <link href="https://immmmm.com/hugo-add-breadcrumb/" rel="related" type="text/html" title="Hugo 添加面包屑导航" />
+                <link href="https://immmmm.com/noto-serif-sc-by-google-fonts/" rel="related" type="text/html" title="添加 Google Fonts 思源宋体" />
+                <link href="https://immmmm.com/hugo-github-editpath/" rel="related" type="text/html" title="前端编辑 Hugo 文章" />
+                <link href="https://immmmm.com/hugo-themes/" rel="related" type="text/html" title="Hugo 主题推荐" />
+            
+                <id>https://immmmm.com/use-visual-studio-code/</id>
+            
+            
+            <published>2020-04-04T09:50:00+08:00</published>
+            <updated>2020-04-04T09:50:00+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>Visual Studio Code 久仰大名，但一直误认为是个臃肿大部头，毕竟是微软出品。 🙇</p>
+<p>一试，直接拉取仓库开启 Git 同步，成了，满足本地码字同步而不用碰终端，不用碰终端，碰终端！</p>
+<p>二试，使用 gpm 插件更能多仓库管理，也成了，好感爆棚。没遇到什么权限问题，应该是之前终端里配置过的关系。</p>
+<p>再试，GitHub 网页上更改，VS 里拉取变更，丝滑，这下舒心到随心咯！</p>
+<p>下载： <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+<p>已安装插件：</p>
+<ul>
+<li>Chinese ：界面汉化</li>
+<li>Monokai Pro ：界面主题</li>
+<li>Material Icon Theme ：文件图标</li>
+<li>gpm ：多仓库管理</li>
+<li>……</li>
+</ul>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -322,49 +370,6 @@ title: &quot;首页&quot;
 <li><a href="https://io-oi.me/tech/loading-google-fonts-async/">简单实现 Google Fonts 的异步加载</a></li>
 <li><a href="https://io-oi.me/tech/noto-serif-sc-added-on-google-fonts/">Google Fonts 已支持思源宋体！</a></li>
 </ul>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[前端编辑 Hugo 文章]]></title>
-            <link href="https://immmmm.com/hugo-github-editpath/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/hugo-themes/" rel="related" type="text/html" title="Hugo 主题推荐" />
-                <link href="https://immmmm.com/hugo-render-hook/" rel="related" type="text/html" title="Hugo 图片懒加载" />
-                <link href="https://immmmm.com/hugo-theme-webstack/" rel="related" type="text/html" title="Hugo Theme Webstack" />
-                <link href="https://immmmm.com/valine-getscript-load/" rel="related" type="text/html" title="Valine 懒加载" />
-                <link href="https://immmmm.com/hello-hugo/" rel="related" type="text/html" title="Hello Hugo" />
-            
-                <id>https://immmmm.com/hugo-github-editpath/</id>
-            
-            
-            <published>2020-03-29T23:15:00+08:00</published>
-            <updated>2020-03-29T23:15:00+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>目前发文是直接在 Github 前端进行，Hugo 的构建交给 <a href="https://immmmm.com/hugo-github-actions/">Github Actions</a> 实现自动化部署。因此，产生个需求，文章里改个错别字什么的，能不能一键直达 GIthub 编辑页面？</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"># 当面页面链接
-https://immmmm.com/hugo-themes/
-# Github 编辑页面链接
-https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
-</code></pre></div><p>想想是可行的，无非是根据当前文章的链接构建编辑页面的链接。直接放代码：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/lmm214/immmmm/edit/master/content/{{ replace .File.Path &#34;</span><span style="color:#960050;background-color:#1e0010">\\&#34;</span> <span style="color:#960050;background-color:#1e0010">&#34;/&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;编辑文章&lt;/<span style="color:#f92672">a</span>&gt;
-</code></pre></div><p>为了页面美观，偷偷加到了某个地方。 ✌️</p>]]></content>
             
                  
                     

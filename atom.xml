@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-04T15:06:59+00:00</updated>
+    <updated>2020-04-04T15:12:17+00:00</updated>
     
     
     
@@ -58,21 +58,34 @@
 <p><p class="md_image">
   <img loading='lazy' src="https://lmm.elizen.me/images/2020/04/vscode-3.png" alt="vscode-3"  />
 </p></p>
-<p><em>按快捷键 <code>⌘ + enter</code>，一键推送到远程仓库。</em></p>
 <p><strong>按快捷键 <code>⌘ + enter</code>，一键推送到远程仓库。</strong></p>
-<p><em><strong>按快捷键 <code>⌘ + enter</code>，一键推送到远程仓库。</strong></em></p>
-<h3 id="配置-settingsjson">配置 <code>settings.json</code></h3>
-<ul>
-<li>设置根据编辑器视图宽度自动换行；</li>
-</ul>
-<pre><code>&quot;editor.wrappingColumn&quot;: 0
-</code></pre><h3 id="常用快捷键">常用快捷键</h3>
-<ul>
-<li><code>control + tab</code>：标签切换</li>
-<li><code>option + shift</code>：列选择</li>
-<li><code>⌘ + D</code>：选中多个相同字符</li>
-<li><code>control + 鼠标点击</code> 多行编辑</li>
-</ul>
+<h3 id="常用快捷键">常用快捷键</h3>
+<table>
+<thead>
+<tr>
+<th align="center">快捷键</th>
+<th align="center">操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>control + tab</code></td>
+<td align="center">标签切换</td>
+</tr>
+<tr>
+<td align="center"><code>option + shift</code></td>
+<td align="center">列选择</td>
+</tr>
+<tr>
+<td align="center"><code>⌘ + D</code></td>
+<td align="center">选中多个相同字符</td>
+</tr>
+<tr>
+<td align="center"><code>control + 鼠标点击</code></td>
+<td align="center">多行编辑</td>
+</tr>
+</tbody>
+</table>
 <h3 id="markdown-all-in-one-快捷键">Markdown All in One 快捷键</h3>
 <table>
 <thead>

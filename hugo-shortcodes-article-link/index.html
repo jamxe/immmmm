@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>Hugo 文章内链优化显示 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="好久好久之前（2年前），写过这功能：《Bitcron 文章内链自动优化显示》，如下效果：
+Bitcron 文章内链自动优化显示  2017-12-18 #折腾&amp;nbsp; 当我们在文章内引用了一个站内的链接，一般只是超级链接，其实，也可以为这个超级链接提供更好的表现方式。 这是看起来很简单，但确实一个超赞的想法，来自于 Jimmy。效果如下(中间部分，hello 为标题):
+    本文利用 Hugo 的 Shortcodes 功能和 .GetPage 函数来实现。
+"/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/hugo-shortcodes-article-link/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:500&display=swap" media="print" onload="this.media='all'">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="Hugo 文章内链优化显示" />
+<meta property="og:description" content="好久好久之前（2年前），写过这功能：《Bitcron 文章内链自动优化显示》，如下效果：
+
+
+
+  
+    
+      
+        Bitcron 文章内链自动优化显示
+      
+      2017-12-18
+      
+      #折腾&nbsp;
+      
+      
+        当我们在文章内引用了一个站内的链接，一般只是超级链接，其实，也可以为这个超级链接提供更好的表现方式。
+这是看起来很简单，但确实一个超赞的想法，来自于 Jimmy。效果如下(中间部分，hello 为标题):
+
+  
+
+      
+    
+  
+
+
+本文利用 Hugo 的 Shortcodes 功能和 .GetPage 函数来实现。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://immmmm.com/hugo-shortcodes-article-link/" />
+<meta property="article:published_time" content="2020-04-05T22:30:27+08:00" />
+<meta property="article:modified_time" content="2020-04-05T22:30:27+08:00" />
+
+
+
+    
+  
+  <link rel="prefetch" href="https://immmmm.com/use-visual-studio-code/">
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu hidden">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/books/">阅读</a></li>
+        
+      
+        
+          <li><a href="/movies/">观影</a></li>
+        
+      
+        
+          <li><a href="/archives/">归档</a></li>
+        
+      
+        
+          <li><a href="/about/">关于</a></li>
+        
+      
+    
+
+                <li><a href="/search/"><svg t="1556783211810" class="search-box-icon" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2078" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M981.39652054 920.86314525L704.56522859 644.0318533a366.65501012 366.65501012 0 1 0-61.73503038 65.64040943L917.55859375 984.40065827z m-856.17925347-493.12920861a284.19142939 284.19142939 0 1 1 283.89101562 284.19142939A284.49184317 284.49184317 0 0 1 125.06706019 427.73393664z" fill="" p-id="2079" data-spm-anchor-id="a313x.7781069.0.i2"></path></svg></a></li>
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/books/">阅读</a></li>
+      
+    
+      
+        <li><a href="/movies/">观影</a></li>
+      
+    
+      
+        <li><a href="/archives/">归档</a></li>
+      
+    
+      
+        <li><a href="/about/">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+  
+  
+
+  <div class="post coding">
+    <div  class="breadcrumb">
+  
+
+  
+
+  
+
+  
+
+<li>
+  <a href="https://immmmm.com/">首页</a>
+</li>
+
+
+<li>
+  <a href="https://immmmm.com/posts/">文章</a>
+</li>
+
+
+<li>
+  <a href="https://immmmm.com/posts/coding/">折腾</a>
+</li>
+
+
+<li class="active">
+  <a href="https://immmmm.com/hugo-shortcodes-article-link/">Hugo 文章内链优化显示</a>
+</li>
+
+</div>
+
+
+    
+    <h2 class="post-title"><a href="https://immmmm.com/hugo-shortcodes-article-link/">Hugo 文章内链优化显示</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2020-04-05 22:30:27
+        </span>
+
+        
+          
+        
+      <span> / <span class="valine-comment-count" data-xid="/hugo-shortcodes-article-link/">0</span> 评论 / <span id="/hugo-shortcodes-article-link/" class="leancloud_visitors" data-flag-title="Hugo 文章内链优化显示"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+    </div>
+
+    
+
+    <div class="post-content">
+      <p>好久好久之前（2年前），写过这功能：<a href="https://immmmm.com/bitcron-auto-article-refer/">《Bitcron 文章内链自动优化显示》</a>，如下效果：</p>
+
+
+<div class="post-preview">
+  <div class="post-preview--meta" style="width:100%;">
+    <div class="post-preview--middle">
+      <h4 class="post-preview--title">
+        <a target="_blank" href="https://immmmm.com/bitcron-auto-article-refer/">Bitcron 文章内链自动优化显示</a>
+      </h4>
+      <time class="post-preview--date">2017-12-18</time>
+      
+      <small>#折腾&nbsp;</small>
+      
+      <section style="max-height:96px;overflow:hidden;" class="post-preview--excerpt">
+        <p>当我们在文章内引用了一个站内的链接，一般只是超级链接，其实，也可以为这个超级链接提供更好的表现方式。
+这是看起来很简单，但确实一个超赞的想法，来自于 Jimmy。效果如下(中间部分，hello 为标题):</p>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2017/12/refer-1.png" alt="refer 处理页面内的链接"  />
+</p></p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<p>本文利用 Hugo 的 <a href="https://gohugo.io/extras/shortcodes/">Shortcodes</a> 功能和 <a href="https://gohugo.io/functions/getpage/">.GetPage</a> 函数来实现。</p>
+<h3 id="功能代码">功能代码</h3>
+<p>创建 <code>/layouts/shortcodes/link.html</code>：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{$URL := .Get &#34;url&#34;}}
+{{ with .Site.GetPage $URL }}
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--meta&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:100%;&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--middle&#34;</span>&gt;
+      &lt;<span style="color:#f92672">h4</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--title&#34;</span>&gt;
+        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">h4</span>&gt;
+      &lt;<span style="color:#f92672">time</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--date&#34;</span>&gt;{{ .Date.Format ( default &#34;2006-01-02&#34;) }}&lt;/<span style="color:#f92672">time</span>&gt;
+      {{ if .Params.tags }}
+      &lt;<span style="color:#f92672">small</span>&gt;{{ range .Params.tags }}#{{ . }}&amp;nbsp;{{ end }}&lt;/<span style="color:#f92672">small</span>&gt;
+      {{ end }}
+      &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;max-height:105px;overflow:hidden;&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--excerpt&#34;</span>&gt;
+        {{ .Summary }}
+      &lt;/<span style="color:#f92672">section</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+{{ end }}
+</code></pre></div><h3 id="样式代码">样式代码</h3>
+<p>样式 CSS 代码需自行调配，个人是复用豆瓣条目的：</p>
+
+
+<div class="post-preview">
+  <div class="post-preview--meta" style="width:100%;">
+    <div class="post-preview--middle">
+      <h4 class="post-preview--title">
+        <a target="_blank" href="https://immmmm.com/post-show-douban-item/">文章内显示豆瓣条目</a>
+      </h4>
+      <time class="post-preview--date">2020-01-25</time>
+      
+      <small>#折腾&nbsp;</small>
+      
+      <section style="max-height:96px;overflow:hidden;" class="post-preview--excerpt">
+        <p>小众豆瓣已成刚需，电影、图书看完都会标记下，写日志时常会提到，老想着在文章内「优雅」地展示，官方 API 已废，幸好还有给力的 <a href="https://mufeng.me/">@mufeng</a> 兄，以下功能就使用其提供的轮子。</p>
+<h3 id="效果如下">效果如下</h3>
+<p><a href="https://book.douban.com/subject/33408247/">https://book.douban.com/subject/33408247/</a></p>
+<p><a href="https://movie.douban.com/subject/10432911/">https://movie.douban.com/subject/10432911/</a></p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<h3 id="食用方式">食用方式</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">\{\{&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">url</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bitcron-auto-article-refer&#34;</span>&gt;\}\}
+</code></pre></div><p>文章内去掉反斜杠 <code>\</code> 插入即可。</p>
+<p>其中 <code>link</code> 匹配短代码模板 <code>link.html</code> ，这 <code>url</code> 填的 <code>bitcron-auto-article-refer</code> 是文章 md 的文件名。</p>
+    </div>
+
+    
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
+
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            
+              <a class="pagination__title-h" href="https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-shortcodes-article-link.md" target="_blank" rel="noopener">阅读更多</a>
+            
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="https://immmmm.com/use-visual-studio-code/">
+                  <span class="button__text">VS Code 初体验</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+          <div class="pagination__title">
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/hugo-shortcodes-article-link/"></span> 条评论</span>
+       <hr />
+  </div>
+  <div id="comments"></div>
+  <script>
+    loadComments();
+    function loadComments() {
+        if (typeof Valine === 'undefined') {
+            var getScript = (options) => {
+                var script = document.createElement('script');
+                script.defer = true;
+                script.crossOrigin = 'anonymous';
+                Object.keys(options).forEach((key) => {
+                    script[key] = options[key];
+                });
+                document.body.appendChild(script);
+            };
+            getScript({
+                src: 'https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.Pure.min.js',
+                onload: () => {
+                    newValine();
+                }
+            });
+        } else {
+            newValine();
+        }
+    }
+    function newValine() {
+      new Valine({
+        el: '#comments' ,
+        recordIP : true,
+        appId: 'm6rxiyixBDG25mYPEPapQpnR-MdYXbMMI',
+        appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor:  true 
+      });
+      function diyValine() {
+        document.querySelector("span.vemoji-btn").innerHTML = '😀';
+        jinrishici.load(function(result) {
+            var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+            document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+        });
+      }
+      setTimeout(diyValine, 1000);
+    }
+  </script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js"></script>
+  <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($){
+        $("#comments").on('click', 'span.vat',function(){
+        	$(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        	$('textarea#veditor').focus();
+        })
+        if(window.location.hash){
+        	var checkExist = setInterval(function() {
+        		if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+                            clearInterval(checkExist);
+                        }
+                }, 100);
+        }
+    });
+  </script>
+
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span>Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/main.js"></script>
+
+<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/lately.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/waterfall.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/slimbox2.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/func.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+
+      
+    </div>
+  </body>
+</html>

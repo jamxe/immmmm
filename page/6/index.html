@@ -123,6 +123,49 @@
   <div class="posts">
     
     <div class="post on-list coding">
+      <h1 class="post-title"><a href="https://immmmm.com/new-tab-external-link/">识别外链并新窗口打开</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2017-07-25 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content">
+        <p>注：已对类似 toc 里的链接进行排除。</p>
+<p>markdown 语法链接不支持设置 <code>target='_blank'</code> ，如果要就直接写 html 的链接代码。个人来说，非常反习惯！</p>
+<p>既然 Bitcron 加载了 jQuery ，那就重操旧业来个自动识别内外链！代码如下：</p>
+<pre><code class="language-jade" data-lang="jade">	script
+		$(document).ready (function() {
+			var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
+			var location_href = window.location.href.replace(parse_url,'$3')
+			$('.post-content a:not(:has(img)),.author-name a').hover(function() {
+				var this_href = $(this).attr('href');
+				var replace_href = this_href.replace(parse_url,'$3');
+                if ( this_href != replace_href &amp;&amp; location_href != replace_href)
+					$(this).attr('target','_blank'); 
+			});
+		});
+</code></pre><p>一般放 <code>post.jade</code>里，直接放 <code>base.jade</code> 也行。其中 <code>.post-content</code> 和 <code>.author-name</code> 有可能需要匹配自己的主题模板。</p>
+<p>短短代码测试了个把小时，主要耗在“a标签里无img”和“本地和点击的href的正则”，哎，果真代码欺负老新人！</p>
+      </div>
+      
+        <div><a class="read-more button" href="/new-tab-external-link/">阅读全文 →</a></div>
+      
+    </div>
+    
+    <div class="post on-list coding">
       <h1 class="post-title"><a href="https://immmmm.com/bitcron-template-code/">Bitcron 主题常用的代码片段</a></h1>
       <div class="post-meta">
         
@@ -713,41 +756,6 @@
       </div>
       
         <div><a class="read-more button" href="/my-purpose-in-where/">阅读全文 →</a></div>
-      
-    </div>
-    
-    <div class="post on-list daily">
-      <h1 class="post-title"><a href="https://immmmm.com/bye-to-wxl/">安。</a></h1>
-      <div class="post-meta">
-        
-          <span class="post-date">
-            2012-02-15 00:00:00
-          </span>
-        
-
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8/">日常</a>&nbsp;
-          
-        </span>
-        
-      </div>
-
-      
-
-      <div class="post-content">
-        <p>一朵正将欲肆意绽放的花，就此凋零。</p>
-<p>立春盼过，却还未来得及见到新年的第一丝春意，急匆匆地抛开一切痛楚，苦留在世的父母二人。</p>
-<hr>
-<p>此时，她就一个人静静地躺着，四角见方的小盒子里。</p>
-<p>工作两月，一倒不起。二年同窗，仅接触过几次，印象中的她是一个非常开朗乐观努力的好姑娘。</p>
-<hr>
-<p>手里的雏菊是那样美丽，香气是那样地耐人寻味，只可惜她的花蕊下仅仅是一截茎，没有根。</p>
-<p>伴随耳边中巴车特有的发动机声，非常担心甚至有些恐慌车子会突然一下子熄火，害怕那突如其来的安静与手足无措。</p>
-      </div>
-      
-        <div><a class="read-more button" href="/bye-to-wxl/">阅读全文 →</a></div>
       
     </div>
     

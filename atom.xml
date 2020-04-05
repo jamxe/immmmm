@@ -7,12 +7,121 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-05T13:20:58+00:00</updated>
+    <updated>2020-04-05T14:33:32+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Hugo 文章内链优化显示]]></title>
+            <link href="https://immmmm.com/hugo-shortcodes-article-link/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/use-visual-studio-code/" rel="related" type="text/html" title="VS Code 初体验" />
+                <link href="https://immmmm.com/hugo-template-code/" rel="related" type="text/html" title="Hugo 主题常用的代码片段" />
+                <link href="https://immmmm.com/hugo-add-breadcrumb/" rel="related" type="text/html" title="Hugo 添加面包屑导航" />
+                <link href="https://immmmm.com/noto-serif-sc-by-google-fonts/" rel="related" type="text/html" title="添加 Google Fonts 思源宋体" />
+                <link href="https://immmmm.com/hugo-github-editpath/" rel="related" type="text/html" title="前端编辑 Hugo 文章" />
+            
+                <id>https://immmmm.com/hugo-shortcodes-article-link/</id>
+            
+            
+            <published>2020-04-05T22:30:27+08:00</published>
+            <updated>2020-04-05T22:30:27+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>好久好久之前（2年前），写过这功能：<a href="https://immmmm.com/bitcron-auto-article-refer/">《Bitcron 文章内链自动优化显示》</a>，如下效果：</p>
+
+
+<div class="post-preview">
+  <div class="post-preview--meta" style="width:100%;">
+    <div class="post-preview--middle">
+      <h4 class="post-preview--title">
+        <a target="_blank" href="https://immmmm.com/bitcron-auto-article-refer/">Bitcron 文章内链自动优化显示</a>
+      </h4>
+      <time class="post-preview--date">2017-12-18</time>
+      
+      <small>#折腾&nbsp;</small>
+      
+      <section style="max-height:96px;overflow:hidden;" class="post-preview--excerpt">
+        <p>当我们在文章内引用了一个站内的链接，一般只是超级链接，其实，也可以为这个超级链接提供更好的表现方式。
+这是看起来很简单，但确实一个超赞的想法，来自于 Jimmy。效果如下(中间部分，hello 为标题):</p>
+<p><p class="md_image">
+  <img loading='lazy' src="https://lmm.elizen.me/images/2017/12/refer-1.png" alt="refer 处理页面内的链接"  />
+</p></p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<p>本文利用 Hugo 的 <a href="https://gohugo.io/extras/shortcodes/">Shortcodes</a> 功能和 <a href="https://gohugo.io/functions/getpage/">.GetPage</a> 函数来实现。</p>
+<h3 id="功能代码">功能代码</h3>
+<p>创建 <code>/layouts/shortcodes/link.html</code>：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{$URL := .Get &#34;url&#34;}}
+{{ with .Site.GetPage $URL }}
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--meta&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:100%;&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--middle&#34;</span>&gt;
+      &lt;<span style="color:#f92672">h4</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--title&#34;</span>&gt;
+        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">h4</span>&gt;
+      &lt;<span style="color:#f92672">time</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--date&#34;</span>&gt;{{ .Date.Format ( default &#34;2006-01-02&#34;) }}&lt;/<span style="color:#f92672">time</span>&gt;
+      {{ if .Params.tags }}
+      &lt;<span style="color:#f92672">small</span>&gt;{{ range .Params.tags }}#{{ . }}&amp;nbsp;{{ end }}&lt;/<span style="color:#f92672">small</span>&gt;
+      {{ end }}
+      &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;max-height:105px;overflow:hidden;&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--excerpt&#34;</span>&gt;
+        {{ .Summary }}
+      &lt;/<span style="color:#f92672">section</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+{{ end }}
+</code></pre></div><h3 id="样式代码">样式代码</h3>
+<p>样式 CSS 代码需自行调配，个人是复用豆瓣条目的：</p>
+
+
+<div class="post-preview">
+  <div class="post-preview--meta" style="width:100%;">
+    <div class="post-preview--middle">
+      <h4 class="post-preview--title">
+        <a target="_blank" href="https://immmmm.com/post-show-douban-item/">文章内显示豆瓣条目</a>
+      </h4>
+      <time class="post-preview--date">2020-01-25</time>
+      
+      <small>#折腾&nbsp;</small>
+      
+      <section style="max-height:96px;overflow:hidden;" class="post-preview--excerpt">
+        <p>小众豆瓣已成刚需，电影、图书看完都会标记下，写日志时常会提到，老想着在文章内「优雅」地展示，官方 API 已废，幸好还有给力的 <a href="https://mufeng.me/">@mufeng</a> 兄，以下功能就使用其提供的轮子。</p>
+<h3 id="效果如下">效果如下</h3>
+<p><a href="https://book.douban.com/subject/33408247/">https://book.douban.com/subject/33408247/</a></p>
+<p><a href="https://movie.douban.com/subject/10432911/">https://movie.douban.com/subject/10432911/</a></p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<h3 id="食用方式">食用方式</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">\{\{&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">url</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bitcron-auto-article-refer&#34;</span>&gt;\}\}
+</code></pre></div><p>文章内去掉反斜杠 <code>\</code> 插入即可。</p>
+<p>其中 <code>link</code> 匹配短代码模板 <code>link.html</code> ，这 <code>url</code> 填的 <code>bitcron-auto-article-refer</code> 是文章 md 的文件名。</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -164,8 +273,16 @@
         <span style="color:#e6db74">&#34;$0&#34;</span>
     ],
     <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;新文章&#34;</span>
+}<span style="color:#960050;background-color:#1e0010">,</span>
+<span style="color:#e6db74">&#34;more post&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+	<span style="color:#f92672">&#34;prefix&#34;</span>: <span style="color:#e6db74">&#34;mr&#34;</span>,
+	<span style="color:#f92672">&#34;body&#34;</span>: [
+		<span style="color:#e6db74">&#34;&lt;!--more--&gt;&#34;</span>
+	],
+    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;more标签&#34;</span>
 }
-</code></pre></div><p>输入 <code>post</code> 按 Tab 快捷插入文章信息，再按 Tab 可选择标签，在 Tab 开始码字。</p>
+</code></pre></div><p>输入 <code>post</code> 按 Tab 快捷插入文章信息，再按 Tab 可选择标签，在 Tab 开始码字；</p>
+<p>输入 <code>mr</code> ，快捷插入 <code>&lt;!--more--&gt;</code> 标签。</p>
 <h3 id="致谢">致谢</h3>
 <ul>
 <li><a href="https://www.codingyang.com/2020/03/codeEditer.html">像写代码一样写作</a></li>
@@ -452,52 +569,6 @@ title: &quot;首页&quot;
       └── reading
         └── _index.md # title: &quot;育人&quot;
 </code></pre><p>累到忘我！如，酒到微醺，甚是美好！ 🌀</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[添加 Google Fonts 思源宋体]]></title>
-            <link href="https://immmmm.com/noto-serif-sc-by-google-fonts/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/hugo-github-editpath/" rel="related" type="text/html" title="前端编辑 Hugo 文章" />
-                <link href="https://immmmm.com/hugo-themes/" rel="related" type="text/html" title="Hugo 主题推荐" />
-                <link href="https://immmmm.com/hugo-render-hook/" rel="related" type="text/html" title="Hugo 图片懒加载" />
-                <link href="https://immmmm.com/hugo-theme-webstack/" rel="related" type="text/html" title="Hugo Theme Webstack" />
-                <link href="https://immmmm.com/valine-getscript-load/" rel="related" type="text/html" title="Valine 懒加载" />
-            
-                <id>https://immmmm.com/noto-serif-sc-by-google-fonts/</id>
-            
-            
-            <published>2020-03-30T12:24:00+08:00</published>
-            <updated>2020-03-30T12:24:00+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>谷婶大法好，在线字体都支持中文咯！ 👍</p>
-<p>访问 <a href="https://fonts.google.com/?subset=chinese-simplified">Google Fonts</a>，点选需要的字体，简单设置能获得样式链接。<del>虽听闻字体服务器国内也有节点，但还是启用 loli 的 CDN，感谢！</del></p>
-<p>结合异步加载代码如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.googleapis.com/css?family=Noto+Serif+SC&amp;display=swap&#34;</span> <span style="color:#a6e22e">media</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;print&#34;</span> <span style="color:#a6e22e">onload</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this.media=&#39;all&#39;&#34;</span>&gt;
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">font-family</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Noto Serif SC&#39;</span><span style="color:#f92672">,</span> <span style="color:#f92672">serif</span><span style="color:#f92672">;</span>
-</code></pre></div><p>个人只设置了 <code>.post-content</code> 部分为思源宋体，不然页面打开那几秒，难受！东施效颦，扑面而来！</p>
-<h3 id="来源">来源</h3>
-<ul>
-<li><a href="https://io-oi.me/tech/loading-google-fonts-async/">简单实现 Google Fonts 的异步加载</a></li>
-<li><a href="https://io-oi.me/tech/noto-serif-sc-added-on-google-fonts/">Google Fonts 已支持思源宋体！</a></li>
-</ul>]]></content>
             
                  
                     

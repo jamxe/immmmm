@@ -7,12 +7,86 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-06T12:36:02+00:00</updated>
+    <updated>2020-04-06T13:17:29+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Hugo 添加相册页面]]></title>
+            <link href="https://immmmm.com/hugo-readdir-photos/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/hugo-shortcodes-article-link/" rel="related" type="text/html" title="Hugo 文章内链优化显示" />
+                <link href="https://immmmm.com/use-visual-studio-code/" rel="related" type="text/html" title="VS Code 初体验" />
+                <link href="https://immmmm.com/hugo-template-code/" rel="related" type="text/html" title="Hugo 主题常用的代码片段" />
+                <link href="https://immmmm.com/hugo-add-breadcrumb/" rel="related" type="text/html" title="Hugo 添加面包屑导航" />
+                <link href="https://immmmm.com/noto-serif-sc-by-google-fonts/" rel="related" type="text/html" title="添加 Google Fonts 思源宋体" />
+            
+                <id>https://immmmm.com/hugo-readdir-photos/</id>
+            
+            
+            <published>2020-04-06T20:42:02+08:00</published>
+            <updated>2020-04-06T20:42:02+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>效果见： <a href="https://immmmm.com/photos/">https://immmmm.com/photos/</a></p>
+<p>总有那么一瞬间特别特别想发一张照片，但不是以文章形式发布。</p>
+<p>实现思路是程序自动遍历指定文件夹内的图片，并展示在一个页面上。有了思路，剩下的就是看文档、看文档、看文档，此功能利用 Hugo 的 <a href="https://gohugo.io/templates/files/">readDir function</a> 函数达成。</p>
+<p>日常更新把图片丢到 <code>static/photos</code> 中即可（搭配 Github Action 自动化部署更香）：</p>
+<pre><code>static
+└── photos
+    ├── 落樱缤纷.jpeg
+    ├── 想象中的自由.jpeg
+    └── 儿时登过顶的狮子山.jpeg
+</code></pre><h3 id="主题集成">主题集成</h3>
+<p>如需集成到自己的主题，一般如下操作，但不保证最终结果：</p>
+<p>1.<code>static/photos</code> 丢几张命名好的图片先；</p>
+<p>2.<code>content/photos.md</code> 创建一个md，好让 Hugo 生成页面；内容如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">---
+title: &#34;我的相册&#34;
+layout: &#34;photos&#34;
+---
+</code></pre></div><p>3.<code>layouts/_default/photos.html</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ define &#34;main&#34; }}
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+  &lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-title&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#f92672">h2</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-photos&#34;</span>&gt;
+  {{ range (readDir &#34;./static/photos&#34;) }}
+  &lt;<span style="color:#f92672">figure</span>&gt;
+    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/photos/{{ .Name }}&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Name }}&#34;</span> /&gt;
+    &lt;<span style="color:#f92672">figcaption</span>&gt;{{ .Name}}&lt;/<span style="color:#f92672">figcaption</span>&gt;
+  &lt;/<span style="color:#f92672">figure</span>&gt;
+  {{ end }}
+&lt;/<span style="color:#f92672">div</span>&gt;
+{{ end }}
+</code></pre></div><p>图片撸了 jsdelivr CDN 的羊毛，需自行更改，或者指定图片的 src 为本地：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{&#34;</span><span style="color:#a6e22e">photos</span><span style="color:#960050;background-color:#1e0010">/&#34;</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">absURL</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Name</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Name }}&#34;</span> /&gt;
+</code></pre></div><p>4.样式参考：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">page-photos</span> <span style="color:#f92672">figure</span>{<span style="color:#66d9ef">max-width</span>:<span style="color:#ae81ff">80</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">margin</span>:<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">auto</span> <span style="color:#ae81ff">3</span><span style="color:#66d9ef">rem</span>;}
+.<span style="color:#a6e22e">page-photos</span> <span style="color:#f92672">figure</span> <span style="color:#f92672">img</span>{<span style="color:#66d9ef">box-shadow</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span> rgba(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">.15</span>);<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>;}
+</code></pre></div><h3 id="不了了之">不了了之</h3>
+<p>原依据 <a href="https://golang.org/pkg/os/#FileInfo">os.FileInfo</a> 还加了 <code>{{ .Modtime }}</code> 时间显示，本地测试都可以，但同步到线上之后所有图片都一个时间，了之。</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -462,113 +536,6 @@ title  =  &quot;木木木木木&quot;
 <p>LoveIt 主题内置数十种短代码：<a href="https://hugoloveit.com/zh-cn/theme-documentation-shortcodes/">https://hugoloveit.com/zh-cn/theme-documentation-shortcodes/</a></p>
 <h3 id="未完">未完</h3>
 <p>待更…… 🤷‍♂️</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[Hugo 添加面包屑导航]]></title>
-            <link href="https://immmmm.com/hugo-add-breadcrumb/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/noto-serif-sc-by-google-fonts/" rel="related" type="text/html" title="添加 Google Fonts 思源宋体" />
-                <link href="https://immmmm.com/hugo-github-editpath/" rel="related" type="text/html" title="前端编辑 Hugo 文章" />
-                <link href="https://immmmm.com/hugo-themes/" rel="related" type="text/html" title="Hugo 主题推荐" />
-                <link href="https://immmmm.com/hugo-render-hook/" rel="related" type="text/html" title="Hugo 图片懒加载" />
-                <link href="https://immmmm.com/hugo-theme-webstack/" rel="related" type="text/html" title="Hugo Theme Webstack" />
-            
-                <id>https://immmmm.com/hugo-add-breadcrumb/</id>
-            
-            
-            <published>2020-03-31T21:59:00+08:00</published>
-            <updated>2020-03-31T21:59:00+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<figure>
-    <img src="https://lmm.elizen.me/images/2020/03/breadcrumb-1.png" width="50%"/><img src="https://lmm.elizen.me/images/2020/03/breadcrumb-2.png" width="50%" />
-    
-      <figcaption>黑+白，疗效好</figcaption>
-    
-</figure>
-<p>「不问明天，悠然浪费」，多少年前看到的一句话，一直作为博客的 Slogan ，如同“谶语”般的存在！ 😷</p>
-<p>说回正题，折腾流程如下：</p>
-<h3 id="主题代码-themes">主题代码 Themes</h3>
-<pre><code>Hugo/themes
-└── hello-friend
-    ├── layouts
-    │   ├── partials
-    │   │   └── breadcrumb.html  # 功能代码
-    │   ├── _default
-    │   │   └── single.html # 文章页调用
-    │   ├── archives
-    │   │   └── list.html # 归档页调用
-    │   ├── posts
-    │   │   └── list.html # 文章页调用
-    │   └── tags
-    │       └── list.html # 标签页调用
-    └── static
-        └── style.css # 添加样式代码
-</code></pre><p><code>breadcrumb.html</code> 代码如下（来自官网，具体含义我也不懂）：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span>  <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
-  {{ template &#34;breadcrumbnav&#34; (dict &#34;p1&#34; . &#34;p2&#34; .) }}
-&lt;/<span style="color:#f92672">div</span>&gt;
-{{ define &#34;breadcrumbnav&#34; }}
-{{ if .p1.Parent }}
-  {{ template &#34;breadcrumbnav&#34; (dict &#34;p1&#34; .p1.Parent &#34;p2&#34; .p2 )  }}
-{{ else if not .p1.IsHome }}
-  {{ template &#34;breadcrumbnav&#34; (dict &#34;p1&#34; .p1.Site.Home &#34;p2&#34; .p2 )  }}
-{{ end }}
-&lt;<span style="color:#f92672">li</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">if</span> <span style="color:#a6e22e">eq</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">p1</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">p2</span> <span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}</span>&gt;
-  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .p1.Permalink }}&#34;</span>&gt;{{ .p1.Title }}&lt;/<span style="color:#f92672">a</span>&gt;
-&lt;/<span style="color:#f92672">li</span>&gt;
-{{ end }}
-</code></pre></div><p><code>single.html</code> 和各 <code>list.html</code> 插入调用代码，当然只插 single 也OK啦：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ partial &#34;breadcrumb.html&#34; . }}
-</code></pre></div><p><code>style.css</code> 样式代码（来自 <a href="https://www.rectcircle.cn/posts/blog-migration/#%e5%ae%9e%e7%8e%b0%e7%b3%bb%e5%88%97%e6%96%87%e7%ab%a0">@rectcircle</a>）：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* breadcrumb */</span>
-.<span style="color:#a6e22e">breadcrumb</span> {<span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#fafafa</span>;<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">margin-bottom</span>:<span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">list-style</span>:<span style="color:#66d9ef">none</span>;<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>; }
-.<span style="color:#a6e22e">breadcrumb</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">li</span>{<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;<span style="color:#66d9ef">opacity</span>:<span style="color:#ae81ff">.7</span>;}
-.<span style="color:#a6e22e">breadcrumb</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">li</span><span style="color:#f92672">+</span><span style="color:#f92672">li</span>:<span style="color:#a6e22e">before</span> {<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#ccc</span>; <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#34;&gt;&#34;</span>; }
-.<span style="color:#a6e22e">breadcrumb</span> <span style="color:#f92672">li</span> <span style="color:#f92672">a</span>{<span style="color:#66d9ef">text-decoration</span>:<span style="color:#66d9ef">none</span>;}
-.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">breadcrumb</span> {<span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#252627</span>;}
-</code></pre></div><h3 id="内容标题-content">内容标题 Content</h3>
-<p>以上功能和样式折腾完毕之后，显示的是这样的：</p>
-<pre><code>木木木木木 &gt; posts &gt; coding &gt; Hugo 添加面包屑导航
-</code></pre><p>所以，需要配合 <code>_index.md </code> 食用！</p>
-<pre><code>---
-title: &quot;首页&quot;
----
-</code></pre><p>个人是指定 posts 为内容文件夹，并且建了 4个子文件夹，相当于分了 4 类文章。</p>
-<pre><code>Hugo/content
-├── _index.md # title: &quot;首页&quot;
-├── archives
-│   └── _index.md # title: &quot;归档&quot;
-└── tags
-│   └── _index.md # title: &quot;标签&quot;
-├── posts
-      ├── _index.md # title: &quot;文章&quot;
-      ├── chat
-      │   └── _index.md # title: &quot;词穷&quot;
-      ├── coding
-      │   └── _index.md # title: &quot;折腾&quot;
-      ├── daily
-      │   └── _index.md # title: &quot;日常&quot;
-      └── reading
-        └── _index.md # title: &quot;育人&quot;
-</code></pre><p>累到忘我！如，酒到微醺，甚是美好！ 🌀</p>]]></content>
             
                  
                     

@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-06T13:17:29+00:00</updated>
+    <updated>2020-04-06T14:17:53+00:00</updated>
     
     
     
@@ -59,7 +59,7 @@ layout: &#34;photos&#34;
   {{ range (readDir &#34;./static/photos&#34;) }}
   &lt;<span style="color:#f92672">figure</span>&gt;
     &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/photos/{{ .Name }}&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Name }}&#34;</span> /&gt;
-    &lt;<span style="color:#f92672">figcaption</span>&gt;{{ .Name}}&lt;/<span style="color:#f92672">figcaption</span>&gt;
+    &lt;<span style="color:#f92672">figcaption</span>&gt;{{ .Name | replaceRE &#34;(.*)[.].*&#34; &#34;$1&#34;}}&lt;/<span style="color:#f92672">figcaption</span>&gt;
   &lt;/<span style="color:#f92672">figure</span>&gt;
   {{ end }}
 &lt;/<span style="color:#f92672">div</span>&gt;

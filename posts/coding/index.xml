@@ -57,6 +57,9 @@
       &lt;/section&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+  
+    &lt;img rel=&#34;link&#34; loading=&#34;lazy&#34; class=&#34;post-preview--image avatar&#34; src=&#34;https://lmm.elizen.me/images/2017/12/refer-1.png&#34;&gt;
+  
 &lt;/div&gt;
 
 &lt;p&gt;本文利用 Hugo 的 &lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;Shortcodes&lt;/a&gt; 功能和 &lt;a href=&#34;https://gohugo.io/functions/getpage/&#34;&gt;.GetPage&lt;/a&gt; 函数来实现。&lt;/p&gt;</description>

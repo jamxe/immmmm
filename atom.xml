@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-06T14:51:05+00:00</updated>
+    <updated>2020-04-07T17:17:18+00:00</updated>
     
     
     
@@ -128,6 +128,9 @@ layout: &#34;photos&#34;
       </section>
     </div>
   </div>
+  
+    <img rel="link" loading="lazy" class="post-preview--image avatar" src="https://lmm.elizen.me/images/2017/12/refer-1.png">
+  
 </div>
 
 <p>本文利用 Hugo 的 <a href="https://gohugo.io/extras/shortcodes/">Shortcodes</a> 功能和 <a href="https://gohugo.io/functions/getpage/">.GetPage</a> 函数来实现。</p>
@@ -157,7 +160,7 @@ layout: &#34;photos&#34;
 
 
 <div class="post-preview">
-  <div class="post-preview--meta" style="width:100%;">
+  <div class="post-preview--meta" >
     <div class="post-preview--middle">
       <h4 class="post-preview--title">
         <a target="_blank" href="https://immmmm.com/post-show-douban-item/">文章内显示豆瓣条目</a>
@@ -174,6 +177,7 @@ layout: &#34;photos&#34;
       </section>
     </div>
   </div>
+  
 </div>
 
 <h3 id="食用方式">食用方式</h3>

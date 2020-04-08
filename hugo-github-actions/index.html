@@ -204,18 +204,12 @@
 </code></pre><h3 id="添加-github-actions-代码">添加 Github Actions 代码：</h3>
 <p>实现效果，直接网页上修改 <code>data/links.toml</code> 或任意文件，触发 Actions 自动化运行 Hugo 程序生成静态文件并推送到 <code>gh-pages</code> 分支上，等待几十秒可看到更新 <a href="https://lmm214.github.io/edui/">https://lmm214.github.io/edui/</a></p>
 <p>具体操作：</p>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/tokens-1.png" alt="tokens-1"  />
-</p></p>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/tokens-2.png" alt="tokens-2"  />
-</p></p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/03/tokens-1.png" alt="tokens-1"  /></p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/03/tokens-2.png" alt="tokens-2"  /></p>
 <ul>
 <li>点 <a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a> 新建一个，勾选 <code>repo</code> 和 <code>workflow</code> ,暂存；</li>
 </ul>
-<p><p class="md_image">
-  <img loading='lazy' src="https://lmm.elizen.me/images/2020/03/secrets.jpeg" alt="secrets"  />
-</p></p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/03/secrets.jpeg" alt="secrets"  /></p>
 <ul>
 <li>
 <p>进项目 <code>settings/secrets</code> 新建标题为 <code>personal_token</code> ，内容是刚创建的 <code>tokens</code> ;</p>

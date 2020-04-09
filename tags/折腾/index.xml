@@ -17,7 +17,8 @@
       <pubDate>Thu, 09 Apr 2020 14:25:00 +0800</pubDate>
       
       <guid>https://immmmm.com/hugo-shortcodes-music/</guid>
-      <description>&lt;p&gt;感谢 &lt;a href=&#34;https://hugoloveit.com/zh-cn/theme-documentation-shortcodes/#music&#34;&gt;LoveIt&lt;/a&gt; 、&lt;a href=&#34;https://github.com/metowolf/MetingJS&#34;&gt;MetingJS&lt;/a&gt; 真好用！&lt;/p&gt;</description>
+      <description>&lt;p&gt;感谢 &lt;a href=&#34;https://hugoloveit.com/zh-cn/theme-documentation-shortcodes/#music&#34;&gt;LoveIt&lt;/a&gt; 、&lt;a href=&#34;https://github.com/metowolf/MetingJS&#34;&gt;MetingJS&lt;/a&gt; 真方便！&lt;/p&gt;
+&lt;p&gt;具体源码见：&lt;a href=&#34;https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/shortcodes/music.html&#34;&gt;shortcodes/music.html&lt;/a&gt;，把这个文件丢入自己的主题文章内插入调用代码即可，已粗暴的把 js 和 css 丢在一起。&lt;/p&gt;</description>
     </item>
     
     <item>

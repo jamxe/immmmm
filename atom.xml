@@ -7,12 +7,50 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-09T13:27:33+00:00</updated>
+    <updated>2020-04-09T16:45:29+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[2020-04-10]]></title>
+            <link href="https://immmmm.com/2020-04-10/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/2020-04-04/" rel="related" type="text/html" title="2020-04-04" />
+                <link href="https://immmmm.com/2020-03-23/" rel="related" type="text/html" title="2020-03-23" />
+                <link href="https://immmmm.com/2020-03-09/" rel="related" type="text/html" title="2020-03-09" />
+                <link href="https://immmmm.com/2020-01-14/" rel="related" type="text/html" title="2020-01-14" />
+                <link href="https://immmmm.com/2019-12-08/" rel="related" type="text/html" title="2019-12-08" />
+            
+                <id>https://immmmm.com/2020-04-10/</id>
+            
+            
+            <published>2020-04-10T00:35:24+08:00</published>
+            <updated>2020-04-10T00:35:24+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>臭小子，我，相伴一天，无争吵无游戏，明日继续。星期几？几号？几月？谁都没个准。</p>
+<p>安心翻书、刷单、听播客，3枚「小宇宙」邀请码，自取：</p>
+<p><photos><img loading='lazy' src="https://lmm.elizen.me/images/2020/04/xyz-1.png" alt="xyz-1"  /><img loading='lazy' src="https://lmm.elizen.me/images/2020/04/xyz-2.png" alt="xyz-2"  /><img loading='lazy' src="https://lmm.elizen.me/images/2020/04/xyz-3.png" alt="xyz-3"  /></photos></p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -426,43 +464,6 @@ https://movie.douban.com/subject/10432911/
                             
                              
                                 <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[2020-04-04]]></title>
-            <link href="https://immmmm.com/2020-04-04/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/2020-03-23/" rel="related" type="text/html" title="2020-03-23" />
-                <link href="https://immmmm.com/2020-03-09/" rel="related" type="text/html" title="2020-03-09" />
-                <link href="https://immmmm.com/2020-01-14/" rel="related" type="text/html" title="2020-01-14" />
-                <link href="https://immmmm.com/2019-12-08/" rel="related" type="text/html" title="2019-12-08" />
-                <link href="https://immmmm.com/2019-12-01/" rel="related" type="text/html" title="2019-12-01" />
-            
-                <id>https://immmmm.com/2020-04-04/</id>
-            
-            
-            <published>2020-04-04T00:02:33+08:00</published>
-            <updated>2020-04-04T00:02:33+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p><del>404</del></p>
-]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
                             
                         
                     

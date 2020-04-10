@@ -186,6 +186,7 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
 </code></pre></div><p>想想是可行的，无非是根据当前文章的链接构建编辑页面的链接。直接放代码：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/lmm214/immmmm/edit/master/content/{{ replace .File.Path &#34;</span><span style="color:#960050;background-color:#1e0010">\\&#34;</span> <span style="color:#960050;background-color:#1e0010">&#34;/&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;编辑文章&lt;/<span style="color:#f92672">a</span>&gt;
 </code></pre></div><p>为了页面美观，偷偷加到了某个地方。 ✌️</p>
+      
     </div>
   
     

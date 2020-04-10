@@ -3,17 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://immmmm.com/2020-04-10/</loc>
-    <lastmod>2020-04-10T00:35:24+08:00</lastmod>
+    <loc>https://immmmm.com/hugo-total-count/</loc>
+    <lastmod>2020-04-10T14:46:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/tags/%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2020-04-10T14:46:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/posts/coding/</loc>
+    <lastmod>2020-04-10T14:46:43+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://immmmm.com/posts/</loc>
-    <lastmod>2020-04-10T00:35:24+08:00</lastmod>
+    <lastmod>2020-04-10T14:46:43+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://immmmm.com/tags/</loc>
+    <lastmod>2020-04-10T14:46:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/2020-04-10/</loc>
     <lastmod>2020-04-10T00:35:24+08:00</lastmod>
   </url>
   
@@ -29,16 +44,6 @@
   
   <url>
     <loc>https://immmmm.com/hugo-shortcodes-music/</loc>
-    <lastmod>2020-04-09T14:25:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/tags/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2020-04-09T14:25:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/posts/coding/</loc>
     <lastmod>2020-04-09T14:25:00+08:00</lastmod>
   </url>
   

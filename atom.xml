@@ -7,12 +7,57 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-10T02:20:06+00:00</updated>
+    <updated>2020-04-10T06:57:24+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Hugo 总文章数和总字数]]></title>
+            <link href="https://immmmm.com/hugo-total-count/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/hugo-shortcodes-music/" rel="related" type="text/html" title="Hugo 音乐短代码" />
+                <link href="https://immmmm.com/hugo-readdir-photos/" rel="related" type="text/html" title="Hugo 添加相册页面" />
+                <link href="https://immmmm.com/hugo-shortcodes-article-link/" rel="related" type="text/html" title="Hugo 文章内链优化显示" />
+                <link href="https://immmmm.com/use-visual-studio-code/" rel="related" type="text/html" title="VS Code 初体验" />
+                <link href="https://immmmm.com/hugo-template-code/" rel="related" type="text/html" title="Hugo 主题常用的代码片段" />
+            
+                <id>https://immmmm.com/hugo-total-count/</id>
+            
+            
+            <published>2020-04-10T14:46:43+08:00</published>
+            <updated>2020-04-10T14:46:43+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>前者在某个大神主题中翻到，一句代码：</p>
+<pre><code>共 {{ len (where .Site.RegularPages &quot;Section&quot; &quot;posts&quot;) }} 篇文章
+</code></pre><p>总字数没有现成参数，官方手册看到 <a href="https://gohugo.io/functions/scratch/">.Scratch.Add</a> 瞎折腾完成:</p>
+<pre><code>{{$scratch := newScratch}}
+{{ range (where .Site.Pages &quot;Kind&quot; &quot;page&quot; )}}
+    {{$scratch.Add &quot;total&quot; .WordCount}}
+{{ end }}
+</code></pre><p>新建了个参数累加所有文章的 <code>.WordCount</code> 字数，一般放 footer 头几行，下面是调用代码：</p>
+<pre><code>总计 {{$scratch.Get &quot;total&quot; }} 字
+</code></pre>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -33,9 +78,10 @@
             
             
             <content type="html"><![CDATA[<p>臭小子，我，相伴一天，无争吵无游戏，明日继续。星期几？几号？几月？谁都没个准。</p>
-<p>安心翻书、刷单、听播客，3枚「小宇宙」邀请码，自取：</p>
-<p><photos><img loading='lazy' src="https://lmm.elizen.me/images/2020/04/xyz-1.png" alt="xyz-1"  /><img loading='lazy' src="https://lmm.elizen.me/images/2020/04/xyz-3.png" alt="xyz-3"  /></photos></p>
-<p><a href="https://www.cssj.fun/">@北海轻歌</a> 接力分享：NXM6，R4TU，VLJG</p>]]></content>
+<p>安心翻书、刷单、听播客，「小宇宙」邀请码：SPAI</p>
+<p>~~ 4ZSJ，8A75~~</p>
+<p>~~ <a href="https://www.cssj.fun/">@北海轻歌</a> 接力分享：NXM6，R4TU，VLJG ~~</p>
+<p>~~ @轻舟 接力分享：NXM6，R4TU，VLJG ~~</p>]]></content>
             
                  
                     
@@ -276,185 +322,6 @@ https://movie.douban.com/subject/10432911/
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">\{\{&lt;<span style="color:#f92672">link</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">bitcron-auto-article-refer</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt;\}\}
 </code></pre></div><p>文章内去掉反斜杠 <code>\</code> 插入即可。</p>
 <p>其中 <code>link</code> 匹配短代码模板 <code>link.html</code> ，之后填的 <code>bitcron-auto-article-refer</code> 是文章 md 的文件名。</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[VS Code 初体验]]></title>
-            <link href="https://immmmm.com/use-visual-studio-code/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/hugo-template-code/" rel="related" type="text/html" title="Hugo 主题常用的代码片段" />
-                <link href="https://immmmm.com/hugo-add-breadcrumb/" rel="related" type="text/html" title="Hugo 添加面包屑导航" />
-                <link href="https://immmmm.com/noto-serif-sc-by-google-fonts/" rel="related" type="text/html" title="添加 Google Fonts 思源宋体" />
-                <link href="https://immmmm.com/hugo-github-editpath/" rel="related" type="text/html" title="前端编辑 Hugo 文章" />
-                <link href="https://immmmm.com/hugo-themes/" rel="related" type="text/html" title="Hugo 主题推荐" />
-            
-                <id>https://immmmm.com/use-visual-studio-code/</id>
-            
-            
-            <published>2020-04-04T20:50:00+08:00</published>
-            <updated>2020-04-04T20:50:00+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>Visual Studio Code 久仰大名，但一直误认为是个臃肿大部头，毕竟是微软出品。 🙇</p>
-<p>一试，直接拉取仓库开启 Git 同步，成了，满足本地码字同步而不用碰终端，不用碰终端，碰终端！</p>
-<p>二试，使用 gpm 插件更能多仓库管理，也成了，好感爆棚。没遇到什么权限问题，应该是之前终端里配置过的关系。</p>
-<p>再试，GitHub 网页上更改，VS 里拉取变更，丝滑，这下舒心到随心咯！</p>
-<h3 id="下载">下载：</h3>
-<p><a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
-<h3 id="插件">插件：</h3>
-<ul>
-<li>Chinese ：界面汉化</li>
-<li>Monokai Pro &amp; GitHub Plus Theme：暗黑/明亮主题</li>
-<li>Material Icon Theme ：文件图标</li>
-<li>gpm ：多仓库管理</li>
-<li>Settings Sync :配置同步</li>
-<li>PicGo：图床</li>
-<li>Markdown All in One：快捷 md 格式化</li>
-<li>Auto Rename Tag：成对修改标签</li>
-<li>favorites：钉住文件或文件夹</li>
-<li>……</li>
-</ul>
-<h3 id="gpm-多仓库配置">gpm 多仓库配置</h3>
-<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/04/vscode-2.png" alt="vscode-2"  /></p>
-<p>填入远程仓库链接拉取到本地。</p>
-<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/04/vscode-3.png" alt="vscode-3"  /></p>
-<p><strong>按快捷键 <code>⌘ + enter</code>，一键推送到远程仓库。</strong></p>
-<h3 id="常用快捷键">常用快捷键</h3>
-<table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="center">操作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><code>control + tab</code></td>
-<td align="center">标签切换</td>
-</tr>
-<tr>
-<td align="center"><code>option + shift</code></td>
-<td align="center">列选择</td>
-</tr>
-<tr>
-<td align="center"><code>⌘ + D</code></td>
-<td align="center">选中多个相同字符</td>
-</tr>
-<tr>
-<td align="center"><code>control + 鼠标点击</code></td>
-<td align="center">多行编辑</td>
-</tr>
-</tbody>
-</table>
-<h3 id="markdown-all-in-one-快捷键">Markdown All in One 快捷键</h3>
-<table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="center">操作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><code>⌘ + B</code></td>
-<td align="center"><strong>粗体</strong></td>
-</tr>
-<tr>
-<td align="center"><code>⌘ + I</code></td>
-<td align="center"><em>斜体</em></td>
-</tr>
-<tr>
-<td align="center"><code>Alt + S</code></td>
-<td align="center">~删除线~</td>
-</tr>
-<tr>
-<td align="center"><code>option + Shift + ]</code></td>
-<td align="center">标题(uplevel)</td>
-</tr>
-<tr>
-<td align="center"><code>option + Shift + [</code></td>
-<td align="center">标题(downlevel)</td>
-</tr>
-<tr>
-<td align="center"><code>option + Shift + F</code></td>
-<td align="center">文档自动格式化</td>
-</tr>
-</tbody>
-</table>
-<h3 id="picgo-快捷键">PicGo 快捷键</h3>
-<table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="center">操作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><code>⌘ + option + U</code></td>
-<td align="center">从剪贴板上传图像</td>
-</tr>
-<tr>
-<td align="center"><code>⌘ + option + E</code></td>
-<td align="center">从资源管理器上传图像</td>
-</tr>
-<tr>
-<td align="center"><code>⌘ + option + O</code></td>
-<td align="center">从输入框上传图像</td>
-</tr>
-</tbody>
-</table>
-<h3 id="启用-markdown-代码片段">启用 Markdown 代码片段</h3>
-<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/04/vscode-1.png" alt="vscode-1"  /></p>
-<p><code>settings.json</code> 中添加 ：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#e6db74">&#34;[markdown]&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
-    <span style="color:#f92672">&#34;editor.quickSuggestions&#34;</span>: <span style="color:#66d9ef">true</span>
-}<span style="color:#960050;background-color:#1e0010">,</span>
-</code></pre></div><p>左下角&ndash;用户代码片段，添加：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#e6db74">&#34;new post&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
-    <span style="color:#f92672">&#34;prefix&#34;</span>: <span style="color:#e6db74">&#34;post&#34;</span>,
-    <span style="color:#f92672">&#34;body&#34;</span>: [
-        <span style="color:#e6db74">&#34;---&#34;</span>,
-        <span style="color:#e6db74">&#34;title: \&#34;${1:在此处添加标题}\&#34;&#34;</span>,
-        <span style="color:#e6db74">&#34;date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND} +0800&#34;</span>,
-        <span style="color:#e6db74">&#34;tags: [${2|折腾,日常,育人,日常|}]&#34;</span> 
-        <span style="color:#e6db74">&#34;---&#34;</span>,
-        <span style="color:#e6db74">&#34;$0&#34;</span>
-    ],
-    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;新文章&#34;</span>
-}<span style="color:#960050;background-color:#1e0010">,</span>
-<span style="color:#e6db74">&#34;more post&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
-	<span style="color:#f92672">&#34;prefix&#34;</span>: <span style="color:#e6db74">&#34;mr&#34;</span>,
-	<span style="color:#f92672">&#34;body&#34;</span>: [
-		<span style="color:#e6db74">&#34;&lt;!--more--&gt;&#34;</span>
-	],
-    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;more标签&#34;</span>
-}
-</code></pre></div><p>输入 <code>post</code> 按 Tab 快捷插入文章信息，再按 Tab 可选择标签，在 Tab 开始码字；</p>
-<p>输入 <code>mr</code> ，快捷插入 <code>&lt;!--more--&gt;</code> 标签。</p>
-<h3 id="致谢">致谢</h3>
-<ul>
-<li><a href="https://www.codingyang.com/2020/03/codeEditer.html">像写代码一样写作</a></li>
-<li><a href="https://blog.walterlv.com/post/add-custom-code-snippet-for-vscode.html">在 Visual Studio Code 中添加自定义的代码片段</a></li>
-<li><a href="https://jeasonstudio.gitbooks.io/vscode-cn-doc/content/md/%E7%BC%96%E8%BE%91%E5%99%A8/%E5%9F%BA%E7%A1%80.html">Visual Studio Code 中文文档</a></li>
-<li><a href="https://tophat.top/posts/51a82223.html">使用 VScode 插件 vs-picgo 传图到七牛云上</a></li>
-</ul>]]></content>
             
                  
                     

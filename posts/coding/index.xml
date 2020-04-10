@@ -6,10 +6,19 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 09 Apr 2020 14:25:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 14:46:43 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 总文章数和总字数</title>
+      <link>https://immmmm.com/hugo-total-count/</link>
+      <pubDate>Fri, 10 Apr 2020 14:46:43 +0800</pubDate>
+      
+      <guid>https://immmmm.com/hugo-total-count/</guid>
+      <description>前者在某个大神主题中翻到，一句代码： 共 {{ len (where .Site.RegularPages &amp;quot;Section&amp;quot; &amp;quot;posts&amp;quot;) }} 篇文章 总字数没有现成参数，官方手册看到 .Scratch.Add 瞎折腾完成: {{$scratch := newScratch}} {{ range (where .Site.Pages &amp;quot;Kind&amp;quot; &amp;quot;page&amp;quot; )}} {{$scratch.Add &amp;quot;total&amp;quot; .WordCount}} {{ end }} 新建了个参数累加所有文章的 .WordCount 字数，一般放 footer 头几行，下面是调用代码： 总计 {{$scratch.Get &amp;quot;total&amp;quot; }} 字</description>
+    </item>
     
     <item>
       <title>Hugo 音乐短代码</title>
@@ -87,25 +96,6 @@
 &lt;p&gt;一试，直接拉取仓库开启 Git 同步，成了，满足本地码字同步而不用碰终端，不用碰终端，碰终端！&lt;/p&gt;
 &lt;p&gt;二试，使用 gpm 插件更能多仓库管理，也成了，好感爆棚。没遇到什么权限问题，应该是之前终端里配置过的关系。&lt;/p&gt;
 &lt;p&gt;再试，GitHub 网页上更改，VS 里拉取变更，丝滑，这下舒心到随心咯！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 主题常用的代码片段</title>
-      <link>https://immmmm.com/hugo-template-code/</link>
-      <pubDate>Wed, 01 Apr 2020 09:46:00 +0800</pubDate>
-      
-      <guid>https://immmmm.com/hugo-template-code/</guid>
-      <description>&lt;h3 id=&#34;全站-site&#34;&gt;全站 Site&lt;/h3&gt;
-&lt;p&gt;网址：&lt;code&gt;.Site.BaseURL&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;标题：&lt;code&gt;.Site.Title&lt;/code&gt;，示例：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ $.Site.BaseURL }}&amp;#34;&lt;/span&gt;&amp;gt;{{ $.Site.Title }}&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;副标题：&lt;code&gt;.Site.Params.description&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;关键词：&lt;code&gt;.Site.Params.keywords&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;头部菜单：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ range $.Site.Menus.main }}
-	&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ .URL }}&amp;#34;&lt;/span&gt;&amp;gt;{{ .Name }}&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
-{{ end }}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

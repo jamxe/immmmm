@@ -153,9 +153,19 @@
       
 
       <div class="post-content">
-        前者在某个大神主题中翻到，一句代码： 共 {{ len (where .Site.RegularPages &quot;Section&quot; &quot;posts&quot;) }} 篇文章 总字数没有现成参数，官方手册看到 .Scratch.Add 瞎折腾完成: {{$scratch := newScratch}} {{ range (where .Site.Pages &quot;Kind&quot; &quot;page&quot; )}} {{$scratch.Add &quot;total&quot; .WordCount}} {{ end }} 新建了个参数累加所有文章的 .WordCount 字数，一般放 footer 头几行，下面是调用代码： 总计 {{$scratch.Get &quot;total&quot; }} 字
-      </div>
       
+        <p>前者在某个大神主题中翻到，一句代码：</p>
+<pre><code>共 {{ len (where .Site.RegularPages &quot;Section&quot; &quot;posts&quot;) }} 篇文章
+</code></pre><p>总字数没有现成参数，官方手册看到 <a href="https://gohugo.io/functions/scratch/">.Scratch.Add</a> 瞎折腾完成:</p>
+<pre><code>{{$scratch := newScratch}}
+{{ range (where .Site.Pages &quot;Kind&quot; &quot;page&quot; )}}
+    {{$scratch.Add &quot;total&quot; .WordCount}}
+{{ end }}
+</code></pre><p>新建了个参数累加所有文章的 <code>.WordCount</code> 字数，一般放 footer 头几行，下面是调用代码：</p>
+<pre><code>总计 {{$scratch.Get &quot;total&quot; }} 字
+</code></pre>
+      
+      </div>
     
     </div>
     
@@ -207,12 +217,12 @@
       
 
       <div class="post-content">
+      
         <p>感谢 <a href="https://hugoloveit.com/zh-cn/theme-documentation-shortcodes/#music">LoveIt</a> 、<a href="https://github.com/metowolf/MetingJS">MetingJS</a> 真方便！</p>
 <p>具体源码见：<a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/shortcodes/music.html">shortcodes/music.html</a>，把这个文件丢入自己的主题文章内插入调用代码即可，已粗暴的把 js 和 css 丢在一起。</p>
-      </div>
-      
         <div><a class="read-more button" href="/hugo-shortcodes-music/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -239,6 +249,7 @@
       
 
       <div class="post-content">
+      
         <p>效果见： <a href="https://immmmm.com/photos/">https://immmmm.com/photos/</a></p>
 <p>总有那么一瞬间特别特别想发一张照片，但不是以文章形式发布。</p>
 <p>实现思路是程序自动遍历指定文件夹内的图片，并展示在一个页面上。有了思路，剩下的就是看文档、看文档、看文档，此功能利用 Hugo 的 <a href="https://gohugo.io/templates/files/">readDir function</a> 函数达成。</p>
@@ -249,10 +260,9 @@
     ├── 想象中的自由.jpeg
     └── 儿时登过顶的狮子山.jpeg
 </code></pre>
-      </div>
-      
         <div><a class="read-more button" href="/hugo-readdir-photos/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -279,6 +289,7 @@
       
 
       <div class="post-content">
+      
         <p>好久好久之前（2年前），写过这功能：<a href="https://immmmm.com/bitcron-auto-article-refer/">《Bitcron 文章内链自动优化显示》</a>，如下效果：</p>
 
 
@@ -309,10 +320,9 @@
 </div>
 
 <p>本文利用 Hugo 的 <a href="https://gohugo.io/extras/shortcodes/">Shortcodes</a> 功能和 <a href="https://gohugo.io/functions/getpage/">.GetPage</a> 函数来实现。</p>
-      </div>
-      
         <div><a class="read-more button" href="/hugo-shortcodes-article-link/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -343,14 +353,14 @@
       
 
       <div class="post-content">
+      
         <p>Visual Studio Code 久仰大名，但一直误认为是个臃肿大部头，毕竟是微软出品。 🙇</p>
 <p>一试，直接拉取仓库开启 Git 同步，成了，满足本地码字同步而不用碰终端，不用碰终端，碰终端！</p>
 <p>二试，使用 gpm 插件更能多仓库管理，也成了，好感爆棚。没遇到什么权限问题，应该是之前终端里配置过的关系。</p>
 <p>再试，GitHub 网页上更改，VS 里拉取变更，丝滑，这下舒心到随心咯！</p>
-      </div>
-      
         <div><a class="read-more button" href="/use-visual-studio-code/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -402,6 +412,7 @@
       
 
       <div class="post-content">
+      
         <h3 id="全站-site">全站 Site</h3>
 <p>网址：<code>.Site.BaseURL</code></p>
 <p>标题：<code>.Site.Title</code>，示例：</p>
@@ -413,10 +424,9 @@
 	&lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .URL }}&#34;</span>&gt;{{ .Name }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
 {{ end }}
 </code></pre></div>
-      </div>
-      
         <div><a class="read-more button" href="/hugo-template-code/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -443,16 +453,16 @@
       
 
       <div class="post-content">
+      
         <figure>
     <img src="https://lmm.elizen.me/images/2020/03/breadcrumb-1.png" width="50%"/><img src="https://lmm.elizen.me/images/2020/03/breadcrumb-2.png" width="50%" />
     <figcaption>黑+白，疗效好</figcaption>
   </figure>
 <p>「不问明天，悠然浪费」，多少年前看到的一句话，一直作为博客的 Slogan ，如同“谶语”般的存在！ 😷</p>
 <p>说回正题，折腾流程如下：</p>
-      </div>
-      
         <div><a class="read-more button" href="/hugo-add-breadcrumb/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -483,12 +493,12 @@
       
 
       <div class="post-content">
+      
         <p>谷婶大法好，在线字体都支持中文咯！ 👍</p>
 <p>访问 <a href="https://fonts.google.com/?subset=chinese-simplified">Google Fonts</a>，点选需要的字体，简单设置能获得样式链接。<del>虽听闻字体服务器国内也有节点，但还是启用 loli 的 CDN，感谢！</del></p>
-      </div>
-      
         <div><a class="read-more button" href="/noto-serif-sc-by-google-fonts/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -515,16 +525,16 @@
       
 
       <div class="post-content">
+      
         <p>目前发文是直接在 Github 前端进行，Hugo 的构建交给 <a href="https://immmmm.com/hugo-github-actions/">Github Actions</a> 实现自动化部署。因此，产生个需求，文章里改个错别字什么的，能不能一键直达 GIthub 编辑页面？</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"># 当面页面链接
 https://immmmm.com/hugo-themes/
 # Github 编辑页面链接
 https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
 </code></pre></div>
-      </div>
-      
         <div><a class="read-more button" href="/hugo-github-editpath/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -551,11 +561,11 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
       
 
       <div class="post-content">
-        <p>人工 Github 搜索 “Hugo theme” 按 stars 排序，挑出以下十款。</p>
-      </div>
       
+        <p>人工 Github 搜索 “Hugo theme” 按 stars 排序，挑出以下十款。</p>
         <div><a class="read-more button" href="/hugo-themes/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -586,12 +596,12 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
       
 
       <div class="post-content">
+      
         <p>起因，想给文章插入的 img 图片添加 <code>loading='lazy'</code>，果然有爱折腾的，看（<a href="https://lvv.me/posts/2019/12/24_hugo_render_hooks/">这里</a>），官方说明 <a href="https://gohugo.io/getting-started/configuration-markup/#render-hook-templates">#render-hook-templates</a>，Hugo v0.62+</p>
 <p>简单说能对md内的链接（link）和图像（image）自定义渲染，比如实现以上需求，只需在主题新建 <code>layouts/_default/_markup/render-image.html</code></p>
-      </div>
-      
         <div><a class="read-more button" href="/hugo-render-hook/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -647,12 +657,12 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
       
 
       <div class="post-content">
+      
         <p>效果预览：<a href="https://edui.fun/">https://edui.fun/</a></p>
 <p>仓库下载：<a href="https://github.com/lmm214/hugo-theme-webstack">https://github.com/lmm214/hugo-theme-webstack</a></p>
-      </div>
-      
         <div><a class="read-more button" href="/hugo-theme-webstack/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -679,16 +689,16 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
       
 
       <div class="post-content">
+      
         <p>博客都已静态，想再提速，要么换国内云服，要么优化一个个 JS 加载。立竿见影办法是使用 CDN 来加载，或者前端延迟加载，甚者后端判断按需加载。</p>
 <p>在需要加载的一串 JS 里，找来找去，Valine 这货最强大 💪</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">47.5KB --&gt; https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js
 75KB   --&gt; https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js
 6.4KB  --&gt; https://js.fundebug.cn/fundebug.1.9.0.min.js
 </code></pre></div><p>撸起袖子，月干！</p>
-      </div>
-      
         <div><a class="read-more button" href="/valine-getscript-load/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -715,14 +725,14 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
       
 
       <div class="post-content">
+      
         <p>哈喽，🐯🐶！（开机声～）</p>
 <p><img loading='lazy' src="https://lmm.elizen.me/images/2020/03/hugo-2.png" alt="hugo-2"  /></p>
 <p>主站顺利切换到 <a href="https://gohugo.io/">Hugo</a> ，直接在 Github Web 端码字，或者本地码好拖进去，自动更新，自动部署，舒心！</p>
 <p>就待它的 Github APP 端支持编辑代码咯！</p>
-      </div>
-      
         <div><a class="read-more button" href="/hello-hugo/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -749,6 +759,7 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
       
 
       <div class="post-content">
+      
         <blockquote>
 <p>🍰 万物皆可 RSS。</p>
 </blockquote>
@@ -756,10 +767,9 @@ https://github.com/lmm214/immmmm/edit/master/content/posts/coding/hugo-themes.md
 <pre><code>$ docker pull diygod/rsshub
 $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
 </code></pre><p>用宝塔面板的话，放行 1200 端口。浏览器打开 http://IP:1200/ ，看到成功页面。✅</p>
-      </div>
-      
         <div><a class="read-more button" href="/rsshub-docker/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -786,15 +796,15 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
       
 
       <div class="post-content">
+      
         <p>不折腾点东西总觉得浑浑噩噩，折腾点东西搞得脑袋晕晕乎乎！</p>
 <h3 id="折腾需求">折腾需求</h3>
 <p>为更新 <a href="https://edui.fun/">https://edui.fun/</a> 导航站能随手些，造了 <a href="https://immmmm.com/gridea-theme-webstack/">Gridea Theme WebStack</a> 。每次得源文件切换加载，但只为加几行代码，等等等；</p>
 <p>折腾一天，已实现直接在 GitHub  <code>master</code> 添加代码，<code>Github Actions </code> 自动构建 <code>Hugo</code> 静态文件到 <code>gh-pages</code> 分支，外加同步 webhook 到自己的服务器。</p>
 <p>再也不用 git 来 git 去！</p>
-      </div>
-      
         <div><a class="read-more button" href="/hugo-github-actions/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     
@@ -821,13 +831,13 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
       
 
       <div class="post-content">
+      
         <p><a href="https://movie.douban.com/subject/30206389/">https://movie.douban.com/subject/30206389/</a></p>
 <p><img loading='lazy' src="https://lmm.elizen.me/images/2020/03/douban-ls.png" alt="douban-ls"  /></p>
 <p>具体使用说明同：<a href="https://immmmm.com/post-show-douban-item/">https://immmmm.com/post-show-douban-item/</a></p>
-      </div>
-      
         <div><a class="read-more button" href="/post-show-douban-item-localstorage-cache/">阅读全文 →</a></div>
       
+      </div>
     
     </div>
     

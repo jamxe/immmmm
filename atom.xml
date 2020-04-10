@@ -7,12 +7,61 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-10T12:36:36+00:00</updated>
+    <updated>2020-04-10T13:24:27+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Hugo 显示指定文件夹内图片]]></title>
+            <link href="https://immmmm.com/hugo-readdir-photos-single/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/hugo-total-count/" rel="related" type="text/html" title="Hugo 总文章数和总字数" />
+                <link href="https://immmmm.com/hugo-shortcodes-music/" rel="related" type="text/html" title="Hugo 音乐短代码" />
+                <link href="https://immmmm.com/hugo-readdir-photos/" rel="related" type="text/html" title="Hugo 添加相册页面" />
+                <link href="https://immmmm.com/hugo-shortcodes-article-link/" rel="related" type="text/html" title="Hugo 文章内链优化显示" />
+                <link href="https://immmmm.com/use-visual-studio-code/" rel="related" type="text/html" title="VS Code 初体验" />
+            
+                <id>https://immmmm.com/hugo-readdir-photos-single/</id>
+            
+            
+            <published>2020-04-10T20:38:16+08:00</published>
+            <updated>2020-04-10T20:38:16+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>效果见文章底部，这些图片非手动一张张插入，文章头部一句 <code>path: 2004gd</code> 搞定！</p>
+<p>直接看代码：</p>
+<pre><code>{{ if .Params.path }}
+    {{$Path := .Params.path}}
+    {{- range (readDir (printf &quot;%s%s&quot; &quot;./static/images/&quot; $Path )) -}}&lt;img loading='lazy' src=&quot;{{(printf &quot;/images/%s/%s&quot; $Path .Name ) | absURL}}&quot; /&gt;{{- end -}}
+{{ end }}
+</code></pre><p>当文章中写了 <code>path: 2004gd</code> 表示 Hugo 遍历根目录 <code>/static/images/2004gd</code> 内的图片并显示。</p>
+<p>这功能其实之前 Bitcron 的主题里就有，太符合老年人的需求了，一句话，一堆图片，一篇文章搞定！</p>
+<p>当然，如果使用 Github 托管，随手羊毛撸起，<code>lmm214/immmmm@gh-pages</code> 需自行更改：</p>
+<pre><code>{{ if .Params.path }}
+    {{$Path := .Params.path}}
+    &lt;photos&gt;{{- range (readDir (printf &quot;%s%s&quot; &quot;./static/images/&quot; $Path )) -}}&lt;img loading='lazy' src=&quot;{{(printf &quot;https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/%s/%s&quot; $Path .Name ) | absURL}}&quot; /&gt;{{- end -}}&lt;/photos&gt;
+{{ end }}
+</code></pre>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -200,128 +249,6 @@ layout: &#34;photos&#34;
 .<span style="color:#a6e22e">page-photos</span> <span style="color:#f92672">figure</span> <span style="color:#f92672">img</span>{<span style="color:#66d9ef">box-shadow</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">12</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span> rgba(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">.15</span>);<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>;}
 </code></pre></div><h3 id="不了了之">不了了之</h3>
 <p>原依据 <a href="https://golang.org/pkg/os/#FileInfo">os.FileInfo</a> 还加了 <code>{{ .Modtime }}</code> 时间显示，本地测试都可以，但同步到线上之后所有图片都一个时间，了之。</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[Hugo 文章内链优化显示]]></title>
-            <link href="https://immmmm.com/hugo-shortcodes-article-link/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/use-visual-studio-code/" rel="related" type="text/html" title="VS Code 初体验" />
-                <link href="https://immmmm.com/hugo-template-code/" rel="related" type="text/html" title="Hugo 主题常用的代码片段" />
-                <link href="https://immmmm.com/hugo-add-breadcrumb/" rel="related" type="text/html" title="Hugo 添加面包屑导航" />
-                <link href="https://immmmm.com/noto-serif-sc-by-google-fonts/" rel="related" type="text/html" title="添加 Google Fonts 思源宋体" />
-                <link href="https://immmmm.com/hugo-github-editpath/" rel="related" type="text/html" title="前端编辑 Hugo 文章" />
-            
-                <id>https://immmmm.com/hugo-shortcodes-article-link/</id>
-            
-            
-            <published>2020-04-05T22:30:27+08:00</published>
-            <updated>2020-04-05T22:30:27+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>好久好久之前（2年前），写过这功能：<a href="https://immmmm.com/bitcron-auto-article-refer/">《Bitcron 文章内链自动优化显示》</a>，如下效果：</p>
-
-
-
-
-	
-
-
-<div class="post-preview">
-  <div class="post-preview--meta" style="width:100%;">
-    <div class="post-preview--middle">
-      <h4 class="post-preview--title">
-        <a target="_blank" href="https://immmmm.com/bitcron-auto-article-refer/">Bitcron 文章内链自动优化显示</a>
-      </h4>
-      <time class="post-preview--date">2017-12-18</time>
-      
-      <small>#折腾&nbsp;</small>
-      
-      <section style="max-height:96px;overflow:hidden;" class="post-preview--excerpt">
-        当我们在文章内引用了一个站内的链接，一般只是超级链接，其实，也可以为这个超级链接提供更好的表现方式。 这是看起来很简单，但确实一个超赞的想法，来自于 Jimmy。效果如下(中间部分，hello 为标题):
-
-      </section>
-    </div>
-  </div>
-  
-    <img rel="link" loading="lazy" class="post-preview--image avatar" src="https://lmm.elizen.me/images/2017/12/refer-1.png">
-  
-</div>
-
-<p>本文利用 Hugo 的 <a href="https://gohugo.io/extras/shortcodes/">Shortcodes</a> 功能和 <a href="https://gohugo.io/functions/getpage/">.GetPage</a> 函数来实现。</p>
-<h3 id="功能代码">功能代码</h3>
-<p>创建 <code>/layouts/shortcodes/link.html</code>：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{$URL := .Get 0}}
-{{ with .Site.GetPage $URL }}
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview&#34;</span>&gt;
-  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--meta&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:100%;&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--middle&#34;</span>&gt;
-      &lt;<span style="color:#f92672">h4</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--title&#34;</span>&gt;
-        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;
-      &lt;/<span style="color:#f92672">h4</span>&gt;
-      &lt;<span style="color:#f92672">time</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--date&#34;</span>&gt;{{ .Date.Format ( default &#34;2006-01-02&#34;) }}&lt;/<span style="color:#f92672">time</span>&gt;
-      {{ if .Params.tags }}
-      &lt;<span style="color:#f92672">small</span>&gt;{{ range .Params.tags }}#{{ . }}&amp;nbsp;{{ end }}&lt;/<span style="color:#f92672">small</span>&gt;
-      {{ end }}
-      &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;max-height:105px;overflow:hidden;&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-preview--excerpt&#34;</span>&gt;
-        {{ .Summary | plainify}}
-      &lt;/<span style="color:#f92672">section</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-  &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
-{{ end }}
-</code></pre></div><h3 id="样式代码">样式代码</h3>
-<p>样式 CSS 代码需自行调配，个人是复用豆瓣条目的：</p>
-
-
-
-
-	
-		
-	
-
-
-<div class="post-preview">
-  <div class="post-preview--meta" style="width:100%;">
-    <div class="post-preview--middle">
-      <h4 class="post-preview--title">
-        <a target="_blank" href="https://immmmm.com/post-show-douban-item/">文章内显示豆瓣条目</a>
-      </h4>
-      <time class="post-preview--date">2020-01-25</time>
-      
-      <small>#折腾&nbsp;</small>
-      
-      <section style="max-height:96px;overflow:hidden;" class="post-preview--excerpt">
-        小众豆瓣已成刚需，电影、图书看完都会标记下，写日志时常会提到，老想着在文章内「优雅」地展示，官方 API 已废，幸好还有给力的 @mufeng 兄，以下功能就使用其提供的轮子。
-效果如下 https://book.douban.com/subject/33408247/
-https://movie.douban.com/subject/10432911/
-
-      </section>
-    </div>
-  </div>
-  
-</div>
-
-<h3 id="食用方式">食用方式</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">\{\{&lt;<span style="color:#f92672">link</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">bitcron-auto-article-refer</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt;\}\}
-</code></pre></div><p>文章内去掉反斜杠 <code>\</code> 插入即可。</p>
-<p>其中 <code>link</code> 匹配短代码模板 <code>link.html</code> ，之后填的 <code>bitcron-auto-article-refer</code> 是文章 md 的文件名。</p>]]></content>
             
                  
                     

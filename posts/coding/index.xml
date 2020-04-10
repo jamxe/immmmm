@@ -6,10 +6,25 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 10 Apr 2020 14:46:43 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 20:38:16 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 显示指定文件夹内图片</title>
+      <link>https://immmmm.com/hugo-readdir-photos-single/</link>
+      <pubDate>Fri, 10 Apr 2020 20:38:16 +0800</pubDate>
+      
+      <guid>https://immmmm.com/hugo-readdir-photos-single/</guid>
+      <description>&lt;p&gt;效果见文章底部，这些图片非手动一张张插入，文章头部一句 &lt;code&gt;path: 2004gd&lt;/code&gt; 搞定！&lt;/p&gt;
+&lt;p&gt;直接看代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{ if .Params.path }}
+    {{$Path := .Params.path}}
+    {{- range (readDir (printf &amp;quot;%s%s&amp;quot; &amp;quot;./static/images/&amp;quot; $Path )) -}}&amp;lt;img loading=&#39;lazy&#39; src=&amp;quot;{{(printf &amp;quot;/images/%s/%s&amp;quot; $Path .Name ) | absURL}}&amp;quot; /&amp;gt;{{- end -}}
+{{ end }}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当文章中写了 &lt;code&gt;path: 2004gd&lt;/code&gt; 表示 Hugo 遍历根目录 &lt;code&gt;/static/images/2004gd&lt;/code&gt; 内的图片并显示。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 总文章数和总字数</title>
@@ -84,18 +99,6 @@
 &lt;/div&gt;
 
 &lt;p&gt;本文利用 Hugo 的 &lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;Shortcodes&lt;/a&gt; 功能和 &lt;a href=&#34;https://gohugo.io/functions/getpage/&#34;&gt;.GetPage&lt;/a&gt; 函数来实现。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>VS Code 初体验</title>
-      <link>https://immmmm.com/use-visual-studio-code/</link>
-      <pubDate>Sat, 04 Apr 2020 20:50:00 +0800</pubDate>
-      
-      <guid>https://immmmm.com/use-visual-studio-code/</guid>
-      <description>&lt;p&gt;Visual Studio Code 久仰大名，但一直误认为是个臃肿大部头，毕竟是微软出品。 🙇&lt;/p&gt;
-&lt;p&gt;一试，直接拉取仓库开启 Git 同步，成了，满足本地码字同步而不用碰终端，不用碰终端，碰终端！&lt;/p&gt;
-&lt;p&gt;二试，使用 gpm 插件更能多仓库管理，也成了，好感爆棚。没遇到什么权限问题，应该是之前终端里配置过的关系。&lt;/p&gt;
-&lt;p&gt;再试，GitHub 网页上更改，VS 里拉取变更，丝滑，这下舒心到随心咯！&lt;/p&gt;</description>
     </item>
     
   </channel>

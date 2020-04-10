@@ -192,9 +192,9 @@
 <p>当然，如果使用 Github 托管，随手羊毛撸起，<code>lmm214/immmmm@gh-pages</code> 需自行更改：</p>
 <pre><code>{{ if .Params.path }}
     {{$Path := .Params.path}}
-    &lt;photos&gt;{{- range (readDir (printf &quot;%s%s&quot; &quot;./static/images/&quot; $Path )) -}}&lt;img loading='lazy' src=&quot;{{(printf &quot;https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/%s/%s&quot; $Path .Name ) | absURL}}&quot; /&gt;{{- end -}}&lt;/photos&gt;
+    {{- range (readDir (printf &quot;%s%s&quot; &quot;./static/images/&quot; $Path )) -}}&lt;img loading='lazy' src=&quot;{{(printf &quot;https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/%s/%s&quot; $Path .Name ) | absURL}}&quot; /&gt;{{- end -}}
 {{ end }}
-</code></pre>
+</code></pre><p>注：代码仅实现功能，灯箱效果什么的需要自行适配主题。</p>
       
     
     <photos><img class="avatar" loading='lazy' src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/2004gd/gd-01.jpeg" /><img class="avatar" loading='lazy' src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/2004gd/gd-02.jpeg" /><img class="avatar" loading='lazy' src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/2004gd/gd-03.jpeg" /><img class="avatar" loading='lazy' src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/2004gd/gd-04.jpeg" /><img class="avatar" loading='lazy' src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/2004gd/gd-05.jpeg" /><img class="avatar" loading='lazy' src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/2004gd/gd-06.jpeg" /></photos>
@@ -624,7 +624,7 @@
 <footer class="footer">
   <div class="footer__inner">
     <div class="copyright">
-      <span>共 148 篇文章</span><span> 68504 字</span>
+      <span>共 148 篇文章</span><span> 68530 字</span>
     </div>
     
       <div class="copyright">

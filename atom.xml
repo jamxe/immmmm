@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-10T13:35:14+00:00</updated>
+    <updated>2020-04-10T13:44:35+00:00</updated>
     
     
     
@@ -43,9 +43,9 @@
 <p>当然，如果使用 Github 托管，随手羊毛撸起，<code>lmm214/immmmm@gh-pages</code> 需自行更改：</p>
 <pre><code>{{ if .Params.path }}
     {{$Path := .Params.path}}
-    &lt;photos&gt;{{- range (readDir (printf &quot;%s%s&quot; &quot;./static/images/&quot; $Path )) -}}&lt;img loading='lazy' src=&quot;{{(printf &quot;https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/%s/%s&quot; $Path .Name ) | absURL}}&quot; /&gt;{{- end -}}&lt;/photos&gt;
+    {{- range (readDir (printf &quot;%s%s&quot; &quot;./static/images/&quot; $Path )) -}}&lt;img loading='lazy' src=&quot;{{(printf &quot;https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/%s/%s&quot; $Path .Name ) | absURL}}&quot; /&gt;{{- end -}}
 {{ end }}
-</code></pre>]]></content>
+</code></pre><p>注：代码仅实现功能，灯箱效果什么的需要自行适配主题。</p>]]></content>
             
                  
                     

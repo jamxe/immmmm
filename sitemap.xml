@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://immmmm.com/2020-04-12/</loc>
+    <lastmod>2020-04-12T22:19:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/posts/</loc>
+    <lastmod>2020-04-12T22:19:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/tags/</loc>
+    <lastmod>2020-04-12T22:19:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/</loc>
+    <lastmod>2020-04-12T22:19:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immmmm.com/posts/chat/</loc>
+    <lastmod>2020-04-12T22:19:51+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://immmmm.com/hugo-diy-post-type/</loc>
     <lastmod>2020-04-12T18:00:27+08:00</lastmod>
   </url>
@@ -18,16 +43,6 @@
   </url>
   
   <url>
-    <loc>https://immmmm.com/posts/</loc>
-    <lastmod>2020-04-12T18:00:27+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/tags/</loc>
-    <lastmod>2020-04-12T18:00:27+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immmmm.com/hugo-readdir-photos-single/</loc>
     <lastmod>2020-04-10T20:38:16+08:00</lastmod>
   </url>
@@ -39,16 +54,6 @@
   
   <url>
     <loc>https://immmmm.com/2020-04-10/</loc>
-    <lastmod>2020-04-10T00:35:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/</loc>
-    <lastmod>2020-04-10T00:35:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immmmm.com/posts/chat/</loc>
     <lastmod>2020-04-10T00:35:24+08:00</lastmod>
   </url>
   

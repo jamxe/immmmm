@@ -6,10 +6,21 @@
     <description>Recent content in 词穷 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 10 Apr 2020 00:35:24 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2020 22:19:51 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020-04-12</title>
+      <link>https://immmmm.com/2020-04-12/</link>
+      <pubDate>Sun, 12 Apr 2020 22:19:51 +0800</pubDate>
+      
+      <guid>https://immmmm.com/2020-04-12/</guid>
+      <description>&lt;p&gt;👩🏻：今天要不要出去玩？&lt;/p&gt;
+&lt;p&gt;🐑：不要了吧，在家玩也可以。疫情期间，尽量不要出门。&lt;/p&gt;
+&lt;p&gt;👩🏻：😳&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2020-04-10</title>
@@ -45,15 +56,6 @@
       
       <guid>https://immmmm.com/2020-03-09/</guid>
       <description>复学遥遥无期，总得找点事打发时间，花了一下午从 Bitcron 迁移到 Gridea，主要是日志meta匹配和主题转制，目前感觉甚好！🎧</description>
-    </item>
-    
-    <item>
-      <title>2020-01-14</title>
-      <link>https://immmmm.com/2020-01-14/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/2020-01-14/</guid>
-      <description>Edui.fun，让教学有点意思。整了个导航站，收集些与工作有关的在线工具、实用软件什么的，希望有点用！</description>
     </item>
     
   </channel>

@@ -192,22 +192,27 @@ content
 │   ├── daily
 │   ├── reading
 </code></pre><p>如 <code>chat</code> 目录内的 md 文件是以一句话的模式（头像+时间）显示，怎么实现呢？利用 Hugo 的 <a href="https://gohugo.io/variables/files/">.File.Dir</a> 和 <a href="https://gohugo.io/functions/replacere/">replaceRE</a> 正则。</p>
-<p>核心代码如下：</p>
-<pre><code>{{ $PostCate := .File.Dir | replaceRE &quot;posts/(.*)/&quot; &quot;$1&quot;}}
-{{ if eq $PostCate &quot;chat&quot;}}
-    &lt;div class=&quot;post-meta&quot;&gt;
+<h3 id="核心代码如下">核心代码如下：</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ $PostCate := .File.Dir | replaceRE &#34;posts/(.*)/&#34; &#34;$1&#34;}}
+{{ if eq $PostCate &#34;chat&#34;}}
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-meta&#34;</span>&gt;
         {{ if .Date }}
-            &lt;span class=&quot;post-date&quot;&gt;{{ .Date.Format | default &quot;2006-01-02&quot; }}&lt;/span&gt;
+            &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-date&#34;</span>&gt;{{ .Date.Format | default &#34;2006-01-02&#34; }}&lt;/<span style="color:#f92672">span</span>&gt;
         {{ end }}
-    &lt;/div&gt;
-    &lt;div class=&quot;post-content&quot;&gt;
-        &lt;a href=&quot;{{ .Permalink }}&quot;&gt;&lt;img loading=&quot;lazy&quot; class=&quot;avatar&quot; src=https://gravatar.loli.net/avatar/{{ md5 &quot;自己的邮箱&quot; }} &gt;&lt;/a&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-content&#34;</span>&gt;
+        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">loading</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lazy&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;avatar&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">https://gravatar.loli.net/avatar/{{</span> <span style="color:#a6e22e">md5</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">自己的邮箱</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}</span> &gt;&lt;/<span style="color:#f92672">a</span>&gt;
         {{ .Content }}
-    &lt;/div&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
 {{ else }}
     ……正常文章样式
 {{ end }}
-</code></pre>
+</code></pre></div><p>一般修改 <code>_default/list.html</code> 和 <code>_default/single.html</code>，其中 list 是放在文章列表的 <code>{{rang ……}}</code> 循环之中。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ range 什么什么 .Pages }}
+    ……这里
+{{ end }}
+</code></pre></div><h3 id="随意说明">随意说明</h3>
+<p><code>.File.Dir</code> 是获取当前文章的相对路径 <code>posts/coding/</code> ，<code>replaceRE &quot;posts/(.*)/&quot; &quot;$1&quot;</code> 是正则到 <code>coding</code> 子文件夹名，之后 <code>{{ if eq $PostCate &quot;chat&quot;}}</code> 就是判断咯 🤷‍♂️</p>
       
     </div>
   
@@ -636,7 +641,7 @@ content
 <footer class="footer">
   <div class="footer__inner">
     <div class="copyright">
-      <span>共 149 篇文章</span><span> 68794 字</span>
+      <span>共 149 篇文章</span><span> 68912 字</span>
     </div>
     
       <div class="copyright">

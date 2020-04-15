@@ -7,12 +7,55 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-14T05:32:16+00:00</updated>
+    <updated>2020-04-15T16:05:43+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[你信什么]]></title>
+            <link href="https://immmmm.com/dont-forget-smile/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/waiting-for-spring/" rel="related" type="text/html" title="春" />
+                <link href="https://immmmm.com/happy-birthday-2020/" rel="related" type="text/html" title="庆生" />
+                <link href="https://immmmm.com/hi-2020/" rel="related" type="text/html" title="二〇二〇，你好" />
+                <link href="https://immmmm.com/macbook-some-things/" rel="related" type="text/html" title="Macbook 二三事" />
+                <link href="https://immmmm.com/the-world-between-us/" rel="related" type="text/html" title="我們與惡的距離" />
+            
+                <id>https://immmmm.com/dont-forget-smile/</id>
+            
+            
+            <published>2020-04-15T23:44:54+08:00</published>
+            <updated>2020-04-15T23:44:54+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>Don‘t <del>Forget To</del> Smile.</p>
+<p>刷完《余欢水》，想起《小丑》这幕，呵呵，听歌听歌。</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<style type="text/css">.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .aplayer-list li .aplayer-list-index{color:#ddd}.dark-theme .aplayer .aplayer-list li .aplayer-list-author{color:#ddd}.dark-theme .aplayer .aplayer-lrc{text-shadow:-1px -1px 0 #666}.dark-theme .aplayer .aplayer-lrc:before{background:-moz-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:-webkit-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:linear-gradient(to bottom, #212121 0%, rgba(33,33,33,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#00212121',GradientType=0 )}.dark-theme .aplayer .aplayer-lrc:after{background:-moz-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:-webkit-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:linear-gradient(to bottom, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00212121', endColorstr='#cc212121',GradientType=0 )}.dark-theme .aplayer .aplayer-lrc p{color:#fff}.dark-theme .aplayer .aplayer-miniswitcher{background:#484848}.dark-theme .aplayer .aplayer-miniswitcher .aplayer-icon path{fill:#eee}</style>
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><meting-js auto="https://y.qq.com/n/yqq/album/001uX0iQ3SWJuV.html" theme="#2980b9"></meting-js>
+<p>🃏</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8" term="%E6%97%A5%E5%B8%B8" label="日常" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -211,46 +254,6 @@
                             
                              
                                 <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[2020-04-10]]></title>
-            <link href="https://immmmm.com/2020-04-10/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/2020-04-04/" rel="related" type="text/html" title="2020-04-04" />
-                <link href="https://immmmm.com/2020-03-23/" rel="related" type="text/html" title="2020-03-23" />
-                <link href="https://immmmm.com/2020-03-09/" rel="related" type="text/html" title="2020-03-09" />
-                <link href="https://immmmm.com/2020-01-14/" rel="related" type="text/html" title="2020-01-14" />
-                <link href="https://immmmm.com/2019-12-08/" rel="related" type="text/html" title="2019-12-08" />
-            
-                <id>https://immmmm.com/2020-04-10/</id>
-            
-            
-            <published>2020-04-10T00:35:24+08:00</published>
-            <updated>2020-04-10T00:35:24+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>臭小子，我，相伴一天，无争吵无游戏，明日继续。星期几？几号？几月？谁都没个准。</p>
-<p>安心翻书、刷单、听播客，「小宇宙」邀请码：SPAI</p>
-<p><del>4ZSJ，8A75</del></p>
-<p><del><a href="https://www.cssj.fun/">@北海轻歌</a> 接力分享：NXM6，R4TU，VLJG</del></p>
-<p><del>@轻舟 接力分享：NXM6，R4TU，VLJG</del></p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
                             
                         
                     

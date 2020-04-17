@@ -7,12 +7,73 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-17T08:07:20+00:00</updated>
+    <updated>2020-04-17T13:06:12+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[废话胶囊，值得拥有]]></title>
+            <link href="https://immmmm.com/just-bb-by-leancloud/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/hugo-diy-post-type/" rel="related" type="text/html" title="Hugo 自定义文章样式" />
+                <link href="https://immmmm.com/hugo-readdir-photos-single/" rel="related" type="text/html" title="Hugo 显示指定文件夹内图片" />
+                <link href="https://immmmm.com/hugo-total-count/" rel="related" type="text/html" title="Hugo 总文章数和总字数" />
+                <link href="https://immmmm.com/hugo-shortcodes-music/" rel="related" type="text/html" title="Hugo 音乐短代码" />
+                <link href="https://immmmm.com/hugo-readdir-photos/" rel="related" type="text/html" title="Hugo 添加相册页面" />
+            
+                <id>https://immmmm.com/just-bb-by-leancloud/</id>
+            
+            
+            <published>2020-04-17T18:24:01+08:00</published>
+            <updated>2020-04-17T18:24:01+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>刷 <a href="https://elizen.me/">@Elizen</a> 的知识星球，得知还有人折腾了这货 <a href="https://sspai.com/post/60024">无点赞评论版微博b言b语</a>，原来是基于 LeanCloud 来实现的，无比亲切。</p>
+<p>这不，折腾折腾已整合到主题中（<a href="https://immmmm.com/bb/">这里</a>）。另外，又学了几招。</p>
+<p>前端用 <code>AppID</code>、<code>AppKey</code> 来展示，并把 <code>class</code> 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 <code>MasterKey</code> 来更新，避免数据被更改。</p>
+<h3 id="页面改动">页面改动</h3>
+<p>原作者提供了 <a href="https://github.com/daibor/nonsense.fun">index.html</a> 开箱即用，自己改成了 Hugo 版本 源码见 <a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/_default/bb.html">bb.html</a>，几处改动：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">v-show</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;count == 0&#34;</span>&gt;别急，加载呢……&lt;/<span style="color:#f92672">p</span>&gt;
+……
+{{htmlUnescape &#34;{{count}}&#34; }}
+……
+{{htmlUnescape &#34;{{item.attributes.time}}&#34;}}
+</code></pre></div><p>加了 loading 时的文字提示，源码输出 <code>{{}}</code>，避免 Hugo 语法冲突。</p>
+<h3 id="更新途径">更新途径</h3>
+<p>原作者提供了 <a href="https://www.icloud.com/shortcuts/3cfcbc36a6a24e0a8721bfeef8dfc6cf">iOS 快捷指令</a> 和 win下的 <a href="https://getquicker.net/sharedaction?code=eeb80278-5f53-4b0d-d333-08d7e0dd26a9">Quicker 模板</a>。这里增加一个 VSCode 的 <a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client">REST Client</a> 插件更新方法。</p>
+<p>新建一个 <code>.http</code> 或 <code>.rest</code> 为后缀的文件：</p>
+<pre><code>POST https://你的AppID前6位.api.lncldglobal.com/1.1/classes/content
+X-LC-Id: 你的AppID
+X-LC-Key: 你的MasterKey,master
+Content-Type: application/json
+
+{
+    &quot;content&quot;:&quot;更新测试&quot;
+}
+</code></pre><p>写好 <code>content</code> 内容后【右键&ndash;Send Request】或快捷键 【Cmd+Alt+R】发布。</p>
+<p>为了能第一时间找到这个文件，安利 VSCode 的 <a href="https://marketplace.visualstudio.com/items?itemName=howardzuo.vscode-favorites">favorites</a> 插件，一件收藏，随点随开。</p>
+<h3 id="一句后话">一句后话</h3>
+<p>这功能让我回想起多年前WP的「一句话公告/状态」、「说说」页面，流逝的时光，不变的需求！周末愉快！</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -199,51 +260,6 @@
     {{- range (readDir (printf &quot;%s%s&quot; &quot;./static/images/&quot; $Path )) -}}&lt;img loading='lazy' src=&quot;{{(printf &quot;https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/%s/%s&quot; $Path .Name ) | absURL}}&quot; /&gt;{{- end -}}
 {{ end }}
 </code></pre><p>注：代码仅实现功能，灯箱效果什么的需要自行适配主题。</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[Hugo 总文章数和总字数]]></title>
-            <link href="https://immmmm.com/hugo-total-count/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/hugo-shortcodes-music/" rel="related" type="text/html" title="Hugo 音乐短代码" />
-                <link href="https://immmmm.com/hugo-readdir-photos/" rel="related" type="text/html" title="Hugo 添加相册页面" />
-                <link href="https://immmmm.com/hugo-shortcodes-article-link/" rel="related" type="text/html" title="Hugo 文章内链优化显示" />
-                <link href="https://immmmm.com/use-visual-studio-code/" rel="related" type="text/html" title="VS Code 初体验" />
-                <link href="https://immmmm.com/hugo-template-code/" rel="related" type="text/html" title="Hugo 主题常用的代码片段" />
-            
-                <id>https://immmmm.com/hugo-total-count/</id>
-            
-            
-            <published>2020-04-10T14:46:43+08:00</published>
-            <updated>2020-04-10T14:46:43+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>前者在某个大神主题中翻到，一句代码：</p>
-<pre><code>共 {{ len (where .Site.RegularPages &quot;Section&quot; &quot;posts&quot;) }} 篇文章
-</code></pre><p>总字数没有现成参数，官方手册看到 <a href="https://gohugo.io/functions/scratch/">.Scratch.Add</a> 瞎折腾完成:</p>
-<pre><code>{{$scratch := newScratch}}
-{{ range (where .Site.Pages &quot;Kind&quot; &quot;page&quot; )}}
-    {{$scratch.Add &quot;total&quot; .WordCount}}
-{{ end }}
-</code></pre><p>新建了个参数累加所有文章的 <code>.WordCount</code> 字数，一般放 footer 头几行，下面是调用代码：</p>
-<pre><code>总计 {{$scratch.Get &quot;total&quot; }} 字
-</code></pre>]]></content>
             
                  
                     

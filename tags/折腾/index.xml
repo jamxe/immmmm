@@ -6,10 +6,21 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 12 Apr 2020 18:00:27 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 18:24:01 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>废话胶囊，值得拥有</title>
+      <link>https://immmmm.com/just-bb-by-leancloud/</link>
+      <pubDate>Fri, 17 Apr 2020 18:24:01 +0800</pubDate>
+      
+      <guid>https://immmmm.com/just-bb-by-leancloud/</guid>
+      <description>&lt;p&gt;刷 &lt;a href=&#34;https://elizen.me/&#34;&gt;@Elizen&lt;/a&gt; 的知识星球，得知还有人折腾了这货 &lt;a href=&#34;https://sspai.com/post/60024&#34;&gt;无点赞评论版微博b言b语&lt;/a&gt;，原来是基于 LeanCloud 来实现的，无比亲切。&lt;/p&gt;
+&lt;p&gt;这不，折腾折腾已整合到主题中（&lt;a href=&#34;https://immmmm.com/bb/&#34;&gt;这里&lt;/a&gt;）。另外，又学了几招。&lt;/p&gt;
+&lt;p&gt;前端用 &lt;code&gt;AppID&lt;/code&gt;、&lt;code&gt;AppKey&lt;/code&gt; 来展示，并把 &lt;code&gt;class&lt;/code&gt; 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 &lt;code&gt;MasterKey&lt;/code&gt; 来更新，避免数据被更改。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 自定义文章样式</title>
@@ -60,24 +71,6 @@
       <guid>https://immmmm.com/hugo-shortcodes-music/</guid>
       <description>&lt;p&gt;感谢 &lt;a href=&#34;https://hugoloveit.com/zh-cn/theme-documentation-shortcodes/#music&#34;&gt;LoveIt&lt;/a&gt; 、&lt;a href=&#34;https://github.com/metowolf/MetingJS&#34;&gt;MetingJS&lt;/a&gt; 真方便！&lt;/p&gt;
 &lt;p&gt;具体源码见：&lt;a href=&#34;https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/shortcodes/music.html&#34;&gt;shortcodes/music.html&lt;/a&gt;，把这个文件丢入自己的主题文章内插入调用代码即可，已粗暴的把 js 和 css 丢在一起。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 添加相册页面</title>
-      <link>https://immmmm.com/hugo-readdir-photos/</link>
-      <pubDate>Mon, 06 Apr 2020 20:42:02 +0800</pubDate>
-      
-      <guid>https://immmmm.com/hugo-readdir-photos/</guid>
-      <description>&lt;p&gt;效果见： &lt;a href=&#34;https://immmmm.com/photos/&#34;&gt;https://immmmm.com/photos/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;总有那么一瞬间特别特别想发一张照片，但不是以文章形式发布。&lt;/p&gt;
-&lt;p&gt;实现思路是程序自动遍历指定文件夹内的图片，并展示在一个页面上。有了思路，剩下的就是看文档、看文档、看文档，此功能利用 Hugo 的 &lt;a href=&#34;https://gohugo.io/templates/files/&#34;&gt;readDir function&lt;/a&gt; 函数达成。&lt;/p&gt;
-&lt;p&gt;日常更新把图片丢到 &lt;code&gt;static/photos&lt;/code&gt; 中即可（搭配 Github Action 自动化部署更香）：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;static
-└── photos
-    ├── 落樱缤纷.jpeg
-    ├── 想象中的自由.jpeg
-    └── 儿时登过顶的狮子山.jpeg
-&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

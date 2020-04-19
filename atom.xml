@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-19T11:23:46+00:00</updated>
+    <updated>2020-04-19T11:34:07+00:00</updated>
     
     
     
@@ -16,7 +16,7 @@
     
         
         <entry>
-            <title type="html"><![CDATA[code-server]]></title>
+            <title type="html"><![CDATA[云 VSCode 云编码]]></title>
             <link href="https://immmmm.com/vs-code-server/" rel="alternate" type="text/html" />
             
                 <link href="https://immmmm.com/just-bb-by-leancloud/" rel="related" type="text/html" title="废话胶囊，值得拥有" />
@@ -32,7 +32,7 @@
             <updated>2020-04-19T18:57:10+08:00</updated>
             
             
-            <content type="html"><![CDATA[<p>云 VSCode 云编码，安装踩坑无数，Docker 一条部署：</p>
+            <content type="html"><![CDATA[<p><a href="https://github.com/cdr/code-server">code-server</a> 云 VSCode 云编码，安装踩坑无数，Docker 一条部署：</p>
 <pre><code>docker run --name vscodeserver --user root -it -d -p 0.0.0.0:8080:8080 -e PASSWORD='youMiMa' -v &quot;$PWD:/home/coder/project&quot; codercom/code-server:latest
 </code></pre><p>此刻 http://ip:8080 输入密码 <code>youMiMa</code> ，等等等失败，挂上特殊通道，等等等，成功。</p>
 <h3 id="开启-https">开启 https</h3>

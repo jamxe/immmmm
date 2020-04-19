@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>code-server</title>
+      <title>云 VSCode 云编码</title>
       <link>https://immmmm.com/vs-code-server/</link>
       <pubDate>Sun, 19 Apr 2020 18:57:10 +0800</pubDate>
       
       <guid>https://immmmm.com/vs-code-server/</guid>
-      <description>&lt;p&gt;云 VSCode 云编码，安装踩坑无数，Docker 一条部署：&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cdr/code-server&#34;&gt;code-server&lt;/a&gt; 云 VSCode 云编码，安装踩坑无数，Docker 一条部署：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --name vscodeserver --user root -it -d -p 0.0.0.0:8080:8080 -e PASSWORD=&#39;youMiMa&#39; -v &amp;quot;$PWD:/home/coder/project&amp;quot; codercom/code-server:latest
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此刻 http://ip:8080 输入密码 &lt;code&gt;youMiMa&lt;/code&gt; ，等等等失败，挂上特殊通道，等等等，成功。&lt;/p&gt;</description>
     </item>

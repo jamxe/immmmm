@@ -6,10 +6,19 @@
     <description>Recent content in 词穷 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 12 Apr 2020 22:19:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 13:36:58 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/chat/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020-04-19</title>
+      <link>https://immmmm.com/2020-04-19/</link>
+      <pubDate>Sun, 19 Apr 2020 13:36:58 +0800</pubDate>
+      
+      <guid>https://immmmm.com/2020-04-19/</guid>
+      <description>&lt;p&gt;闲逛发现 &lt;a href=&#34;https://github.com/xCss/Valine/releases&#34;&gt;Valine 1.4.4&lt;/a&gt; 已发布，表情改为了图片形式（win下不会再一坨坨）、评论支持楼内回复（不会一直在顶部）、也有取消回复按钮，立马跟近匹配了样式。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2020-04-12</title>
@@ -46,15 +55,6 @@
       
       <guid>https://immmmm.com/2020-03-23/</guid>
       <description>喜大普奔，市官宣 “全面恢复生产生活秩序” ！自家小区已解禁，商场全部正常营业，餐饮也全部支持堂食。真是 “忽如一夜春风来，千树万树梨花开。”</description>
-    </item>
-    
-    <item>
-      <title>2020-03-09</title>
-      <link>https://immmmm.com/2020-03-09/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/2020-03-09/</guid>
-      <description>复学遥遥无期，总得找点事打发时间，花了一下午从 Bitcron 迁移到 Gridea，主要是日志meta匹配和主题转制，目前感觉甚好！🎧</description>
     </item>
     
   </channel>

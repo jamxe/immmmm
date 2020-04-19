@@ -7,12 +7,50 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-19T05:22:47+00:00</updated>
+    <updated>2020-04-19T05:53:10+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[2020-04-19]]></title>
+            <link href="https://immmmm.com/2020-04-19/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/2020-04-12/" rel="related" type="text/html" title="2020-04-12" />
+                <link href="https://immmmm.com/2020-04-10/" rel="related" type="text/html" title="2020-04-10" />
+                <link href="https://immmmm.com/2020-04-04/" rel="related" type="text/html" title="2020-04-04" />
+                <link href="https://immmmm.com/2020-03-23/" rel="related" type="text/html" title="2020-03-23" />
+                <link href="https://immmmm.com/2020-03-09/" rel="related" type="text/html" title="2020-03-09" />
+            
+                <id>https://immmmm.com/2020-04-19/</id>
+            
+            
+            <published>2020-04-19T13:36:58+08:00</published>
+            <updated>2020-04-19T13:36:58+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>闲逛发现 <a href="https://github.com/xCss/Valine/releases">Valine 1.4.4</a> 已发布，表情改为了图片形式（win下不会再一坨坨）、评论支持楼内回复（不会一直在顶部）、也有取消回复按钮，立马跟近匹配了样式。</p>
+<p>另外，折腾了一晚上+一上午 <a href="https://github.com/cdr/code-server">code-server</a>，成是成了但体验不佳，可能部署在国内云会好些。</p>
+<p>🌧️</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -211,55 +249,6 @@ Content-Type: application/json
 {{ end }}
 </code></pre></div><h3 id="随意说明">随意说明</h3>
 <p><code>.File.Dir</code> 是获取当前文章的相对路径 <code>posts/coding/</code> ，<code>replaceRE &quot;posts/(.*)/&quot; &quot;$1&quot;</code> 是正则到 <code>coding</code> 子文件夹名，之后 <code>{{ if eq $PostCate &quot;chat&quot;}}</code> 就是判断咯 🤷‍♂️</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[Hugo 显示指定文件夹内图片]]></title>
-            <link href="https://immmmm.com/hugo-readdir-photos-single/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/hugo-total-count/" rel="related" type="text/html" title="Hugo 总文章数和总字数" />
-                <link href="https://immmmm.com/hugo-shortcodes-music/" rel="related" type="text/html" title="Hugo 音乐短代码" />
-                <link href="https://immmmm.com/hugo-readdir-photos/" rel="related" type="text/html" title="Hugo 添加相册页面" />
-                <link href="https://immmmm.com/hugo-shortcodes-article-link/" rel="related" type="text/html" title="Hugo 文章内链优化显示" />
-                <link href="https://immmmm.com/use-visual-studio-code/" rel="related" type="text/html" title="VS Code 初体验" />
-            
-                <id>https://immmmm.com/hugo-readdir-photos-single/</id>
-            
-            
-            <published>2020-04-10T20:38:16+08:00</published>
-            <updated>2020-04-10T20:38:16+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>效果见文章底部，这些图片非手动一张张插入，文章头部一句 <code>path: 2004gd</code> 搞定！</p>
-<p>直接看代码：</p>
-<pre><code>{{ if .Params.path }}
-    {{$Path := .Params.path}}
-    {{- range (readDir (printf &quot;%s%s&quot; &quot;./static/images/&quot; $Path )) -}}&lt;img loading='lazy' src=&quot;{{(printf &quot;/images/%s/%s&quot; $Path .Name ) | absURL}}&quot; /&gt;{{- end -}}
-{{ end }}
-</code></pre><p>当文章中写了 <code>path: 2004gd</code> 表示 Hugo 遍历根目录 <code>/static/images/2004gd</code> 内的图片并显示。</p>
-<p>这功能其实之前 Bitcron 的主题里就有，太符合老年人的需求了，一句话，一堆图片，一篇文章搞定！</p>
-<p>当然，如果使用 Github 托管，随手羊毛撸起，<code>lmm214/immmmm@gh-pages</code> 需自行更改：</p>
-<pre><code>{{ if .Params.path }}
-    {{$Path := .Params.path}}
-    {{- range (readDir (printf &quot;%s%s&quot; &quot;./static/images/&quot; $Path )) -}}&lt;img loading='lazy' src=&quot;{{(printf &quot;https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/images/%s/%s&quot; $Path .Name ) | absURL}}&quot; /&gt;{{- end -}}
-{{ end }}
-</code></pre><p>注：代码仅实现功能，灯箱效果什么的需要自行适配主题。</p>]]></content>
             
                  
                     

@@ -6,10 +6,21 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 17 Apr 2020 18:24:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 18:57:10 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>code-server</title>
+      <link>https://immmmm.com/vs-code-server/</link>
+      <pubDate>Sun, 19 Apr 2020 18:57:10 +0800</pubDate>
+      
+      <guid>https://immmmm.com/vs-code-server/</guid>
+      <description>&lt;p&gt;云 VSCode 云编码，安装踩坑无数，Docker 一条部署：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --name vscodeserver --user root -it -d -p 0.0.0.0:8080:8080 -e PASSWORD=&#39;youMiMa&#39; -v &amp;quot;$PWD:/home/coder/project&amp;quot; codercom/code-server:latest
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此刻 http://ip:8080 输入密码 &lt;code&gt;youMiMa&lt;/code&gt; ，等等等失败，挂上特殊通道，等等等，成功。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>废话胶囊，值得拥有</title>
@@ -61,16 +72,6 @@
       
       <guid>https://immmmm.com/hugo-total-count/</guid>
       <description>前者在某个大神主题中翻到，一句代码： 共 {{ len (where .Site.RegularPages &amp;quot;Section&amp;quot; &amp;quot;posts&amp;quot;) }} 篇文章 总字数没有现成参数，官方手册看到 .Scratch.Add 瞎折腾完成: {{$scratch := newScratch}} {{ range (where .Site.Pages &amp;quot;Kind&amp;quot; &amp;quot;page&amp;quot; )}} {{$scratch.Add &amp;quot;total&amp;quot; .WordCount}} {{ end }} 新建了个参数累加所有文章的 .WordCount 字数，一般放 footer 头几行，下面是调用代码： 总计 {{$scratch.Get &amp;quot;total&amp;quot; }} 字</description>
-    </item>
-    
-    <item>
-      <title>Hugo 音乐短代码</title>
-      <link>https://immmmm.com/hugo-shortcodes-music/</link>
-      <pubDate>Thu, 09 Apr 2020 14:25:00 +0800</pubDate>
-      
-      <guid>https://immmmm.com/hugo-shortcodes-music/</guid>
-      <description>&lt;p&gt;感谢 &lt;a href=&#34;https://hugoloveit.com/zh-cn/theme-documentation-shortcodes/#music&#34;&gt;LoveIt&lt;/a&gt; 、&lt;a href=&#34;https://github.com/metowolf/MetingJS&#34;&gt;MetingJS&lt;/a&gt; 真方便！&lt;/p&gt;
-&lt;p&gt;具体源码见：&lt;a href=&#34;https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/shortcodes/music.html&#34;&gt;shortcodes/music.html&lt;/a&gt;，把这个文件丢入自己的主题文章内插入调用代码即可，已粗暴的把 js 和 css 丢在一起。&lt;/p&gt;</description>
     </item>
     
   </channel>

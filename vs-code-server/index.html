@@ -2,30 +2,34 @@
 <html lang="zh-CN">
   <head>
     
-      <title>2020-04-04 :: 木木木木木</title>
+      <title>code-server :: 木木木木木</title>
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="404"/>
+<meta name="description" content="云 VSCode 云编码，安装踩坑无数，Docker 一条部署：
+docker run --name vscodeserver --user root -it -d -p 0.0.0.0:8080:8080 -e PASSWORD=&#39;youMiMa&#39; -v &amp;quot;$PWD:/home/coder/project&amp;quot; codercom/code-server:latest 此刻 http://ip:8080 输入密码 youMiMa ，等等等失败，挂上特殊通道，等等等，成功。
+"/>
 <meta name="keywords" content=""/>
 <meta name="referrer" content="never" />
-<link rel="canonical" href="https://immmmm.com/2020-04-04/" />
+<link rel="canonical" href="https://immmmm.com/vs-code-server/" />
 <link rel="stylesheet" href="https://immmmm.com/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:500&display=swap" media="print" onload="this.media='all'">
 <link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
 
-<meta property="og:title" content="2020-04-04" />
-<meta property="og:description" content="404" />
+<meta property="og:title" content="code-server" />
+<meta property="og:description" content="云 VSCode 云编码，安装踩坑无数，Docker 一条部署：
+docker run --name vscodeserver --user root -it -d -p 0.0.0.0:8080:8080 -e PASSWORD=&#39;youMiMa&#39; -v &quot;$PWD:/home/coder/project&quot; codercom/code-server:latest
+此刻 http://ip:8080 输入密码 youMiMa ，等等等失败，挂上特殊通道，等等等，成功。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://immmmm.com/2020-04-04/" />
-<meta property="article:published_time" content="2020-04-04T00:02:33+08:00" />
-<meta property="article:modified_time" content="2020-04-04T00:02:33+08:00" />
+<meta property="og:url" content="https://immmmm.com/vs-code-server/" />
+<meta property="article:published_time" content="2020-04-19T18:57:10+08:00" />
+<meta property="article:modified_time" content="2020-04-19T18:57:10+08:00" />
 
 
 
     
-  <link rel="prefetch" href="https://immmmm.com/use-visual-studio-code/">
-  <link rel="prefetch" href="https://immmmm.com/hugo-template-code/">
+  
+  <link rel="prefetch" href="https://immmmm.com/2020-04-19/">
 
   </head>
   <body class="dark-theme">
@@ -122,7 +126,7 @@
   
   
   
-  <div class="post chat">
+  <div class="post coding">
     <div  class="breadcrumb">
   
 
@@ -143,38 +147,74 @@
 
 
 <li>
-  <a href="https://immmmm.com/posts/chat/">词穷</a>
+  <a href="https://immmmm.com/posts/coding/">折腾</a>
 </li>
 
 
 <li class="active">
-  <a href="https://immmmm.com/2020-04-04/">2020-04-04</a>
+  <a href="https://immmmm.com/vs-code-server/">code-server</a>
 </li>
 
 </div>
 
 
   
-            <div class="post-meta">
-        
-          <span class="post-date">
-            2020-04-04 00:02:33
-          </span>
-        
-
-        
-        <span class="">
-          
-            #<a href="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7/">词穷</a>&nbsp;
-          
+    <h2 class="post-title"><a href="https://immmmm.com/vs-code-server/">code-server</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2020-04-19 18:57:10
         </span>
-        
-      </div>
-      <div class="post-content">
-        <a href="https://immmmm.com/2020-04-04/" rel="link"><img loading="lazy" class="post-avatar avatar" src=https://gravatar.loli.net/avatar/ba83fa02fc4b2ba621514941307e21be ></a>
-          <p><del>404</del></p>
 
-      </div>
+        
+          
+        
+      <span> / <span class="valine-comment-count" data-xid="/vs-code-server/">0</span> 评论 / <span id="/vs-code-server/" class="leancloud_visitors" data-flag-title="code-server"><span class="leancloud-visitors-count">0</span> 阅读</span></span>
+        
+    </div>
+
+    
+      
+        <img loading='lazy' src="https://lmm.elizen.me/images/2020/04/code-server.png" class="post-cover" />
+      
+    
+  
+    <div class="post-content">
+      <p>云 VSCode 云编码，安装踩坑无数，Docker 一条部署：</p>
+<pre><code>docker run --name vscodeserver --user root -it -d -p 0.0.0.0:8080:8080 -e PASSWORD='youMiMa' -v &quot;$PWD:/home/coder/project&quot; codercom/code-server:latest
+</code></pre><p>此刻 http://ip:8080 输入密码 <code>youMiMa</code> ，等等等失败，挂上特殊通道，等等等，成功。</p>
+<h3 id="开启-https">开启 https</h3>
+<p>以下步骤基于宝塔面板。添加网站，纯静态，开启 ssl Let&rsquo;s Encrypt，添加反响理代：</p>
+<p>目标URL： <code>http://localhost:8080</code> 发送域名： <code>$host</code></p>
+<p>照理这样也就OK了，但就算挂特殊通道还是报错，看教程，在配置文件中加入 <code>location</code> 这段代码：</p>
+<pre><code>……
+root /www/wwwroot/e.immmmm.com;
+……
+location /path/ {
+  proxy_pass http://localhost:8080/;
+  proxy_redirect http:// https://;
+  proxy_set_header Host $host:443/path;
+  proxy_set_header Upgrade $http_upgrade;
+  proxy_set_header Connection upgrade;
+  proxy_set_header Accept-Encoding gzip;
+}
+……
+</code></pre><p>访问 <a href="https://e.immmmm.com/path/">https://e.immmmm.com/path/</a>  ，搞定！</p>
+<h3 id="疑惑">疑惑</h3>
+<p>不懂不懂，不加 <code>/path/</code> 为啥不行呢？</p>
+<p>🤔️</p>
+      
+    </div>
+  
+    
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+        
+      </span>
+    
   
     <div class="clear"></div>
     
@@ -183,23 +223,16 @@
         <div class="pagination">
           <div class="pagination__title">
             
-              <a class="pagination__title-h" href="https://github.com/lmm214/immmmm/edit/master/content/posts/chat/2020-04-04.md" target="_blank" rel="noopener">阅读更多</a>
+              <a class="pagination__title-h" href="https://github.com/lmm214/immmmm/edit/master/content/posts/coding/vs-code-server.md" target="_blank" rel="noopener">阅读更多</a>
             
             <hr />
           </div>
           <div class="pagination__buttons">
             
-              <span class="button previous">
-                <a href="https://immmmm.com/use-visual-studio-code/">
-                  <span class="button__icon">←</span>
-                  <span class="button__text">VS Code 初体验</span>
-                </a>
-              </span>
-            
             
               <span class="button next">
-                <a href="https://immmmm.com/hugo-template-code/">
-                  <span class="button__text">Hugo 主题常用的代码片段</span>
+                <a href="https://immmmm.com/2020-04-19/">
+                  <span class="button__text">2020-04-19</span>
                   <span class="button__icon">→</span>
                 </a>
               </span>
@@ -212,7 +245,7 @@
 
     
           <div class="pagination__title">
-       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/2020-04-04/"></span> 条评论</span>
+       <span class="pagination__title-h"><span class="valine-comment-count" data-xid="/vs-code-server/"></span> 条评论</span>
        <hr />
   </div>
   <div id="comments"></div>

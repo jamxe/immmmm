@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-04-19T11:34:07+00:00</updated>
+    <updated>2020-04-20T09:54:18+00:00</updated>
     
     
     
@@ -54,6 +54,11 @@ location /path/ {
 </code></pre><p>访问 <a href="https://e.immmmm.com/path/">https://e.immmmm.com/path/</a>  ，搞定！</p>
 <h3 id="疑惑">疑惑</h3>
 <p>不懂不懂，不加 <code>/path/</code> 为啥不行呢？</p>
+<h3 id="后续">后续</h3>
+<figure>
+    <img src=""/></figure>
+
+<p>原来 Coding 的也已经是 vscode ，每天免费4小时，除了 clone github 仓库好慢好慢，其它省心省心！</p>
 <p>🤔️</p>]]></content>
             
                  

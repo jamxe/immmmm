@@ -265,7 +265,7 @@ Google Reader 关闭后，个人使用了 Feedly ，刚查看竟然还有 400&#4
                 document.body.appendChild(script);
             };
             getScript({
-                src: 'https://cdn.jsdelivr.net/npm/valine@1.4.5/dist/Valine.Pure.min.js',
+                src: 'https://cdn.jsdelivr.net/npm/valine@1.4.7/dist/Valine.Pure.min.js',
                 onload: () => {
                     newValine();
                 }
@@ -282,6 +282,7 @@ Google Reader 关闭后，个人使用了 Feedly ，刚查看竟然还有 400&#4
         appKey: 'WMokwNAwh9noJ4XeUjVBjsCt',
         placeholder: '既然来了，那就留个痕迹吧~',
         visitor:  true ,
+        requiredFields: ['nick','mail'],
         emojiCDN: '//i0.hdslb.com/bfs/emote/',
         emojiMaps: {
           "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",

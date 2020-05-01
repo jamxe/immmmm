@@ -6,10 +6,25 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Apr 2020 18:57:10 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 11:15:30 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>撸个 Alfred 插件「b言b语」</title>
+      <link>https://immmmm.com/bb-by-alfred/</link>
+      <pubDate>Fri, 01 May 2020 11:15:30 +0800</pubDate>
+      
+      <guid>https://immmmm.com/bb-by-alfred/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#39;lazy&#39; src=&#34;https://lmm.elizen.me/images/2020/05/bb-1.png&#34; alt=&#34;bb-1&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;虽说 iOS 的快捷方式足够优雅，但还是想着 Mac 上也更舒坦地随意发布。VSCode 的 &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=humao.rest-client&#34;&gt;REST Client&lt;/a&gt; 插件能用但没有一键直达，看到 &lt;a href=&#34;https://xwlearn.com/howto-graciously-bb-in-mac/&#34;&gt;@xwlearn&lt;/a&gt; 分享的 Python 代码，立马想到神器 「Alfred」！&lt;/p&gt;
+&lt;h3 id=&#34;插件撸起&#34;&gt;插件撸起&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#39;lazy&#39; src=&#34;https://lmm.elizen.me/images/2020/05/bb-3.png&#34; alt=&#34;bb-3&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;安装依赖：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo pip install urllib3
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     
     <item>
       <title>云 VSCode 云编码</title>
@@ -63,15 +78,6 @@
     {{- range (readDir (printf &amp;quot;%s%s&amp;quot; &amp;quot;./static/images/&amp;quot; $Path )) -}}&amp;lt;img loading=&#39;lazy&#39; src=&amp;quot;{{(printf &amp;quot;/images/%s/%s&amp;quot; $Path .Name ) | absURL}}&amp;quot; /&amp;gt;{{- end -}}
 {{ end }}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当文章中写了 &lt;code&gt;path: 2004gd&lt;/code&gt; 表示 Hugo 遍历根目录 &lt;code&gt;/static/images/2004gd&lt;/code&gt; 内的图片并显示。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 总文章数和总字数</title>
-      <link>https://immmmm.com/hugo-total-count/</link>
-      <pubDate>Fri, 10 Apr 2020 14:46:43 +0800</pubDate>
-      
-      <guid>https://immmmm.com/hugo-total-count/</guid>
-      <description>前者在某个大神主题中翻到，一句代码： 共 {{ len (where .Site.RegularPages &amp;quot;Section&amp;quot; &amp;quot;posts&amp;quot;) }} 篇文章 总字数没有现成参数，官方手册看到 .Scratch.Add 瞎折腾完成: {{$scratch := newScratch}} {{ range (where .Site.Pages &amp;quot;Kind&amp;quot; &amp;quot;page&amp;quot; )}} {{$scratch.Add &amp;quot;total&amp;quot; .WordCount}} {{ end }} 新建了个参数累加所有文章的 .WordCount 字数，一般放 footer 头几行，下面是调用代码： 总计 {{$scratch.Get &amp;quot;total&amp;quot; }} 字</description>
     </item>
     
   </channel>

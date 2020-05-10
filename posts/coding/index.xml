@@ -19,7 +19,7 @@
       <guid>https://immmmm.com/bb-by-wechat/</guid>
       <description>&lt;p&gt;看到 &lt;a href=&#34;https://bearye.cn/archives/488&#34;&gt;@熊野&lt;/a&gt; 说可以用「微信公众号」发哔哔，还基于腾讯云函数，也能部署到 Leancloud ，立马 &lt;del&gt;勾搭&lt;/del&gt; 加上微信好友。熊大神连夜折腾匹配一夜一天，远程手把手指导部署，整个过程：失败，等，失败，等等，失败，等等等等……成啦！太、太神奇！&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src=&#34;&#34;/&gt;&lt;/figure&gt;
+    &lt;img src=&#34;https://lmm.elizen.me/images/2020/05/bbds.png&#34;/&gt;&lt;figcaption&gt;「哔哔点啥」微信公众号&lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;h3 id=&#34;食用步骤&#34;&gt;食用步骤&lt;/h3&gt;
 &lt;p&gt;1.按照原作者 &lt;a href=&#34;https://sspai.com/post/60024&#34;&gt;@daibor&lt;/a&gt; 的教程在 Leancloud 建好应用，进入设置&amp;ndash;应用 Keys，留存 &lt;code&gt;AppID&lt;/code&gt;、&lt;code&gt;MasterKey&lt;/code&gt;、&lt;code&gt;Request 域名&lt;/code&gt;；&lt;/p&gt;</description>

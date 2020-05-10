@@ -6,10 +6,24 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 01 May 2020 11:15:30 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 20:22:49 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>「哔哔点啥」微信公众号</title>
+      <link>https://immmmm.com/bb-by-wechat/</link>
+      <pubDate>Sun, 10 May 2020 20:22:49 +0800</pubDate>
+      
+      <guid>https://immmmm.com/bb-by-wechat/</guid>
+      <description>&lt;p&gt;看到 &lt;a href=&#34;https://bearye.cn/archives/488&#34;&gt;@熊野&lt;/a&gt; 说可以用「微信公众号」发哔哔，还基于腾讯云函数，也能部署到 Leancloud ，立马 &lt;del&gt;勾搭&lt;/del&gt; 加上微信好友。熊大神连夜折腾匹配一夜一天，远程手把手指导部署，整个过程：失败，等，失败，等等，失败，等等等等……成啦！太、太神奇！&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;&#34;/&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;食用步骤&#34;&gt;食用步骤&lt;/h3&gt;
+&lt;p&gt;1.按照原作者 &lt;a href=&#34;https://sspai.com/post/60024&#34;&gt;@daibor&lt;/a&gt; 的教程在 Leancloud 建好应用，进入设置&amp;ndash;应用 Keys，留存 &lt;code&gt;AppID&lt;/code&gt;、&lt;code&gt;MasterKey&lt;/code&gt;、&lt;code&gt;Request 域名&lt;/code&gt;；&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>撸个 Alfred 插件「b言b语」</title>
@@ -63,21 +77,6 @@
 │   ├── daily
 │   ├── reading
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如 &lt;code&gt;chat&lt;/code&gt; 目录内的 md 文件是以一句话的模式（头像+时间）显示，怎么实现呢？利用 Hugo 的 &lt;a href=&#34;https://gohugo.io/variables/files/&#34;&gt;.File.Dir&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/functions/replacere/&#34;&gt;replaceRE&lt;/a&gt; 正则。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 显示指定文件夹内图片</title>
-      <link>https://immmmm.com/hugo-readdir-photos-single/</link>
-      <pubDate>Fri, 10 Apr 2020 20:38:16 +0800</pubDate>
-      
-      <guid>https://immmmm.com/hugo-readdir-photos-single/</guid>
-      <description>&lt;p&gt;效果见文章底部，这些图片非手动一张张插入，文章头部一句 &lt;code&gt;path: 2004gd&lt;/code&gt; 搞定！&lt;/p&gt;
-&lt;p&gt;直接看代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{ if .Params.path }}
-    {{$Path := .Params.path}}
-    {{- range (readDir (printf &amp;quot;%s%s&amp;quot; &amp;quot;./static/images/&amp;quot; $Path )) -}}&amp;lt;img loading=&#39;lazy&#39; src=&amp;quot;{{(printf &amp;quot;/images/%s/%s&amp;quot; $Path .Name ) | absURL}}&amp;quot; /&amp;gt;{{- end -}}
-{{ end }}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当文章中写了 &lt;code&gt;path: 2004gd&lt;/code&gt; 表示 Hugo 遍历根目录 &lt;code&gt;/static/images/2004gd&lt;/code&gt; 内的图片并显示。&lt;/p&gt;</description>
     </item>
     
   </channel>

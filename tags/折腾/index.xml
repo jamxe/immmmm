@@ -6,10 +6,22 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 10 May 2020 20:22:49 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 22:12:52 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>定时任务唤醒体验版实例失败</title>
+      <link>https://immmmm.com/leancloud-auto-deploy/</link>
+      <pubDate>Tue, 12 May 2020 22:12:52 +0800</pubDate>
+      
+      <guid>https://immmmm.com/leancloud-auto-deploy/</guid>
+      <description>&lt;p&gt;用了 &lt;a href=&#34;https://valine.js.org/&#34;&gt;Valine&lt;/a&gt; 十有八九也都部署了 &lt;a href=&#34;https://github.com/DesertsP/Valine-Admin&#34;&gt;Valine Admin&lt;/a&gt;，主要为了邮件通知。但最近 LeanCloud 应用日志一直报错：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;self_wake !! {&amp;quot;error&amp;quot;:&amp;quot;因流控原因，通过定时任务唤醒体验版实例失败，建议升级至标准版云引擎实例避免休眠 https://url.leanapp.cn/dwAEksv&amp;quot;}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img loading=&#39;lazy&#39; src=&#34;https://lmm.elizen.me/images/2020/05/auto-deploy-1.png&#34; alt=&#34;auto-deploy-1&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;得手动进后台重启才行……&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>「哔哔点啥」微信公众号</title>
@@ -60,23 +72,6 @@
       <description>&lt;p&gt;刷 &lt;a href=&#34;https://elizen.me/&#34;&gt;@Elizen&lt;/a&gt; 的知识星球，得知还有人折腾了这货 &lt;a href=&#34;https://sspai.com/post/60024&#34;&gt;无点赞评论版微博b言b语&lt;/a&gt;，原来是基于 LeanCloud 来实现的，无比亲切。&lt;/p&gt;
 &lt;p&gt;这不，折腾折腾已整合到主题中（&lt;a href=&#34;https://immmmm.com/bb/&#34;&gt;这里&lt;/a&gt;）。另外，又学了几招。&lt;/p&gt;
 &lt;p&gt;前端用 &lt;code&gt;AppID&lt;/code&gt;、&lt;code&gt;AppKey&lt;/code&gt; 来展示，并把 &lt;code&gt;class&lt;/code&gt; 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 &lt;code&gt;MasterKey&lt;/code&gt; 来更新，避免数据被更改。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 自定义文章样式</title>
-      <link>https://immmmm.com/hugo-diy-post-type/</link>
-      <pubDate>Sun, 12 Apr 2020 18:00:27 +0800</pubDate>
-      
-      <guid>https://immmmm.com/hugo-diy-post-type/</guid>
-      <description>&lt;p&gt;之前 WordPress 推出不同文章样式，如轻博客一样，发一句话、链接或视频有不同的显示效果。之后，用 Hexo、Bitcron 时都以文件夹形式进行文章分类，并以此为判断条件。&lt;/p&gt;
-&lt;p&gt;效果见：&lt;a href=&#34;https://immmmm.com/posts/chat/&#34;&gt;https://immmmm.com/posts/chat/&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;content
-├── posts
-│   ├── chat
-│   ├── coding
-│   ├── daily
-│   ├── reading
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如 &lt;code&gt;chat&lt;/code&gt; 目录内的 md 文件是以一句话的模式（头像+时间）显示，怎么实现呢？利用 Hugo 的 &lt;a href=&#34;https://gohugo.io/variables/files/&#34;&gt;.File.Dir&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/functions/replacere/&#34;&gt;replaceRE&lt;/a&gt; 正则。&lt;/p&gt;</description>
     </item>
     
   </channel>

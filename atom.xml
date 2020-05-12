@@ -7,12 +7,75 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-05-10T13:10:22+00:00</updated>
+    <updated>2020-05-12T14:17:12+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[定时任务唤醒体验版实例失败]]></title>
+            <link href="https://immmmm.com/leancloud-auto-deploy/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/bb-by-wechat/" rel="related" type="text/html" title="「哔哔点啥」微信公众号" />
+                <link href="https://immmmm.com/bb-by-alfred/" rel="related" type="text/html" title="撸个 Alfred 插件「b言b语」" />
+                <link href="https://immmmm.com/vs-code-server/" rel="related" type="text/html" title="云 VSCode 云编码" />
+                <link href="https://immmmm.com/just-bb-by-leancloud/" rel="related" type="text/html" title="废话胶囊，值得拥有" />
+                <link href="https://immmmm.com/hugo-diy-post-type/" rel="related" type="text/html" title="Hugo 自定义文章样式" />
+            
+                <id>https://immmmm.com/leancloud-auto-deploy/</id>
+            
+            
+            <published>2020-05-12T22:12:52+08:00</published>
+            <updated>2020-05-12T22:12:52+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>用了 <a href="https://valine.js.org/">Valine</a> 十有八九也都部署了 <a href="https://github.com/DesertsP/Valine-Admin">Valine Admin</a>，主要为了邮件通知。但最近 LeanCloud 应用日志一直报错：</p>
+<pre><code>self_wake !! {&quot;error&quot;:&quot;因流控原因，通过定时任务唤醒体验版实例失败，建议升级至标准版云引擎实例避免休眠 https://url.leanapp.cn/dwAEksv&quot;}
+</code></pre><p><img loading='lazy' src="https://lmm.elizen.me/images/2020/05/auto-deploy-1.png" alt="auto-deploy-1"  /></p>
+<p>得手动进后台重启才行……</p>
+<p>经 @Dyxang 指导，使用 Github Action 来实现应用实例的定时自动部署及唤醒。</p>
+<h3 id="操作123">操作123</h3>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/05/auto-deploy-2.png" alt="auto-deploy-2"  /></p>
+<p>1.生成 LeanCloud 应用的 <code>Deploy token</code>，暂存；</p>
+<p>2.新建 Github 仓库，Settings - Secrets 添加一个名为 <code>DEPLOY_TOKEN</code> 的 secret，值为上一步的 <code>Deploy token</code>，继续点 <code>Actions -- New wordflow -- Set up a workflow yourself</code> ，添加如下代码，多个同时部署可参考：<a href="https://github.com/lmm214/leancloud-auto-deploy/blob/master/.github/workflows/auto-deploy.yml">leancloud-auto-deploy</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#75715e"># 定时重新部署，国际时间0点，即早上8点。</span>
+<span style="color:#66d9ef">on</span>:
+  <span style="color:#66d9ef">push</span>:
+  <span style="color:#66d9ef">schedule</span>:
+    - <span style="color:#66d9ef">cron</span>: <span style="color:#e6db74">&#39;0 0 * * *&#39;</span> 
+
+<span style="color:#66d9ef">jobs</span>:
+  <span style="color:#66d9ef">deploy</span>:
+    <span style="color:#66d9ef">runs-on</span>: ubuntu-latest
+    <span style="color:#66d9ef">steps</span>:
+    - <span style="color:#66d9ef">uses</span>: actions/checkout@master
+
+    <span style="color:#75715e">### 自定部署</span>
+    - <span style="color:#66d9ef">name</span>: Deploy to LeanEngine
+      <span style="color:#66d9ef">uses</span>: enflo/curl-action@master
+      <span style="color:#66d9ef">with</span>:
+        <span style="color:#66d9ef">curl</span>: -X POST https://console.leancloud.app/<span style="color:#ae81ff">1.1</span>/engine/groups/web/production/version?gitTag=master<span style="color:#75715e">&amp;token=${{</span> secrets.DEPLOY_TOKEN }}
+
+</code></pre></div><p>3.睡一觉，等待明早8点！</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -221,67 +284,6 @@ location /path/ {
                             
                              
                                 <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[废话胶囊，值得拥有]]></title>
-            <link href="https://immmmm.com/just-bb-by-leancloud/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/hugo-diy-post-type/" rel="related" type="text/html" title="Hugo 自定义文章样式" />
-                <link href="https://immmmm.com/hugo-readdir-photos-single/" rel="related" type="text/html" title="Hugo 显示指定文件夹内图片" />
-                <link href="https://immmmm.com/hugo-total-count/" rel="related" type="text/html" title="Hugo 总文章数和总字数" />
-                <link href="https://immmmm.com/hugo-shortcodes-music/" rel="related" type="text/html" title="Hugo 音乐短代码" />
-                <link href="https://immmmm.com/hugo-readdir-photos/" rel="related" type="text/html" title="Hugo 添加相册页面" />
-            
-                <id>https://immmmm.com/just-bb-by-leancloud/</id>
-            
-            
-            <published>2020-04-17T18:24:01+08:00</published>
-            <updated>2020-04-17T18:24:01+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>刷 <a href="https://elizen.me/">@Elizen</a> 的知识星球，得知还有人折腾了这货 <a href="https://sspai.com/post/60024">无点赞评论版微博b言b语</a>，原来是基于 LeanCloud 来实现的，无比亲切。</p>
-<p>这不，折腾折腾已整合到主题中（<a href="https://immmmm.com/bb/">这里</a>）。另外，又学了几招。</p>
-<p>前端用 <code>AppID</code>、<code>AppKey</code> 来展示，并把 <code>class</code> 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 <code>MasterKey</code> 来更新，避免数据被更改。</p>
-<h3 id="页面改动">页面改动</h3>
-<p>原作者提供了 <a href="https://github.com/daibor/nonsense.fun">index.html</a> 开箱即用，自己改成了 Hugo 版本 源码见 <a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/_default/bb.html">bb.html</a>，几处改动：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">v-show</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;count == 0&#34;</span>&gt;别急，加载呢……&lt;/<span style="color:#f92672">p</span>&gt;
-……
-{{htmlUnescape &#34;{{count}}&#34; }}
-……
-{{htmlUnescape &#34;{{item.attributes.time}}&#34;}}
-</code></pre></div><p>加了 loading 时的文字提示，源码输出 <code>{{}}</code>，避免 Hugo 语法冲突。</p>
-<h3 id="更新途径">更新途径</h3>
-<p>原作者提供了 <a href="https://www.icloud.com/shortcuts/3cfcbc36a6a24e0a8721bfeef8dfc6cf">iOS 快捷指令</a> 和 win下的 <a href="https://getquicker.net/sharedaction?code=eeb80278-5f53-4b0d-d333-08d7e0dd26a9">Quicker 模板</a>。这里增加一个 VSCode 的 <a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client">REST Client</a> 插件更新方法。</p>
-<p>新建一个 <code>.http</code> 或 <code>.rest</code> 为后缀的文件：</p>
-<pre><code>POST https://你的AppID前6位.api.lncldglobal.com/1.1/classes/content
-X-LC-Id: 你的AppID
-X-LC-Key: 你的MasterKey,master
-Content-Type: application/json
-
-{
-    &quot;content&quot;:&quot;更新测试&quot;
-}
-</code></pre><p>写好 <code>content</code> 内容后【右键&ndash;Send Request】或快捷键 【Cmd+Alt+R】发布。</p>
-<p>为了能第一时间找到这个文件，安利 VSCode 的 <a href="https://marketplace.visualstudio.com/items?itemName=howardzuo.vscode-favorites">favorites</a> 插件，一件收藏，随点随开。</p>
-<h3 id="一句后话">一句后话</h3>
-<p>这功能让我回想起多年前WP的「一句话公告/状态」、「说说」页面，流逝的时光，不变的需求！周末愉快！</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
                             
                         
                     

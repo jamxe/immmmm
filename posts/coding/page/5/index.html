@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+      <title>折腾 :: 木木木木木</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta name="referrer" content="never" />
+<link rel="canonical" href="https://immmmm.com/posts/coding/" />
+<link rel="stylesheet" href="https://immmmm.com/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:500&display=swap" media="print" onload="this.media='all'">
+<link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
+
+<meta property="og:title" content="折腾" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://immmmm.com/posts/coding/" />
+<meta property="og:updated_time" content="2020-05-10T20:22:49+08:00" />
+
+
+<link rel="alternate" type="application/rss+xml" href="/posts/coding/index.xml" title="木木木木木" />
+
+    
+  <link rel="prefetch" href="/posts/coding/page/4/">
+  <link rel="prefetch" href="/posts/coding/page/6/">
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://immmmm.com" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">木木木木木</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu hidden">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/books/">阅读</a></li>
+        
+      
+        
+          <li><a href="/movies/">观影</a></li>
+        
+      
+        
+          <li><a href="/photos/">相册</a></li>
+        
+      
+        
+          <li><a href="/archives/">归档</a></li>
+        
+      
+        
+          <li><a href="/about/">关于</a></li>
+        
+      
+    
+
+                <li><a href="/search/"><svg t="1556783211810" class="search-box-icon" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2078" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M981.39652054 920.86314525L704.56522859 644.0318533a366.65501012 366.65501012 0 1 0-61.73503038 65.64040943L917.55859375 984.40065827z m-856.17925347-493.12920861a284.19142939 284.19142939 0 1 1 283.89101562 284.19142939A284.49184317 284.49184317 0 0 1 125.06706019 427.73393664z" fill="" p-id="2079" data-spm-anchor-id="a313x.7781069.0.i2"></path></svg></a></li>
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/books/">阅读</a></li>
+      
+    
+      
+        <li><a href="/movies/">观影</a></li>
+      
+    
+      
+        <li><a href="/photos/">相册</a></li>
+      
+    
+      
+        <li><a href="/archives/">归档</a></li>
+      
+    
+      
+        <li><a href="/about/">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  
+  
+  
+
+  <div class="posts">
+    
+    
+    <div class="post on-list coding">
+    
+      <h1 class="post-title"><a href="https://immmmm.com/typora-paepub/">用 Typora 做了本电子书</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2019-08-05 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        <p>网上有组系列文章想做成电子书，搜索 markdown 导出 epub，找到了 Typora 和 Pandoc，后者是纯命令行制作电子书，其实 Typora 的导出 epub 功能也是基于它的。制作流程非常简单，一篇篇文章打开直接复制标题、复制内容，TY直接识别成了 md 格式。点击文件&ndash;导出&ndash;epub，没安装会提示安装 pandoc，完成搞定。</p>
+<p>第一次导出发现许久没完成，原来是文章里的图片无法顺利访问，得，看来这个插件不走秘密通道，此处我傻傻的一张张图片手动下载，其实可以利用这个功能：</p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2019/07/Moaz3D.jpg" alt="pic"  /></p>
+<p>网页上图片右键 <code>复制图片</code> 回编辑器直接 <code>Ctrl+V</code> 粘贴，乖乖，图片自动下载！</p>
+        <div><a class="read-more button" href="/typora-paepub/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list coding">
+    
+      <h1 class="post-title"><a href="https://immmmm.com/qq-handwrite-typewriting/">Canvas 手写输入法</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2019-08-01 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        xuebihua-cn 在整合完“写笔画”网站后，考虑到大屏上输入文字不太方便，搜索一圈发现以下代码：web版手写输入法 ，利用了 QQ输入法的手写 handwritingapi.js 接口，不过文中添加的仅是鼠标事件，移动端的触摸事件不支持。 折腾到凌晨实在搞不定，求助了 @牧风 后依然卡壳，之后发现QQ输入法的鼠标定位值和 Canvas 直接触摸定位值不同
+        <div><a class="read-more button" href="/qq-handwrite-typewriting/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list coding">
+    
+      <h1 class="post-title"><a href="https://immmmm.com/xuebihua-cn/">“学笔画”折腾小记</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2019-07-29 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        <p>点击体验→ <a href="https://xuebihua.cn">https://xuebihua.cn</a></p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2019/07/xuebihua_qr.png" alt="xuebihua_qr"  /></p>
+<p>刷着阮一峰的 weekly 看到了 <a href="https://chanind.github.io/hanzi-writer/cn/">Hanzi Writer</a> <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> 这个项目，发现笔顺的动画比较自然，还能在 svg 上手写练习，最重要的是看看 demo 好像上手比较简单，实际也如此。</p>
+<p>功能代码非常好使，基本折腾在界面和陌生的代码上，比如想让 svg 自适应，搜索测试一晚发现还是以下代码好使：</p>
+        <div><a class="read-more button" href="/xuebihua-cn/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list coding">
+    
+      <h1 class="post-title"><a href="https://immmmm.com/matrixk-bitcron-themes/">矩阵良的 Bitcron 主题集</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2019-07-17 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        <p>强力搬运：<a href="https://mrx.moe/zi-zhi/my-bitcron-themes">矩阵良的Bitcron主题集</a></p>
+<h1 id="皿">皿</h1>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2019/07/Screenshot1.png" alt="效果图"  /></p>
+        <div><a class="read-more button" href="/matrixk-bitcron-themes/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list coding">
+    
+      <h1 class="post-title"><a href="https://immmmm.com/valine-diy/">Valine 评论框美化及功能优化</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2019-07-15 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        <p>以下修改不涉及 Valine 源码的改动，防止后续官方更新还得再来一边。因此，相关 css、js 代码得放在调取 <code>valine.min.js</code> 之后。</p>
+<h3 id="评论框美化">评论框美化：</h3>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2019/07/plk.jpg" alt="评论框美化："  /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span>{<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">44</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">veditor</span>{<span style="color:#66d9ef">min-height</span>:<span style="color:#ae81ff">7</span><span style="color:#66d9ef">rem</span>;<span style="color:#66d9ef">resize</span>:<span style="color:#66d9ef">none</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span>{<span style="color:#66d9ef">padding-top</span>:<span style="color:#ae81ff">0</span>}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">80</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">bottom</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#f7f7f7</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">border-bottom</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span> .<span style="color:#a6e22e">vctrl</span>{<span style="color:#66d9ef">margin-top</span>:<span style="color:#ae81ff">-44</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">right</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">margin-right</span>:<span style="color:#ae81ff">-3</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span>{    <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">absolute</span>;<span style="color:#66d9ef">right</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">bottom</span>:<span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">padding-top</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span> .<span style="color:#a6e22e">col</span>.<span style="color:#a6e22e">col-80</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vbtn</span>.<span style="color:#a6e22e">vsubmit</span>{<span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>;<span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">44</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;<span style="color:#66d9ef">background</span>:<span style="color:#ae81ff">#1abc9c</span>;}.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vedit</span> .<span style="color:#a6e22e">vctrl</span> <span style="color:#f92672">span</span>.<span style="color:#a6e22e">vpreview-btn</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vcontrol</span> .<span style="color:#a6e22e">col</span>.<span style="color:#a6e22e">col-20</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vlist</span> .<span style="color:#a6e22e">vcard</span> .<span style="color:#a6e22e">vhead</span> .<span style="color:#a6e22e">vsys</span>{<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">none</span>;}
+@<span style="color:#66d9ef">media</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span><span style="color:#f92672">:</span> <span style="color:#f92672">520px</span><span style="color:#f92672">)</span>{
+	.<span style="color:#a6e22e">v</span> .<span style="color:#a6e22e">vwrap</span> .<span style="color:#a6e22e">vheader</span> .<span style="color:#a6e22e">vinput</span>{<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">33.33</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;}
+}
+</code></pre></div>
+        <div><a class="read-more button" href="/valine-diy/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list coding">
+    
+      <h1 class="post-title"><a href="https://immmmm.com/valine-by-leancloud-cn/">基于 LeanCloud 的评论系统：Valine</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2019-07-13 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        Valine 官网： https://valine.js.org/ Valine Admin 云引擎： https://deserts.io/valine-admin-document/ 安装过程略过不表，目前还存在一个问题，通过使用： //unpkg.com/valine@1.3.6/dist/Valine.min.js 指定 1.3.6 版本解决，官方最新的 1.3.9 报错，官网自用的 1.3.10 没问题，但还没更新至 CDN。另外这个 Valine Admin 云引擎方便，顾名思义，安装完毕后可通过 LeanCloud 的二级域名管理评论，相当于给 Valine 增加了个评论管理后台。 另外，昨天绑定域名方式由原来
+        <div><a class="read-more button" href="/valine-by-leancloud-cn/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list coding">
+    
+      <h1 class="post-title"><a href="https://immmmm.com/weapp-cloud-todo/">微信小程序：校园云待办</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-08-21 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        <p>点击“点击设置团队名”，添加团队名为“吃土”，OK，欢迎来撩~</p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2018/08/todo.jpg" alt=""  /></p>
+        <div><a class="read-more button" href="/weapp-cloud-todo/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list coding">
+    
+      <h1 class="post-title"><a href="https://immmmm.com/weapp-tian-yi-ge/">微信小程序：校园添衣阁</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-08-16 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        <p>欢迎扫码体验~</p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2018/08/tyg.jpg" alt=""  /></p>
+
+        
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list coding">
+    
+      <h1 class="post-title"><a href="https://immmmm.com/bitcron-exclude-cat-from-feed/">Bitcron 在 Feed 里排除某个分类</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-08-03 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        <p>无视了文档的 <code>status: false</code> ，直接在 feed 中更新，大 BUG 啊！</p>
+<p>官方文档 <a href="https://api.bitcron.com/read/builtin-codes-files#toc_0">feed.jade</a> 中是获取最近 10 篇文章：</p>
+<pre><code class="language-jade" data-lang="jade">feed_posts = posts.recent_10
+</code></pre><p>要想排除某个分类，其实也就是 <strong>某个文件夹</strong>，只要在这里改动。经过超出预习的测试，暂且改为：</p>
+        <div><a class="read-more button" href="/bitcron-exclude-cat-from-feed/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    
+    <div class="post on-list coding">
+    
+      <h1 class="post-title"><a href="https://immmmm.com/telegram-linmumu/">Telegram 使用小记</a></h1>
+      <div class="post-meta">
+        
+          <span class="post-date">
+            2018-08-01 00:00:00
+          </span>
+        
+
+        
+        <span class="">
+          
+            #<a href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>&nbsp;
+          
+        </span>
+        
+      </div>
+
+      
+
+      <div class="post-content $PostCate">
+      
+        <h3 id="user">user</h3>
+<p>@linmumu： <a href="https://t.me/linmumu">https://t.me/linmumu</a></p>
+<h3 id="group">Group</h3>
+<p>Bitcron 中文圈： <a href="https://t.me/bitcron">https://t.me/bitcron</a></p>
+        <div><a class="read-more button" href="/telegram-linmumu/">阅读全文 →</a></div>
+      
+      </div>
+    
+    </div>
+    
+    <div class="pagination">
+  <div class="pagination__buttons">
+    
+      <span class="button previous">
+        <a href="/posts/coding/page/4/">
+          <span class="button__icon">←</span>
+          <span class="button__text">上 一 页</span>
+        </a>
+      </span>
+    
+    
+      <span class="button next">
+        <a href="/posts/coding/page/6/">
+          <span class="button__text">下 一 页</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+
+  </div>
+
+      </div>
+
+      
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="copyright">
+      <span>共 158 篇文章</span><span> 75402 字</span>
+    </div>
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/main.js"></script>
+
+<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/lately.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/waterfall.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/slimbox2.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/immmmm@gh-pages/al.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module"></script>
+
+      
+    </div>
+  </body>
+</html>

@@ -7,12 +7,52 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-05-31T06:28:02+00:00</updated>
+    <updated>2020-06-07T13:43:50+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[败入国行 Nintendo Switch]]></title>
+            <link href="https://immmmm.com/nintendo-switch-tx/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/dont-forget-smile/" rel="related" type="text/html" title="你信什么" />
+                <link href="https://immmmm.com/waiting-for-spring/" rel="related" type="text/html" title="春" />
+                <link href="https://immmmm.com/happy-birthday-2020/" rel="related" type="text/html" title="庆生" />
+                <link href="https://immmmm.com/hi-2020/" rel="related" type="text/html" title="二〇二〇，你好" />
+                <link href="https://immmmm.com/macbook-some-things/" rel="related" type="text/html" title="Macbook 二三事" />
+            
+                <id>https://immmmm.com/nintendo-switch-tx/</id>
+            
+            
+            <published>2020-06-07T21:15:54+08:00</published>
+            <updated>2020-06-07T21:15:54+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>山姆超市败入国行 Nintendo Switch 套装，包含主机（¥1848）+方向盘（¥99）+卡丁车（¥299）+超级马里欧（¥299）=套装（ <del>¥2545</del>  &ndash;&gt; ¥2288 ），比某东还便宜。其实默认套装只有1款卡丁车，自己手气不错，抽到老包装的有2盘游戏卡带。</p>
+<p>到家开箱发圈，感谢当家的！立马和臭小子一人一方向盘投入战斗，别说，主机模式真香！等娃睡后，试了试掌机联网，拿在手上甚至还感到有点轻。想起当年的网吧苦练Q2飞车，仍抵不过后方袭来的龟壳…… 🤦‍♂️</p>
+<p>换卡，超级马里欧。可悲的童年没有它，因此，感到些无趣。</p>
+<p>同时，周五当晚已淘点下单健身环，当家的也是听闻此健身法才点头准许，不过周一才清关，等待中。</p>
+<p>感叹一句，能不买国行别买了！</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8" term="%E6%97%A5%E5%B8%B8" label="日常" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -374,45 +414,6 @@ location /path/ {
                             
                              
                                 <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[2020-04-19]]></title>
-            <link href="https://immmmm.com/2020-04-19/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/2020-04-12/" rel="related" type="text/html" title="2020-04-12" />
-                <link href="https://immmmm.com/2020-04-10/" rel="related" type="text/html" title="2020-04-10" />
-                <link href="https://immmmm.com/2020-04-04/" rel="related" type="text/html" title="2020-04-04" />
-                <link href="https://immmmm.com/2020-03-23/" rel="related" type="text/html" title="2020-03-23" />
-                <link href="https://immmmm.com/2020-03-09/" rel="related" type="text/html" title="2020-03-09" />
-            
-                <id>https://immmmm.com/2020-04-19/</id>
-            
-            
-            <published>2020-04-19T13:36:58+08:00</published>
-            <updated>2020-04-19T13:36:58+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>闲逛发现 <a href="https://github.com/xCss/Valine/releases">Valine 1.4.4</a> 已发布，表情改为了图片形式（win下不会再一坨坨）、评论支持楼内回复（不会一直在顶部）、也有取消回复按钮，立马跟近匹配了样式。</p>
-<p>另外，折腾了一晚上+一上午 <a href="https://github.com/cdr/code-server">code-server</a>，成是成了但体验不佳，可能部署在国内云会好些。</p>
-<p>补充：群里得知神技能，直接拖本地图片到评论框试试？</p>
-<p>🌧️</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
                             
                         
                     

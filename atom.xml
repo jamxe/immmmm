@@ -7,12 +7,132 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-06-07T14:36:44+00:00</updated>
+    <updated>2020-06-10T01:16:03+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Hugo Theme Webstack]]></title>
+            <link href="https://immmmm.com/hugo-theme-webstack/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/bb-by-wechat/" rel="related" type="text/html" title="「哔哔点啥」微信公众号" />
+                <link href="https://immmmm.com/bb-by-alfred/" rel="related" type="text/html" title="撸个 Alfred 插件「b言b语」" />
+                <link href="https://immmmm.com/vs-code-server/" rel="related" type="text/html" title="云 VSCode 云编码" />
+                <link href="https://immmmm.com/just-bb-by-leancloud/" rel="related" type="text/html" title="废话胶囊，值得拥有" />
+                <link href="https://immmmm.com/hugo-diy-post-type/" rel="related" type="text/html" title="Hugo 自定义文章样式" />
+            
+                <id>https://immmmm.com/hugo-theme-webstack/</id>
+            
+            
+            <published>2020-06-10T00:00:00+00:00</published>
+            <updated>2020-06-10T00:00:00+00:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>新版本更新，感谢  <a href="https://github.com/bolabola/stackf">@ooiii</a> 童鞋。</p>
+<p>在线预览：<a href="https://edui.fun/">https://edui.fun/</a></p>
+<p>仓库下载：<a href="https://github.com/lmm214/hugo-theme-webstack">https://github.com/lmm214/hugo-theme-webstack</a></p>
+<h3 id="配置说明">配置说明</h3>
+<p>Hugo 站点 <code>config.toml</code> 默认配置，新增各信息和功能的修改。</p>
+<pre><code>theme = &quot;webstack&quot;
+version = &quot;20.06.09&quot;
+
+# 首页网址
+baseURL = &quot;https://edui.fun&quot;
+# 标题
+title = &quot;Edui.fun&quot;
+
+[params]
+    # 副标题
+    subtitle = &quot;让教学有点意思&quot;
+    # 横条logo
+    logo = &quot;https://cdn.jsdelivr.net/gh/lmm214/edui@gh-pages/images/avatar.png&quot;
+    # logo 图标
+    logoM = &quot;https://cdn.jsdelivr.net/gh/lmm214/edui@gh-pages/images/eduifuns.png&quot;
+    # css和js文件的cdn
+    cdn = &quot;https://cdn.jsdelivr.net/gh/lmm214/edui@gh-pages&quot;
+    # 开启今日诗词
+    jinrishici = &quot;true&quot;
+    # 开启访问量统计
+    busuanzi = &quot;true&quot;
+</code></pre><h3 id="主题使用">主题使用</h3>
+<p>主题目录：</p>
+<pre><code>hugo-webstack
+├── data
+│   └── links.toml  //只需更改这里
+├── layouts
+│   └── home.html //独一无二一个页面搞定
+└── theme.toml
+</code></pre><p>感谢 <a href="https://github.com/bolabola/stackf">@ooiii</a> 改进，所有内容（导航和板块）的增删排序直接在 <code>links.toml</code> 内完成！ 👍</p>
+<p><code>links.toml</code> 示例：</p>
+<pre><code>[[list]]
+tag = '在线工具'
+css = 'icon-globe'
+
+[[list.sub]]
+tag = '教学助手'
+css = 'icon-star'
+
+[[list.sub.item]]
+description=&quot;随时随地打开，开启专注力训练&quot;
+siteLink=&quot;https://edui.fun/schulte/&quot;
+siteLogo=&quot;https://cdn.jsdelivr.net/gh/lmm214/images/logos/schulte.png&quot;
+siteName=&quot;舒尔特方格&quot;
+
+[[list.sub]]
+tag = '图文影音'
+css = 'icon-pencil'
+
+[[list.sub.item]]
+description=&quot;在线生成并打印描字帖、笔顺描写贴和常用字体模板&quot;
+siteLink=&quot;https://tool.lu/copybook/index.html&quot;
+siteLogo=&quot;https://cdn.jsdelivr.net/gh/lmm214/images/logos/toollu.png&quot;
+siteName=&quot;字帖生成器&quot;
+
+[[list]]
+tag = '实用软件'
+css = 'icon-desktop'
+
+[[list.item]]
+description=&quot;一键部署新版本 Office 全家桶，免费！&quot;
+siteLink=&quot;https://otp.landian.vip/zh-cn/&quot;
+siteLogo=&quot;https://cdn.jsdelivr.net/gh/lmm214/images@master/logos/otp.png&quot;
+siteName=&quot;Office Tool Plus&quot;
+
+
+[[list]]
+tag = '移动在线'
+css = 'icon-mobile'
+
+[[list.item]]
+description=&quot;在线电子教材、必备古诗词、24点出题&quot;
+siteImage=&quot;https://cdn.jsdelivr.net/gh/lmm214/images/logos/exzz.jpg&quot;
+siteLogo=&quot;https://cdn.jsdelivr.net/gh/lmm214/images/logos/exzz.jpg&quot;
+siteName=&quot;二小智造&quot;
+</code></pre><p><code>list</code> 为主导航，<code>list.sub</code> 子导航，其中 <code>item</code> 中如果有 <code>siteImage</code> 则开启图片模式，效果如下：</p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/05/webstack-11.png" alt="webstack-11"  /></p>
+<h3 id="其他">其他</h3>
+<p>部署参考：<a href="https://immmmm.com/hugo-github-actions/">Hugo + Github Actions 实现自动化部署</a></p>
+<p>😈</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -341,69 +461,6 @@ r <span style="color:#f92672">=</span> http<span style="color:#f92672">.</span>r
 </code></pre></div><h3 id="题外话">题外话</h3>
 <p>五一快乐，动起来！</p>
 <p>🧹</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[云 VSCode 云编码]]></title>
-            <link href="https://immmmm.com/vs-code-server/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/just-bb-by-leancloud/" rel="related" type="text/html" title="废话胶囊，值得拥有" />
-                <link href="https://immmmm.com/hugo-diy-post-type/" rel="related" type="text/html" title="Hugo 自定义文章样式" />
-                <link href="https://immmmm.com/hugo-readdir-photos-single/" rel="related" type="text/html" title="Hugo 显示指定文件夹内图片" />
-                <link href="https://immmmm.com/hugo-total-count/" rel="related" type="text/html" title="Hugo 总文章数和总字数" />
-                <link href="https://immmmm.com/hugo-shortcodes-music/" rel="related" type="text/html" title="Hugo 音乐短代码" />
-            
-                <id>https://immmmm.com/vs-code-server/</id>
-            
-            
-            <published>2020-04-19T18:57:10+08:00</published>
-            <updated>2020-04-19T18:57:10+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p><a href="https://github.com/cdr/code-server">code-server</a> 云 VSCode 云编码，安装踩坑无数，Docker 一条部署：</p>
-<pre><code>docker run --name vscodeserver --user root -it -d -p 0.0.0.0:8080:8080 -e PASSWORD='youMiMa' -v &quot;$PWD:/home/coder/project&quot; codercom/code-server:latest
-</code></pre><p>此刻 http://ip:8080 输入密码 <code>youMiMa</code> ，等等等失败，挂上特殊通道，等等等，成功。</p>
-<h3 id="开启-https">开启 https</h3>
-<p>以下步骤基于宝塔面板。添加网站，纯静态，开启 ssl Let&rsquo;s Encrypt，添加反响理代：</p>
-<p>目标URL： <code>http://localhost:8080</code> 发送域名： <code>$host</code></p>
-<p>照理这样也就OK了，但就算挂特殊通道还是报错，看教程，在配置文件中加入 <code>location</code> 这段代码：</p>
-<pre><code>……
-root /www/wwwroot/e.immmmm.com;
-……
-location /path/ {
-  proxy_pass http://localhost:8080/;
-  proxy_redirect http:// https://;
-  proxy_set_header Host $host:443/path;
-  proxy_set_header Upgrade $http_upgrade;
-  proxy_set_header Connection upgrade;
-  proxy_set_header Accept-Encoding gzip;
-}
-……
-</code></pre><p>访问 <a href="https://e.immmmm.com/path/">https://e.immmmm.com/path/</a>  ，搞定！</p>
-<h3 id="疑惑">疑惑</h3>
-<p>不懂不懂，不加 <code>/path/</code> 为啥不行呢？</p>
-<h3 id="后续">后续</h3>
-<figure>
-    <img src=""/></figure>
-
-<p>原来 Coding 的也已经是 vscode ，每天免费4小时，除了 clone github 仓库好慢好慢，其它省心省心！</p>
-<p>🤔️</p>]]></content>
             
                  
                     

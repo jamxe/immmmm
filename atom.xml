@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-06-11T00:03:55+00:00</updated>
+    <updated>2020-06-11T12:06:57+00:00</updated>
     
     
     
@@ -32,7 +32,7 @@
             <updated>2020-06-10T09:15:25+08:00</updated>
             
             
-            <content type="html"><![CDATA[<p>新版本更新，感谢  <a href="https://github.com/bolabola/stackf">@ooiii</a> 童鞋。</p>
+            <content type="html"><![CDATA[<p>新版本更新，感谢 <a href="https://github.com/bolabola/stackf">@ooiii</a> 改进，所有内容（导航和板块）的增删排序直接在 <code>links.toml</code> 内完成！ 👍</p>
 <p>在线预览：<a href="https://edui.fun/">https://edui.fun/</a></p>
 <p>仓库下载：<a href="https://github.com/lmm214/hugo-theme-webstack">https://github.com/lmm214/hugo-theme-webstack</a></p>
 <h3 id="配置说明">配置说明</h3>
@@ -66,8 +66,7 @@ title = &quot;Edui.fun&quot;
 ├── layouts
 │   └── home.html //独一无二一个页面搞定
 └── theme.toml
-</code></pre><p>感谢 <a href="https://github.com/bolabola/stackf">@ooiii</a> 改进，所有内容（导航和板块）的增删排序直接在 <code>links.toml</code> 内完成！ 👍</p>
-<p><code>links.toml</code> 示例：</p>
+</code></pre><p><code>links.toml</code> 示例：</p>
 <pre><code>[[list]]
 tag = '在线工具'
 css = 'icon-globe'

@@ -6,10 +6,19 @@
     <description>Recent content in 日常 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 14 Jun 2020 10:42:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 13:58:52 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>安个 Big Sur 桌面先</title>
+      <link>https://immmmm.com/big-sur-desktop-picture/</link>
+      <pubDate>Sat, 27 Jun 2020 13:58:52 +0800</pubDate>
+      
+      <guid>https://immmmm.com/big-sur-desktop-picture/</guid>
+      <description>来源：https://v2ex.com/t/684405，由 @c7in7 搬运到奶牛：https://cowtransfer.com/s/49630b1a98a84c，下载 Appearance Dynamic.heic 之后丢入 /Library/Desktop Pictures ，选择动态背景，静待晚上效果。</description>
+    </item>
     
     <item>
       <title>荒野乱斗，其乐无穷</title>
@@ -48,19 +57,6 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;春水初生，春林初盛。春风十里，不如你。 ——《春》冯唐&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>庆生</title>
-      <link>https://immmmm.com/happy-birthday-2020/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://immmmm.com/happy-birthday-2020/</guid>
-      <description>&lt;figure&gt;
-    &lt;img src=&#34;https://lmm.elizen.me/images/logos/birthday-1.JPG&#34; width=&#34;50%&#34;/&gt;
-    &lt;figcaption&gt;庆生&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;生，活着，当下异常值得庆祝！祝，自己生日快乐！祝，家人平安健康！&lt;/p&gt;</description>
     </item>
     
   </channel>

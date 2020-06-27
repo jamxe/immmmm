@@ -7,12 +7,49 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-06-14T03:19:49+00:00</updated>
+    <updated>2020-06-27T06:12:07+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[安个 Big Sur 桌面先]]></title>
+            <link href="https://immmmm.com/big-sur-desktop-picture/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/brawl-stars-tx/" rel="related" type="text/html" title="荒野乱斗，其乐无穷" />
+                <link href="https://immmmm.com/nintendo-switch-tx/" rel="related" type="text/html" title="败入国行 Nintendo Switch" />
+                <link href="https://immmmm.com/dont-forget-smile/" rel="related" type="text/html" title="你信什么" />
+                <link href="https://immmmm.com/waiting-for-spring/" rel="related" type="text/html" title="春" />
+                <link href="https://immmmm.com/happy-birthday-2020/" rel="related" type="text/html" title="庆生" />
+            
+                <id>https://immmmm.com/big-sur-desktop-picture/</id>
+            
+            
+            <published>2020-06-27T13:58:52+08:00</published>
+            <updated>2020-06-27T13:58:52+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>来源：<a href="https://v2ex.com/t/684405">https://v2ex.com/t/684405</a>，由 @c7in7 搬运到奶牛：<a href="https://cowtransfer.com/s/49630b1a98a84c">https://cowtransfer.com/s/49630b1a98a84c</a>，下载 <code>Appearance Dynamic.heic</code> 之后丢入 <code>/Library/Desktop Pictures</code> ，选择动态背景，静待晚上效果。</p>
+]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8" term="%E6%97%A5%E5%B8%B8" label="日常" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -400,53 +437,6 @@ siteName=&quot;二小智造&quot;
                             
                              
                                 <category scheme="https://immmmm.com/tags/%E8%82%B2%E4%BA%BA" term="%E8%82%B2%E4%BA%BA" label="育人" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[「哔哔点啥」微信公众号]]></title>
-            <link href="https://immmmm.com/bb-by-wechat/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/bb-by-alfred/" rel="related" type="text/html" title="撸个 Alfred 插件「b言b语」" />
-                <link href="https://immmmm.com/vs-code-server/" rel="related" type="text/html" title="云 VSCode 云编码" />
-                <link href="https://immmmm.com/just-bb-by-leancloud/" rel="related" type="text/html" title="废话胶囊，值得拥有" />
-                <link href="https://immmmm.com/hugo-diy-post-type/" rel="related" type="text/html" title="Hugo 自定义文章样式" />
-                <link href="https://immmmm.com/hugo-readdir-photos-single/" rel="related" type="text/html" title="Hugo 显示指定文件夹内图片" />
-            
-                <id>https://immmmm.com/bb-by-wechat/</id>
-            
-            
-            <published>2020-05-10T20:22:49+08:00</published>
-            <updated>2020-05-10T20:22:49+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>看到 <a href="https://bearye.cn/archives/488">@熊野</a> 说可以用「微信公众号」发哔哔，还基于腾讯云函数，也能部署到 Leancloud ，立马 <del>勾搭</del> 加上微信好友。熊大神连夜折腾匹配一夜一天，远程手把手指导部署，整个过程：失败，等，失败，等等，失败，等等等等……成啦！太、太神奇！</p>
-<figure>
-    <img src="https://lmm.elizen.me/images/2020/05/bbds.png"/><figcaption>「哔哔点啥」微信公众号</figcaption></figure>
-
-<h3 id="食用步骤">食用步骤</h3>
-<p>1.按照原作者 <a href="https://sspai.com/post/60024">@daibor</a> 的教程在 Leancloud 建好应用，进入设置&ndash;应用 Keys，留存 <code>AppID</code>、<code>MasterKey</code>、<code>Request 域名</code>；</p>
-<p>2.扫码关注「哔哔点啥」公众号（更名申请中），按照提示构建以下命令绑定：</p>
-<pre><code>//bindCurrentUser:你的AppID,你的MasterKey,https://你的Request 域名
-</code></pre><p>3.Done！</p>
-<h3 id="风险预警">风险预警</h3>
-<p>对于以上的id和key，微信公众号消息会有记录，腾讯云数据库也会储存，所以使用前请各位小伙伴斟酌。另外，后端使用的是免费配额，且用且珍惜。</p>
-<p>最后，再次感谢 <a href="https://bearye.cn/">@熊野</a> 大神！</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
                             
                         
                     

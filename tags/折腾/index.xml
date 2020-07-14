@@ -6,10 +6,20 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 10 Jun 2020 09:15:25 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2020 19:47:09 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>吉比特 ZNHG600 光猫获取超级密码</title>
+      <link>https://immmmm.com/telecomadmin-znhg600/</link>
+      <pubDate>Tue, 14 Jul 2020 19:47:09 +0800</pubDate>
+      
+      <guid>https://immmmm.com/telecomadmin-znhg600/</guid>
+      <description>&lt;p&gt;偶接10000号呼叫，交200换光猫，免费提速 100M &amp;ndash;&amp;gt; 300M ，续费费用不变，依然是6年前的套餐 1998元/三年。下午师傅上门安装“水”的不行，追问得知他们也是昨天刚拿到的。&lt;/p&gt;
+&lt;p&gt;吉比特 ZNHG600，自带了 2.4G Wifi，果断禁用，直接让师傅在光猫上拨号，路由器直接获取IP即可。服役六年的华为 HG8240 光荣退休！&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo Theme Webstack</title>
@@ -60,17 +70,6 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cdr/code-server&#34;&gt;code-server&lt;/a&gt; 云 VSCode 云编码，安装踩坑无数，Docker 一条部署：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --name vscodeserver --user root -it -d -p 0.0.0.0:8080:8080 -e PASSWORD=&#39;youMiMa&#39; -v &amp;quot;$PWD:/home/coder/project&amp;quot; codercom/code-server:latest
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此刻 http://ip:8080 输入密码 &lt;code&gt;youMiMa&lt;/code&gt; ，等等等失败，挂上特殊通道，等等等，成功。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>废话胶囊，值得拥有</title>
-      <link>https://immmmm.com/just-bb-by-leancloud/</link>
-      <pubDate>Fri, 17 Apr 2020 18:24:01 +0800</pubDate>
-      
-      <guid>https://immmmm.com/just-bb-by-leancloud/</guid>
-      <description>&lt;p&gt;刷 &lt;a href=&#34;https://elizen.me/&#34;&gt;@Elizen&lt;/a&gt; 的知识星球，得知还有人折腾了这货 &lt;a href=&#34;https://sspai.com/post/60024&#34;&gt;无点赞评论版微博b言b语&lt;/a&gt;，原来是基于 LeanCloud 来实现的，无比亲切。&lt;/p&gt;
-&lt;p&gt;这不，折腾折腾已整合到主题中（&lt;a href=&#34;https://immmmm.com/bb/&#34;&gt;这里&lt;/a&gt;）。另外，又学了几招。&lt;/p&gt;
-&lt;p&gt;前端用 &lt;code&gt;AppID&lt;/code&gt;、&lt;code&gt;AppKey&lt;/code&gt; 来展示，并把 &lt;code&gt;class&lt;/code&gt; 的 create 、delete 、update 三项权限设置为「指定用户」，后端用 &lt;code&gt;MasterKey&lt;/code&gt; 来更新，避免数据被更改。&lt;/p&gt;</description>
     </item>
     
   </channel>

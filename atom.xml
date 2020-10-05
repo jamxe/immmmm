@@ -7,12 +7,59 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-09-24T11:10:54+00:00</updated>
+    <updated>2020-10-05T10:53:11+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[初体验 Scriptable 小挂件]]></title>
+            <link href="https://immmmm.com/scriptable-widget/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/telecomadmin-znhg600/" rel="related" type="text/html" title="光猫 ZNHG600 获取超级密码" />
+                <link href="https://immmmm.com/hugo-theme-webstack/" rel="related" type="text/html" title="Hugo Theme Webstack" />
+                <link href="https://immmmm.com/bb-by-wechat/" rel="related" type="text/html" title="「哔哔点啥」微信公众号" />
+                <link href="https://immmmm.com/bb-by-alfred/" rel="related" type="text/html" title="撸个 Alfred 插件「b言b语」" />
+                <link href="https://immmmm.com/vs-code-server/" rel="related" type="text/html" title="云 VSCode 云编码" />
+            
+                <id>https://immmmm.com/scriptable-widget/</id>
+            
+            
+            <published>2020-10-05T18:30:49+08:00</published>
+            <updated>2020-10-05T18:30:49+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>图中代码来自 <a href="https://github.com/byenow/scriptable-widget/blob/master/index.js">https://github.com/byenow/scriptable-widget/blob/master/index.js</a></p>
+<p>另外，中文化的仓库找到这两个：</p>
+<ul>
+<li><a href="https://github.com/evilbutcher/Scriptables">https://github.com/evilbutcher/Scriptables</a></li>
+<li><a href="https://github.com/GideonSenku/Scriptable">https://github.com/GideonSenku/Scriptable</a></li>
+</ul>
+<h3 id="折腾流程">折腾流程</h3>
+<p>1.安装 <code>Scriptable</code> （<a href="https://testflight.apple.com/join/uN1vTqxk">TestFlight版</a>）</p>
+<p>2.下载 <code>Env.js</code> （<a href="https://github.com/evilbutcher/Scriptables/blob/master/Env.js">这里</a>）</p>
+<p>3.下载想要使用的 <code>xxx.js</code> 文件，直接 Airdrop 导入 Scriptable 。</p>
+<h3 id="啰嗦一句">啰嗦一句</h3>
+<p>三个Size放桌面依然鸡肋，且目测所有挂件都不是刚需，不如「快捷方式」丢桌面好使！</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -182,125 +229,6 @@
                             
                              
                                 <category scheme="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8" term="%E6%97%A5%E5%B8%B8" label="日常" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[Hugo Theme Webstack]]></title>
-            <link href="https://immmmm.com/hugo-theme-webstack/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/bb-by-wechat/" rel="related" type="text/html" title="「哔哔点啥」微信公众号" />
-                <link href="https://immmmm.com/bb-by-alfred/" rel="related" type="text/html" title="撸个 Alfred 插件「b言b语」" />
-                <link href="https://immmmm.com/vs-code-server/" rel="related" type="text/html" title="云 VSCode 云编码" />
-                <link href="https://immmmm.com/just-bb-by-leancloud/" rel="related" type="text/html" title="废话胶囊，值得拥有" />
-                <link href="https://immmmm.com/hugo-diy-post-type/" rel="related" type="text/html" title="Hugo 自定义文章样式" />
-            
-                <id>https://immmmm.com/hugo-theme-webstack/</id>
-            
-            
-            <published>2020-06-10T09:15:25+08:00</published>
-            <updated>2020-06-10T09:15:25+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>新版本更新，感谢 <a href="https://github.com/bolabola/stackf">@ooiii</a> 改进，所有内容（导航和板块）的增删排序直接在 <code>links.toml</code> 内完成！ 👍</p>
-<p>在线预览：<a href="https://edui.fun/">https://edui.fun/</a></p>
-<p>仓库下载：<a href="https://github.com/lmm214/hugo-theme-webstack">https://github.com/lmm214/hugo-theme-webstack</a></p>
-<h3 id="配置说明">配置说明</h3>
-<p>Hugo 站点 <code>config.toml</code> 默认配置，新增各信息和功能的修改。</p>
-<pre><code>theme = &quot;webstack&quot;
-version = &quot;20.06.09&quot;
-
-# 首页网址
-baseURL = &quot;https://edui.fun&quot;
-# 标题
-title = &quot;Edui.fun&quot;
-
-[params]
-    # 副标题
-    subtitle = &quot;让教学有点意思&quot;
-    # 横条logo
-    logo = &quot;https://cdn.jsdelivr.net/gh/lmm214/edui@gh-pages/images/avatar.png&quot;
-    # logo 图标
-    logoM = &quot;https://cdn.jsdelivr.net/gh/lmm214/edui@gh-pages/images/eduifuns.png&quot;
-    # css和js文件的cdn
-    cdn = &quot;https://cdn.jsdelivr.net/gh/lmm214/edui@gh-pages&quot;
-    # 开启今日诗词
-    jinrishici = &quot;true&quot;
-    # 开启访问量统计
-    busuanzi = &quot;true&quot;
-</code></pre><h3 id="主题使用">主题使用</h3>
-<p>主题目录：</p>
-<pre><code>hugo-webstack
-├── data
-│   └── links.toml  //只需更改这里
-├── layouts
-│   └── home.html //独一无二一个页面搞定
-└── theme.toml
-</code></pre><p><code>links.toml</code> 示例：</p>
-<pre><code>[[list]]
-tag = '在线工具'
-css = 'icon-globe'
-
-[[list.sub]]
-tag = '教学助手'
-css = 'icon-star'
-
-[[list.sub.item]]
-description=&quot;随时随地打开，开启专注力训练&quot;
-siteLink=&quot;https://edui.fun/schulte/&quot;
-siteLogo=&quot;https://cdn.jsdelivr.net/gh/lmm214/images/logos/schulte.png&quot;
-siteName=&quot;舒尔特方格&quot;
-
-[[list.sub]]
-tag = '图文影音'
-css = 'icon-pencil'
-
-[[list.sub.item]]
-description=&quot;在线生成并打印描字帖、笔顺描写贴和常用字体模板&quot;
-siteLink=&quot;https://tool.lu/copybook/index.html&quot;
-siteLogo=&quot;https://cdn.jsdelivr.net/gh/lmm214/images/logos/toollu.png&quot;
-siteName=&quot;字帖生成器&quot;
-
-[[list]]
-tag = '实用软件'
-css = 'icon-desktop'
-
-[[list.item]]
-description=&quot;一键部署新版本 Office 全家桶，免费！&quot;
-siteLink=&quot;https://otp.landian.vip/zh-cn/&quot;
-siteLogo=&quot;https://cdn.jsdelivr.net/gh/lmm214/images@master/logos/otp.png&quot;
-siteName=&quot;Office Tool Plus&quot;
-
-
-[[list]]
-tag = '移动在线'
-css = 'icon-mobile'
-
-[[list.item]]
-description=&quot;在线电子教材、必备古诗词、24点出题&quot;
-siteImage=&quot;https://cdn.jsdelivr.net/gh/lmm214/images/logos/exzz.jpg&quot;
-siteLogo=&quot;https://cdn.jsdelivr.net/gh/lmm214/images/logos/exzz.jpg&quot;
-siteName=&quot;二小智造&quot;
-</code></pre><p><code>list</code> 为主导航，<code>list.sub</code> 子导航，其中 <code>item</code> 中如果有 <code>siteImage</code> 则开启图片模式，效果如下：</p>
-<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/05/webstack-11.png" alt="webstack-11"  /></p>
-<h3 id="其他">其他</h3>
-<p>部署参考：<a href="https://immmmm.com/hugo-github-actions/">Hugo + Github Actions 实现自动化部署</a></p>
-<p>😈</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
                             
                         
                     

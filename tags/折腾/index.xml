@@ -6,10 +6,24 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 14 Jul 2020 19:47:09 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 18:30:49 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>初体验 Scriptable 小挂件</title>
+      <link>https://immmmm.com/scriptable-widget/</link>
+      <pubDate>Mon, 05 Oct 2020 18:30:49 +0800</pubDate>
+      
+      <guid>https://immmmm.com/scriptable-widget/</guid>
+      <description>&lt;p&gt;图中代码来自 &lt;a href=&#34;https://github.com/byenow/scriptable-widget/blob/master/index.js&#34;&gt;https://github.com/byenow/scriptable-widget/blob/master/index.js&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;另外，中文化的仓库找到这两个：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/evilbutcher/Scriptables&#34;&gt;https://github.com/evilbutcher/Scriptables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/GideonSenku/Scriptable&#34;&gt;https://github.com/GideonSenku/Scriptable&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>光猫 ZNHG600 获取超级密码</title>
@@ -59,17 +73,6 @@
 &lt;p&gt;安装依赖：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo pip install urllib3
 &lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>云 VSCode 云编码</title>
-      <link>https://immmmm.com/vs-code-server/</link>
-      <pubDate>Sun, 19 Apr 2020 18:57:10 +0800</pubDate>
-      
-      <guid>https://immmmm.com/vs-code-server/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cdr/code-server&#34;&gt;code-server&lt;/a&gt; 云 VSCode 云编码，安装踩坑无数，Docker 一条部署：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --name vscodeserver --user root -it -d -p 0.0.0.0:8080:8080 -e PASSWORD=&#39;youMiMa&#39; -v &amp;quot;$PWD:/home/coder/project&amp;quot; codercom/code-server:latest
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此刻 http://ip:8080 输入密码 &lt;code&gt;youMiMa&lt;/code&gt; ，等等等失败，挂上特殊通道，等等等，成功。&lt;/p&gt;</description>
     </item>
     
   </channel>

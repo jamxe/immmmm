@@ -7,7 +7,7 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-10-05T15:43:16+00:00</updated>
+    <updated>2020-10-05T15:46:22+00:00</updated>
     
     
     
@@ -39,7 +39,7 @@
 <li><a href="https://github.com/GideonSenku/Scriptable">https://github.com/GideonSenku/Scriptable</a></li>
 </ul>
 <p>还有这个：</p>
-<p><a href="https://lmm.elizen.me/images/2020/10/scriptable.jpg">!scriptable</a></p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/10/scriptable.jpg" alt="scriptable"  /></p>
 <p><a href="https://github.com/byenow/scriptable-widget/blob/master/index.js">byenow/scriptable-widget</a></p>
 <h3 id="折腾流程">折腾流程</h3>
 <p>1.安装 <code>Scriptable</code> （<a href="https://testflight.apple.com/join/uN1vTqxk">TestFlight版</a>）</p>

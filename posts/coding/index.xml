@@ -17,7 +17,7 @@
       <pubDate>Tue, 06 Oct 2020 16:27:30 +0800</pubDate>
       
       <guid>https://immmmm.com/ios14-transparent-widget-by-shortcuts/</guid>
-      <description>&lt;p&gt;全“透明”占坑图！利用自带的「快捷指令」和「Days Matter」自定义小挂件实现！&lt;/p&gt;
+      <description>&lt;p&gt;全“透明”占坑图！&lt;/p&gt;
 &lt;h3 id=&#34;快捷指令用来切图&#34;&gt;快捷指令：用来切图&lt;/h3&gt;
 &lt;p&gt;其实小组件就3个size，2x2、2x4、4x4，也就是小有6个不同位置、中有3个、大有2个，相对应做了下面3个快捷指令，运行后生成对应位置的背景图片，如小的就把背景图切成6张小图，分别是：上左、上右、中左、中右、下左、下右。&lt;/p&gt;
 &lt;p&gt;特别感谢 &lt;a href=&#34;https://sharecuts.cn/shortcut/8370&#34;&gt;@小悟空哥&lt;/a&gt; 和 &lt;a href=&#34;https://github.com/mzeryck/Transparent-Scriptable-Widget&#34;&gt;@mzeryck&lt;/a&gt; 分享的「快捷指令」和「Scriptable」代码。&lt;/p&gt;</description>

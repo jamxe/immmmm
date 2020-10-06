@@ -7,12 +7,55 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-10-05T15:46:22+00:00</updated>
+    <updated>2020-10-06T08:46:17+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[利用「快捷指令」创建“透明”小组件]]></title>
+            <link href="https://immmmm.com/ios14-transparent-widget-by-shortcuts/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/scriptable-widget/" rel="related" type="text/html" title="初体验 Scriptable 小挂件" />
+                <link href="https://immmmm.com/telecomadmin-znhg600/" rel="related" type="text/html" title="光猫 ZNHG600 获取超级密码" />
+                <link href="https://immmmm.com/hugo-theme-webstack/" rel="related" type="text/html" title="Hugo Theme Webstack" />
+                <link href="https://immmmm.com/bb-by-wechat/" rel="related" type="text/html" title="「哔哔点啥」微信公众号" />
+                <link href="https://immmmm.com/bb-by-alfred/" rel="related" type="text/html" title="撸个 Alfred 插件「b言b语」" />
+            
+                <id>https://immmmm.com/ios14-transparent-widget-by-shortcuts/</id>
+            
+            
+            <published>2020-10-06T16:27:30+08:00</published>
+            <updated>2020-10-06T16:27:30+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>全“透明”占坑图！利用自带的「快捷指令」和「Days Matter」自定义小挂件实现！</p>
+<h3 id="快捷指令">快捷指令</h3>
+<p><a href="https://www.icloud.com/shortcuts/ec8f5137ddc445789481c604cf7396ce">透明小组件（大）</a>、<a href="https://www.icloud.com/shortcuts/68e1c0da26fd498ca310a3fd87d2478b">透明小组件（中）</a>、<a href="https://www.icloud.com/shortcuts/905ac2c54c9149fa9ac5220c63e1829d">透明小组件（小）</a></p>
+<p>其实小组件就3个size，2x2、2x4、4x4，也就是小有6个、中有3个、大有2个位置。</p>
+<h3 id="使用步骤">使用步骤：</h3>
+<p>1.长按桌面滑到最右，截个只有背景的图；</p>
+<p>2.安装好快捷指令，运行生成切割图；</p>
+<p>3.到「Days Matter」里新建小组件，选择对应位置背景。</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -181,48 +224,6 @@
             
             <content type="html"><![CDATA[<p>来源：<a href="https://v2ex.com/t/684405">https://v2ex.com/t/684405</a>，由 @c7in7 搬运到奶牛：<a href="https://cowtransfer.com/s/49630b1a98a84c">https://cowtransfer.com/s/49630b1a98a84c</a>，下载 <code>Appearance Dynamic.heic</code> 之后丢入 <code>/Library/Desktop Pictures</code> ，选择动态背景，静待晚上效果。</p>
 ]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8" term="%E6%97%A5%E5%B8%B8" label="日常" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[荒野乱斗，其乐无穷]]></title>
-            <link href="https://immmmm.com/brawl-stars-tx/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/nintendo-switch-tx/" rel="related" type="text/html" title="败入国行 Nintendo Switch" />
-                <link href="https://immmmm.com/dont-forget-smile/" rel="related" type="text/html" title="你信什么" />
-                <link href="https://immmmm.com/waiting-for-spring/" rel="related" type="text/html" title="春" />
-                <link href="https://immmmm.com/happy-birthday-2020/" rel="related" type="text/html" title="庆生" />
-                <link href="https://immmmm.com/hi-2020/" rel="related" type="text/html" title="二〇二〇，你好" />
-            
-                <id>https://immmmm.com/brawl-stars-tx/</id>
-            
-            
-            <published>2020-06-14T10:42:22+08:00</published>
-            <updated>2020-06-14T10:42:22+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>超长假期中，《荒野乱斗》国际版肝到1W+，但这网络让人窝火！特别是连输两盘，第三盘卡网络，砸手机的心都有！前几天腾X代理的国内版顺利上线，一个字：肝！再一个字：氪！</p>
-<figure>
-    <img src="https://lmm.elizen.me/images/2020/06/hyld-1.PNG"/></figure>
-
-<p><photos><img loading='lazy' src="https://lmm.elizen.me/images/2020/06/hyld-2.PNG" alt="hyld-2.PNG"  /><img loading='lazy' src="https://lmm.elizen.me/images/2020/06/hyld-3.PNG" alt="hyld-3.PNG"  /><img loading='lazy' src="https://lmm.elizen.me/images/2020/06/hyld-4.PNG" alt="hyld-4.PNG"  /></photos></p>
-<p>一开始没氪，肝到2000多分，难起来，一氪，开箱开到嗨。继续肝不同英雄，刚上5000分，目前已经有点无聊……</p>
-<p>但玩习惯快节奏在线对战游戏，再玩单机游戏包括 Switch 也是兴趣索然，时间宝贵，压力山大。所以，太累了，赶紧肝几盘“休息、休息”～</p>]]></content>
             
                  
                     

@@ -6,10 +6,22 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 05 Oct 2020 18:30:49 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 16:27:30 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>利用「快捷指令」创建“透明”小组件</title>
+      <link>https://immmmm.com/ios14-transparent-widget-by-shortcuts/</link>
+      <pubDate>Tue, 06 Oct 2020 16:27:30 +0800</pubDate>
+      
+      <guid>https://immmmm.com/ios14-transparent-widget-by-shortcuts/</guid>
+      <description>&lt;p&gt;全“透明”占坑图！利用自带的「快捷指令」和「Days Matter」自定义小挂件实现！&lt;/p&gt;
+&lt;h3 id=&#34;快捷指令&#34;&gt;快捷指令&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.icloud.com/shortcuts/ec8f5137ddc445789481c604cf7396ce&#34;&gt;透明小组件（大）&lt;/a&gt;、&lt;a href=&#34;https://www.icloud.com/shortcuts/68e1c0da26fd498ca310a3fd87d2478b&#34;&gt;透明小组件（中）&lt;/a&gt;、&lt;a href=&#34;https://www.icloud.com/shortcuts/905ac2c54c9149fa9ac5220c63e1829d&#34;&gt;透明小组件（小）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;其实小组件就3个size，2x2、2x4、4x4，也就是小有6个、中有3个、大有2个位置。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>初体验 Scriptable 小挂件</title>
@@ -58,21 +70,6 @@
 
 &lt;h3 id=&#34;食用步骤&#34;&gt;食用步骤&lt;/h3&gt;
 &lt;p&gt;1.按照原作者 &lt;a href=&#34;https://sspai.com/post/60024&#34;&gt;@daibor&lt;/a&gt; 的教程在 Leancloud 建好应用，进入设置&amp;ndash;应用 Keys，留存 &lt;code&gt;AppID&lt;/code&gt;、&lt;code&gt;MasterKey&lt;/code&gt;、&lt;code&gt;Request 域名&lt;/code&gt;；&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>撸个 Alfred 插件「b言b语」</title>
-      <link>https://immmmm.com/bb-by-alfred/</link>
-      <pubDate>Fri, 01 May 2020 11:15:30 +0800</pubDate>
-      
-      <guid>https://immmmm.com/bb-by-alfred/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#39;lazy&#39; src=&#34;https://lmm.elizen.me/images/2020/05/bb-1.png&#34; alt=&#34;bb-1&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;虽说 iOS 的快捷方式足够优雅，但还是想着 Mac 上也更舒坦地随意发布。VSCode 的 &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=humao.rest-client&#34;&gt;REST Client&lt;/a&gt; 插件能用但没有一键直达，看到 &lt;a href=&#34;https://xwlearn.com/howto-graciously-bb-in-mac/&#34;&gt;@xwlearn&lt;/a&gt; 分享的 Python 代码，立马想到神器 「Alfred」！&lt;/p&gt;
-&lt;h3 id=&#34;插件撸起&#34;&gt;插件撸起&lt;/h3&gt;
-&lt;p&gt;&lt;img loading=&#39;lazy&#39; src=&#34;https://lmm.elizen.me/images/2020/05/bb-3.png&#34; alt=&#34;bb-3&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;安装依赖：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo pip install urllib3
-&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

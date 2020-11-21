@@ -6,10 +6,21 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 06 Oct 2020 16:27:30 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2020 21:36:33 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>启用 Twikoo 评论系统</title>
+      <link>https://immmmm.com/hello-twikoo-comment/</link>
+      <pubDate>Sat, 21 Nov 2020 21:36:33 +0800</pubDate>
+      
+      <guid>https://immmmm.com/hello-twikoo-comment/</guid>
+      <description>&lt;p&gt;感谢 &lt;a href=&#34;https://www.imaegoo.com/&#34;&gt;@iMaeGoo&lt;/a&gt; 大神用爱发电，顺利启用 Twikoo 评论系统，并完美迁移 Valine 评论数据。&lt;/p&gt;
+&lt;p&gt;下午在 &lt;a href=&#34;https://eallion.com/&#34;&gt;@大大的小蜗牛 &lt;/a&gt; 博客看到评论系统右下角竟然不是 Valine 哦，赫然显示这 Twikoo，啥？！&lt;/p&gt;
+&lt;p&gt;原来是基于腾讯云开发的评论系统，换！&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>利用「快捷指令」创建“透明”小组件</title>
@@ -57,20 +68,6 @@
       <description>&lt;p&gt;新版本更新，感谢 &lt;a href=&#34;https://github.com/bolabola/stackf&#34;&gt;@ooiii&lt;/a&gt; 改进，所有内容（导航和板块）的增删排序直接在 &lt;code&gt;links.toml&lt;/code&gt; 内完成！ 👍&lt;/p&gt;
 &lt;p&gt;在线预览：&lt;a href=&#34;https://edui.fun/&#34;&gt;https://edui.fun/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;仓库下载：&lt;a href=&#34;https://github.com/lmm214/hugo-theme-webstack&#34;&gt;https://github.com/lmm214/hugo-theme-webstack&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>「哔哔点啥」微信公众号</title>
-      <link>https://immmmm.com/bb-by-wechat/</link>
-      <pubDate>Sun, 10 May 2020 20:22:49 +0800</pubDate>
-      
-      <guid>https://immmmm.com/bb-by-wechat/</guid>
-      <description>&lt;p&gt;看到 &lt;a href=&#34;https://bearye.cn/archives/488&#34;&gt;@熊野&lt;/a&gt; 说可以用「微信公众号」发哔哔，还基于腾讯云函数，也能部署到 Leancloud ，立马 &lt;del&gt;勾搭&lt;/del&gt; 加上微信好友。熊大神连夜折腾匹配一夜一天，远程手把手指导部署，整个过程：失败，等，失败，等等，失败，等等等等……成啦！太、太神奇！&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://lmm.elizen.me/images/2020/05/bbds.png&#34;/&gt;&lt;figcaption&gt;「哔哔点啥」微信公众号&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;食用步骤&#34;&gt;食用步骤&lt;/h3&gt;
-&lt;p&gt;1.按照原作者 &lt;a href=&#34;https://sspai.com/post/60024&#34;&gt;@daibor&lt;/a&gt; 的教程在 Leancloud 建好应用，进入设置&amp;ndash;应用 Keys，留存 &lt;code&gt;AppID&lt;/code&gt;、&lt;code&gt;MasterKey&lt;/code&gt;、&lt;code&gt;Request 域名&lt;/code&gt;；&lt;/p&gt;</description>
     </item>
     
   </channel>

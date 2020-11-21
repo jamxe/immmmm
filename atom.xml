@@ -7,12 +7,59 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-11-21T13:14:05+00:00</updated>
+    <updated>2020-11-21T14:01:45+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[启用 Twikoo 评论系统]]></title>
+            <link href="https://immmmm.com/hello-twikoo-comment/" rel="alternate" type="text/html" />
+            
+                <link href="https://immmmm.com/ios14-transparent-widget-by-shortcuts/" rel="related" type="text/html" title="利用「快捷指令」创建“透明”小组件" />
+                <link href="https://immmmm.com/scriptable-widget/" rel="related" type="text/html" title="初体验 Scriptable 小挂件" />
+                <link href="https://immmmm.com/telecomadmin-znhg600/" rel="related" type="text/html" title="光猫 ZNHG600 获取超级密码" />
+                <link href="https://immmmm.com/hugo-theme-webstack/" rel="related" type="text/html" title="Hugo Theme Webstack" />
+                <link href="https://immmmm.com/bb-by-wechat/" rel="related" type="text/html" title="「哔哔点啥」微信公众号" />
+            
+                <id>https://immmmm.com/hello-twikoo-comment/</id>
+            
+            
+            <published>2020-11-21T21:36:33+08:00</published>
+            <updated>2020-11-21T21:36:33+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>感谢 <a href="https://www.imaegoo.com/">@iMaeGoo</a> 大神用爱发电，顺利启用 Twikoo 评论系统，并完美迁移 Valine 评论数据。</p>
+<p>下午在 <a href="https://eallion.com/">@大大的小蜗牛 </a> 博客看到评论系统右下角竟然不是 Valine 哦，赫然显示这 Twikoo，啥？！</p>
+<p>原来是基于腾讯云开发的评论系统，换！</p>
+<p>一顿操作，主要时间花在了匹配主题的暗黑样式。效果对比：</p>
+<figure>
+    <img src="https://lmm.elizen.me/images/2020/11/Twikoo-1.png"/><figcaption><a href="https://lmm.elizen.me/images/2020/11/Twikoo-2.png">https://lmm.elizen.me/images/2020/11/Twikoo-2.png</a></figcaption></figure>
+
+<p>相关教程：</p>
+<ul>
+<li>Twikoo 中文文档：<a href="https://twikoo.js.org/">https://twikoo.js.org/</a></li>
+<li>Valine 到 Twikoo 迁移脚本：<a href="https://github.com/imaegoo/twikoo-import-tools">https://github.com/imaegoo/twikoo-import-tools</a></li>
+</ul>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -207,47 +254,6 @@
                             
                              
                                 <category scheme="https://immmmm.com/tags/%E6%97%A5%E5%B8%B8" term="%E6%97%A5%E5%B8%B8" label="日常" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[光猫 ZNHG600 获取超级密码]]></title>
-            <link href="https://immmmm.com/telecomadmin-znhg600/" rel="alternate" type="text/html" />
-            
-                <link href="https://immmmm.com/hugo-theme-webstack/" rel="related" type="text/html" title="Hugo Theme Webstack" />
-                <link href="https://immmmm.com/bb-by-wechat/" rel="related" type="text/html" title="「哔哔点啥」微信公众号" />
-                <link href="https://immmmm.com/bb-by-alfred/" rel="related" type="text/html" title="撸个 Alfred 插件「b言b语」" />
-                <link href="https://immmmm.com/vs-code-server/" rel="related" type="text/html" title="云 VSCode 云编码" />
-                <link href="https://immmmm.com/just-bb-by-leancloud/" rel="related" type="text/html" title="废话胶囊，值得拥有" />
-            
-                <id>https://immmmm.com/telecomadmin-znhg600/</id>
-            
-            
-            <published>2020-07-14T19:47:09+08:00</published>
-            <updated>2020-07-14T19:47:09+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>偶接10000号呼叫，交200换光猫，免费提速 100M &ndash;&gt; 300M ，续费费用不变，依然是6年前的套餐 1998元/三年。下午师傅上门安装“水”的不行，追问得知他们也是昨天刚拿到的。</p>
-<p>吉比特 ZNHG600，自带了 2.4G Wifi，果断禁用，直接让师傅在光猫上拨号，路由器直接获取IP即可。服役六年的华为 HG8240 光荣退休！</p>
-<p>想着之前是有个超级密码什么的，果然有，以下内容来自网络：</p>
-<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/07/ZNHG600-1.png" alt="ZNHG600-1"  /></p>
-<p>浏览器访问 http://192.168.1.1 底下 「快速装维入口」，左上角「返回登录页面」；或者直接访问 http://192.168.1.1:8080/login.cgi，开启谷歌浏览器「开发者工具&ndash;Network」，随便输入个密码，点击 <code>telecomStatus.cgi</code> 这条看到 <code>Enabled/telecomadmin12345678</code></p>
-<p><code>telecomadmin12345678</code> 就是超级密码，用户名是 <code>telecomadmin</code>，登录随心飞～</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
                             
                         
                     

@@ -6,10 +6,21 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 21 Nov 2020 21:36:33 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2020 22:39:55 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>请在 Bi... 声后留言</title>
+      <link>https://immmmm.com/bb-by-taio-app/</link>
+      <pubDate>Wed, 25 Nov 2020 22:39:55 +0800</pubDate>
+      
+      <guid>https://immmmm.com/bb-by-taio-app/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.taio.app/#/cn/&#34;&gt;Taio&lt;/a&gt; TF 许久许久终于正式上线咯，虽然钟大说是免费公测，但功能还是足够诚意的。这不，试了试内置的动作脚本，做了个动作发「哔哔」！&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#39;lazy&#39; src=&#34;https://lmm.elizen.me/images/2020/11/bi.png&#34; alt=&#34;bi&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;仓库下载并导入（AirDrop）：&lt;a href=&#34;https://github.com/lmm214/diybug/raw/main/Bi.taioactions&#34;&gt;Bi.taioactions&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>启用 Twikoo 评论系统</title>
@@ -57,17 +68,6 @@
       <guid>https://immmmm.com/telecomadmin-znhg600/</guid>
       <description>&lt;p&gt;偶接10000号呼叫，交200换光猫，免费提速 100M &amp;ndash;&amp;gt; 300M ，续费费用不变，依然是6年前的套餐 1998元/三年。下午师傅上门安装“水”的不行，追问得知他们也是昨天刚拿到的。&lt;/p&gt;
 &lt;p&gt;吉比特 ZNHG600，自带了 2.4G Wifi，果断禁用，直接让师傅在光猫上拨号，路由器直接获取IP即可。服役六年的华为 HG8240 光荣退休！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo Theme Webstack</title>
-      <link>https://immmmm.com/hugo-theme-webstack/</link>
-      <pubDate>Wed, 10 Jun 2020 09:15:25 +0800</pubDate>
-      
-      <guid>https://immmmm.com/hugo-theme-webstack/</guid>
-      <description>&lt;p&gt;新版本更新，感谢 &lt;a href=&#34;https://github.com/bolabola/stackf&#34;&gt;@ooiii&lt;/a&gt; 改进，所有内容（导航和板块）的增删排序直接在 &lt;code&gt;links.toml&lt;/code&gt; 内完成！ 👍&lt;/p&gt;
-&lt;p&gt;在线预览：&lt;a href=&#34;https://edui.fun/&#34;&gt;https://edui.fun/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;仓库下载：&lt;a href=&#34;https://github.com/lmm214/hugo-theme-webstack&#34;&gt;https://github.com/lmm214/hugo-theme-webstack&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

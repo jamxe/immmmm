@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+    <generator uri="https://gohugo.io/" version="0.67.1">Hugo</generator><title type="html"><![CDATA[木木木木木]]></title>
+    
+    
+    
+            <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
+            <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
+            <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
+    <updated>2020-11-29T00:36:38+00:00</updated>
+    
+    
+    
+    
+        <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[请在 Bi... 声后留言]]></title>
+            <link href="https://immmmm.com/bb-by-taio-app/" rel="alternate" type="text/html" />
+            
+                <id>https://immmmm.com/bb-by-taio-app/</id>
+            
+            
+            <published>2020-11-25T22:39:55+08:00</published>
+            <updated>2020-11-25T22:39:55+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p><a href="https://docs.taio.app/#/cn/">Taio</a> TF 许久许久终于正式上线咯，虽然钟大说是免费公测，但功能还是足够诚意的。这不，试了试内置的动作脚本，做了个动作发「哔哔」！</p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/11/bi.png" alt="bi"  /></p>
+<p>仓库下载并导入（AirDrop）：<a href="https://github.com/lmm214/diybug/raw/main/Bi.taioactions">Bi.taioactions</a></p>
+<p>其实核心代码也就一段 JavaScript ，但做着做着就用了一些内置的一些模板，因为准备分享出来也就优化了流程。</p>
+<p>「Bi.taioactions」 使用指北：若剪切板为空直接进入码字界面，反之则弹窗询问是否直接发布剪切板内容，还是重新输入。</p>
+<figure>
+    <img src="https://lmm.elizen.me/images/2020/11/Taio-1.jpeg" width="50%"/><img src="https://lmm.elizen.me/images/2020/11/Taio-2.jpeg" width="50%" />
+    <figcaption>Taio 使用指北</figcaption>
+  </figure>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[启用 Twikoo 评论系统]]></title>
+            <link href="https://immmmm.com/hello-twikoo-comment/" rel="alternate" type="text/html" />
+            
+                <id>https://immmmm.com/hello-twikoo-comment/</id>
+            
+            
+            <published>2020-11-21T21:36:33+08:00</published>
+            <updated>2020-11-21T21:36:33+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>感谢 <a href="https://www.imaegoo.com/">@iMaeGoo</a> 大神用爱发电，顺利启用 Twikoo 评论系统，并完美迁移 Valine 评论数据。</p>
+<p>下午在 <a href="https://eallion.com/">@大大的小蜗牛 </a> 博客看到评论系统右下角竟然不是 Valine 哦，赫然显示这 Twikoo，啥？！</p>
+<p>原来是基于腾讯云开发的评论系统，换！</p>
+<h3 id="相关教程">相关教程：</h3>
+<ul>
+<li>Twikoo 中文文档：<a href="https://twikoo.js.org/">https://twikoo.js.org/</a></li>
+<li>Valine 到 Twikoo 迁移脚本：<a href="https://github.com/imaegoo/twikoo-import-tools">https://github.com/imaegoo/twikoo-import-tools</a></li>
+<li>Typecho 到 Twikoo 迁移脚本：<a href="https://github.com/Android-KitKat/twikoo-import-tools-typecho">https://github.com/Android-KitKat/twikoo-import-tools-typecho</a></li>
+</ul>
+<h3 id="优化新评论邮件通知">优化新评论邮件通知</h3>
+<p>以下内容基于 0.2.3 版本,进入云函数 <code>twikoo -- index.js</code></p>
+<p><code>if (config.SC_SENDKEY) return</code>，开启了微信通知，则停用“新评论邮件通知”。</p>
+<p>相关位置如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 博主通知
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">noticeMaster</span> (<span style="color:#a6e22e">comment</span>) {
+  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">transporter</span>) <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">await</span> <span style="color:#a6e22e">initMailer</span>()) <span style="color:#66d9ef">return</span>
+  <span style="color:#75715e">//若设置了微信通知，则不发邮件
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">SC_SENDKEY</span>) <span style="color:#66d9ef">return</span>
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">BLOGGER_EMAIL</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">comment</span>.<span style="color:#a6e22e">mail</span>) <span style="color:#66d9ef">return</span>
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">SITE_NAME</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">SITE_NAME</span>
+</code></pre></div><h3 id="分享邮件通知模板html">分享邮件通知模板HTMl</h3>
+<figure>
+    <img src="https://lmm.elizen.me/images/2020/11/twikooC1.png" width="50%"/><img src="https://lmm.elizen.me/images/2020/11/twikooC2.png" width="50%" />
+    <figcaption>评论回复通知模板</figcaption>
+  </figure>
+<p>建议等后续版本更新，改的话也是进云函数 <code>twikoo -- index.js</code> 内替换。</p>
+<p>// 博主通知模板</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;line-height:24px;font-size:13px;&#34;</span>&gt;     &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#3eae5f&#34;</span>&gt; ${NICK} &lt;/<span style="color:#f92672">span</span>&gt; 说：&lt;/<span style="color:#f92672">p</span>&gt;     &lt;<span style="color:#f92672">p</span> &gt;${COMMENT}&lt;/<span style="color:#f92672">p</span>&gt;     &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;font-size:12px;line-height:12px;&#34;</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#b3b3b1;text-decoration:none;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${POST_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;${POST_URL}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt; &lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>// 评论回复通知模板</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;padding:2em 10%;color:#b3b3b1;width:420px;margin:0 auto;font-size:14px&#34;</span><span style="color:#960050;background-color:#1e0010">;</span>&gt; 	&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-align:center;&#34;</span>&gt;Hi，&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#3eae5f&#34;</span>&gt; ${PARENT_NICK} &lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt; 	&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;font-size:13px;text-align:center;&#34;</span>&gt;有人回复了您在 &lt;<span style="color:#f92672">strong</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;font-weight:bold&#34;</span>&gt; ${SITE_NAME} &lt;/<span style="color:#f92672">strong</span>&gt; 上的评论&lt;/<span style="color:#f92672">p</span>&gt; 	&lt;<span style="color:#f92672">hr</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:64px;border:0;border-bottom:1px solid #e5e5e5;margin:24px auto;&#34;</span>&gt;     &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#333;overflow:hidden;&#34;</span>&gt;     	&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display:inline-block;float:left;&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#3eae5f;font-weight:bold&#34;</span>&gt; 您 &lt;/<span style="color:#f92672">span</span>&gt;&lt;<span style="color:#f92672">span</span>&gt;说：&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;     	${PARENT_COMMENT}     &lt;/<span style="color:#f92672">div</span>&gt;     &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#333;overflow:hidden;&#34;</span>&gt;      	&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display:inline-block;float:left;&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#3eae5f;font-weight:bold&#34;</span>&gt; ${NICK} &lt;/<span style="color:#f92672">span</span>&gt;&lt;<span style="color:#f92672">span</span>&gt;说：&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;      	${COMMENT}     &lt;/<span style="color:#f92672">div</span>&gt;     &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:#ffffff;text-decoration:none;display:inline-block;min-height:28px;line-height:28px;padding:0 13px;outline:0;background:#3eae5f;font-size:13px;text-align:center;font-weight:400;border:0;border-radius:999em&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${POST_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;点击查看&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;     &lt;<span style="color:#f92672">hr</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:64px;border:0;border-bottom:1px solid #e5e5e5;margin:24px auto;&#34;</span>&gt;     &lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display:block;color:#b3b3b1;text-decoration:none;text-align:center;&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${SITE_URL}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt; ${SITE_NAME} &lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt; &lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><h3 id="评论样式自定义">评论样式自定义</h3>
+<p>主要匹配了暗黑样式和评论管理页面改为全屏，效果对比：</p>
+<figure>
+    <img src="https://lmm.elizen.me/images/2020/11/Twikoo-1.png" width="50%"/><img src="https://lmm.elizen.me/images/2020/11/Twikoo-2.png" width="50%" />
+    <figcaption>Twikoo</figcaption>
+  </figure>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">tk-tag</span>{<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#4a4b50</span> <span style="color:#75715e">!important</span>;<span style="color:#66d9ef">border-color</span>:<span style="color:#ae81ff">#434a56</span> <span style="color:#75715e">!important</span>;<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span> <span style="color:#75715e">!important</span>;<span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span> <span style="color:#75715e">!important</span>;}
+.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">tk-expand</span>{<span style="color:#66d9ef">background</span>:linear-gradient(rgba(<span style="color:#ae81ff">38</span>,<span style="color:#ae81ff">42</span>,<span style="color:#ae81ff">56</span>,<span style="color:#ae81ff">0</span>),<span style="color:#ae81ff">#3b3d42</span>) <span style="color:#75715e">!important</span>;}
+.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">el-button</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">el-input__inner</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">el-textarea__inner</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">tk-tag-green</span>{<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">silver</span> <span style="color:#75715e">!important</span>;<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#252627</span> <span style="color:#75715e">!important</span>;<span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#4a4b50</span> <span style="color:#75715e">!important</span>;}
+.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">tk-meta-input</span> .<span style="color:#a6e22e">el-input</span> .<span style="color:#a6e22e">el-input-group__prepend</span>{<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">silver</span> <span style="color:#75715e">!important</span>;<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#4a4b50</span> <span style="color:#75715e">!important</span>;<span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#4a4b50</span> <span style="color:#75715e">!important</span>;}
+.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">el-button--primary</span>.<span style="color:#a6e22e">is-disabled</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">el-button--primary</span>.<span style="color:#a6e22e">is-disabled</span>:<span style="color:#a6e22e">active</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">el-button--primary</span>.<span style="color:#a6e22e">is-disabled</span>:<span style="color:#a6e22e">focus</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">el-button--primary</span>.<span style="color:#a6e22e">is-disabled</span>:<span style="color:#a6e22e">hover</span>{<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#FFF</span> <span style="color:#75715e">!important</span>;<span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#252627</span> <span style="color:#75715e">!important</span>;<span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#4a4b50</span> <span style="color:#75715e">!important</span>;}
+.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">el-button</span>.<span style="color:#a6e22e">tk-preview</span>{<span style="color:#66d9ef">border</span>:<span style="color:#66d9ef">none</span>;}
+.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">tk-action-icon</span> <span style="color:#f92672">svg</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">tk-comments-title</span> .<span style="color:#a6e22e">tk-icon</span> <span style="color:#f92672">svg</span>{fill: <span style="color:#ae81ff">#ccc</span> <span style="color:#75715e">!important</span>;}
+.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">tk-action-count</span>{<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#ccc</span> <span style="color:#75715e">!important</span>;}
+.<span style="color:#a6e22e">tk-extras</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">tk-row</span>.<span style="color:#a6e22e">actions</span> .<span style="color:#a6e22e">tk-action-icon</span><span style="color:#f92672">,</span>.<span style="color:#a6e22e">tk-preview</span>{<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span> <span style="color:#75715e">!important</span>;}
+.<span style="color:#a6e22e">tk-content</span> <span style="color:#f92672">p</span>{<span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;}
+.<span style="color:#a6e22e">tk-admin</span>{<span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">fixed</span> <span style="color:#75715e">!important</span>;}
+.<span style="color:#a6e22e">tk-admin-comment</span> <span style="color:#f92672">table</span> <span style="color:#f92672">col</span><span style="color:#f92672">[</span><span style="color:#f92672">name</span><span style="color:#f92672">=</span><span style="color:#f92672">el-table_1_column_1</span><span style="color:#f92672">]</span>{<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">5</span><span style="color:#66d9ef">%</span>;}
+.<span style="color:#a6e22e">tk-admin-comment</span> <span style="color:#f92672">table</span> <span style="color:#f92672">col</span><span style="color:#f92672">[</span><span style="color:#f92672">name</span><span style="color:#f92672">=</span><span style="color:#f92672">el-table_1_column_2</span><span style="color:#f92672">],</span>.<span style="color:#a6e22e">tk-admin-comment</span> <span style="color:#f92672">table</span> <span style="color:#f92672">col</span><span style="color:#f92672">[</span><span style="color:#f92672">name</span><span style="color:#f92672">=</span><span style="color:#f92672">el-table_1_column_3</span><span style="color:#f92672">]</span>{<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">10</span><span style="color:#66d9ef">%</span>;}
+.<span style="color:#a6e22e">tk-admin-comment</span> <span style="color:#f92672">table</span> <span style="color:#f92672">col</span><span style="color:#f92672">[</span><span style="color:#f92672">name</span><span style="color:#f92672">=</span><span style="color:#f92672">el-table_1_column_4</span><span style="color:#f92672">]</span>{<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">55</span><span style="color:#66d9ef">%</span>;}
+.<span style="color:#a6e22e">tk-admin-comment</span> <span style="color:#f92672">table</span> <span style="color:#f92672">col</span><span style="color:#f92672">[</span><span style="color:#f92672">name</span><span style="color:#f92672">=</span><span style="color:#f92672">el-table_1_column_5</span><span style="color:#f92672">]</span>{<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">15</span><span style="color:#66d9ef">%</span>;}
+</code></pre></div>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[2020-10-18]]></title>
+            <link href="https://immmmm.com/2020-10-18/" rel="alternate" type="text/html" />
+            
+                <id>https://immmmm.com/2020-10-18/</id>
+            
+            
+            <published>2020-10-18T17:31:06+08:00</published>
+            <updated>2020-10-18T17:31:06+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>右下智齿，取之！</p>
+<p>前车之鉴：若智齿是横着长的，还是趁早拔，别等它把前一颗大牙顶穿了再去！</p>
+<p>但也没想象中那么可怕，那点痛还是可以忍受，磨牙钻头的声音也柔和了不少。自己是选择了家旁边的连锁口腔，整个就诊体验良好，医生也比较耐心。其实，真去看了那就那样！</p>
+<p>“吃嘛嘛香”绝对的人生第一大幸事！</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[利用「快捷指令」创建“透明”小组件]]></title>
+            <link href="https://immmmm.com/ios14-transparent-widget-by-shortcuts/" rel="alternate" type="text/html" />
+            
+                <id>https://immmmm.com/ios14-transparent-widget-by-shortcuts/</id>
+            
+            
+            <published>2020-10-06T16:27:30+08:00</published>
+            <updated>2020-10-06T16:27:30+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>全“透明”占坑图！</p>
+<h3 id="快捷指令用来切图">快捷指令：用来切图</h3>
+<p>一个快捷指令搞定：「透明小组件」<a href="https://www.icloud.com/shortcuts/59062aac9ee241f0b14c9190b9ed09f5">(这里)</a></p>
+<p>其实小组件就3个size，2x2、2x4、4x4，也就是小有6个不同位置、中有3个、大有2个，相对应做了下面3个快捷指令，运行后生成对应位置的背景图片，如小的就把背景图切成6张小图，分别是：上左、上右、中左、中右、下左、下右。</p>
+<p>特别感谢 <a href="https://sharecuts.cn/shortcut/8370">@小悟空哥</a> 和 <a href="https://github.com/mzeryck/Transparent-Scriptable-Widget">@mzeryck</a> 分享的「快捷指令」和「Scriptable」代码。</p>
+<h3 id="使用步骤">使用步骤：</h3>
+<p>准备：截个只有背景的图（编辑桌面滑到最右）；运行「快捷指令」切图。</p>
+<p>添加小组件：</p>
+<ul>
+<li>使用 <strong>「Days Matter」</strong> 创建小组件；</li>
+<li>使用 <strong>「Scriptable」</strong> 创建小组件；</li>
+</ul>
+<h3 id="scriptable-代码分享">Scriptable 代码分享</h3>
+<p><a href="https://github.com/lmm214/Scriptables">https://github.com/lmm214/Scriptables</a></p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/10/touming.jpg" alt="touming"  /></p>
+<p><code>TouMing.js</code> 第一次运行会要求选择背景图片，多个位置可通过 <strong>复制、重命名</strong> 再选择。</p>
+<p><code>TouMingWttrInLine</code> 内置了 Wttr.In 天气数据。</p>
+<p><code>TouMingWeiBo</code> 基于 <a href="https://github.com/evilbutcher/Scriptables">@evilbutcher</a> 修改。</p>
+<h3 id="一句啰嗦">一句啰嗦</h3>
+<p>刚发生所有小组件<strong>字体</strong>发虚，点击无法进入对应 APP，重启解决。</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[初体验 Scriptable 小挂件]]></title>
+            <link href="https://immmmm.com/scriptable-widget/" rel="alternate" type="text/html" />
+            
+                <id>https://immmmm.com/scriptable-widget/</id>
+            
+            
+            <published>2020-10-05T18:30:49+08:00</published>
+            <updated>2020-10-05T18:30:49+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>图中代码见：<a href="https://github.com/lmm214/Transparent-Scriptable-Widget/blob/master/mz_transparent_widget.js">mz_transparent_widget.js</a></p>
+<p>另外，中文化的仓库找到这两个：</p>
+<ul>
+<li><a href="https://github.com/evilbutcher/Scriptables">https://github.com/evilbutcher/Scriptables</a></li>
+<li><a href="https://github.com/GideonSenku/Scriptable">https://github.com/GideonSenku/Scriptable</a></li>
+</ul>
+<p>还有这个：</p>
+<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/10/scriptable.jpg" alt="scriptable"  /></p>
+<p><a href="https://github.com/byenow/scriptable-widget/blob/master/index.js">byenow/scriptable-widget</a></p>
+<h3 id="折腾流程">折腾流程</h3>
+<p>1.安装 <code>Scriptable</code> （<a href="https://testflight.apple.com/join/uN1vTqxk">TestFlight版</a>）</p>
+<p>2.下载 <code>Env.js</code> （<a href="https://github.com/evilbutcher/Scriptables/blob/master/Env.js">这里</a>）</p>
+<p>3.下载想要使用的 <code>xxx.js</code> 文件，直接 Airdrop 导入 Scriptable 。</p>
+<h3 id="啰嗦一句">啰嗦一句</h3>
+<p>三个Size放桌面依然鸡肋，且目测所有挂件都不是刚需，因为这货仅是个“延迟输出”，无功能交互。不如「快捷方式」丢桌面好使！</p>
+<p>继续期待：「Taio」</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+</feed>

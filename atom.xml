@@ -7,12 +7,43 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-12-03T13:44:51+00:00</updated>
+    <updated>2020-12-03T13:58:57+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[2020-12-03]]></title>
+            <link href="https://immmmm.com/2020-12-03/" rel="alternate" type="text/html" />
+            
+                <id>https://immmmm.com/2020-12-03/</id>
+            
+            
+            <published>2020-12-03T21:46:26+08:00</published>
+            <updated>2020-12-03T21:46:26+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>尝试戒了晚上的咖啡，周一抗住了，周二没有，周三没有，今天仍然没有，1:3失败！越来越觉得时间在加速，这不，没眨几眼，周五咯！</p>
+]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -198,51 +229,6 @@
 <p><code>TouMingWeiBo</code> 基于 <a href="https://github.com/evilbutcher/Scriptables">@evilbutcher</a> 修改。</p>
 <h3 id="一句啰嗦">一句啰嗦</h3>
 <p>刚发生所有小组件<strong>字体</strong>发虚，点击无法进入对应 APP，重启解决。</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[初体验 Scriptable 小挂件]]></title>
-            <link href="https://immmmm.com/scriptable-widget/" rel="alternate" type="text/html" />
-            
-                <id>https://immmmm.com/scriptable-widget/</id>
-            
-            
-            <published>2020-10-05T18:30:49+08:00</published>
-            <updated>2020-10-05T18:30:49+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>图中代码见：<a href="https://github.com/lmm214/Transparent-Scriptable-Widget/blob/master/mz_transparent_widget.js">mz_transparent_widget.js</a></p>
-<p>另外，中文化的仓库找到这两个：</p>
-<ul>
-<li><a href="https://github.com/evilbutcher/Scriptables">https://github.com/evilbutcher/Scriptables</a></li>
-<li><a href="https://github.com/GideonSenku/Scriptable">https://github.com/GideonSenku/Scriptable</a></li>
-</ul>
-<p>还有这个：</p>
-<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/10/scriptable.jpg" alt="scriptable"  /></p>
-<p><a href="https://github.com/byenow/scriptable-widget/blob/master/index.js">byenow/scriptable-widget</a></p>
-<h3 id="折腾流程">折腾流程</h3>
-<p>1.安装 <code>Scriptable</code> （<a href="https://testflight.apple.com/join/uN1vTqxk">TestFlight版</a>）</p>
-<p>2.下载 <code>Env.js</code> （<a href="https://github.com/evilbutcher/Scriptables/blob/master/Env.js">这里</a>）</p>
-<p>3.下载想要使用的 <code>xxx.js</code> 文件，直接 Airdrop 导入 Scriptable 。</p>
-<h3 id="啰嗦一句">啰嗦一句</h3>
-<p>三个Size放桌面依然鸡肋，且目测所有挂件都不是刚需，因为这货仅是个“延迟输出”，无功能交互。不如「快捷方式」丢桌面好使！</p>
-<p>继续期待：「Taio」</p>]]></content>
             
                  
                     

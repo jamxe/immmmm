@@ -258,7 +258,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
           $('#twikoo_count').text(counts)
           clearInterval(checkComments);
         }
-      }, 100);
+      }, 1000);
       if(window.location.hash){
         var checkExist = setInterval(function() {
           if ($(window.location.hash).length) {

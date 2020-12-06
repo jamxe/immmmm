@@ -273,7 +273,7 @@ feed(xmlns=&quot;http://www.w3.org/2005/Atom&quot;)
           $('#twikoo_count').text(counts)
           clearInterval(checkComments);
         }
-      }, 100);
+      }, 1000);
       if(window.location.hash){
         var checkExist = setInterval(function() {
           if ($(window.location.hash).length) {

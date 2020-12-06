@@ -164,7 +164,7 @@ Surface Pro 7 有4款型号，i3、i5、i7，也好选择，i3和i7不做考虑�
     <h2 class="post-title"><a href="https://immmmm.com/surface-pro-7/">Surface Pro 7 上手记</a></h2>
     <div class="post-meta">
       
-        <span class="post-date">2020-07-24 16:18:00</span><span> / <span id="twikoo_visitors">0</span> 阅读</span>
+        <span class="post-date">2020-07-24 16:18:00</span><span> / <span id="twikoo_visitors">0</span> 阅读</span><span> / <span id="twikoo_count">0 条评论</span></span>
         
           
         
@@ -259,14 +259,21 @@ Surface Pro 7 有4款型号，i3、i5、i7，也好选择，i3和i7不做考虑�
   <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
   <script type="text/javascript">
     jQuery(document).ready(function($){
-        if(window.location.hash){
-        	var checkExist = setInterval(function() {
-        		if ($(window.location.hash).length) {
-                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-                            clearInterval(checkExist);
-                        }
-                }, 100);
+      var checkComments = setInterval(function() {
+        var counts = $('.tk-comments-title').find('span').first().text();
+        if (counts) {
+          $('#twikoo_count').text(counts)
+          clearInterval(checkComments);
         }
+      }, 100);
+      if(window.location.hash){
+        var checkExist = setInterval(function() {
+          if ($(window.location.hash).length) {
+            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+            clearInterval(checkExist);
+          }
+        }, 100);
+      }
     });
   </script>
     

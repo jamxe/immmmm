@@ -167,7 +167,7 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
     <h2 class="post-title"><a href="https://immmmm.com/rsshub-docker/">RSSHub 部署笔记</a></h2>
     <div class="post-meta">
       
-        <span class="post-date">2020-03-21 00:00:00</span><span> / <span id="twikoo_visitors">0</span> 阅读</span>
+        <span class="post-date">2020-03-21 00:00:00</span><span> / <span id="twikoo_visitors">0</span> 阅读</span><span> / <span id="twikoo_count">0 条评论</span></span>
         
           
         
@@ -252,14 +252,21 @@ $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
   <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
   <script type="text/javascript">
     jQuery(document).ready(function($){
-        if(window.location.hash){
-        	var checkExist = setInterval(function() {
-        		if ($(window.location.hash).length) {
-                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-                            clearInterval(checkExist);
-                        }
-                }, 100);
+      var checkComments = setInterval(function() {
+        var counts = $('.tk-comments-title').find('span').first().text();
+        if (counts) {
+          $('#twikoo_count').text(counts)
+          clearInterval(checkComments);
         }
+      }, 100);
+      if(window.location.hash){
+        var checkExist = setInterval(function() {
+          if ($(window.location.hash).length) {
+            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+            clearInterval(checkExist);
+          }
+        }, 100);
+      }
     });
   </script>
     

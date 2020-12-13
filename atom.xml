@@ -7,12 +7,45 @@
             <link href="https://immmmm.com/atom.xml" rel="self" type="application/rss+xml" title="atom" />
             <link href="https://immmmm.com/" rel="alternate" type="text/html" title="HTML" />
             <link href="https://immmmm.com/index.json" rel="alternate" type="application/json" title="JSON" />
-    <updated>2020-12-09T09:41:20+00:00</updated>
+    <updated>2020-12-13T10:05:01+00:00</updated>
     
     
     
     
         <id>https://immmmm.com/atom.xml</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[Flomo | 浮墨笔记]]></title>
+            <link href="https://immmmm.com/flomoapp/" rel="alternate" type="text/html" />
+            
+                <id>https://immmmm.com/flomoapp/</id>
+            
+            
+            <published>2020-12-13T17:17:37+08:00</published>
+            <updated>2020-12-13T17:17:37+08:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>上专属邀请链接：<a href="https://flomoapp.com/register2/?Njk1NA">https://flomoapp.com/register2/?Njk1NA</a> (能互相得到几天Pro会员)</p>
+<p>用了一周 <strong>Flomo</strong> ，简单来说是一个「哔言哔语」的 <strong>正经版</strong> ，其特有的回顾功能有点新意，基于某个 TAG 或 批注某条信息，无压力积累碎片化的想法，说不准碎着碎着就成了深度思考！</p>
+<p>刚公布了 <a href="https://support.qq.com/products/297045/faqs-more/#classifyId=46026">API 发布内容</a> ，iOS 快捷方式、Mac 的自动化和Alfred ，让发布内容更直接！</p>
+<p>PS：其续费页面有个教育优惠，非常直接的说明不做验证自由选择，点个赞！</p>]]></content>
+            
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
+                            
+                        
+                    
+                
+            
+        </entry>
     
         
         <entry>
@@ -190,55 +223,6 @@
                             
                              
                                 <category scheme="https://immmmm.com/tags/%E8%AF%8D%E7%A9%B7" term="%E8%AF%8D%E7%A9%B7" label="词穷" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        
-        <entry>
-            <title type="html"><![CDATA[利用「快捷指令」创建“透明”小组件]]></title>
-            <link href="https://immmmm.com/ios14-transparent-widget-by-shortcuts/" rel="alternate" type="text/html" />
-            
-                <id>https://immmmm.com/ios14-transparent-widget-by-shortcuts/</id>
-            
-            
-            <published>2020-10-06T16:27:30+08:00</published>
-            <updated>2020-10-06T16:27:30+08:00</updated>
-            
-            
-            <content type="html"><![CDATA[<p>全“透明”占坑图！</p>
-<h3 id="快捷指令用来切图">快捷指令：用来切图</h3>
-<p>一个快捷指令搞定：「透明小组件」<a href="https://www.icloud.com/shortcuts/59062aac9ee241f0b14c9190b9ed09f5">(这里)</a></p>
-<p>其实小组件就3个size，2x2、2x4、4x4，也就是小有6个不同位置、中有3个、大有2个，相对应做了下面3个快捷指令，运行后生成对应位置的背景图片，如小的就把背景图切成6张小图，分别是：上左、上右、中左、中右、下左、下右。</p>
-<p>特别感谢 <a href="https://sharecuts.cn/shortcut/8370">@小悟空哥</a> 和 <a href="https://github.com/mzeryck/Transparent-Scriptable-Widget">@mzeryck</a> 分享的「快捷指令」和「Scriptable」代码。</p>
-<h3 id="使用步骤">使用步骤：</h3>
-<p>准备：截个只有背景的图（编辑桌面滑到最右）；运行「快捷指令」切图。</p>
-<p>添加小组件：</p>
-<ul>
-<li>使用 <strong>「Days Matter」</strong> 创建小组件；</li>
-<li>使用 <strong>「Scriptable」</strong> 创建小组件；</li>
-</ul>
-<h3 id="scriptable-代码分享">Scriptable 代码分享</h3>
-<p><a href="https://github.com/lmm214/Scriptables">https://github.com/lmm214/Scriptables</a></p>
-<p><img loading='lazy' src="https://lmm.elizen.me/images/2020/10/touming.jpg" alt="touming"  /></p>
-<p><code>TouMing.js</code> 第一次运行会要求选择背景图片，多个位置可通过 <strong>复制、重命名</strong> 再选择。</p>
-<p><code>TouMingWttrInLine</code> 内置了 Wttr.In 天气数据。</p>
-<p><code>TouMingWeiBo</code> 基于 <a href="https://github.com/evilbutcher/Scriptables">@evilbutcher</a> 修改。</p>
-<h3 id="一句啰嗦">一句啰嗦</h3>
-<p>刚发生所有小组件<strong>字体</strong>发虚，点击无法进入对应 APP，重启解决。</p>]]></content>
-            
-                 
-                    
-                 
-                    
-                         
-                        
-                            
-                             
-                                <category scheme="https://immmmm.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾" />
                             
                         
                     

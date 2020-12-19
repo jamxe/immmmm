@@ -6,10 +6,23 @@
     <description>Recent content in 折腾 on 木木木木木</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 13 Dec 2020 17:17:37 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Dec 2020 23:48:16 +0800</lastBuildDate>
     
 	<atom:link href="https://immmmm.com/posts/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>微信小程序评论开发踩坑记</title>
+      <link>https://immmmm.com/bugs-wx-minapp/</link>
+      <pubDate>Sat, 19 Dec 2020 23:48:16 +0800</pubDate>
+      
+      <guid>https://immmmm.com/bugs-wx-minapp/</guid>
+      <description>&lt;p&gt;容我吐会儿！！！🤮&lt;/p&gt;
+&lt;p&gt;冲动是魔鬼，就因看了 &lt;a href=&#34;https://www.ifanr.com/minapp/916787&#34;&gt;10 分钟教你实现一个朋友圈小程序&lt;/a&gt; ，SoGa！换下臃肿的 &lt;a href=&#34;https://github.com/yicm/NewWxComment&#34;&gt;NewWxComment&lt;/a&gt; ，直接原生知晓云纯收工评论开码！&lt;/p&gt;
+&lt;p&gt;刚干完了：评论、相对时间、评论分页、下拉加载、排序切换、点赞、回复、前端删除、订阅消息！除了提交新评论会重新拉取数据，其他前后端分别处理。最舒心的是评论回复的消息通知！&lt;/p&gt;
+&lt;h3 id=&#34;相对时间&#34;&gt;相对时间&lt;/h3&gt;
+&lt;p&gt;时间戳转 Date 及格式化，吐在不支持 &lt;code&gt;new Date()&lt;/code&gt; ，在 wxml 内调用 wxs 搞定！&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Flomo | 浮墨笔记</title>
@@ -54,20 +67,6 @@
 &lt;p&gt;一个快捷指令搞定：「透明小组件」&lt;a href=&#34;https://www.icloud.com/shortcuts/59062aac9ee241f0b14c9190b9ed09f5&#34;&gt;(这里)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;其实小组件就3个size，2x2、2x4、4x4，也就是小有6个不同位置、中有3个、大有2个，相对应做了下面3个快捷指令，运行后生成对应位置的背景图片，如小的就把背景图切成6张小图，分别是：上左、上右、中左、中右、下左、下右。&lt;/p&gt;
 &lt;p&gt;特别感谢 &lt;a href=&#34;https://sharecuts.cn/shortcut/8370&#34;&gt;@小悟空哥&lt;/a&gt; 和 &lt;a href=&#34;https://github.com/mzeryck/Transparent-Scriptable-Widget&#34;&gt;@mzeryck&lt;/a&gt; 分享的「快捷指令」和「Scriptable」代码。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>初体验 Scriptable 小挂件</title>
-      <link>https://immmmm.com/scriptable-widget/</link>
-      <pubDate>Mon, 05 Oct 2020 18:30:49 +0800</pubDate>
-      
-      <guid>https://immmmm.com/scriptable-widget/</guid>
-      <description>&lt;p&gt;图中代码见：&lt;a href=&#34;https://github.com/lmm214/Transparent-Scriptable-Widget/blob/master/mz_transparent_widget.js&#34;&gt;mz_transparent_widget.js&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;另外，中文化的仓库找到这两个：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/evilbutcher/Scriptables&#34;&gt;https://github.com/evilbutcher/Scriptables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/GideonSenku/Scriptable&#34;&gt;https://github.com/GideonSenku/Scriptable&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
     
   </channel>

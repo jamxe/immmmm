@@ -2,38 +2,38 @@
 <html lang="zh-CN">
   <head>
     
-      <title>Valine 懒加载 :: 木木木木木</title>
+      <title>微信小程序评论开发踩坑记 :: 木木木木木</title>
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="博客都已静态，想再提速，要么换国内云服，要么优化一个个 JS 加载。立竿见影办法是使用 CDN 来加载，或者前端延迟加载，甚者后端判断按需加载。
-在需要加载的一串 JS 里，找来找去，Valine 这货最强大 💪
-47.5KB --&amp;gt; https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js 75KB --&amp;gt; https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js 6.4KB --&amp;gt; https://js.fundebug.cn/fundebug.1.9.0.min.js 撸起袖子，月干！
+<meta name="description" content="容我吐会儿！！！🤮
+冲动是魔鬼，就因看了 10 分钟教你实现一个朋友圈小程序 ，SoGa！换下臃肿的 NewWxComment ，直接原生知晓云纯收工评论开码！
+刚干完了：评论、相对时间、评论分页、下拉加载、排序切换、点赞、回复、前端删除、订阅消息！除了提交新评论会重新拉取数据，其他前后端分别处理。最舒心的是评论回复的消息通知！
+相对时间 时间戳转 Date 及格式化，吐在不支持 new Date() ，在 wxml 内调用 wxs 搞定！
 "/>
 <meta name="keywords" content=""/>
 <meta name="referrer" content="never" />
-<link rel="canonical" href="https://immmmm.com/valine-getscript-load/" />
+<link rel="canonical" href="https://immmmm.com/bugs-wx-minapp/" />
 <link rel="stylesheet" href="https://immmmm.com/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:500&display=swap" media="print" onload="this.media='all'">
 <link rel="shortcut icon" href="https://immmmm.com/favicon.ico">
 
-<meta property="og:title" content="Valine 懒加载" />
-<meta property="og:description" content="博客都已静态，想再提速，要么换国内云服，要么优化一个个 JS 加载。立竿见影办法是使用 CDN 来加载，或者前端延迟加载，甚者后端判断按需加载。
-在需要加载的一串 JS 里，找来找去，Valine 这货最强大 💪
-47.5KB --&gt; https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js
-75KB   --&gt; https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js
-6.4KB  --&gt; https://js.fundebug.cn/fundebug.1.9.0.min.js
-撸起袖子，月干！" />
+<meta property="og:title" content="微信小程序评论开发踩坑记" />
+<meta property="og:description" content="容我吐会儿！！！🤮
+冲动是魔鬼，就因看了 10 分钟教你实现一个朋友圈小程序 ，SoGa！换下臃肿的 NewWxComment ，直接原生知晓云纯收工评论开码！
+刚干完了：评论、相对时间、评论分页、下拉加载、排序切换、点赞、回复、前端删除、订阅消息！除了提交新评论会重新拉取数据，其他前后端分别处理。最舒心的是评论回复的消息通知！
+相对时间
+时间戳转 Date 及格式化，吐在不支持 new Date() ，在 wxml 内调用 wxs 搞定！" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://immmmm.com/valine-getscript-load/" />
-<meta property="article:published_time" content="2020-03-23T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-03-23T00:00:00+00:00" />
+<meta property="og:url" content="https://immmmm.com/bugs-wx-minapp/" />
+<meta property="article:published_time" content="2020-12-19T23:48:16+08:00" />
+<meta property="article:modified_time" content="2020-12-19T23:48:16+08:00" />
 
 
 
     
-  <link rel="prefetch" href="https://immmmm.com/2020-03-23/">
-  <link rel="prefetch" href="https://immmmm.com/hello-hugo/">
+  
+  <link rel="prefetch" href="https://immmmm.com/flomoapp/">
 
   </head>
   <body class="dark-theme">
@@ -156,17 +156,17 @@
 
 
 <li class="active">
-  <a href="https://immmmm.com/valine-getscript-load/">Valine 懒加载</a>
+  <a href="https://immmmm.com/bugs-wx-minapp/">微信小程序评论开发踩坑记</a>
 </li>
 
 </div>
 
 
   
-    <h2 class="post-title"><a href="https://immmmm.com/valine-getscript-load/">Valine 懒加载</a></h2>
+    <h2 class="post-title"><a href="https://immmmm.com/bugs-wx-minapp/">微信小程序评论开发踩坑记</a></h2>
     <div class="post-meta">
       
-        <span class="post-date">2020-03-23 00:00:00</span><span> / <span id="twikoo_visitors">0</span> 阅读</span><span> / <span id="twikoo_count">0 条评论</span></span>
+        <span class="post-date">2020-12-19 23:48:16</span><span> / <span id="twikoo_visitors">0</span> 阅读</span><span> / <span id="twikoo_count">0 条评论</span></span>
         
           
         
@@ -174,45 +174,27 @@
     </div>
 
     
+      
+        <img loading='lazy' src="https://lmm.elizen.me/images/2020/12/exzz.jpg" class="post-cover" />
+      
+    
   
     <div class="post-content">
-      <p>博客都已静态，想再提速，要么换国内云服，要么优化一个个 JS 加载。立竿见影办法是使用 CDN 来加载，或者前端延迟加载，甚者后端判断按需加载。</p>
-<p>在需要加载的一串 JS 里，找来找去，Valine 这货最强大 💪</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">47.5KB --&gt; https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js
-75KB   --&gt; https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js
-6.4KB  --&gt; https://js.fundebug.cn/fundebug.1.9.0.min.js
-</code></pre></div><p>撸起袖子，月干！</p>
-<p>代码来自：<a href="https://github.com/reuixiy/hugo-theme-meme/blob/master/layouts/partials/third-party/valine.html">hugo-theme-meme/valine.html</a>，好使！ 👍</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span><span style="color:#f92672">&gt;</span>
-<span style="color:#a6e22e">loadComments</span>();
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">loadComments</span>() {
-  <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">Valine</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;undefined&#39;</span>) {
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">getScript</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">options</span>) =&gt; {
-      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">script</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;script&#39;</span>);
-      <span style="color:#a6e22e">script</span>.<span style="color:#a6e22e">defer</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
-      <span style="color:#a6e22e">script</span>.<span style="color:#a6e22e">crossOrigin</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;anonymous&#39;</span>;
-      Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">options</span>).<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">key</span>) =&gt; {
-          <span style="color:#a6e22e">script</span>[<span style="color:#a6e22e">key</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">options</span>[<span style="color:#a6e22e">key</span>];
-      });
-      document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">script</span>);
-    };
-    <span style="color:#a6e22e">getScript</span>({
-      <span style="color:#a6e22e">src</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js&#39;</span>,
-      <span style="color:#a6e22e">onload</span><span style="color:#f92672">:</span> () =&gt; {
-        <span style="color:#a6e22e">newValine</span>();
-      }
-    });
-  } <span style="color:#66d9ef">else</span> {
-    <span style="color:#a6e22e">newValine</span>();
-  }
-}
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">newValine</span>() {
-  <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Valine</span>({
-    <span style="color:#75715e">//原配置
-</span><span style="color:#75715e"></span>  });
-}
-<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
-</code></pre></div><p>🎉</p>
+      <p>容我吐会儿！！！🤮</p>
+<p>冲动是魔鬼，就因看了 <a href="https://www.ifanr.com/minapp/916787">10 分钟教你实现一个朋友圈小程序</a> ，SoGa！换下臃肿的 <a href="https://github.com/yicm/NewWxComment">NewWxComment</a> ，直接原生知晓云纯收工评论开码！</p>
+<p>刚干完了：评论、相对时间、评论分页、下拉加载、排序切换、点赞、回复、前端删除、订阅消息！除了提交新评论会重新拉取数据，其他前后端分别处理。最舒心的是评论回复的消息通知！</p>
+<h3 id="相对时间">相对时间</h3>
+<p>时间戳转 Date 及格式化，吐在不支持 <code>new Date()</code> ，在 wxml 内调用 wxs 搞定！</p>
+<h3 id="评论分页下拉加载排序切换">评论分页、下拉加载、排序切换</h3>
+<p>为了前端直接渲染脑子搞s，吐在不支持 push ，利用各种数组拼组 setData 搞定！</p>
+<h3 id="点赞">点赞</h3>
+<p>感谢 <a href="https://blog.csdn.net/qq_41049816/article/details/84792206">微信小程序列表点赞功能</a> 省了不少力，但依然吐在不支持 push，还没实现“已点赞”标示，只能在点击时判断！</p>
+<h3 id="回复">回复</h3>
+<p>依然吐在不支持 push！！！利用 for 、map 强插搞定！</p>
+<h3 id="前端删除">前端删除</h3>
+<p>最省心的功能，判断是否创建者或管理者，显示「删除」按钮。这方面知晓云服务到位！</p>
+<h3 id="订阅消息">订阅消息</h3>
+<p>url 中文转码导致 page 无法正常跳转，keyword 特定参数及限制导致测试了一下午，加上 <code>decodeuricomponent()</code> 顺利回血！</p>
       
     </div>
   
@@ -233,23 +215,16 @@
         <div class="pagination">
           <div class="pagination__title">
             
-              <a class="pagination__title-h" href="https://github.com/lmm214/immmmm/edit/master/content/posts/coding/valine-getscript-load.md" target="_blank" rel="noopener">阅读更多</a>
+              <a class="pagination__title-h" href="https://github.com/lmm214/immmmm/edit/master/content/posts/coding/bugs-wx-minapp.md" target="_blank" rel="noopener">阅读更多</a>
             
             <hr />
           </div>
           <div class="pagination__buttons">
             
-              <span class="button previous">
-                <a href="https://immmmm.com/2020-03-23/">
-                  <span class="button__icon">←</span>
-                  <span class="button__text">2020-03-23</span>
-                </a>
-              </span>
-            
             
               <span class="button next">
-                <a href="https://immmmm.com/hello-hugo/">
-                  <span class="button__text">Hello Hugo</span>
+                <a href="https://immmmm.com/flomoapp/">
+                  <span class="button__text">Flomo | 浮墨笔记</span>
                   <span class="button__icon">→</span>
                 </a>
               </span>

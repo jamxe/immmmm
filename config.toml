@@ -21,10 +21,6 @@ ignoreErrors = ["error-remote-getjson","error-remote-getcsv"]
 
 [menu]
   [[menu.main]]
-  name="哔哔"
-  url="/bbs/"
-  weight="1"
-  [[menu.main]]
   name="友圈"
   url="/friends/"
   weight="2"
